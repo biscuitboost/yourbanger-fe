@@ -1,0 +1,149 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import ExampleCard from '~/components/widgets/ExampleCard.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Song Examples - YourBanger',
+  description: 'Listen to sample personalized AI-generated songs. Hear the variety and quality of custom songs you can create.',
+};
+
+const examples = [
+  {
+    title: "Sarah's Legendary 30th",
+    occasion: 'Birthday',
+    style: 'Rock',
+    context: 'An epic rock anthem about Sarah\'s terrible karaoke skills and legendary weekend adventures with friends.',
+    audioSrc: '/audio/sample-rock.mp3',
+  },
+  {
+    title: 'Forever Starts Today',
+    occasion: 'Wedding',
+    style: 'Ballad',
+    context: 'A heartfelt wedding ballad celebrating a couple\'s journey from college sweethearts to lifelong partners.',
+    audioSrc: '/audio/sample-ballad.mp3',
+  },
+  {
+    title: 'Remember That Time?',
+    occasion: 'Inside Joke',
+    style: 'Country',
+    context: 'A hilarious country tune about that camping trip incident that friends won\'t let each other forget.',
+    audioSrc: '/audio/sample-country.mp3',
+  },
+  {
+    title: 'The Office Legend',
+    occasion: 'Retirement',
+    style: 'Pop',
+    context: 'A celebration of Dave who brought donuts every Friday for 20 years and made everyone\'s Monday meetings bearable.',
+    audioSrc: '/audio/sample-pop.mp3',
+  },
+  {
+    title: 'Ten Years of You',
+    occasion: 'Anniversary',
+    style: 'R&B',
+    context: 'A smooth R&B love song celebrating a decade of adventures, inside jokes, and growing old together.',
+    audioSrc: '/audio/sample-rnb.mp3',
+  },
+  {
+    title: 'The Champion Graduate',
+    occasion: 'Graduation',
+    style: 'Hip Hop',
+    context: 'An energetic hip hop track celebrating graduating against all odds and making the family proud.',
+    audioSrc: '/audio/sample-hiphop.mp3',
+  },
+];
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-purple-50 to-white dark:from-gray-900 dark:to-gray-800 py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+        Song <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Examples</span>
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+        Listen to real examples of personalized AI-generated songs. Every song is unique, custom-made for the story behind it.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter Section (Future Enhancement) -->
+  <section class="py-8 border-b border-gray-200 dark:border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-wrap gap-3 justify-center">
+        <span class="text-sm font-medium text-gray-700 dark:text-gray-300 self-center">Filter by:</span>
+        <button class="px-4 py-2 text-sm font-medium rounded-full bg-purple-600 text-white">
+          All
+        </button>
+        <button class="px-4 py-2 text-sm font-medium rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+          Birthday
+        </button>
+        <button class="px-4 py-2 text-sm font-medium rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+          Wedding
+        </button>
+        <button class="px-4 py-2 text-sm font-medium rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+          Inside Joke
+        </button>
+        <button class="px-4 py-2 text-sm font-medium rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
+          Celebration
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Grid -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {examples.map((example) => (
+          <ExampleCard
+            title={example.title}
+            occasion={example.occasion}
+            style={example.style}
+            context={example.context}
+            audioSrc={example.audioSrc}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Music Styles Section -->
+  <section class="bg-gray-50 dark:bg-gray-900 py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+        Choose Your Style
+      </h2>
+      <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+        We support multiple music genres to match your story's vibe
+      </p>
+      <div class="flex flex-wrap gap-3 justify-center">
+        {['Rock', 'Pop', 'Country', 'Rap', 'R&B', 'Ballad', 'Indie', 'Electronic', 'Jazz'].map((style) => (
+          <span class="px-5 py-3 text-sm font-semibold rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-md">
+            {style}
+          </span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Create Your Own Song',
+        href: 'https://app.yourbanger.com/auth?tab=signup',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Your Story Deserves Its Own Song
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Ready to create something legendary? Start making your personalized song now.
+    </Fragment>
+  </CallToAction>
+</Layout>

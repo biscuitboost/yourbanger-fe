@@ -1,0 +1,143 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'FAQ - YourBanger',
+  description: 'Frequently asked questions about creating personalized AI-generated songs with YourBanger.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-purple-50 to-white dark:from-gray-900 dark:to-gray-800 py-12 md:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+        Frequently Asked <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Questions</span>
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-400">
+        Everything you need to know about creating personalized songs
+      </p>
+    </div>
+  </section>
+
+  <!-- Getting Started FAQs -->
+  <FAQs
+    title="Getting Started"
+    items={[
+      {
+        title: 'How long does it take?',
+        description: '~2 minutes to create, ~1 minute to generate. Total time: about 3 minutes from start to shareable song.',
+      },
+      {
+        title: 'Do I need musical talent?',
+        description: 'Nope. That\'s literally the whole point. Just tell us the story, we handle the music.',
+      },
+      {
+        title: 'How does it work?',
+        description: 'You share details about the person or moment, our AI writes personalized lyrics, sets them to music in your chosen style, and creates a professional-quality song.',
+      },
+    ]}
+  />
+
+  <!-- Customization FAQs -->
+  <FAQs
+    title="Customization"
+    items={[
+      {
+        title: 'Can I edit the lyrics?',
+        description: 'Yep, full control before we make it. Edit, revise, or regenerate until it\'s perfect.',
+      },
+      {
+        title: 'What music styles are available?',
+        description: 'Rock, pop, country, rap, R&B, ballad, indie, electronic, jazz... we got you.',
+      },
+      {
+        title: 'Can I choose the vibe?',
+        description: 'Absolutely. Pick from upbeat, emotional, funny, romantic, epic, and more.',
+      },
+    ]}
+  />
+
+  <!-- Sharing & Quality FAQs -->
+  <FAQs
+    title="Sharing & Quality"
+    items={[
+      {
+        title: 'Can I share my song?',
+        description: 'Yep, every song gets a custom link. Share via text, social media, email, whatever.',
+      },
+      {
+        title: 'Can I download the song?',
+        description: 'Yes, full download included with every song.',
+      },
+      {
+        title: 'What format are songs?',
+        description: 'High-quality MP3, playable anywhere.',
+      },
+    ]}
+  />
+
+  <!-- Issues & Support FAQs -->
+  <FAQs
+    title="Issues & Support"
+    items={[
+      {
+        title: 'What if they hate it?',
+        description: 'Then they have no sense of humor (but yes, you can remake it or edit it).',
+      },
+      {
+        title: 'What if I\'m not happy?',
+        description: 'We\'ll make it right. Remake it, get a refund, we\'re flexible.',
+      },
+      {
+        title: 'How do I get help?',
+        description: 'Contact us at support@yourbanger.com or through the app.',
+      },
+    ]}
+  />
+
+  <!-- Technical FAQs -->
+  <FAQs
+    title="Technical"
+    items={[
+      {
+        title: 'Do songs expire?',
+        description: 'Nope. Lifetime access to every song you create.',
+      },
+      {
+        title: 'How many revisions can I make?',
+        description: 'Unlimited before generation. After generation, you can remake with the same credit.',
+      },
+      {
+        title: 'Is my data private?',
+        description: 'Yes. See our Privacy Policy for details.',
+      },
+      {
+        title: 'Do credits expire?',
+        description: 'No, use them whenever you want. They never expire.',
+      },
+    ]}
+  />
+
+  <!-- CTA Section -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Still Have Questions? Just Try It',
+        href: 'https://app.yourbanger.com/auth?tab=signup',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Ready to Create Your Song?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      The best way to understand is to try it. Get started in minutes.
+    </Fragment>
+  </CallToAction>
+</Layout>

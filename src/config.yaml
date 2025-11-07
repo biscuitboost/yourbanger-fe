@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: YourBanger
+  site: 'https://yourbanger.com'
   base: '/'
   trailingSlash: false
 
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: YourBanger - Create Personalized AI Songs in Minutes
+    template: '%s — YourBanger'
+  description: "Turn your story into a custom song. AI-powered personalized music for birthdays, weddings, and special moments. $14 for 10 songs. No musical talent required."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: YourBanger
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/og-image.jpg'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
+    handle: '@yourbanger'
+    site: '@yourbanger'
     cardType: summary_large_image
 
 i18n:

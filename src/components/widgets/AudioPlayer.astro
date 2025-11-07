@@ -1,0 +1,120 @@
+---
+interface Props {
+  src: string;
+  title: string;
+  artist?: string;
+  class?: string;
+}
+
+const { src, title, artist = 'YourBanger', class: className = '' } = Astro.props;
+---
+
+<div class={`audio-player bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 ${className}`}>
+  <div class="flex items-center justify-between mb-3">
+    <div class="flex-1 min-w-0">
+      <h4 class="text-sm font-semibold text-gray-900 dark:text-white truncate">{title}</h4>
+      <p class="text-xs text-gray-600 dark:text-gray-400">{artist}</p>
+    </div>
+    <button
+      class="play-button ml-3 w-10 h-10 flex items-center justify-center bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-full shadow-md transition-all duration-200 transform hover:scale-110"
+      aria-label="Play"
+    >
+      <svg class="play-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
+      </svg>
+      <svg class="pause-icon w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M5.75 3a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h1.5a.75.75 0 00.75-.75V3.75A.75.75 0 007.25 3h-1.5zM12.75 3a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h1.5a.75.75 0 00.75-.75V3.75a.75.75 0 00-.75-.75h-1.5z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="relative">
+    <div class="progress-bar-bg h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden cursor-pointer">
+      <div class="progress-bar h-full bg-gradient-to-r from-purple-600 to-pink-600 rounded-full" style="width: 0%"></div>
+    </div>
+  </div>
+
+  <div class="flex items-center justify-between mt-2 text-xs text-gray-600 dark:text-gray-400">
+    <span class="current-time">0:00</span>
+    <span class="duration">0:00</span>
+  </div>
+
+  <audio class="audio-element hidden" src={src} preload="metadata"></audio>
+</div>
+
+<script>
+  function initAudioPlayers() {
+    const players = document.querySelectorAll('.audio-player');
+
+    players.forEach((playerEl) => {
+      const audio = playerEl.querySelector('.audio-element') as HTMLAudioElement;
+      const playButton = playerEl.querySelector('.play-button') as HTMLButtonElement;
+      const playIcon = playerEl.querySelector('.play-icon') as SVGElement;
+      const pauseIcon = playerEl.querySelector('.pause-icon') as SVGElement;
+      const progressBar = playerEl.querySelector('.progress-bar') as HTMLElement;
+      const progressBarBg = playerEl.querySelector('.progress-bar-bg') as HTMLElement;
+      const currentTimeEl = playerEl.querySelector('.current-time') as HTMLElement;
+      const durationEl = playerEl.querySelector('.duration') as HTMLElement;
+
+      if (!audio) return;
+
+      // Play/Pause
+      playButton.addEventListener('click', () => {
+        if (audio.paused) {
+          // Pause all other audio players
+          document.querySelectorAll('.audio-element').forEach((otherAudio) => {
+            if (otherAudio !== audio && !(otherAudio as HTMLAudioElement).paused) {
+              (otherAudio as HTMLAudioElement).pause();
+            }
+          });
+          audio.play();
+          playIcon.classList.add('hidden');
+          pauseIcon.classList.remove('hidden');
+        } else {
+          audio.pause();
+          playIcon.classList.remove('hidden');
+          pauseIcon.classList.add('hidden');
+        }
+      });
+
+      // Update progress bar
+      audio.addEventListener('timeupdate', () => {
+        const progress = (audio.currentTime / audio.duration) * 100;
+        progressBar.style.width = `${progress}%`;
+        currentTimeEl.textContent = formatTime(audio.currentTime);
+      });
+
+      // Set duration
+      audio.addEventListener('loadedmetadata', () => {
+        durationEl.textContent = formatTime(audio.duration);
+      });
+
+      // Reset on end
+      audio.addEventListener('ended', () => {
+        playIcon.classList.remove('hidden');
+        pauseIcon.classList.add('hidden');
+        progressBar.style.width = '0%';
+        audio.currentTime = 0;
+      });
+
+      // Seek
+      progressBarBg.addEventListener('click', (e) => {
+        const rect = progressBarBg.getBoundingClientRect();
+        const percent = (e.clientX - rect.left) / rect.width;
+        audio.currentTime = percent * audio.duration;
+      });
+    });
+  }
+
+  function formatTime(seconds: number): string {
+    if (isNaN(seconds)) return '0:00';
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+  }
+
+  // Initialize on page load
+  document.addEventListener('DOMContentLoaded', initAudioPlayers);
+  // Re-initialize if content is dynamically added
+  document.addEventListener('astro:page-load', initAudioPlayers);
+</script>

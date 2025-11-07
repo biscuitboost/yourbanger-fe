@@ -1,0 +1,41 @@
+---
+import AudioPlayer from './AudioPlayer.astro';
+import CTAButton from './CTAButton.astro';
+
+interface Props {
+  title: string;
+  occasion: string;
+  style: string;
+  context: string;
+  audioSrc: string;
+  class?: string;
+}
+
+const { title, occasion, style, context, audioSrc, class: className = '' } = Astro.props;
+---
+
+<div
+  class={`example-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700 ${className}`}
+>
+  <div class="p-6">
+    <div class="flex flex-wrap gap-2 mb-3">
+      <span
+        class="px-3 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200"
+      >
+        {occasion}
+      </span>
+      <span
+        class="px-3 py-1 text-xs font-semibold rounded-full bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200"
+      >
+        {style}
+      </span>
+    </div>
+
+    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{title}</h3>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">{context}</p>
+
+    <AudioPlayer src={audioSrc} title={title} class="mb-4" />
+
+    <CTAButton text="Create Yours" variant="primary" size="sm" class="w-full text-center" />
+  </div>
+</div>
