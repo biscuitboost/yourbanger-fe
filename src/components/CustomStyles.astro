@@ -25,19 +25,35 @@ import '@fontsource-variable/inter';
     --aw-font-serif: 'Inter Variable';
     --aw-font-heading: 'Inter Variable';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    /* Pastel Neobrutalism Color Palette */
+    --aw-color-primary: rgb(255 182 217);      /* Pastel Pink */
+    --aw-color-secondary: rgb(168 216 234);    /* Pastel Blue */
+    --aw-color-accent: rgb(255 229 180);       /* Pastel Peach/Yellow */
+    --aw-color-success: rgb(180 231 206);      /* Pastel Green */
+    --aw-color-warning: rgb(255 203 164);      /* Pastel Orange */
+    --aw-color-purple: rgb(216 180 254);       /* Pastel Purple */
+    --aw-color-lavender: rgb(230 224 255);     /* Pastel Lavender */
 
-    --aw-color-text-heading: rgb(0 0 0);
-    --aw-color-text-default: rgb(16 16 16);
-    --aw-color-text-muted: rgb(16 16 16 / 66%);
-    --aw-color-bg-page: rgb(255 255 255);
+    /* Text Colors - High Contrast for Neobrutalism */
+    --aw-color-text-heading: rgb(0 0 0);       /* Pure Black */
+    --aw-color-text-default: rgb(26 26 26);    /* Near Black */
+    --aw-color-text-muted: rgb(64 64 64);      /* Dark Gray */
 
-    --aw-color-bg-page-dark: rgb(3 6 32);
+    /* Background Colors */
+    --aw-color-bg-page: rgb(255 254 249);      /* Warm Cream */
+    --aw-color-bg-card: rgb(255 255 255);      /* Pure White */
+
+    /* Neobrutalism Borders & Shadows */
+    --aw-border-color: rgb(0 0 0);             /* Black borders */
+    --aw-border-width: 4px;                     /* Thick borders */
+    --aw-shadow-offset: 6px;                    /* Shadow offset */
+
+    /* Dark mode fallback (keeping similar but muted) */
+    --aw-color-bg-page-dark: rgb(26 26 31);
 
     ::selection {
-      background-color: lavender;
+      background-color: rgb(255 229 180);
+      color: rgb(0 0 0);
     }
   }
 
@@ -46,18 +62,26 @@ import '@fontsource-variable/inter';
     --aw-font-serif: 'Inter Variable';
     --aw-font-heading: 'Inter Variable';
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    /* Dark Mode - Muted Pastel Neobrutalism */
+    --aw-color-primary: rgb(255 182 217);      /* Pastel Pink */
+    --aw-color-secondary: rgb(168 216 234);    /* Pastel Blue */
+    --aw-color-accent: rgb(255 229 180);       /* Pastel Peach/Yellow */
+    --aw-color-success: rgb(180 231 206);      /* Pastel Green */
+    --aw-color-warning: rgb(255 203 164);      /* Pastel Orange */
+    --aw-color-purple: rgb(216 180 254);       /* Pastel Purple */
+    --aw-color-lavender: rgb(230 224 255);     /* Pastel Lavender */
 
-    --aw-color-text-heading: rgb(247, 248, 248);
-    --aw-color-text-default: rgb(229 236 246);
-    --aw-color-text-muted: rgb(229 236 246 / 66%);
-    --aw-color-bg-page: rgb(3 6 32);
+    --aw-color-text-heading: rgb(255 255 255); /* White */
+    --aw-color-text-default: rgb(240 240 240); /* Light Gray */
+    --aw-color-text-muted: rgb(180 180 180);   /* Medium Gray */
+    --aw-color-bg-page: rgb(26 26 31);         /* Dark Background */
+    --aw-color-bg-card: rgb(36 36 41);         /* Dark Card Background */
+
+    --aw-border-color: rgb(255 255 255);       /* White borders in dark mode */
 
     ::selection {
-      background-color: black;
-      color: snow;
+      background-color: rgb(255 182 217);
+      color: rgb(0 0 0);
     }
   }
 </style>
