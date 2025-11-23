@@ -54,6 +54,10 @@
     @apply dark:bg-pastel-green dark:border-white dark:text-black;
   }
 
+  .btn-link {
+    @apply font-black uppercase tracking-wide text-black dark:text-white underline hover:text-black/80 dark:hover:text-white/80 transition-colors;
+  }
+
   /* Neobrutalism Card Styles */
   .card-brutal {
     @apply border-4 border-black bg-white shadow-brutal;
@@ -86,6 +90,23 @@
     @apply focus:outline-none focus:translate-x-[2px] focus:translate-y-[2px] focus:shadow-brutal-sm;
     @apply dark:border-white dark:bg-gray-900 dark:text-white;
   }
+
+  /* Icon Styles - Make icons more visible */
+  [astro-icon] {
+    @apply text-black dark:text-white;
+  }
+
+  [astro-icon].icon-light > * {
+    stroke-width: 2;
+  }
+
+  [astro-icon].icon-bold > * {
+    stroke-width: 3;
+  }
+
+  [astro-icon].icon-brutal > * {
+    stroke-width: 2.5;
+  }
 }
 
 #header.scroll > div:first-child {
@@ -114,14 +135,6 @@
 .dropdown:focus-within .dropdown-menu,
 .dropdown:hover .dropdown-menu {
   display: block;
-}
-
-[astro-icon].icon-light > * {
-  stroke-width: 1.2;
-}
-
-[astro-icon].icon-bold > * {
-  stroke-width: 2.4;
 }
 
 [data-aw-toggle-menu] path {
