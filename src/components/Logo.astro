@@ -4,35 +4,28 @@
 <span
   class="logo-container self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 dark:text-white whitespace-nowrap flex items-center gap-2"
 >
-  <svg class="synth-icon" width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- Synth body -->
-    <rect x="1" y="6" width="26" height="13" rx="2" fill="currentColor" class="synth-body"/>
-    <!-- Keys -->
-    <rect class="key key-1" x="4" y="10" width="3" height="8" rx="0.5" fill="white"/>
-    <rect class="key key-2" x="8" y="10" width="3" height="8" rx="0.5" fill="white"/>
-    <rect class="key key-3" x="12" y="10" width="3" height="8" rx="0.5" fill="white"/>
-    <rect class="key key-4" x="16" y="10" width="3" height="8" rx="0.5" fill="white"/>
-    <rect class="key key-5" x="20" y="10" width="3" height="8" rx="0.5" fill="white"/>
+  <svg class="mic-icon" width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Mic head -->
+    <rect class="mic-head" x="5" y="1" width="10" height="14" rx="5" fill="currentColor"/>
+    <!-- Mic grille lines -->
+    <line x1="7" y1="4" x2="13" y2="4" stroke="white" stroke-width="1" opacity="0.5"/>
+    <line x1="7" y1="6.5" x2="13" y2="6.5" stroke="white" stroke-width="1" opacity="0.5"/>
+    <line x1="7" y1="9" x2="13" y2="9" stroke="white" stroke-width="1" opacity="0.5"/>
+    <line x1="7" y1="11.5" x2="13" y2="11.5" stroke="white" stroke-width="1" opacity="0.5"/>
+    <!-- Mic stand -->
+    <path d="M10 15V20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M6 20H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     <!-- Sound waves -->
-    <path class="wave wave-1" d="M6 4C6 4 7 2 8 4C9 6 10 4 10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-    <path class="wave wave-2" d="M12 3C12 3 13.5 0 15 3C16.5 6 18 3 18 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-    <path class="wave wave-3" d="M20 4C20 4 21 2 22 4C23 6 24 4 24 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path class="wave wave-1" d="M2 6C2 6 1 8 2 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <path class="wave wave-2" d="M18 6C18 6 19 8 18 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
   </svg>
   YourBanger.com
 </span>
 
 <style>
-  .synth-body {
-    fill: #1f2937;
-  }
-
-  :global(.dark) .synth-body {
-    fill: #e5e7eb;
-  }
-
   .wave {
     opacity: 0;
-    animation: wave-float 1.8s ease-in-out infinite;
+    animation: wave-pulse 2s ease-in-out infinite;
   }
 
   .wave-1 {
@@ -40,59 +33,33 @@
   }
 
   .wave-2 {
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
   }
 
-  .wave-3 {
-    animation-delay: 0.6s;
-  }
-
-  @keyframes wave-float {
+  @keyframes wave-pulse {
     0%, 100% {
       opacity: 0;
-      transform: translateY(2px);
+      transform: scaleY(0.8);
     }
     50% {
-      opacity: 0.7;
-      transform: translateY(-1px);
+      opacity: 0.6;
+      transform: scaleY(1.1);
     }
   }
 
-  .key {
-    transition: transform 0.1s ease;
+  .logo-container:hover .mic-icon {
+    animation: mic-bounce 0.4s ease-in-out;
   }
 
-  .logo-container:hover .key-1 {
-    animation: key-press 0.4s ease-in-out;
-    animation-delay: 0s;
-  }
-
-  .logo-container:hover .key-2 {
-    animation: key-press 0.4s ease-in-out;
-    animation-delay: 0.08s;
-  }
-
-  .logo-container:hover .key-3 {
-    animation: key-press 0.4s ease-in-out;
-    animation-delay: 0.16s;
-  }
-
-  .logo-container:hover .key-4 {
-    animation: key-press 0.4s ease-in-out;
-    animation-delay: 0.24s;
-  }
-
-  .logo-container:hover .key-5 {
-    animation: key-press 0.4s ease-in-out;
-    animation-delay: 0.32s;
-  }
-
-  @keyframes key-press {
+  @keyframes mic-bounce {
     0%, 100% {
-      transform: translateY(0);
+      transform: rotate(0deg);
     }
-    50% {
-      transform: translateY(2px);
+    25% {
+      transform: rotate(-5deg);
+    }
+    75% {
+      transform: rotate(5deg);
     }
   }
 </style>
