@@ -1,0 +1,49 @@
+Type,Filename,Location,Description,Specs,Priority,Status
+Audio,sample-rock.mp3,/public/audio/,Birthday rock song example - upbeat celebratory rock track,"MP3, 128-320kbps, 1-3 min, <5MB",High,Pending
+Audio,sample-ballad.mp3,/public/audio/,Wedding ballad example - romantic emotional slow song,"MP3, 128-320kbps, 1-3 min, <5MB",High,Pending
+Audio,sample-country.mp3,/public/audio/,Inside joke country song - fun storytelling country track,"MP3, 128-320kbps, 1-3 min, <5MB",High,Pending
+Audio,sample-pop.mp3,/public/audio/,Retirement pop song - uplifting celebratory pop track,"MP3, 128-320kbps, 1-3 min, <5MB",High,Pending
+Audio,sample-rnb.mp3,/public/audio/,Anniversary R&B song - smooth romantic R&B track,"MP3, 128-320kbps, 1-3 min, <5MB",High,Pending
+Audio,sample-hiphop.mp3,/public/audio/,Graduation hip hop song - energetic triumphant hip hop track,"MP3, 128-320kbps, 1-3 min, <5MB",High,Pending
+Branding,og-image.jpg,/public/,Open Graph image for social sharing - YourBanger branding with tagline Turn Your Story Into a Song - purple/pink gradient theme,"1200x628px, JPG",High,Pending
+Blog Image,birthday-gift-ideas-hero.jpg,/src/assets/images/blog/,Wrapped birthday gifts with personalized touches including custom song QR code photo book and handwritten letter arranged on a table,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,21st-birthday-gifts-hero.jpg,/src/assets/images/blog/,21st birthday celebration setup with gold 21 balloons champagne glasses and elegant wrapped gifts,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,30th-birthday-gifts-hero.jpg,/src/assets/images/blog/,Elegant 30th birthday celebration with gold 30 balloons champagne and thoughtfully wrapped gifts,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,40th-birthday-gifts-hero.jpg,/src/assets/images/blog/,Elegant 40th birthday celebration setup with 40 decorations champagne and sophisticated wrapped gifts,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,50th-birthday-gifts-hero.jpg,/src/assets/images/blog/,50th birthday celebration with elegant decorations and meaningful gifts for half-century milestone,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,60th-birthday-gifts-hero.jpg,/src/assets/images/blog/,Elegant 60th birthday celebration setup with 60 decorations and thoughtfully wrapped gifts,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,wedding-gifts-couples-hero.jpg,/src/assets/images/blog/,Beautifully wrapped wedding gifts for couples arranged on elegant gift table with flowers,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,wedding-gifts-unique-hero.jpg,/src/assets/images/blog/,Unique wedding gift ideas including custom song card personalized items and experience tickets,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,personalized-wedding-gifts-hero.jpg,/src/assets/images/blog/,Personalized wedding gifts including custom artwork engraved items and meaningful keepsakes arranged elegantly,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,engagement-party-gifts-hero.jpg,/src/assets/images/blog/,Engagement party celebration with champagne glasses wrapped gifts and elegant decorations,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,couples-gifts-hero.jpg,/src/assets/images/blog/,Happy couple opening a gift together at home both excited about their couples gift,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,wedding-toast-guide-hero.jpg,/src/assets/images/blog/,Best man giving wedding toast with champagne glasses raised guests laughing and emotional,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,graduation-gifts-hero.jpg,/src/assets/images/blog/,Graduate in cap and gown celebrating achievement with meaningful graduation gifts and family,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,graduation-gifts-her-hero.jpg,/src/assets/images/blog/,Happy female graduate celebrating achievement with diploma flowers and graduation gifts,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,graduation-gifts-him-hero.jpg,/src/assets/images/blog/,Male graduate celebrating achievement in cap and gown with diploma and graduation gifts,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,christmas-gifts-hero.jpg,/src/assets/images/blog/,Christmas gift ideas beautifully wrapped under decorated tree with festive holiday lighting,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,personalized-christmas-gifts-hero.jpg,/src/assets/images/blog/,Personalized Christmas gifts under decorated tree including custom wrapped presents and photo books,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,unique-christmas-adults-hero.jpg,/src/assets/images/blog/,Sophisticated Christmas gifts for adults including elegant wrapped presents and experience cards with subtle holiday decor,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,valentines-gifts-her-hero.jpg,/src/assets/images/blog/,Unique Valentines Day gifts for her including personalized presents and romantic candles,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,valentines-gifts-him-hero.jpg,/src/assets/images/blog/,Valentines Day gifts for him including quality watch cologne and elegantly wrapped presents in romantic colors,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,mothers-day-gifts-hero.jpg,/src/assets/images/blog/,Mother receiving meaningful Mothers Day gift from child emotional moment of appreciation and love,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,fathers-day-gifts-hero.jpg,/src/assets/images/blog/,Father receiving meaningful Fathers Day gift from child emotional moment of appreciation,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,best-friend-gifts-hero.jpg,/src/assets/images/blog/,Best friends sharing a meaningful gift moment laughing together over a thoughtful present,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,gifts-female-friend-hero.jpg,/src/assets/images/blog/,Two female friends laughing together while exchanging thoughtful gifts warm friendship moment,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,anniversary-gifts-year-hero.jpg,/src/assets/images/blog/,Anniversary gift ideas by year showing traditional and modern gift options from 1st to 50th anniversary,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,baby-shower-gifts-hero.jpg,/src/assets/images/blog/,Baby shower gift ideas beautifully arranged including wrapped presents and meaningful keepsakes,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,bridesmaid-gifts-hero.jpg,/src/assets/images/blog/,Bridesmaid gift ideas including delicate jewelry luxury skincare and personalized keepsakes arranged on marble with pink flowers,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,groomsmen-gifts-hero.jpg,/src/assets/images/blog/,Collection of groomsmen gift ideas including leather wallet watch custom cufflinks and personalized flask arranged on dark wood,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,personalized-gifts-guide-hero.jpg,/src/assets/images/blog/,Collection of personalized gifts including custom song card engraved jewelry photo book and star map arranged aesthetically,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,personalized-gifts-men-hero.jpg,/src/assets/images/blog/,Personalized gift ideas for men including engraved leather wallet custom BBQ tools and whiskey glasses,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,personalized-birthday-song-hero.jpg,/src/assets/images/blog/,Birthday party with personalized song playing birthday person looking emotional and surprised,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,meaningful-gifts-hero.jpg,/src/assets/images/blog/,Meaningful gift exchange showing genuine emotional connection between giver and receiver,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,gifts-has-everything-hero.jpg,/src/assets/images/blog/,Thoughtful gift arrangement for someone who has everything including experience tickets and personalized items,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,gifts-men-everything-hero.jpg,/src/assets/images/blog/,Gifts for men who have everything - sophisticated gift ideas for the man who buys himself what he wants,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,gifts-woman-everything-hero.jpg,/src/assets/images/blog/,Elegant gift ideas for the woman who has everything including spa items experiences and personalized presents,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,unique-gifts-him-hero.jpg,/src/assets/images/blog/,Unique gift ideas for him including custom song card experience tickets quality leather items and hobby gear,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,retirement-gifts-hero.jpg,/src/assets/images/blog/,Retirement celebration with colleagues presenting meaningful gift to retiree emotional moment,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,housewarming-gifts-hero.jpg,/src/assets/images/blog/,Housewarming gift ideas including wrapped presents potted plants and home accessories at front door,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,thank-you-gifts-hero.jpg,/src/assets/images/blog/,Thoughtful thank you gift ideas including beautifully wrapped present fresh flowers and handwritten card,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,sentimental-gifts-hero.jpg,/src/assets/images/blog/,Person emotionally opening sentimental gift visibly moved by the thoughtful gesture,"1200x630px, JPG, 16:9",Medium,Pending
+Blog Image,last-minute-gifts-hero.jpg,/src/assets/images/blog/,Person quickly creating last-minute personalized gift on phone modern and urgent gift-giving moment,"1200x630px, JPG, 16:9",Medium,Pending
