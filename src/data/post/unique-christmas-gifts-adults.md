@@ -3,7 +3,7 @@ publishDate: 2024-12-02T00:00:00Z
 title: "Unique Christmas Gifts for Adults Who Have Everything"
 excerpt: "What do you get adults who already have everything they need? These unique Christmas gift ideas focus on experiences and personalization—not more stuff."
 image: ~/assets/images/blog/unique-christmas-adults-hero.jpg
-# IMAGE NEEDED: Sophisticated Christmas gift setting for adults - elegant wrapped presents, experience cards, custom song QR code, with subtle holiday decor
+imageAlt: "Sophisticated Christmas gifts for adults including elegant wrapped presents and experience cards with subtle holiday decor"
 category: Gift Guides
 tags:
   - christmas gifts

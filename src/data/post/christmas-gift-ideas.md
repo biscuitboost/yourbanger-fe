@@ -3,8 +3,7 @@ publishDate: 2024-11-25T00:00:00Z
 title: "Christmas Gift Ideas for Everyone on Your List"
 excerpt: "The ultimate Christmas gift guide for every person and budget. From stocking stuffers to showstoppers, find the perfect gift for everyone—without the holiday shopping stress."
 image: ~/assets/images/blog/christmas-gifts-hero.jpg
-# IMAGE: Beautifully wrapped Christmas presents under decorated tree with warm holiday lighting
-# Alt text: "Christmas gift ideas beautifully wrapped under decorated tree with festive holiday lighting"
+imageAlt: "Christmas gift ideas beautifully wrapped under decorated tree with festive holiday lighting"
 category: Gift Guides
 tags:
   - christmas gifts

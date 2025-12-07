@@ -3,8 +3,7 @@ publishDate: 2025-10-05T00:00:00Z
 title: "Groomsmen Gift Ideas They'll Actually Use (Not Just Display)"
 excerpt: "Skip the generic flask. These groomsmen gift ideas range from practical everyday items to meaningful keepsakes that honor your friendship and the role they're playing in your big day."
 image: ~/assets/images/blog/groomsmen-gifts-hero.jpg
-# IMAGE: Hero image showing a stylish flat-lay of various groomsmen gifts including watches, leather goods, and personalized items on a dark wooden surface
-# Alt text: "Collection of groomsmen gift ideas including leather wallet, watch, custom cufflinks, and personalized flask arranged on dark wood"
+imageAlt: "Collection of groomsmen gift ideas including leather wallet, watch, custom cufflinks, and personalized flask arranged on dark wood"
 category: Gift Guides
 tags:
   - groomsmen gifts

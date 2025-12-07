@@ -3,8 +3,7 @@ publishDate: 2024-08-15T00:00:00Z
 title: "21st Birthday Gift Ideas That Match the Milestone"
 excerpt: "Turning 21 is a big deal—the gift should be too. These 21st birthday gift ideas range from celebratory to sentimental, perfect for marking this major milestone."
 image: ~/assets/images/blog/21st-birthday-gifts-hero.jpg
-# IMAGE: Festive 21st birthday setup with gold balloons, champagne, and wrapped gifts
-# Alt text: "21st birthday celebration setup with gold '21' balloons, champagne glasses, and elegant wrapped gifts"
+imageAlt: "21st birthday celebration setup with gold '21' balloons, champagne glasses, and elegant wrapped gifts"
 category: Gift Guides
 tags:
   - birthday gifts

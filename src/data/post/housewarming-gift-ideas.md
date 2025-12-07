@@ -3,8 +3,7 @@ publishDate: 2024-12-05T00:00:00Z
 title: "Housewarming Gift Ideas That Won't Collect Dust"
 excerpt: "Skip the generic candle. These housewarming gift ideas are actually useful, thoughtful, and won't end up in a donation pile six months later."
 image: ~/assets/images/blog/housewarming-gifts-hero.jpg
-# IMAGE: Welcoming home entrance with wrapped housewarming gifts, plants, and a welcome mat
-# Alt text: "Housewarming gift ideas including wrapped presents, potted plants, and home accessories at front door"
+imageAlt: "Housewarming gift ideas including wrapped presents, potted plants, and home accessories at front door"
 category: Gift Guides
 tags:
   - housewarming gifts

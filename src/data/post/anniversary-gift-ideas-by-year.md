@@ -3,7 +3,7 @@ publishDate: 2025-01-18T00:00:00Z
 title: "Anniversary Gift Ideas by Year (1st to 50th)"
 excerpt: "From paper to gold and everything in between. The complete guide to anniversary gift ideas for every milestone year, with modern alternatives and personalized options."
 image: ~/assets/images/blog/anniversary-gifts-year-hero.jpg
-# IMAGE NEEDED: Elegant timeline visual showing anniversary years with corresponding traditional gifts and modern alternatives
+imageAlt: "Anniversary gift ideas by year showing traditional and modern gift options from 1st to 50th anniversary"
 category: Gift Guides
 tags:
   - anniversary gifts

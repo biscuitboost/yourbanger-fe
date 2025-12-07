@@ -3,7 +3,7 @@ publishDate: 2025-03-08T00:00:00Z
 title: "Retirement Gift Ideas That Honor Their Legacy (Not Another Watch)"
 excerpt: "After decades of work, they deserve better than a gold watch. These retirement gift ideas celebrate their career and the freedom ahead—from custom songs to meaningful tributes."
 image: ~/assets/images/blog/retirement-gifts-hero.jpg
-# IMAGE NEEDED: Retirement celebration scene - group presenting something meaningful to retiree, or retiree looking emotional receiving gift
+imageAlt: "Retirement celebration with colleagues presenting meaningful gift to retiree, emotional moment"
 category: Gift Guides
 tags:
   - retirement gifts

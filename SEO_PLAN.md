@@ -21,11 +21,20 @@
 
 ### ⚠️ Needs Improvement
 - `robots.txt` is too minimal
-- No structured data (Schema.org)
-- Blog disabled but infrastructure exists
-- No canonical URLs explicitly set
+- ~~No structured data (Schema.org)~~ ✅ FIXED: Article, BreadcrumbList, Service, FAQPage schemas added
+- ~~Blog disabled but infrastructure exists~~ ✅ Blog enabled with 41 posts
+- ~~No canonical URLs explicitly set~~ ✅ FIXED: Canonical URLs now always set on blog posts
 - Missing page-specific OG images
-- No Google Analytics configured
+- ~~No Google Analytics configured~~ ✅ GA4 configured (G-9HMNB359RY)
+
+### ✅ Recently Implemented (Dec 2024)
+- Article schema on all blog posts (headline, datePublished, dateModified, author, publisher)
+- BreadcrumbList schema on blog posts, category pages, tag pages, and blog list
+- Service schema on landing pages (birthday-songs, wedding-songs, etc.)
+- FAQPage schema on FAQ page
+- Proper meta descriptions on blog list, category, and tag pages
+- `imageAlt` field support for blog post featured images
+- Canonical URLs always set on blog posts
 
 ---
 

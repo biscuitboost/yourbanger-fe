@@ -3,8 +3,7 @@ publishDate: 2025-12-01T00:00:00Z
 title: "Sentimental Gift Ideas That Create Real Emotional Moments"
 excerpt: "The best gifts aren't the most expensive—they're the ones that make people feel truly seen. These sentimental gift ideas create genuine emotional connections."
 image: ~/assets/images/blog/sentimental-gifts-hero.jpg
-# IMAGE: Emotional moment of someone opening a meaningful gift, touched expression
-# Alt text: "Person emotionally opening sentimental gift, visibly moved by the thoughtful gesture"
+imageAlt: "Person emotionally opening sentimental gift, visibly moved by the thoughtful gesture"
 category: Gift Guides
 tags:
   - sentimental gifts

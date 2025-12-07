@@ -3,8 +3,7 @@ publishDate: 2024-10-25T00:00:00Z
 title: "60th Birthday Gift Ideas That Honor Six Decades"
 excerpt: "Sixty years deserves more than a gag gift about aging. These 60th birthday gift ideas celebrate the milestone with meaning, experiences, and genuine appreciation for a life well-lived."
 image: ~/assets/images/blog/60th-birthday-gifts-hero.jpg
-# IMAGE: Elegant 60th birthday celebration with sophisticated decorations and meaningful gifts
-# Alt text: "Elegant 60th birthday celebration setup with '60' decorations and thoughtfully wrapped gifts"
+imageAlt: "Elegant 60th birthday celebration setup with '60' decorations and thoughtfully wrapped gifts"
 category: Gift Guides
 tags:
   - birthday gifts

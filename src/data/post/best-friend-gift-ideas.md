@@ -3,7 +3,7 @@ publishDate: 2025-09-22T00:00:00Z
 title: "Best Friend Gift Ideas That Show You Actually Know Them"
 excerpt: "Your best friend deserves better than a generic present. These gift ideas prove you've been paying attention all these years—from custom songs to inside joke tributes."
 image: ~/assets/images/blog/best-friend-gifts-hero.jpg
-# IMAGE NEEDED: Two best friends sharing a moment - could be laughing together, one giving gift to other, or emotional reaction to meaningful present
+imageAlt: "Best friends sharing a meaningful gift moment, laughing together over a thoughtful present"
 category: Gift Guides
 tags:
   - gifts for friends

@@ -3,7 +3,7 @@ publishDate: 2025-05-15T00:00:00Z
 title: "Father's Day Gift Ideas He'll Actually Use (Not Another Tie)"
 excerpt: "Dad says he doesn't need anything. These Father's Day gift ideas prove you know him better than a gift card ever could—from custom songs to meaningful experiences."
 image: ~/assets/images/blog/fathers-day-gifts-hero.jpg
-# IMAGE NEEDED: Father and child moment - maybe dad listening to something on phone looking emotional, or enjoying a gift together
+imageAlt: "Father receiving meaningful Father's Day gift from child, emotional moment of appreciation"
 category: Gift Guides
 tags:
   - fathers day gifts

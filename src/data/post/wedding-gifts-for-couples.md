@@ -3,8 +3,7 @@ publishDate: 2025-11-15T00:00:00Z
 title: "Wedding Gifts for Couples Who Have Everything (Or Live Together Already)"
 excerpt: "When the couple already has a fully stocked kitchen and matching towels, finding a meaningful wedding gift gets tricky. These ideas go beyond the registry for couples who don't need another blender."
 image: ~/assets/images/blog/wedding-gifts-couples-hero.jpg
-# IMAGE: Elegant wedding gift display with wrapped presents, flowers, and a card on a gift table
-# Alt text: "Beautifully wrapped wedding gifts for couples arranged on elegant gift table with flowers"
+imageAlt: "Beautifully wrapped wedding gifts for couples arranged on elegant gift table with flowers"
 category: Gift Guides
 tags:
   - wedding gifts

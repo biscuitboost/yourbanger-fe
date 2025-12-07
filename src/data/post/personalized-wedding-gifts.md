@@ -3,8 +3,7 @@ publishDate: 2025-11-28T00:00:00Z
 title: "Personalized Wedding Gifts That Actually Feel Personal"
 excerpt: "Monogrammed towels are fine, but truly personalized wedding gifts go deeper. These ideas celebrate the couple's unique story, not just their initials."
 image: ~/assets/images/blog/personalized-wedding-gifts-hero.jpg
-# IMAGE: Elegant display of personalized wedding gifts including custom items, engraved pieces, and meaningful keepsakes
-# Alt text: "Personalized wedding gifts including custom artwork, engraved items, and meaningful keepsakes arranged elegantly"
+imageAlt: "Personalized wedding gifts including custom artwork, engraved items, and meaningful keepsakes arranged elegantly"
 category: Gift Guides
 tags:
   - personalized gifts

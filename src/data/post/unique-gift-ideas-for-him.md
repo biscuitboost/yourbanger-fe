@@ -3,7 +3,7 @@ publishDate: 2024-09-05T00:00:00Z
 title: "Unique Gift Ideas for Him This Holiday Season"
 excerpt: "Skip the predictable gifts this year. These unique gift ideas for him go beyond the ordinary—from custom songs to experiences he'll actually remember."
 image: ~/assets/images/blog/unique-gifts-him-hero.jpg
-# IMAGE NEEDED: Stylish arrangement of unique men's gifts - custom song card, experience tickets, quality leather item, and hobby gear
+imageAlt: "Unique gift ideas for him including custom song card, experience tickets, quality leather items, and hobby gear"
 category: Gift Guides
 tags:
   - gifts for him

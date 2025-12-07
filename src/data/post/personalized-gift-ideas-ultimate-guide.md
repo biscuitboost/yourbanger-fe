@@ -3,7 +3,7 @@ publishDate: 2024-01-15T00:00:00Z
 title: "Personalized Gift Ideas: The Ultimate Guide to Meaningful Presents"
 excerpt: "The complete guide to personalized gifts for every occasion. From custom songs to engraved jewelry, discover how to give gifts that show you really care."
 image: ~/assets/images/blog/personalized-gifts-guide-hero.jpg
-# IMAGE NEEDED: Comprehensive hero showing variety of personalized gifts - custom song card, engraved jewelry, photo book, star map, all arranged aesthetically
+imageAlt: "Collection of personalized gifts including custom song card, engraved jewelry, photo book, and star map arranged aesthetically"
 category: Gift Guides
 tags:
   - personalized gifts

@@ -3,8 +3,7 @@ publishDate: 2024-07-12T00:00:00Z
 title: "Baby Shower Gift Ideas That Go Beyond the Registry"
 excerpt: "The registry is covered. Now what? These baby shower gift ideas are the thoughtful extras that new parents actually appreciate—practical, meaningful, and not another onesie."
 image: ~/assets/images/blog/baby-shower-gifts-hero.jpg
-# IMAGE: Beautiful baby shower gift display with wrapped presents, soft colors, and elegant arrangement
-# Alt text: "Baby shower gift ideas beautifully arranged including wrapped presents and meaningful keepsakes"
+imageAlt: "Baby shower gift ideas beautifully arranged including wrapped presents and meaningful keepsakes"
 category: Gift Guides
 tags:
   - baby shower

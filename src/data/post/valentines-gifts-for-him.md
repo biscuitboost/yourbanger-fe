@@ -3,8 +3,7 @@ publishDate: 2025-01-10T00:00:00Z
 title: "Valentine's Day Gifts for Him That Aren't Another Tie"
 excerpt: "Finding Valentine's gifts for him that feel romantic without being cheesy is an art. These ideas range from thoughtful to thrilling—no generic gift sets in sight."
 image: ~/assets/images/blog/valentines-gifts-him-hero.jpg
-# IMAGE: Romantic masculine gift arrangement with quality items like watch, cologne, and wrapped presents in deep reds and blacks
-# Alt text: "Valentine's Day gifts for him including quality watch, cologne, and elegantly wrapped presents in romantic colors"
+imageAlt: "Valentine's Day gifts for him including quality watch, cologne, and elegantly wrapped presents in romantic colors"
 category: Gift Guides
 tags:
   - valentines day

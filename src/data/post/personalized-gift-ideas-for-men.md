@@ -3,7 +3,7 @@ publishDate: 2024-05-22T00:00:00Z
 title: "Personalized Gift Ideas for Men: Beyond the Usual Suspects"
 excerpt: "Tired of giving him another tie or gift card? These personalized gift ideas for men actually show you put thought into it—from custom songs to meaningful keepsakes."
 image: ~/assets/images/blog/personalized-gifts-men-hero.jpg
-# IMAGE NEEDED: Masculine personalized gifts arranged - engraved leather wallet, custom BBQ tools, whiskey glasses, perhaps a phone showing a custom song
+imageAlt: "Personalized gift ideas for men including engraved leather wallet, custom BBQ tools, and whiskey glasses"
 category: Gift Guides
 tags:
   - gifts for him

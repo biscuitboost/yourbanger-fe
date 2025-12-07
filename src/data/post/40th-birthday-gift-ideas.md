@@ -3,8 +3,7 @@ publishDate: 2024-11-20T00:00:00Z
 title: "40th Birthday Gift Ideas for the Fabulous Forty"
 excerpt: "Forty is when you finally stop caring what people think and start investing in quality. These 40th birthday gift ideas match that energy—thoughtful, elevated, and worth celebrating."
 image: ~/assets/images/blog/40th-birthday-gifts-hero.jpg
-# IMAGE: Sophisticated 40th birthday celebration with elegant decorations and premium gifts
-# Alt text: "Elegant 40th birthday celebration setup with '40' decorations, champagne, and sophisticated wrapped gifts"
+imageAlt: "Elegant 40th birthday celebration setup with '40' decorations, champagne, and sophisticated wrapped gifts"
 category: Gift Guides
 tags:
   - birthday gifts

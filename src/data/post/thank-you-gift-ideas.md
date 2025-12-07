@@ -3,8 +3,7 @@ publishDate: 2024-09-18T00:00:00Z
 title: "Thank You Gift Ideas That Actually Show Gratitude"
 excerpt: "A generic gift card says 'thanks.' These thank you gift ideas say 'I genuinely appreciate what you did and put real thought into acknowledging it.'"
 image: ~/assets/images/blog/thank-you-gifts-hero.jpg
-# IMAGE: Elegant thank you gift arrangement with wrapped present, flowers, and heartfelt card
-# Alt text: "Thoughtful thank you gift ideas including beautifully wrapped present, fresh flowers, and handwritten card"
+imageAlt: "Thoughtful thank you gift ideas including beautifully wrapped present, fresh flowers, and handwritten card"
 category: Gift Guides
 tags:
   - thank you gifts

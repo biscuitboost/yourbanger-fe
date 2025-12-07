@@ -3,8 +3,7 @@ publishDate: 2025-11-02T00:00:00Z
 title: "Couples Gift Ideas for Every Occasion (That They'll Both Love)"
 excerpt: "Finding a gift that both people in a couple will actually enjoy is harder than it sounds. These couples gift ideas work for anniversaries, weddings, housewarmings, and holidays."
 image: ~/assets/images/blog/couples-gifts-hero.jpg
-# IMAGE: Couple opening a gift together on their couch, both smiling and engaged with the present
-# Alt text: "Happy couple opening a gift together at home, both excited about their couples gift"
+imageAlt: "Happy couple opening a gift together at home, both excited about their couples gift"
 category: Gift Guides
 tags:
   - couples gifts

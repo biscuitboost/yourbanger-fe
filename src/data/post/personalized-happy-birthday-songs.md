@@ -3,7 +3,7 @@ publishDate: 2024-02-20T00:00:00Z
 title: "Personalized Happy Birthday Songs: The Gift They'll Never Forget"
 excerpt: "Why settle for the awkward group sing-along when you can give them a personalized birthday song about their life? Here's how to create a custom birthday track in minutes."
 image: ~/assets/images/blog/personalized-birthday-song-hero.jpg
-# IMAGE NEEDED: Birthday party scene with someone playing a custom song - perhaps on a speaker or phone, with birthday person looking emotional/surprised
+imageAlt: "Birthday party with personalized song playing, birthday person looking emotional and surprised"
 category: Gift Guides
 tags:
   - birthday gifts

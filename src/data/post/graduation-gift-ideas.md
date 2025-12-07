@@ -3,7 +3,7 @@ publishDate: 2025-05-02T00:00:00Z
 title: "Graduation Gift Ideas That Mark the Milestone"
 excerpt: "They just finished years of hard work. These graduation gift ideas celebrate their achievement and set them up for what's next—beyond the generic gift card."
 image: ~/assets/images/blog/graduation-gifts-hero.jpg
-# IMAGE NEEDED: Graduation celebration - graduate in cap and gown receiving meaningful gift, or celebrating with family
+imageAlt: "Graduate in cap and gown celebrating achievement with meaningful graduation gifts and family"
 category: Gift Guides
 tags:
   - graduation gifts

@@ -3,7 +3,7 @@ publishDate: 2025-07-18T00:00:00Z
 title: "50th Birthday Gift Ideas That Mark Half a Century"
 excerpt: "Turning 50 is a milestone that deserves more than a 'happy birthday' text. These 50th birthday gift ideas celebrate five decades of life, memories, and what's still to come."
 image: ~/assets/images/blog/50th-birthday-gifts-hero.jpg
-# IMAGE NEEDED: Celebration scene for 50th birthday - could be party setting, person receiving meaningful gift, or emotional moment with family
+imageAlt: "50th birthday celebration with elegant decorations and meaningful gifts for half-century milestone"
 category: Gift Guides
 tags:
   - birthday gifts

@@ -3,7 +3,7 @@ publishDate: 2025-08-12T00:00:00Z
 title: "How to Write a Wedding Toast (Without the Stress)"
 excerpt: "Dreading the wedding speech? This guide covers everything—what to include, what to avoid, how to be funny without bombing, and how to end without crying."
 image: ~/assets/images/blog/wedding-toast-guide-hero.jpg
-# IMAGE NEEDED: Best man or maid of honor giving toast at wedding, guests laughing or emotional, champagne glasses raised
+imageAlt: "Best man giving wedding toast with champagne glasses raised, guests laughing and emotional"
 category: Gift Guides
 tags:
   - wedding tips

@@ -3,8 +3,7 @@ publishDate: 2025-04-28T00:00:00Z
 title: "Graduation Gift Ideas for Him That He'll Actually Appreciate"
 excerpt: "He made it through. These graduation gift ideas for him skip the generic and focus on what he actually needs, wants, or would never buy himself."
 image: ~/assets/images/blog/graduation-gifts-him-hero.jpg
-# IMAGE: Male graduate in cap and gown, confident expression, celebrating achievement
-# Alt text: "Male graduate celebrating achievement in cap and gown with diploma and graduation gifts"
+imageAlt: "Male graduate celebrating achievement in cap and gown with diploma and graduation gifts"
 category: Gift Guides
 tags:
   - graduation gifts

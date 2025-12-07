@@ -3,7 +3,7 @@ publishDate: 2024-03-12T00:00:00Z
 title: "Gift Ideas for Female Friends They'll Actually Love"
 excerpt: "Finding the perfect gift for your female friend shouldn't be stressful. These thoughtful ideas go beyond generic presents to show you really know her."
 image: ~/assets/images/blog/gifts-female-friend-hero.jpg
-# IMAGE NEEDED: Two female friends laughing together, perhaps one giving a gift to the other - warm, genuine friendship vibes
+imageAlt: "Two female friends laughing together while exchanging thoughtful gifts, warm friendship moment"
 category: Gift Guides
 tags:
   - gift ideas

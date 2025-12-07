@@ -6,6 +6,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import BlogList from '~/components/blog/List.astro';
 import Headline from '~/components/blog/Headline.astro';
 import Pagination from '~/components/blog/Pagination.astro';
+import { SITE } from 'astrowind:config';
 
 export const prerender = true;
 
@@ -19,18 +20,62 @@ const { page, category } = Astro.props as Props;
 
 const currentPage = page.currentPage ?? 1;
 
+// Generate dynamic description based on category
+const getCategoryDescription = (categoryTitle: string): string => {
+  const descriptions: Record<string, string> = {
+    'Gift Guides': 'Expert gift guides for every occasion. Find the perfect personalized gift ideas for birthdays, weddings, anniversaries, and more.',
+    'Wedding': 'Wedding gift ideas and inspiration. Discover unique, personalized presents for couples and wedding celebrations.',
+    'Birthday': 'Birthday gift guides and ideas. Find unique, meaningful birthday presents that create lasting memories.',
+    'Anniversary': 'Anniversary gift ideas by year. Discover thoughtful, personalized presents to celebrate your love.',
+  };
+  return descriptions[categoryTitle] || `Browse our ${categoryTitle} articles for gift ideas, inspiration, and guides on personalized songs and meaningful presents.`;
+};
+
 const metadata = {
-  title: `Category '${category.title}' ${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
+  title: `${category.title} Gift Ideas & Guides${currentPage > 1 ? ` — Page ${currentPage}` : ''} | YourBanger`,
+  description: getCategoryDescription(category.title),
   robots: {
     index: blogCategoryRobots?.index,
     follow: blogCategoryRobots?.follow,
   },
+  openGraph: {
+    type: 'website',
+  },
+};
+
+// Breadcrumb Schema for category pages
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: SITE.site,
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: `${SITE.site}/blog`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: category.title,
+      item: `${SITE.site}/category/${category.slug}`,
+    },
+  ],
 };
 ---
 
 <Layout metadata={metadata}>
+  <!-- Breadcrumb Schema for SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
   <section class="px-4 md:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
-    <Headline>{category.title}</Headline>
+    <Headline subtitle={`Browse all ${category.title.toLowerCase()} articles and inspiration`}>{category.title}</Headline>
     <BlogList posts={page.data} />
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
   </section>

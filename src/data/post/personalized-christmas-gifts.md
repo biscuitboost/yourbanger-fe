@@ -3,7 +3,7 @@ publishDate: 2024-11-08T00:00:00Z
 title: "Personalized Christmas Gifts That Actually Mean Something"
 excerpt: "Skip the generic gifts this Christmas. These personalized gift ideas show you actually know the person—from custom songs to meaningful keepsakes they'll treasure forever."
 image: ~/assets/images/blog/personalized-christmas-gifts-hero.jpg
-# IMAGE NEEDED: Festive hero image with personalized gifts under a Christmas tree - custom wrapped presents, photo books, perhaps a phone showing a custom song
+imageAlt: "Personalized Christmas gifts under decorated tree including custom wrapped presents and photo books"
 category: Gift Guides
 tags:
   - christmas gifts

@@ -3,8 +3,7 @@ publishDate: 2024-11-05T00:00:00Z
 title: "Gifts for Men Who Have Everything (And Buy What They Want)"
 excerpt: "He already owns the nice watch, the quality tools, and every gadget he wants. These gift ideas for men who have everything focus on experiences, meaning, and things he'd never think to get himself."
 image: ~/assets/images/blog/gifts-men-everything-hero.jpg
-# IMAGE: Sophisticated man surrounded by quality items, looking content but hard to shop for
-# Alt text: "Gifts for men who have everything - sophisticated gift ideas for the man who buys himself what he wants"
+imageAlt: "Gifts for men who have everything - sophisticated gift ideas for the man who buys himself what he wants"
 category: Gift Guides
 tags:
   - gifts for him

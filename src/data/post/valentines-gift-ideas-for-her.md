@@ -3,7 +3,7 @@ publishDate: 2025-02-01T00:00:00Z
 title: "Unique Valentine's Day Gift Ideas for Her That Aren't Flowers"
 excerpt: "Skip the overpriced roses. These unique Valentine's Day gift ideas for her actually show thought and effort—from custom songs to experiences she'll remember."
 image: ~/assets/images/blog/valentines-gifts-her-hero.jpg
-# IMAGE NEEDED: Romantic but unique Valentine's setting - personalized gifts, candles, perhaps a phone showing a custom song, no generic flowers/chocolates
+imageAlt: "Unique Valentine's Day gifts for her including personalized presents and romantic candles"
 category: Gift Guides
 tags:
   - valentines gifts

@@ -3,7 +3,7 @@ publishDate: 2024-10-14T00:00:00Z
 title: "Last-Minute Gift Ideas That Don't Look Last-Minute"
 excerpt: "The party is tomorrow and you still don't have a gift. Don't panic. These last-minute gift ideas are thoughtful, personal, and can be ready in hours—not days."
 image: ~/assets/images/blog/last-minute-gifts-hero.jpg
-# IMAGE NEEDED: Hero image showing someone on their phone/laptop quickly creating a gift, with a clock showing urgency - modern, clean aesthetic
+imageAlt: "Person quickly creating last-minute personalized gift on phone, modern and urgent gift-giving moment"
 category: Gift Guides
 tags:
   - last minute gifts

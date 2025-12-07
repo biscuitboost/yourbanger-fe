@@ -3,8 +3,7 @@ publishDate: 2025-03-15T00:00:00Z
 title: "Engagement Party Gift Ideas for the Happy Couple"
 excerpt: "They just got engaged—now what do you bring to the party? These engagement party gift ideas celebrate the moment without stepping on the wedding gift's toes."
 image: ~/assets/images/blog/engagement-party-gifts-hero.jpg
-# IMAGE: Elegant engagement party setting with champagne, gifts, and celebratory decorations
-# Alt text: "Engagement party celebration with champagne glasses, wrapped gifts, and elegant decorations"
+imageAlt: "Engagement party celebration with champagne glasses, wrapped gifts, and elegant decorations"
 category: Gift Guides
 tags:
   - engagement gifts

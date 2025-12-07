@@ -3,8 +3,7 @@ publishDate: 2025-10-18T00:00:00Z
 title: "Bridesmaid Gift Ideas That Go Beyond the Robe"
 excerpt: "Your bridesmaids deserve more than matching robes they'll wear once. These bridesmaid gift ideas range from luxe self-care to meaningful keepsakes that actually celebrate your friendship."
 image: ~/assets/images/blog/bridesmaid-gifts-hero.jpg
-# IMAGE: Elegant flat-lay of bridesmaid gifts including jewelry, skincare products, and personalized items on marble surface with flowers
-# Alt text: "Bridesmaid gift ideas including delicate jewelry, luxury skincare, and personalized keepsakes arranged on marble with pink flowers"
+imageAlt: "Bridesmaid gift ideas including delicate jewelry, luxury skincare, and personalized keepsakes arranged on marble with pink flowers"
 category: Gift Guides
 tags:
   - bridesmaid gifts

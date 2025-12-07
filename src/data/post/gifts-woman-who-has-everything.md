@@ -3,7 +3,7 @@ publishDate: 2024-07-25T00:00:00Z
 title: "10 Gifts for the Woman Who Has Everything"
 excerpt: "She says she doesn't need anything. She means it. Here are 10 gift ideas for the woman who has everything—focusing on experiences and personalization over more stuff."
 image: ~/assets/images/blog/gifts-woman-everything-hero.jpg
-# IMAGE NEEDED: Elegant, minimalist image of thoughtful gifts for sophisticated woman - perhaps spa items, experience tickets, custom song card, and fresh flowers
+imageAlt: "Elegant gift ideas for the woman who has everything including spa items, experiences, and personalized presents"
 category: Gift Guides
 tags:
   - gifts for her

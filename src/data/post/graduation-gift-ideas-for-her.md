@@ -3,8 +3,7 @@ publishDate: 2025-04-22T00:00:00Z
 title: "Graduation Gift Ideas for Her That Match the Achievement"
 excerpt: "She worked hard for this degree. These graduation gift ideas for her go beyond the generic to celebrate her accomplishment and support whatever comes next."
 image: ~/assets/images/blog/graduation-gifts-her-hero.jpg
-# IMAGE: Female graduate in cap and gown, joyful expression, holding diploma and flowers
-# Alt text: "Happy female graduate celebrating achievement with diploma, flowers, and graduation gifts"
+imageAlt: "Happy female graduate celebrating achievement with diploma, flowers, and graduation gifts"
 category: Gift Guides
 tags:
   - graduation gifts

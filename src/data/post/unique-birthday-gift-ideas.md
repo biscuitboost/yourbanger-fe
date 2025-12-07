@@ -3,7 +3,7 @@ publishDate: 2024-06-10T00:00:00Z
 title: "10 Unique Birthday Gift Ideas That Will Make Them Cry (Happy Tears)"
 excerpt: "Forget the gift card. These personalized birthday gift ideas will create moments they'll remember forever. From custom songs to handwritten letters, find the perfect meaningful gift."
 image: ~/assets/images/blog/birthday-gift-ideas-hero.jpg
-# IMAGE NEEDED: Hero image showing wrapped birthday gifts with personal touches - perhaps a custom song QR code, photo book, and handwritten letter arranged aesthetically
+imageAlt: "Wrapped birthday gifts with personalized touches including custom song QR code, photo book, and handwritten letter arranged on a table"
 category: Gift Guides
 tags:
   - birthday gifts

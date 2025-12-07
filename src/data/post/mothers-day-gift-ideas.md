@@ -3,7 +3,7 @@ publishDate: 2025-04-10T00:00:00Z
 title: "Mother's Day Gift Ideas That'll Make Her Ugly Cry (Happy Tears)"
 excerpt: "Mom deserves more than flowers that die in a week. These Mother's Day gift ideas show her impact in ways she'll treasure forever—from custom songs to meaningful experiences."
 image: ~/assets/images/blog/mothers-day-gifts-hero.jpg
-# IMAGE NEEDED: Mother with adult child, emotional moment - maybe mom listening to something and getting teary, or receiving a meaningful gift
+imageAlt: "Mother receiving meaningful Mother's Day gift from child, emotional moment of appreciation and love"
 category: Gift Guides
 tags:
   - mothers day gifts

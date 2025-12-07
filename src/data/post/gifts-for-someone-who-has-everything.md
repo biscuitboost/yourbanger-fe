@@ -3,7 +3,7 @@ publishDate: 2024-04-18T00:00:00Z
 title: "10 Gifts for Someone Who Has Everything (That They'll Actually Love)"
 excerpt: "What do you get for the person who has everything? These unique gift ideas go beyond stuff—creating experiences and memories they never knew they wanted."
 image: ~/assets/images/blog/gifts-has-everything-hero.jpg
-# IMAGE NEEDED: Elegant hero image of a thoughtful, minimalist gift arrangement - perhaps experience tickets, a custom song QR code card, and a handwritten letter on a clean background
+imageAlt: "Thoughtful gift arrangement for someone who has everything including experience tickets and personalized items"
 category: Gift Guides
 tags:
   - unique gifts

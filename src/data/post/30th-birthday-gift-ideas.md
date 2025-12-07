@@ -3,8 +3,7 @@ publishDate: 2024-08-28T00:00:00Z
 title: "30th Birthday Gift Ideas for the Milestone They're Pretending Is Fine"
 excerpt: "Turning 30 hits different. These 30th birthday gift ideas help celebrate the milestone with humor, meaning, or a healthy dose of denial—whatever they need."
 image: ~/assets/images/blog/30th-birthday-gifts-hero.jpg
-# IMAGE: Stylish 30th birthday setup with elegant decorations, "30" balloons, and sophisticated gifts
-# Alt text: "Elegant 30th birthday celebration with gold '30' balloons, champagne, and thoughtfully wrapped gifts"
+imageAlt: "Elegant 30th birthday celebration with gold '30' balloons, champagne, and thoughtfully wrapped gifts"
 category: Gift Guides
 tags:
   - birthday gifts

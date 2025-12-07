@@ -3,7 +3,7 @@ publishDate: 2025-06-20T00:00:00Z
 title: "Unique Wedding Gift Ideas Beyond the Registry"
 excerpt: "The registry is covered. What gift can you give that they'll actually remember? These unique wedding gift ideas stand out from the typical blender and towel set."
 image: ~/assets/images/blog/wedding-gifts-unique-hero.jpg
-# IMAGE NEEDED: Elegant wedding gift setting - perhaps a custom song card, personalized item, and experience tickets rather than typical registry items
+imageAlt: "Unique wedding gift ideas including custom song card, personalized items, and experience tickets"
 category: Gift Guides
 tags:
   - wedding gifts

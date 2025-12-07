@@ -3,8 +3,7 @@ publishDate: 2025-02-18T00:00:00Z
 title: "Meaningful Gift Ideas That Show You Actually Care"
 excerpt: "Anyone can buy something expensive. These meaningful gift ideas prove you put thought into it—gifts that say 'I know you' instead of 'I Googled gift ideas.'"
 image: ~/assets/images/blog/meaningful-gifts-hero.jpg
-# IMAGE: Heartfelt gift-giving moment between two people, genuine emotional connection
-# Alt text: "Meaningful gift exchange showing genuine emotional connection between giver and receiver"
+imageAlt: "Meaningful gift exchange showing genuine emotional connection between giver and receiver"
 category: Gift Guides
 tags:
   - meaningful gifts
