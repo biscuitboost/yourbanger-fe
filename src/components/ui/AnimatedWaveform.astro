@@ -1,0 +1,49 @@
+---
+interface Props {
+  isPlaying?: boolean;
+  barCount?: number;
+  class?: string;
+}
+
+const { isPlaying = false, barCount = 40, class: className = '' } = Astro.props;
+
+// Generate bar heights using sine wave pattern
+const bars = Array.from({ length: barCount }, (_, i) => {
+  return 20 + Math.sin(i * 0.3) * 15 + Math.sin(i * 0.7) * 10;
+});
+---
+
+<div class={`flex items-end justify-center gap-[2px] h-16 ${className}`} data-waveform data-playing={isPlaying}>
+  {bars.map((baseHeight, i) => (
+    <div
+      class="w-1 rounded-full transition-all bg-[var(--primary)]"
+      style={`height: ${baseHeight}%; animation-delay: ${i * 0.05}s; opacity: 0.4;`}
+      data-base-height={baseHeight}
+    />
+  ))}
+</div>
+
+<script>
+  function initWaveforms() {
+    document.querySelectorAll('[data-waveform]').forEach((waveform) => {
+      const bars = waveform.querySelectorAll('div');
+      const isPlaying = waveform.getAttribute('data-playing') === 'true';
+      
+      bars.forEach((bar) => {
+        const baseHeight = parseFloat(bar.getAttribute('data-base-height') || '20');
+        if (isPlaying) {
+          bar.style.height = `${baseHeight + 30}%`;
+          bar.style.opacity = '1';
+          bar.classList.add('waveform-bar');
+        } else {
+          bar.style.height = `${baseHeight}%`;
+          bar.style.opacity = '0.4';
+          bar.classList.remove('waveform-bar');
+        }
+      });
+    });
+  }
+  
+  initWaveforms();
+  document.addEventListener('astro:page-load', initWaveforms);
+</script>

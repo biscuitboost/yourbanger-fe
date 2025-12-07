@@ -9,17 +9,17 @@ interface Props {
 const { src, title, artist = 'YourBanger', class: className = '' } = Astro.props;
 ---
 
-<div class={`audio-player bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 ${className}`}>
+<div class={`audio-player bg-[var(--secondary)]/50 rounded-xl p-4 border border-[var(--border)] ${className}`}>
   <div class="flex items-center justify-between mb-3">
     <div class="flex-1 min-w-0">
-      <h4 class="text-sm font-semibold text-gray-900 dark:text-white truncate">{title}</h4>
-      <p class="text-xs text-gray-600 dark:text-gray-400">{artist}</p>
+      <h4 class="text-sm font-semibold text-[var(--foreground)] truncate">{title}</h4>
+      <p class="text-xs text-[var(--muted-foreground)]">{artist}</p>
     </div>
     <button
-      class="play-button ml-3 w-10 h-10 flex items-center justify-center bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-full shadow-md transition-all duration-200 transform hover:scale-110"
+      class="play-button ml-3 w-10 h-10 flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white rounded-full shadow-lg shadow-[var(--primary)]/25 transition-all duration-200 transform hover:scale-105"
       aria-label="Play"
     >
-      <svg class="play-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+      <svg class="play-icon w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 20 20">
         <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
       </svg>
       <svg class="pause-icon w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20">
@@ -29,12 +29,12 @@ const { src, title, artist = 'YourBanger', class: className = '' } = Astro.props
   </div>
 
   <div class="relative">
-    <div class="progress-bar-bg h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden cursor-pointer">
-      <div class="progress-bar h-full bg-gradient-to-r from-purple-600 to-pink-600 rounded-full" style="width: 0%"></div>
+    <div class="progress-bar-bg h-2 bg-[var(--secondary)] rounded-full overflow-hidden cursor-pointer">
+      <div class="progress-bar h-full bg-[var(--primary)] rounded-full transition-all" style="width: 0%"></div>
     </div>
   </div>
 
-  <div class="flex items-center justify-between mt-2 text-xs text-gray-600 dark:text-gray-400">
+  <div class="flex items-center justify-between mt-2 text-xs text-[var(--muted-foreground)]">
     <span class="current-time">0:00</span>
     <span class="duration">0:00</span>
   </div>

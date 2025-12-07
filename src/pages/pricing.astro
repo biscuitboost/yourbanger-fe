@@ -1,24 +1,23 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import Pricing from '~/components/widgets/Pricing.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'Pricing - YourBanger',
-  description: '$14 for 10 songs. No subscription, credits never expire. Create personalized AI-generated songs.',
+  description: '$14 for 10 songs. That\'s $1.40 per song. No subscription, credits never expire. Way cheaper than hiring a musician.',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero Section -->
-  <section class="bg-gradient-to-b from-purple-50 to-white dark:from-gray-900 dark:to-gray-800 py-12 md:py-16">
+  <section class="py-16 md:py-24">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-        Simple, <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Transparent</span> Pricing
+      <h1 class="text-4xl md:text-5xl font-bold text-[var(--foreground)] mb-4">
+        <span class="text-[var(--primary)]">$1.40</span> Per Song
       </h1>
-      <p class="text-xl text-gray-600 dark:text-gray-400">
-        One price. No surprises. No subscription.
+      <p class="text-xl text-[var(--muted-foreground)]">
+        No subscription. No hidden fees. Just buy credits and make songs.
       </p>
     </div>
   </section>
@@ -26,71 +25,72 @@ const metadata = {
   <!-- Pricing Card -->
   <section class="py-16 md:py-20">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <div class="bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl shadow-2xl p-8 md:p-12 text-white">
+      <div class="relative bg-[var(--card)] border border-[var(--border)] rounded-2xl p-8 md:p-12">
+        <div class="absolute -inset-4 bg-[var(--primary)]/20 rounded-3xl blur-2xl -z-10"></div>
         <div class="text-center mb-8">
-          <h2 class="text-3xl md:text-4xl font-bold mb-2">$14 for 10 Songs</h2>
-          <p class="text-2xl text-white/90">That's just $1.40 per song</p>
-          <p class="text-lg text-white/80 mt-2">No subscription • Credits never expire</p>
+          <h2 class="text-3xl md:text-4xl font-bold mb-2 text-[var(--foreground)]">$14 for 10 Songs</h2>
+          <p class="text-2xl text-[var(--primary)]">That's just $1.40 per song</p>
+          <p class="text-lg text-[var(--muted-foreground)] mt-2">No subscription • Credits never expire</p>
         </div>
 
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8 mb-8">
-          <h3 class="text-xl font-bold mb-4">What's Included:</h3>
-          <ul class="space-y-3">
+        <div class="bg-[var(--secondary)]/50 rounded-xl p-6 md:p-8 mb-8 border border-[var(--border)]">
+          <h3 class="text-xl font-bold mb-4 text-[var(--foreground)]">What's Included:</h3>
+          <ul class="space-y-3 text-[var(--foreground)]">
             <li class="flex items-start">
-              <svg class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-              </svg>
-              <div>
-                <strong>AI-generated lyrics</strong> based on your story
+              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
+              <div><strong>AI-generated lyrics</strong> based on your story</div>
             </li>
             <li class="flex items-start">
-              <svg class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-              </svg>
-              <div>
-                <strong>Professional-quality</strong> music production
+              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
+              <div><strong>Professional-quality</strong> music production</div>
             </li>
             <li class="flex items-start">
-              <svg class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-              </svg>
-              <div>
-                <strong>Choice of music style</strong> (Rock, Pop, Country, Rap, R&B, etc.)
+              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
+              <div><strong>Choice of music style</strong> (Rock, Pop, Country, Rap, R&B, etc.)</div>
             </li>
             <li class="flex items-start">
-              <svg class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-              </svg>
-              <div>
-                <strong>Full editing control</strong> before generation
+              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
+              <div><strong>Full editing control</strong> before generation</div>
             </li>
             <li class="flex items-start">
-              <svg class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-              </svg>
-              <div>
-                <strong>Shareable link</strong> for each song
+              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
+              <div><strong>Shareable link</strong> for each song</div>
             </li>
             <li class="flex items-start">
-              <svg class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-              </svg>
-              <div>
-                <strong>Unlimited replays</strong> and downloads
+              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
+              <div><strong>Unlimited replays</strong> and downloads</div>
             </li>
             <li class="flex items-start">
-              <svg class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-              </svg>
-              <div>
-                <strong>Lifetime access</strong> to your songs
+              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
               </div>
+              <div><strong>Lifetime access</strong> to your songs</div>
             </li>
           </ul>
         </div>
@@ -100,7 +100,7 @@ const metadata = {
             href="https://app.yourbanger.com/auth?tab=signup"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-block px-8 py-4 text-lg font-bold bg-white text-purple-600 rounded-lg hover:bg-gray-100 transition-all duration-200 transform hover:scale-105 shadow-lg"
+            class="inline-block px-8 py-4 text-lg font-bold bg-[var(--primary)] text-white rounded-xl hover:bg-[var(--primary)]/90 transition-all duration-200 shadow-lg shadow-[var(--primary)]/25"
           >
             Get Started with 10 Songs
           </a>
@@ -110,42 +110,53 @@ const metadata = {
   </section>
 
   <!-- Comparison Section -->
-  <section class="bg-gray-50 dark:bg-gray-900 py-16 md:py-20">
+  <section class="bg-[var(--secondary)]/30 py-16 md:py-20">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center mb-12">
-        How We Compare
+      <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] text-center mb-4">
+        Your Other Options
       </h2>
-      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-        <table class="w-full">
-          <thead class="bg-gray-50 dark:bg-gray-700">
-            <tr>
-              <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Option</th>
-              <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Cost</th>
-              <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Time</th>
-              <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900 dark:text-white">Customization</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-            <tr class="bg-purple-50 dark:bg-purple-900/20">
-              <td class="px-6 py-4 font-semibold text-purple-600 dark:text-purple-400">YourBanger</td>
-              <td class="px-6 py-4 text-gray-900 dark:text-white">$1.40 per song</td>
-              <td class="px-6 py-4 text-gray-900 dark:text-white">3 minutes</td>
-              <td class="px-6 py-4 text-gray-900 dark:text-white">Full control</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4 text-gray-900 dark:text-white">Hire a musician</td>
-              <td class="px-6 py-4 text-gray-600 dark:text-gray-400">$100-500+</td>
-              <td class="px-6 py-4 text-gray-600 dark:text-gray-400">1-2 weeks</td>
-              <td class="px-6 py-4 text-gray-600 dark:text-gray-400">Limited revisions</td>
-            </tr>
-            <tr>
-              <td class="px-6 py-4 text-gray-900 dark:text-white">Greeting card</td>
-              <td class="px-6 py-4 text-gray-600 dark:text-gray-400">$5-10</td>
-              <td class="px-6 py-4 text-gray-600 dark:text-gray-400">Instant</td>
-              <td class="px-6 py-4 text-gray-600 dark:text-gray-400">Generic</td>
-            </tr>
-          </tbody>
-        </table>
+      <p class="text-center text-[var(--muted-foreground)] mb-12">
+        (Spoiler: they're all worse)
+      </p>
+      <div class="bg-[var(--card)] rounded-2xl border border-[var(--border)] overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead class="bg-[var(--secondary)]">
+              <tr>
+                <th class="px-6 py-4 text-left text-sm font-semibold text-[var(--foreground)]">Option</th>
+                <th class="px-6 py-4 text-left text-sm font-semibold text-[var(--foreground)]">Cost</th>
+                <th class="px-6 py-4 text-left text-sm font-semibold text-[var(--foreground)]">Time</th>
+                <th class="px-6 py-4 text-left text-sm font-semibold text-[var(--foreground)]">Personalization</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[var(--border)]">
+              <tr class="bg-[var(--primary)]/10">
+                <td class="px-6 py-4 font-semibold text-[var(--primary)]">YourBanger</td>
+                <td class="px-6 py-4 text-[var(--foreground)] font-semibold">$1.40</td>
+                <td class="px-6 py-4 text-[var(--foreground)]">~3 minutes</td>
+                <td class="px-6 py-4 text-[var(--foreground)]">100% custom lyrics & music</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-[var(--foreground)]">Hire a musician on Fiverr</td>
+                <td class="px-6 py-4 text-[var(--muted-foreground)]">$100–500+</td>
+                <td class="px-6 py-4 text-[var(--muted-foreground)]">3–14 days</td>
+                <td class="px-6 py-4 text-[var(--muted-foreground)]">Limited revisions</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-[var(--foreground)]">Cameo video</td>
+                <td class="px-6 py-4 text-[var(--muted-foreground)]">$50–500</td>
+                <td class="px-6 py-4 text-[var(--muted-foreground)]">1–7 days</td>
+                <td class="px-6 py-4 text-[var(--muted-foreground)]">30-second shoutout</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 text-[var(--foreground)]">Greeting card</td>
+                <td class="px-6 py-4 text-[var(--muted-foreground)]">$5–10</td>
+                <td class="px-6 py-4 text-[var(--muted-foreground)]">Instant</td>
+                <td class="px-6 py-4 text-[var(--muted-foreground)]">Your handwriting (maybe)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>
@@ -178,18 +189,19 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get Started with 10 Songs',
+        text: 'Get 10 Songs for $14',
         href: 'https://app.yourbanger.com/auth?tab=signup',
         target: '_blank',
       },
     ]}
   >
     <Fragment slot="title">
-      Ready to Create Something Special?
+      Think About Who'd Love This
     </Fragment>
 
     <Fragment slot="subtitle">
-      $14 for 10 songs. No subscription. Start making memories into music.
+      That friend with the birthday coming up. Your parents' anniversary. <br class="hidden md:block" />
+      $1.40 and 2 minutes is all it takes.
     </Fragment>
   </CallToAction>
 </Layout>

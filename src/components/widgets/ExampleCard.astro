@@ -8,34 +8,42 @@ interface Props {
   style: string;
   context: string;
   audioSrc: string;
+  backstory?: string;
   class?: string;
 }
 
-const { title, occasion, style, context, audioSrc, class: className = '' } = Astro.props;
+const { title, occasion, style, context, audioSrc, backstory, class: className = '' } = Astro.props;
 ---
 
 <div
-  class={`example-card bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700 ${className}`}
+  class={`example-card bg-[var(--card)] rounded-2xl overflow-hidden border border-[var(--border)] flex flex-col h-full hover:border-[var(--primary)]/50 transition-all duration-300 gradient-border ${className}`}
 >
-  <div class="p-6">
+  <div class="p-6 flex flex-col flex-grow">
     <div class="flex flex-wrap gap-2 mb-3">
       <span
-        class="px-3 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200"
+        class="px-3 py-1 text-xs font-semibold rounded-full bg-[var(--primary)]/10 text-[var(--primary)]"
       >
         {occasion}
       </span>
       <span
-        class="px-3 py-1 text-xs font-semibold rounded-full bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200"
+        class="px-3 py-1 text-xs font-semibold rounded-full bg-[var(--secondary)] text-[var(--muted-foreground)]"
       >
         {style}
       </span>
     </div>
 
-    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{title}</h3>
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">{context}</p>
+    <h3 class="text-xl font-bold text-[var(--foreground)] mb-2">{title}</h3>
+    <p class="text-sm text-[var(--muted-foreground)] mb-3">{context}</p>
+    
+    {backstory && (
+      <p class="text-xs text-[var(--primary)] italic mb-4 flex-grow">
+        "{backstory}"
+      </p>
+    )}
 
-    <AudioPlayer src={audioSrc} title={title} class="mb-4" />
-
-    <CTAButton text="Create Yours" variant="primary" size="sm" class="w-full text-center" />
+    <div class="mt-auto">
+      <AudioPlayer src={audioSrc} title={title} class="mb-4" />
+      <CTAButton text="Make One Like This" variant="primary" size="sm" class="w-full text-center" />
+    </div>
   </div>
 </div>

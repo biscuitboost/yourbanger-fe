@@ -5,118 +5,114 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'FAQ - YourBanger',
-  description: 'Frequently asked questions about creating personalized AI-generated songs with YourBanger.',
+  description: 'Common questions about creating personalized AI-generated songs. How it works, pricing, quality, and more.',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero Section -->
-  <section class="bg-gradient-to-b from-purple-50 to-white dark:from-gray-900 dark:to-gray-800 py-12 md:py-16">
+  <section class="py-16 md:py-24">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-        Frequently Asked <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Questions</span>
+      <h1 class="text-4xl md:text-5xl font-bold text-[var(--foreground)] mb-4">
+        Questions? <span class="text-[var(--primary)]">Answers.</span>
       </h1>
-      <p class="text-xl text-gray-600 dark:text-gray-400">
-        Everything you need to know about creating personalized songs
+      <p class="text-xl text-[var(--muted-foreground)]">
+        Everything you're wondering about, probably answered below.
       </p>
     </div>
   </section>
 
-  <!-- Getting Started FAQs -->
+  <!-- The Big Questions -->
   <FAQs
-    title="Getting Started"
+    title="The Big Questions"
     items={[
       {
-        title: 'How long does it take?',
-        description: '~2 minutes to create, ~1 minute to generate. Total time: about 3 minutes from start to shareable song.',
+        title: 'Is this actually good? Or is it weird AI garbage?',
+        description: 'It\'s genuinely good. We\'ve had people cry at wedding toasts, grandparents play songs for their entire extended family, and office parties where people demanded encores. The AI creates real lyrics based on your story, set to professional-quality music. Listen to the examples—you\'ll see.',
       },
       {
-        title: 'Do I need musical talent?',
-        description: 'Nope. That\'s literally the whole point. Just tell us the story, we handle the music.',
+        title: 'How long does it actually take?',
+        description: 'About 2 minutes to tell us the story and pick your style. About 1 minute for the AI to generate your song. That\'s it. You\'ll have a shareable link and downloadable MP3 in under 5 minutes total.',
       },
       {
-        title: 'How does it work?',
-        description: 'You share details about the person or moment, our AI writes personalized lyrics, sets them to music in your chosen style, and creates a professional-quality song.',
+        title: 'Do I need to know anything about music?',
+        description: 'Not even a little bit. Can\'t sing? Doesn\'t matter. Can\'t play instruments? Irrelevant. Don\'t know what a chord is? Perfect. You just need to know the person you\'re making the song for.',
       },
     ]}
   />
 
-  <!-- Customization FAQs -->
+  <!-- About the Songs -->
   <FAQs
-    title="Customization"
+    title="About the Songs"
     items={[
       {
-        title: 'Can I edit the lyrics?',
-        description: 'Yep, full control before we make it. Edit, revise, or regenerate until it\'s perfect.',
+        title: 'What music styles can I choose from?',
+        description: 'Rock, pop, country, rap, R&B, ballad, indie, electronic, jazz, acoustic, and more. Want an epic rock anthem? A sweet acoustic ballad? A funny country roast? We\'ve got you covered.',
       },
       {
-        title: 'What music styles are available?',
-        description: 'Rock, pop, country, rap, R&B, ballad, indie, electronic, jazz... we got you.',
+        title: 'Can I edit the lyrics before the song is made?',
+        description: 'Absolutely. After the AI generates the initial lyrics based on your story, you can edit every word. Add more inside jokes, remove anything that doesn\'t feel right, tweak the phrasing. Full control.',
       },
       {
-        title: 'Can I choose the vibe?',
-        description: 'Absolutely. Pick from upbeat, emotional, funny, romantic, epic, and more.',
+        title: 'What if I don\'t like the first version?',
+        description: 'Regenerate with the same credit. Edit the story details, try a different music style, adjust the vibe. You\'re not locked into the first result.',
+      },
+      {
+        title: 'How long are the songs?',
+        description: 'Typically 2-3 minutes. Long enough to tell the story, short enough that people will actually listen to the whole thing (multiple times, probably).',
       },
     ]}
   />
 
-  <!-- Sharing & Quality FAQs -->
+  <!-- Pricing & Credits -->
   <FAQs
-    title="Sharing & Quality"
+    title="Pricing & Credits"
     items={[
       {
-        title: 'Can I share my song?',
-        description: 'Yep, every song gets a custom link. Share via text, social media, email, whatever.',
-      },
-      {
-        title: 'Can I download the song?',
-        description: 'Yes, full download included with every song.',
-      },
-      {
-        title: 'What format are songs?',
-        description: 'High-quality MP3, playable anywhere.',
-      },
-    ]}
-  />
-
-  <!-- Issues & Support FAQs -->
-  <FAQs
-    title="Issues & Support"
-    items={[
-      {
-        title: 'What if they hate it?',
-        description: 'Then they have no sense of humor (but yes, you can remake it or edit it).',
-      },
-      {
-        title: 'What if I\'m not happy?',
-        description: 'We\'ll make it right. Remake it, get a refund, we\'re flexible.',
-      },
-      {
-        title: 'How do I get help?',
-        description: 'Contact us at support@yourbanger.com or through the app.',
-      },
-    ]}
-  />
-
-  <!-- Technical FAQs -->
-  <FAQs
-    title="Technical"
-    items={[
-      {
-        title: 'Do songs expire?',
-        description: 'Nope. Lifetime access to every song you create.',
-      },
-      {
-        title: 'How many revisions can I make?',
-        description: 'Unlimited before generation. After generation, you can remake with the same credit.',
-      },
-      {
-        title: 'Is my data private?',
-        description: 'Yes. See our Privacy Policy for details.',
+        title: 'How much does it cost?',
+        description: '$14 for 10 songs. That\'s $1.40 per song. No subscriptions, no hidden fees, no gotchas. Just buy credits and use them whenever.',
       },
       {
         title: 'Do credits expire?',
-        description: 'No, use them whenever you want. They never expire.',
+        description: 'Nope. Buy them now, use them in 3 years. They\'re yours forever.',
+      },
+      {
+        title: 'What if I want a refund?',
+        description: 'If you\'re genuinely not happy, email us at support@yourbanger.com. We\'ll work something out. We\'re reasonable people who want you to love what you create.',
+      },
+    ]}
+  />
+
+  <!-- Sharing & Ownership -->
+  <FAQs
+    title="Sharing & Ownership"
+    items={[
+      {
+        title: 'How do I share the song?',
+        description: 'Every song gets a unique shareable link. Text it, email it, post it on social media, include it in a presentation, play it at a party. You also get a downloadable MP3 for offline use.',
+      },
+      {
+        title: 'Can I post it on social media?',
+        description: 'Yes! It\'s your song. Post it wherever you want. Tag us if you\'d like—we love seeing reactions.',
+      },
+      {
+        title: 'Do I own the song?',
+        description: 'You have full rights to use the song for personal purposes. Post it, share it, play it at events. For commercial use, check our terms or reach out.',
+      },
+    ]}
+  />
+
+  <!-- Privacy & Security -->
+  <FAQs
+    title="Privacy & Security"
+    items={[
+      {
+        title: 'Is the story I share private?',
+        description: 'Yes. The details you share are used only to create your song. We don\'t sell your data, we don\'t share your stories, we don\'t train other AI models on your personal details.',
+      },
+      {
+        title: 'Can other people see my songs?',
+        description: 'Only if you share the link. Your songs are not publicly listed anywhere. You control who sees them.',
       },
     ]}
   />
@@ -126,18 +122,19 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Still Have Questions? Just Try It',
+        text: 'Make Your First Song',
         href: 'https://app.yourbanger.com/auth?tab=signup',
         target: '_blank',
       },
     ]}
   >
     <Fragment slot="title">
-      Ready to Create Your Song?
+      Still Curious?
     </Fragment>
 
     <Fragment slot="subtitle">
-      The best way to understand is to try it. Get started in minutes.
+      The best way to understand is to try it. Pick someone you care about. <br class="hidden md:block" />
+      In 2 minutes, you'll have a song that makes them feel like a legend.
     </Fragment>
   </CallToAction>
 </Layout>

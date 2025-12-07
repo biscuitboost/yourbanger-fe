@@ -1,0 +1,220 @@
+---
+const genres = ["Rock", "Pop", "Country", "R&B", "Hip-Hop"];
+const demoPrompt = "A rock anthem about my dad's obsession with his smoker grill, his legendary backyard BBQs, and how he always burns the first batch...";
+---
+
+<div class="relative">
+  <div class="absolute -inset-3 bg-[var(--primary)]/20 rounded-2xl blur-xl"></div>
+  <div class="absolute -inset-6 bg-[var(--primary)]/10 rounded-2xl blur-2xl"></div>
+
+  <div class="relative bg-[var(--card)] border border-[var(--border)] rounded-xl overflow-hidden shadow-xl gradient-border">
+    <!-- Header -->
+    <div class="px-4 py-2.5 border-b border-[var(--border)] flex items-center justify-between bg-[var(--secondary)]/30">
+      <div class="flex items-center gap-1.5">
+        <div class="w-2.5 h-2.5 rounded-full bg-red-500"></div>
+        <div class="w-2.5 h-2.5 rounded-full bg-yellow-500"></div>
+        <div class="w-2.5 h-2.5 rounded-full bg-green-500"></div>
+      </div>
+      <span class="text-[10px] text-[var(--muted-foreground)] font-mono">yourbanger.com</span>
+    </div>
+
+    <!-- Content -->
+    <div class="p-4 space-y-4">
+      <!-- Genre selector -->
+      <div class="space-y-1.5">
+        <label class="text-[10px] text-[var(--muted-foreground)] uppercase tracking-wider">Pick a vibe</label>
+        <div class="flex flex-wrap gap-1.5" id="genre-selector">
+          {genres.map((genre, i) => (
+            <button
+              data-genre={genre}
+              class={`px-2.5 py-1 text-[10px] font-medium rounded-full transition-all ${
+                i === 0
+                  ? "bg-[var(--primary)] text-white"
+                  : "bg-[var(--secondary)] text-[var(--muted-foreground)] hover:text-[var(--foreground)]"
+              }`}
+            >
+              {i === 0 && (
+                <svg class="w-2.5 h-2.5 inline mr-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              )}
+              {genre}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- Input area -->
+      <div class="space-y-1.5">
+        <label class="text-[10px] text-[var(--muted-foreground)] uppercase tracking-wider">Tell us your story</label>
+        <div class="relative">
+          <div class="min-h-[80px] p-3 bg-[var(--secondary)]/50 rounded-lg border border-[var(--border)] text-xs text-[var(--foreground)] leading-relaxed">
+            <span id="typed-text"></span>
+            <span id="cursor" class="inline-block w-0.5 h-3.5 bg-[var(--primary)] ml-0.5 animate-blink"></span>
+          </div>
+          <button class="absolute bottom-2.5 right-2.5 w-7 h-7 bg-[var(--primary)] rounded-md flex items-center justify-center text-white hover:bg-[var(--primary)]/90 transition-colors">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Generation progress (hidden initially) -->
+      <div id="generating-phase" class="space-y-2 hidden">
+        <div class="flex items-center justify-between text-xs">
+          <span class="text-[var(--muted-foreground)]">Creating your song...</span>
+          <span class="text-[var(--primary)] font-mono" id="progress-text">0%</span>
+        </div>
+        <div class="h-1.5 bg-[var(--secondary)] rounded-full overflow-hidden">
+          <div
+            id="progress-bar"
+            class="h-full bg-gradient-to-r from-[var(--primary)] to-[var(--primary)]/70 rounded-full transition-all duration-200"
+            style="width: 0%"
+          ></div>
+        </div>
+        <div class="flex items-center gap-1.5 text-[10px] text-[var(--muted-foreground)]">
+          <div class="w-1.5 h-1.5 bg-[var(--primary)] rounded-full animate-pulse"></div>
+          <span>Analyzing story • Composing melody • Adding vocals</span>
+        </div>
+      </div>
+
+      <!-- Result (hidden initially) -->
+      <div id="result-phase" class="space-y-3 hidden">
+        <div class="flex items-center gap-3 p-3 bg-[var(--secondary)]/50 rounded-lg border border-[var(--primary)]/30">
+          <button id="play-btn" class="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white hover:bg-[var(--primary)]/90 transition-all hover:scale-105 shadow-lg shadow-[var(--primary)]/30">
+            <svg id="play-icon" class="w-4 h-4 ml-0.5" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <svg id="pause-icon" class="w-4 h-4 hidden" viewBox="0 0 24 24" fill="currentColor">
+              <rect x="6" y="4" width="4" height="16"></rect>
+              <rect x="14" y="4" width="4" height="16"></rect>
+            </svg>
+          </button>
+          <div class="flex-1">
+            <h4 class="text-sm font-semibold text-[var(--foreground)]">King of the Coals</h4>
+            <p class="text-xs text-[var(--muted-foreground)]">Rock • 3:24</p>
+          </div>
+          <span class="px-2 py-0.5 bg-[var(--primary)]/20 text-[var(--primary)] text-[10px] font-medium rounded-full">NEW</span>
+        </div>
+
+        <div id="waveform-container" class="flex items-end justify-center gap-[1px] h-12">
+          <!-- Waveform bars will be generated by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ demoPrompt }}>
+  let phase = 'typing';
+  let typedIndex = 0;
+  let progress = 0;
+  let isPlaying = false;
+  
+  const typedText = document.getElementById('typed-text');
+  const cursor = document.getElementById('cursor');
+  const generatingPhase = document.getElementById('generating-phase');
+  const resultPhase = document.getElementById('result-phase');
+  const progressBar = document.getElementById('progress-bar');
+  const progressText = document.getElementById('progress-text');
+  const playBtn = document.getElementById('play-btn');
+  const playIcon = document.getElementById('play-icon');
+  const pauseIcon = document.getElementById('pause-icon');
+  const waveformContainer = document.getElementById('waveform-container');
+  
+  // Generate waveform bars
+  const barCount = 50;
+  for (let i = 0; i < barCount; i++) {
+    const bar = document.createElement('div');
+    const baseHeight = 20 + Math.sin(i * 0.3) * 15 + Math.sin(i * 0.7) * 10;
+    bar.className = 'w-1 rounded-full transition-all bg-[var(--primary)]';
+    bar.style.height = `${baseHeight}%`;
+    bar.style.opacity = '0.4';
+    bar.style.animationDelay = `${i * 0.05}s`;
+    bar.dataset.baseHeight = baseHeight;
+    waveformContainer.appendChild(bar);
+  }
+  
+  function updateWaveform(playing) {
+    const bars = waveformContainer.querySelectorAll('div');
+    bars.forEach((bar) => {
+      const baseHeight = parseFloat(bar.dataset.baseHeight);
+      if (playing) {
+        bar.style.height = `${baseHeight + 30}%`;
+        bar.style.opacity = '1';
+        bar.classList.add('waveform-bar');
+      } else {
+        bar.style.height = `${baseHeight}%`;
+        bar.style.opacity = '0.4';
+        bar.classList.remove('waveform-bar');
+      }
+    });
+  }
+  
+  function runTypingPhase() {
+    if (typedIndex < demoPrompt.length) {
+      typedText.textContent = demoPrompt.slice(0, typedIndex + 1);
+      typedIndex++;
+      setTimeout(runTypingPhase, 40);
+    } else {
+      setTimeout(() => {
+        phase = 'generating';
+        cursor.classList.add('hidden');
+        generatingPhase.classList.remove('hidden');
+        runGeneratingPhase();
+      }, 800);
+    }
+  }
+  
+  function runGeneratingPhase() {
+    if (progress < 100) {
+      progress += Math.random() * 15;
+      if (progress > 100) progress = 100;
+      progressBar.style.width = `${progress}%`;
+      progressText.textContent = `${Math.round(progress)}%`;
+      setTimeout(runGeneratingPhase, 200);
+    } else {
+      setTimeout(() => {
+        phase = 'result';
+        generatingPhase.classList.add('hidden');
+        resultPhase.classList.remove('hidden');
+        setTimeout(() => {
+          isPlaying = true;
+          playIcon.classList.add('hidden');
+          pauseIcon.classList.remove('hidden');
+          updateWaveform(true);
+        }, 300);
+      }, 500);
+    }
+  }
+  
+  playBtn?.addEventListener('click', () => {
+    isPlaying = !isPlaying;
+    playIcon.classList.toggle('hidden', isPlaying);
+    pauseIcon.classList.toggle('hidden', !isPlaying);
+    updateWaveform(isPlaying);
+  });
+  
+  // Start the demo after a short delay
+  setTimeout(runTypingPhase, 1000);
+  
+  // Reset cycle after result
+  setInterval(() => {
+    if (phase === 'result') {
+      isPlaying = false;
+      updateWaveform(false);
+      phase = 'typing';
+      typedIndex = 0;
+      progress = 0;
+      typedText.textContent = '';
+      cursor.classList.remove('hidden');
+      resultPhase.classList.add('hidden');
+      playIcon.classList.remove('hidden');
+      pauseIcon.classList.add('hidden');
+      progressBar.style.width = '0%';
+      setTimeout(runTypingPhase, 500);
+    }
+  }, 10000);
+</script>

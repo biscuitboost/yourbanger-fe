@@ -1,276 +1,469 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Features from '~/components/widgets/Features.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import AudioPlayer from '~/components/widgets/AudioPlayer.astro';
-import TestimonialChat from '~/components/widgets/TestimonialChat.astro';
-import CTAButton from '~/components/widgets/CTAButton.astro';
+import DemoCard from '~/components/ui/DemoCard.astro';
+import FloatingParticles from '~/components/ui/FloatingParticles.astro';
+import { Icon } from 'astro-icon/components';
 
 const metadata = {
   title: 'YourBanger - Turn Your Story Into a Song',
-  description: 'Create personalized AI-generated songs in minutes. Perfect for birthdays, weddings, and special moments. $14 for 10 songs. No musical talent required.',
+  description: 'Create personalized AI-generated songs in 2 minutes. Share your memories and inside jokes, get a professionally produced song. $14 for 10 songs.',
   ignoreTitleTemplate: true,
 };
 
+const steps = [
+  {
+    icon: 'tabler:message-2',
+    number: '01',
+    title: 'Share Your Story',
+    description: 'Tell us about the person, the memories, the inside jokes. The more details, the more personal the song.',
+  },
+  {
+    icon: 'tabler:music',
+    number: '02',
+    title: 'Pick Your Vibe',
+    description: "Rock, pop, country, R&B, ballad — choose the style that fits. We'll handle the rest.",
+  },
+  {
+    icon: 'tabler:share',
+    number: '03',
+    title: 'Watch Them React',
+    description: 'Get your song instantly. Share it, play it, record their face when they hear their story in music.',
+  },
+];
+
+const songs = [
+  {
+    id: 1,
+    title: "Sarah's Legendary 30th",
+    genre: 'Rock',
+    description: "An epic rock anthem about Sarah's terrible karaoke skills and legendary weekend adventures.",
+    color: 'from-pink-500 to-rose-500',
+  },
+  {
+    id: 2,
+    title: 'Forever Starts Today',
+    genre: 'Ballad',
+    description: "A heartfelt wedding ballad celebrating a couple's journey together.",
+    color: 'from-blue-500 to-cyan-500',
+  },
+  {
+    id: 3,
+    title: 'Remember That Time?',
+    genre: 'Country',
+    description: 'A country tune about that camping trip that shall not be spoken of.',
+    color: 'from-amber-500 to-orange-500',
+  },
+  {
+    id: 4,
+    title: 'Office Legend',
+    genre: 'Pop',
+    description: "A pop anthem for a coworker who's finally retiring after 30 years.",
+    color: 'from-emerald-500 to-teal-500',
+  },
+];
+
 const testimonials = [
-  { message: 'omg I can\'t stop laughing 😂', name: 'Sarah', align: 'left' as const },
-  { message: 'best gift I\'ve ever received', name: 'Mike', align: 'right' as const },
-  { message: 'played it 10 times already', name: 'Jessica', align: 'left' as const },
-  { message: 'my wife cried (happy tears!)', name: 'Tom', align: 'right' as const },
-  { message: 'way better than a hallmark card', name: 'Lisa', align: 'left' as const },
-  { message: 'everyone at the party wanted to know how I made it', name: 'Marcus', align: 'right' as const },
+  {
+    quote: "I made a song about my dad's obsession with his smoker grill. We played it at the party, and he called me the next morning to play it again.",
+    author: 'Marcus T.',
+    location: 'Austin, TX',
+    tag: 'Birthday',
+  },
+  {
+    quote: "My best friend ugly-cried when I played it at her bridal shower. It mentioned her cat, her terrible parking skills, and the time we got lost in IKEA for 3 hours.",
+    author: 'Jenna M.',
+    location: 'Seattle, WA',
+    tag: 'Wedding',
+  },
+  {
+    quote: "Got one for my wife for our 10th anniversary. Mentioned our first date at that terrible Thai place, the proposal fail, all of it. She's made it her ringtone.",
+    author: 'David K.',
+    location: 'Chicago, IL',
+    tag: 'Anniversary',
+  },
+  {
+    quote: "Made one roasting my coworker who's retiring after 30 years. We played it at his party and he laughed so hard he had to sit down.",
+    author: 'Rachel S.',
+    location: 'Denver, CO',
+    tag: 'Retirement',
+  },
+  {
+    quote: "Created a song for my mom's 60th with all our family inside jokes. She plays it every time someone visits now. Best $14 I ever spent.",
+    author: 'Alex P.',
+    location: 'Miami, FL',
+    tag: 'Birthday',
+  },
+  {
+    quote: "Our wedding first dance was a custom song about how we met at a coffee shop. Not a dry eye in the house. Even the DJ was crying.",
+    author: 'Sarah & Mike',
+    location: 'Portland, OR',
+    tag: 'Wedding',
+  },
+];
+
+const useCases = [
+  { icon: 'tabler:gift', title: 'Birthdays', description: 'Forget the gift card. Give them an anthem about their quirks, their wins, their legendary moments.', size: 'large' },
+  { icon: 'tabler:heart', title: 'Weddings', description: 'First dance? Make it unforgettable.', size: 'small' },
+  { icon: 'tabler:users', title: 'Inside Jokes', description: 'That Vegas trip deserves a song.', size: 'small' },
+  { icon: 'tabler:briefcase', title: 'Retirements', description: '30 years of stories, legendary meetings, and office pranks. One epic track to send them off.', size: 'large' },
+  { icon: 'tabler:calendar-heart', title: 'Anniversaries', description: 'Your story, set to music.', size: 'small' },
+  { icon: 'tabler:sparkles', title: 'Just Because', description: 'Sometimes they need to know they matter.', size: 'small' },
+];
+
+const features = [
+  'AI-generated lyrics based on your story',
+  'Professional-quality music production',
+  'Choice of music styles (Rock, Pop, Country, R&B, etc.)',
+  'Shareable links + downloadable MP3s',
+  'Full editing control before generation',
 ];
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero Section -->
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Create Your Song 🎵',
-        href: 'https://app.yourbanger.com/auth?tab=signup',
-        target: '_blank',
-      },
-      {
-        text: 'See Examples',
-        href: '/examples',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Turn Your Story Into a <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Song</span>
-    </Fragment>
+  <section class="relative pt-24 pb-16 px-6 sm:px-8 lg:px-12 overflow-hidden">
+    <!-- Background elements -->
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[var(--primary)]/5 rounded-full blur-3xl"></div>
+      <div class="absolute inset-0 opacity-[0.02]" style="background-image: linear-gradient(var(--foreground) 1px, transparent 1px), linear-gradient(90deg, var(--foreground) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    </div>
 
-    <Fragment slot="subtitle">
-      <span class="text-xl md:text-2xl font-medium">
-        Personalized AI-generated songs in minutes. No musical talent required.
-      </span>
-    </Fragment>
-  </Hero>
+    <FloatingParticles />
 
-  <!-- How It Works Section -->
-  <Steps
-    title="How It Works"
-    subtitle="Create your personalized song in 3 simple steps"
-    items={[
-      {
-        title: 'Tell Your Story',
-        description: 'Share details about the person, memory, or inside joke. Be creative, be funny, be heartfelt.',
-        icon: 'tabler:edit',
-      },
-      {
-        title: 'We Make Magic',
-        description: 'Our AI creates personalized lyrics and sets them to music in your chosen style. Takes about 2 minutes.',
-        icon: 'tabler:wand',
-      },
-      {
-        title: 'Share & Celebrate',
-        description: 'Get a custom shareable link. Download the song. Watch them laugh, cry, or both.',
-        icon: 'tabler:share',
-      },
-    ]}
-  />
-
-  <!-- Use Cases Section -->
-  <Features
-    id="use-cases"
-    title="Perfect For Every Occasion"
-    subtitle="Make someone feel like a legend"
-    columns={3}
-    items={[
-      {
-        title: '🎂 Birthday Surprises',
-        description: 'Make them the star of their own birthday anthem',
-        icon: 'tabler:cake',
-      },
-      {
-        title: '💍 Wedding Toasts',
-        description: 'Turn your wedding speech into a memorable song',
-        icon: 'tabler:heart',
-      },
-      {
-        title: '😂 Inside Jokes',
-        description: 'Immortalize those moments that only you two understand',
-        icon: 'tabler:mood-smile',
-      },
-      {
-        title: '🎓 Graduations',
-        description: 'Celebrate their achievements with a custom graduation song',
-        icon: 'tabler:school',
-      },
-      {
-        title: '💝 Just Because',
-        description: 'Sometimes the best gifts have no reason at all',
-        icon: 'tabler:gift',
-      },
-      {
-        title: '🎉 Any Celebration',
-        description: 'Retirement, promotion, or just making someone smile',
-        icon: 'tabler:confetti',
-      },
-    ]}
-  />
-
-  <!-- Sample Songs Section -->
-  <section class="bg-gray-50 dark:bg-gray-900 py-16 md:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Hear the <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Magic</span>
-        </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-400">
-          Sample songs showing the variety and quality you can create
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-          <div class="mb-3">
-            <span class="px-3 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200">
-              Birthday
-            </span>
-            <span class="ml-2 px-3 py-1 text-xs font-semibold rounded-full bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200">
-              Rock
-            </span>
+    <div class="max-w-6xl mx-auto relative z-10">
+      <div class="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+        <!-- Left side - Copy -->
+        <div class="space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[var(--secondary)] rounded-full border border-[var(--border)]">
+            <Icon name="tabler:sparkles" class="w-3.5 h-3.5 text-[var(--primary)]" />
+            <span class="text-xs text-[var(--muted-foreground)]">AI-Powered Music Creation</span>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Sarah's Legendary 30th</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
-            An epic rock anthem about Sarah's terrible karaoke and legendary weekend adventures
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-balance">
+            <span class="text-[var(--foreground)]">Turn Your Story Into a </span>
+            <span class="text-[var(--primary)]">Song They'll Never Forget</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-[var(--muted-foreground)] max-w-lg leading-relaxed">
+            Share your memories, inside jokes, and love. Get a professionally produced, completely unique song in under 2 minutes.
           </p>
-          <AudioPlayer src="/audio/sample-rock.mp3" title="Sarah's Legendary 30th" />
+
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a
+              href="https://app.yourbanger.com/auth?tab=signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium text-sm px-6 h-11 rounded-lg shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
+            >
+              Create Your Song
+              <Icon name="tabler:arrow-right" class="w-4 h-4 ml-2" />
+            </a>
+            <a
+              href="/examples"
+              class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-sm px-6 h-11 rounded-lg transition-all"
+            >
+              Listen to Examples
+            </a>
+          </div>
+
+          <div class="flex items-center gap-4 pt-2">
+            <div class="flex items-center gap-2">
+              <div class="flex -space-x-1.5">
+                <div class="w-6 h-6 rounded-full bg-gradient-to-br from-pink-400 to-purple-500 border-2 border-[var(--background)]"></div>
+                <div class="w-6 h-6 rounded-full bg-gradient-to-br from-blue-400 to-cyan-500 border-2 border-[var(--background)]"></div>
+                <div class="w-6 h-6 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 border-2 border-[var(--background)]"></div>
+                <div class="w-6 h-6 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 border-2 border-[var(--background)]"></div>
+              </div>
+              <span class="text-xs text-[var(--muted-foreground)]">10k+ songs created</span>
+            </div>
+            <div class="h-3 w-px bg-[var(--border)]"></div>
+            <div class="flex items-center gap-0.5">
+              {[1, 2, 3, 4, 5].map(() => (
+                <svg class="w-3.5 h-3.5 text-yellow-500 fill-yellow-500" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+              <span class="text-xs text-[var(--muted-foreground)] ml-1">4.9/5</span>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-          <div class="mb-3">
-            <span class="px-3 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200">
-              Wedding
-            </span>
-            <span class="ml-2 px-3 py-1 text-xs font-semibold rounded-full bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200">
-              Ballad
-            </span>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Forever Starts Today</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
-            A heartfelt wedding ballad celebrating a couple's journey together
-          </p>
-          <AudioPlayer src="/audio/sample-ballad.mp3" title="Forever Starts Today" />
+        <!-- Right side - Interactive Demo -->
+        <div>
+          <DemoCard />
         </div>
-
-        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-          <div class="mb-3">
-            <span class="px-3 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200">
-              Inside Joke
-            </span>
-            <span class="ml-2 px-3 py-1 text-xs font-semibold rounded-full bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200">
-              Country
-            </span>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Remember That Time?</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
-            A country tune about that camping trip that shall not be spoken of
-          </p>
-          <AudioPlayer src="/audio/sample-country.mp3" title="Remember That Time?" />
-        </div>
-      </div>
-
-      <div class="text-center mt-10">
-        <CTAButton text="Hear More Examples" href="/examples" variant="secondary" size="lg" />
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="py-16 md:py-20">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Real Reactions
+  <!-- How It Works -->
+  <section class="py-16 px-6 sm:px-8 lg:px-12 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--foreground)] mb-3">
+          Three Steps to <span class="text-[var(--primary)]">Legendary</span>
         </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-400">
-          Here's what people are saying about their songs
-        </p>
+        <p class="text-sm text-[var(--muted-foreground)] max-w-2xl mx-auto">No musical talent required. Seriously.</p>
       </div>
 
-      <TestimonialChat testimonials={testimonials} />
+      <div class="grid md:grid-cols-3 gap-5">
+        {steps.map((step) => (
+          <div class="group relative p-5 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all duration-300">
+            <div class="absolute -top-3 -right-3 text-4xl font-bold text-[var(--secondary)] opacity-50 group-hover:text-[var(--primary)]/20 transition-colors">
+              {step.number}
+            </div>
+            <div class="relative z-10">
+              <div class="w-10 h-10 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[var(--primary)]/20 transition-colors">
+                <Icon name={step.icon} class="w-5 h-5 text-[var(--primary)]" />
+              </div>
+              <h3 class="text-base font-semibold text-[var(--foreground)] mb-2">{step.title}</h3>
+              <p class="text-sm text-[var(--muted-foreground)] leading-relaxed">{step.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 
-  <!-- Pricing Preview Section -->
-  <section class="bg-gradient-to-r from-purple-600 to-pink-600 py-16 md:py-20">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-        $14 for 10 Songs
+  <!-- Sample Songs -->
+  <section id="examples" class="py-16 px-6 sm:px-8 lg:px-12">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--foreground)] mb-3">
+          Hear the <span class="text-[var(--primary)]">Magic</span>
+        </h2>
+        <p class="text-sm text-[var(--muted-foreground)]">Real songs created for real moments</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-4">
+        {songs.map((song) => (
+          <div class="group relative bg-[var(--card)] rounded-xl border border-[var(--border)] overflow-hidden hover:border-[var(--primary)]/50 transition-all duration-300 gradient-border">
+            <div class={`absolute inset-0 bg-gradient-to-br ${song.color} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
+
+            <div class="relative p-4">
+              <div class="flex items-start gap-3 mb-3">
+                <div class="relative w-12 h-12 rounded-lg overflow-hidden shrink-0 bg-gradient-to-br from-[var(--primary)] to-purple-400 flex items-center justify-center">
+                  <Icon name="tabler:music" class="w-6 h-6 text-white" />
+                </div>
+                <div class="flex-1 min-w-0">
+                  <span class="inline-block px-2 py-0.5 bg-[var(--primary)]/10 text-[var(--primary)] text-xs font-medium rounded-full mb-1">
+                    {song.genre}
+                  </span>
+                  <h3 class="text-sm font-semibold text-[var(--foreground)] truncate">{song.title}</h3>
+                </div>
+                <button class="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white hover:bg-[var(--primary)]/90 transition-all hover:scale-105 shrink-0 shadow-lg shadow-[var(--primary)]/20">
+                  <Icon name="tabler:player-play-filled" class="w-4 h-4 ml-0.5" />
+                </button>
+              </div>
+
+              <p class="text-[var(--muted-foreground)] text-xs mb-3 line-clamp-2">{song.description}</p>
+
+              <div class="flex items-end justify-center gap-[1px] h-8">
+                {Array.from({ length: 50 }).map((_, i) => (
+                  <div
+                    class="w-0.5 rounded-full bg-[var(--primary)]"
+                    style={`height: ${20 + Math.sin(i * 0.3) * 15 + Math.sin(i * 0.7) * 10}%; opacity: 0.4;`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/examples" class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-sm px-5 py-2.5 rounded-lg transition-all">
+          Explore More Examples
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-14 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 mb-8">
+      <div class="text-center">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--foreground)] mb-3">
+          Real Stories, Real <span class="text-[var(--primary)]">Reactions</span>
+        </h2>
+        <p class="text-sm text-[var(--muted-foreground)]">What happens when you give someone a song about them</p>
+      </div>
+    </div>
+
+    <div class="relative">
+      <!-- Fade edges -->
+      <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[var(--background)] to-transparent z-10"></div>
+      <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[var(--background)] to-transparent z-10"></div>
+
+      <div class="flex animate-marquee hover:[animation-play-state:paused]">
+        {[...testimonials, ...testimonials].map((testimonial) => (
+          <div class="flex-shrink-0 w-[320px] mx-2 p-4 bg-[var(--card)] rounded-xl border border-[var(--border)] gradient-border">
+            <div class="flex items-center gap-2 mb-3">
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-[var(--primary)] to-pink-400"></div>
+              <div>
+                <p class="font-medium text-[var(--foreground)] text-xs">{testimonial.author}</p>
+                <p class="text-[10px] text-[var(--muted-foreground)]">{testimonial.location}</p>
+              </div>
+              <span class="ml-auto px-2 py-0.5 bg-[var(--primary)]/10 text-[var(--primary)] text-[10px] font-medium rounded-full">
+                {testimonial.tag}
+              </span>
+            </div>
+            <blockquote class="text-[var(--foreground)] text-xs leading-relaxed">"{testimonial.quote}"</blockquote>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="py-14 px-6 sm:px-8 lg:px-12">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--foreground)] mb-3">When Words Aren't Enough</h2>
+        <p class="text-sm text-[var(--muted-foreground)]">Perfect for moments that deserve more than a card</p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <!-- Large card - Birthdays -->
+        <div class="col-span-2 row-span-2 group relative p-5 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all duration-300 gradient-border overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div class="relative z-10">
+            <div class="w-10 h-10 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[var(--primary)]/20 transition-colors">
+              <Icon name={useCases[0].icon} class="w-5 h-5 text-[var(--primary)]" />
+            </div>
+            <h3 class="text-lg font-bold text-[var(--foreground)] mb-2">{useCases[0].title}</h3>
+            <p class="text-sm text-[var(--muted-foreground)] leading-relaxed">{useCases[0].description}</p>
+          </div>
+        </div>
+
+        <!-- Small cards -->
+        {useCases.slice(1, 3).map((useCase) => (
+          <div class="group p-4 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all duration-300 gradient-border">
+            <div class="w-8 h-8 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-[var(--primary)]/20 transition-colors">
+              <Icon name={useCase.icon} class="w-4 h-4 text-[var(--primary)]" />
+            </div>
+            <h3 class="text-sm font-semibold text-[var(--foreground)] mb-1">{useCase.title}</h3>
+            <p class="text-xs text-[var(--muted-foreground)]">{useCase.description}</p>
+          </div>
+        ))}
+
+        <!-- Large card - Retirements -->
+        <div class="col-span-2 row-span-2 group relative p-5 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all duration-300 gradient-border overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div class="relative z-10">
+            <div class="w-10 h-10 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[var(--primary)]/20 transition-colors">
+              <Icon name={useCases[3].icon} class="w-5 h-5 text-[var(--primary)]" />
+            </div>
+            <h3 class="text-lg font-bold text-[var(--foreground)] mb-2">{useCases[3].title}</h3>
+            <p class="text-sm text-[var(--muted-foreground)] leading-relaxed">{useCases[3].description}</p>
+          </div>
+        </div>
+
+        <!-- Small cards -->
+        {useCases.slice(4, 6).map((useCase) => (
+          <div class="group p-4 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all duration-300 gradient-border">
+            <div class="w-8 h-8 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center mb-3 group-hover:bg-[var(--primary)]/20 transition-colors">
+              <Icon name={useCase.icon} class="w-4 h-4 text-[var(--primary)]" />
+            </div>
+            <h3 class="text-sm font-semibold text-[var(--foreground)] mb-1">{useCase.title}</h3>
+            <p class="text-xs text-[var(--muted-foreground)]">{useCase.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-14 px-6 sm:px-8 lg:px-12 bg-[var(--secondary)]/30">
+    <div class="max-w-lg mx-auto">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--foreground)] mb-3">Simple Pricing</h2>
+        <p class="text-sm text-[var(--muted-foreground)]">No subscription. Credits don't expire.</p>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -inset-3 bg-gradient-to-r from-[var(--primary)]/20 via-[var(--primary)]/30 to-[var(--primary)]/20 rounded-2xl blur-xl animate-gradient"></div>
+
+        <div class="relative bg-[var(--card)] border border-[var(--border)] rounded-xl p-6 gradient-border">
+          <div class="text-center mb-6">
+            <div class="inline-flex items-baseline gap-1.5 mb-1">
+              <span class="text-4xl font-bold text-[var(--foreground)]">$14</span>
+              <span class="text-sm text-[var(--muted-foreground)]">for 10 songs</span>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)]">That's just $1.40 per song</p>
+          </div>
+
+          <div class="space-y-2.5 mb-6">
+            {features.map((feature) => (
+              <div class="flex items-center gap-2">
+                <div class="w-4 h-4 bg-[var(--primary)]/20 rounded-full flex items-center justify-center shrink-0">
+                  <Icon name="tabler:check" class="w-2.5 h-2.5 text-[var(--primary)]" />
+                </div>
+                <span class="text-sm text-[var(--foreground)]">{feature}</span>
+              </div>
+            ))}
+          </div>
+
+          <a
+            href="https://app.yourbanger.com/auth?tab=signup"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block w-full text-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium h-11 leading-[2.75rem] text-sm rounded-lg shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
+          >
+            Get Started Now
+          </a>
+
+          <p class="text-center text-xs text-[var(--muted-foreground)] mt-3">No account required to start creating</p>
+
+          <div class="flex items-center justify-center gap-4 mt-6 pt-6 border-t border-[var(--border)]">
+            <div class="flex items-center gap-1.5 text-[var(--muted-foreground)]">
+              <Icon name="tabler:shield-check" class="w-3.5 h-3.5" />
+              <span class="text-[10px]">Secure Payment</span>
+            </div>
+            <div class="flex items-center gap-1.5 text-[var(--muted-foreground)]">
+              <Icon name="tabler:credit-card" class="w-3.5 h-3.5" />
+              <span class="text-[10px]">All Cards Accepted</span>
+            </div>
+            <div class="flex items-center gap-1.5 text-[var(--muted-foreground)]">
+              <Icon name="tabler:clock" class="w-3.5 h-3.5" />
+              <span class="text-[10px]">Credits Never Expire</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-14 px-6 sm:px-8 lg:px-12 relative overflow-hidden">
+    <div class="absolute inset-0 flex items-center justify-center opacity-10">
+      <div class="flex items-end justify-center gap-[1px] w-full h-20">
+        {Array.from({ length: 80 }).map((_, i) => (
+          <div
+            class="w-0.5 rounded-full bg-[var(--primary)] waveform-bar"
+            style={`height: ${20 + Math.sin(i * 0.3) * 15 + Math.sin(i * 0.7) * 10 + 30}%; animation-delay: ${i * 0.05}s;`}
+          />
+        ))}
+      </div>
+    </div>
+
+    <div class="max-w-2xl mx-auto text-center relative z-10">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--foreground)] mb-4 text-balance">
+        Someone's Birthday Is Coming Up
       </h2>
-      <p class="text-xl text-white/90 mb-2">
-        That's just $1.40 per song
+      <p class="text-sm sm:text-base text-[var(--muted-foreground)] mb-6 max-w-xl mx-auto">
+        You know who it is. You know what makes them special. In 2 minutes, you could have a song they'll never forget.
       </p>
-      <p class="text-lg text-white/80 mb-8">
-        No subscription. Credits don't expire. Full control over every detail.
-      </p>
-
-      <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8 mb-8 text-left max-w-2xl mx-auto">
-        <h3 class="text-xl font-bold text-white mb-4">What You Get:</h3>
-        <ul class="space-y-3 text-white/90">
-          <li class="flex items-start">
-            <svg class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-            </svg>
-            <span>AI-generated lyrics based on your story</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-            </svg>
-            <span>Professional-quality music production</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-            </svg>
-            <span>Choice of music styles (Rock, Pop, Country, Rap, R&B, etc.)</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-            </svg>
-            <span>Shareable links + downloads included</span>
-          </li>
-          <li class="flex items-start">
-            <svg class="w-6 h-6 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-            </svg>
-            <span>Full editing control before generation</span>
-          </li>
-        </ul>
-      </div>
-
-      <CTAButton text="Get Started with 10 Songs" size="lg" class="!bg-white !text-purple-600 hover:!bg-gray-100" />
-      <p class="text-sm text-white/70 mt-4">
-        <a href="/pricing" class="underline hover:text-white">View full pricing details</a>
-      </p>
+      <a
+        href="https://app.yourbanger.com/auth?tab=signup"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium text-sm px-6 h-11 rounded-lg shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
+      >
+        Make Someone a Song
+        <Icon name="tabler:arrow-right" class="w-4 h-4 ml-2" />
+      </a>
     </div>
   </section>
-
-  <!-- Final CTA Section -->
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Make My First Song 🎵',
-        href: 'https://app.yourbanger.com/auth?tab=signup',
-        target: '_blank',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Ready to Make Someone a Legend?
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Create your first personalized song in minutes. No musical talent needed.
-    </Fragment>
-  </CallToAction>
 </Layout>

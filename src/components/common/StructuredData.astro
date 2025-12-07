@@ -1,0 +1,76 @@
+---
+interface Props {
+  type: 'organization' | 'product' | 'faq' | 'website';
+  data?: Record<string, unknown>;
+}
+
+const { type, data = {} } = Astro.props;
+
+const baseUrl = 'https://yourbanger.com';
+
+const schemas: Record<string, object> = {
+  organization: {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'YourBanger',
+    url: baseUrl,
+    logo: `${baseUrl}/favicon.svg`,
+    description: 'AI-powered personalized song creation platform. Create custom songs for birthdays, weddings, and special moments.',
+    sameAs: [
+      'https://twitter.com/yourbanger',
+      'https://instagram.com/yourbanger',
+      'https://tiktok.com/@yourbanger',
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'support@yourbanger.com',
+      contactType: 'customer service',
+    },
+  },
+  product: {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'YourBanger - Personalized AI Songs',
+    description: 'Create personalized AI-generated songs in minutes. Custom lyrics and professional music production for any occasion.',
+    brand: {
+      '@type': 'Brand',
+      name: 'YourBanger',
+    },
+    offers: {
+      '@type': 'Offer',
+      price: '14.00',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: `${baseUrl}/pricing`,
+      description: '10 songs for $14 ($1.40 per song)',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '127',
+    },
+  },
+  website: {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'YourBanger',
+    url: baseUrl,
+    description: 'Create personalized AI-generated songs in minutes for birthdays, weddings, and special moments.',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${baseUrl}/examples?q={search_term_string}`,
+      'query-input': 'required name=search_term_string',
+    },
+  },
+  faq: {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: data.questions || [],
+  },
+};
+
+const schemaData = schemas[type] || {};
+const finalSchema = { ...schemaData, ...data };
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(finalSchema)} />
