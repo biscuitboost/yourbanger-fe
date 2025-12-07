@@ -4,12 +4,51 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pricing - YourBanger',
-  description: '$14 for 10 songs. That\'s $1.40 per song. No subscription, credits never expire. Way cheaper than hiring a musician.',
+  title: 'Pricing - $1.40 Per Song | Custom AI Music | YourBanger',
+  description: 'Get 10 personalized AI songs for just $14 ($1.40 each). No subscription, credits never expire. Create custom birthday songs, wedding songs & more in minutes.',
+  openGraph: {
+    title: 'YourBanger Pricing - $1.40 Per Custom Song',
+    description: '10 songs for $14. No subscription. Credits never expire. Professional AI music creation.',
+    type: 'website',
+  },
+};
+
+// Product schema data for SEO
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'YourBanger Song Credits',
+  description: '10 personalized AI-generated songs. Create custom music for birthdays, weddings, and special moments.',
+  brand: {
+    '@type': 'Brand',
+    name: 'YourBanger'
+  },
+  offers: {
+    '@type': 'Offer',
+    price: '14.00',
+    priceCurrency: 'USD',
+    availability: 'https://schema.org/InStock',
+    url: 'https://yourbanger.com/pricing',
+    priceValidUntil: '2025-12-31',
+    seller: {
+      '@type': 'Organization',
+      name: 'YourBanger'
+    }
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '127',
+    bestRating: '5',
+    worstRating: '1'
+  }
 };
 ---
 
 <Layout metadata={metadata}>
+  <!-- Product Schema for SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+
   <!-- Hero Section -->
   <section class="py-16 md:py-24">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">

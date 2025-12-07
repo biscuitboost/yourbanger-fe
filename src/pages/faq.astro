@@ -4,12 +4,92 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'FAQ - YourBanger',
-  description: 'Common questions about creating personalized AI-generated songs. How it works, pricing, quality, and more.',
+  title: 'FAQ - How AI Personalized Songs Work | YourBanger',
+  description: 'Common questions about creating personalized AI songs. Learn how it works, pricing ($1.40/song), song quality, music styles, and how to share your custom songs.',
+  openGraph: {
+    title: 'YourBanger FAQ - Everything About Personalized AI Songs',
+    description: 'How does AI song creation work? How much does it cost? Get all your questions answered.',
+    type: 'website',
+  },
 };
+
+// FAQ data for structured schema
+const faqSchemaData = [
+  {
+    '@type': 'Question',
+    name: 'How long does it take to create a personalized song?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'About 2 minutes to tell us the story and pick your style. About 1 minute for the AI to generate your song. Total: under 5 minutes for a complete, shareable song.'
+    }
+  },
+  {
+    '@type': 'Question',
+    name: 'How much does YourBanger cost?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: '$14 for 10 songs. That\'s $1.40 per song. No subscriptions, no hidden fees. Credits never expire.'
+    }
+  },
+  {
+    '@type': 'Question',
+    name: 'Do I need musical talent to create a song?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Not at all. Can\'t sing? Doesn\'t matter. Can\'t play instruments? Irrelevant. You just need to know the person you\'re making the song for and share their story.'
+    }
+  },
+  {
+    '@type': 'Question',
+    name: 'What music styles can I choose from?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Rock, pop, country, rap, R&B, ballad, indie, electronic, jazz, acoustic, and more. Choose the style that fits your story\'s vibe.'
+    }
+  },
+  {
+    '@type': 'Question',
+    name: 'Can I edit the lyrics before the song is created?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Yes! After the AI generates the initial lyrics based on your story, you can edit every word. Add more inside jokes, remove anything that doesn\'t feel right, tweak the phrasing. Full control.'
+    }
+  },
+  {
+    '@type': 'Question',
+    name: 'Do song credits expire?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'No, credits never expire. Buy them now, use them in 3 years. They\'re yours forever.'
+    }
+  },
+  {
+    '@type': 'Question',
+    name: 'How do I share my personalized song?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Every song gets a unique shareable link. Text it, email it, post it on social media, play it at a party. You also get a downloadable MP3 for offline use.'
+    }
+  },
+  {
+    '@type': 'Question',
+    name: 'Is my story private?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Yes. The details you share are used only to create your song. We don\'t sell your data, share your stories, or train other AI models on your personal details.'
+    }
+  }
+];
 ---
 
 <Layout metadata={metadata}>
+  <!-- FAQPage Schema for SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqSchemaData
+  })} />
+
   <!-- Hero Section -->
   <section class="py-16 md:py-24">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">

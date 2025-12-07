@@ -1,2 +1,23 @@
+# YourBanger robots.txt
+# https://yourbanger.com
+
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://yourbanger.com/sitemap-index.xml
+
+# Block internal/build paths
+Disallow: /api/
+Disallow: /_astro/
+Disallow: /_image/
+
+# Allow all search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

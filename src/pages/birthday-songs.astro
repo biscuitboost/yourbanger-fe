@@ -1,0 +1,275 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import { Icon } from 'astro-icon/components';
+
+const metadata = {
+  title: 'Personalized Birthday Songs | Custom AI Birthday Music | YourBanger',
+  description: 'Create a personalized birthday song in 2 minutes. Turn their story, quirks, and memories into a custom AI-generated song. Perfect gift for any age. $1.40 per song.',
+  openGraph: {
+    title: 'Personalized Birthday Songs - Create Custom Birthday Music',
+    description: 'Make their birthday unforgettable with a personalized AI song about them. 2 minutes to create, memories that last forever.',
+    type: 'website',
+  },
+};
+
+const examples = [
+  {
+    title: "Sarah's Legendary 30th",
+    style: 'Rock',
+    description: 'An arena rock anthem about her obsession with true crime podcasts and terrible karaoke skills.',
+    gradient: 'from-pink-500 to-rose-500',
+  },
+  {
+    title: "Dad's 60th Tribute",
+    style: 'Country',
+    description: 'A country tribute to his 15-year relationship with the smoker grill and legendary brisket.',
+    gradient: 'from-amber-500 to-orange-500',
+  },
+  {
+    title: "Best Friend's 25th",
+    style: 'Pop',
+    description: 'A pop anthem celebrating decade of friendship, inside jokes, and adventures.',
+    gradient: 'from-purple-500 to-pink-500',
+  },
+];
+
+const benefits = [
+  {
+    icon: 'tabler:clock',
+    title: '2 Minutes to Create',
+    description: 'Share their story, pick a style, and get a professional song almost instantly.',
+  },
+  {
+    icon: 'tabler:heart',
+    title: 'Deeply Personal',
+    description: 'Include inside jokes, memories, and details that only you know about them.',
+  },
+  {
+    icon: 'tabler:music',
+    title: 'Any Music Style',
+    description: 'Rock, pop, country, rap, ballad, R&B—choose the genre that fits their personality.',
+  },
+  {
+    icon: 'tabler:share',
+    title: 'Easy to Share',
+    description: 'Get a shareable link and downloadable MP3. Play it at the party or send it directly.',
+  },
+];
+
+// Schema for SEO
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Personalized Birthday Song Creation',
+  description: 'AI-powered custom birthday song creation service. Create unique, personalized birthday songs in minutes.',
+  provider: {
+    '@type': 'Organization',
+    name: 'YourBanger',
+    url: 'https://yourbanger.com'
+  },
+  serviceType: 'Custom Music Creation',
+  areaServed: 'Worldwide',
+  offers: {
+    '@type': 'Offer',
+    price: '1.40',
+    priceCurrency: 'USD',
+    description: 'Per song (10 songs for $14)'
+  }
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Service Schema for SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[var(--secondary)] rounded-full border border-[var(--border)] mb-6">
+        <Icon name="tabler:gift" class="w-4 h-4 text-[var(--primary)]" />
+        <span class="text-sm text-[var(--muted-foreground)]">The Gift They'll Never Forget</span>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
+        Personalized <span class="text-[var(--primary)]">Birthday Songs</span>
+      </h1>
+
+      <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">
+        Turn their quirks, memories, and inside jokes into a custom song they'll play on repeat. 
+        Create a personalized birthday song in just 2 minutes.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="https://app.yourbanger.com/auth?tab=signup"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium text-lg px-8 h-14 rounded-xl shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
+        >
+          Create a Birthday Song
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/examples"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Hear Examples
+        </a>
+      </div>
+
+      <p class="text-sm text-[var(--muted-foreground)] mt-4">
+        Just $1.40 per song • No subscription • Ready in minutes
+      </p>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Why a Personalized Birthday Song?
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          Because they deserve more than a generic gift card
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {benefits.map((benefit) => (
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all">
+            <div class="w-12 h-12 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center mb-4">
+              <Icon name={benefit.icon} class="w-6 h-6 text-[var(--primary)]" />
+            </div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">{benefit.title}</h3>
+            <p class="text-[var(--muted-foreground)]">{benefit.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Real Birthday Songs We've Made
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          Every one created in under 2 minutes
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {examples.map((example) => (
+          <div class="group relative bg-[var(--card)] rounded-xl border border-[var(--border)] overflow-hidden hover:border-[var(--primary)]/50 transition-all">
+            <div class={`absolute inset-0 bg-gradient-to-br ${example.gradient} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
+            <div class="relative p-6">
+              <span class="inline-block px-3 py-1 bg-[var(--primary)]/10 text-[var(--primary)] text-sm font-medium rounded-full mb-3">
+                {example.style}
+              </span>
+              <h3 class="text-xl font-semibold text-[var(--foreground)] mb-2">{example.title}</h3>
+              <p class="text-[var(--muted-foreground)]">{example.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/examples" class="inline-flex items-center text-[var(--primary)] hover:underline font-medium">
+          See all examples
+          <Icon name="tabler:arrow-right" class="w-4 h-4 ml-1" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          How to Create a Birthday Song
+        </h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="flex items-start gap-4 p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white font-bold shrink-0">1</div>
+          <div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-1">Share Their Story</h3>
+            <p class="text-[var(--muted-foreground)]">Tell us about the birthday person—their quirks, memorable moments, inside jokes, and what makes them special.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white font-bold shrink-0">2</div>
+          <div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-1">Pick the Perfect Style</h3>
+            <p class="text-[var(--muted-foreground)]">Choose from rock, pop, country, R&B, ballad, and more. Match the music to their personality.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white font-bold shrink-0">3</div>
+          <div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-1">Watch Their Reaction</h3>
+            <p class="text-[var(--muted-foreground)]">Get your song instantly. Share it at the party, text it to them, or play it during cake time. Record their face!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Birthday FAQ -->
+  <FAQs
+    title="Birthday Song Questions"
+    items={[
+      {
+        title: 'What details should I include for a birthday song?',
+        description: 'Include their name, age (if celebrating a milestone), personality traits, hobbies, memorable moments you\'ve shared, inside jokes, and anything that makes them uniquely them. The more specific, the more personal the song.',
+      },
+      {
+        title: 'How long does a birthday song take to create?',
+        description: 'About 2 minutes to input your story and choose a style, then about 1 minute for AI generation. You\'ll have a complete, shareable song in under 5 minutes total.',
+      },
+      {
+        title: 'Can I play it at a birthday party?',
+        description: 'Absolutely! You get a downloadable MP3 and a shareable link. Play it on speakers at the party, project it on a screen, or share it in a group chat before the celebration.',
+      },
+      {
+        title: 'What if it\'s a last-minute gift?',
+        description: 'Perfect timing! Unlike custom gifts that take weeks, a personalized birthday song takes just minutes to create. Even if the party starts in an hour, you can have a custom song ready.',
+      },
+    ]}
+  />
+
+  <!-- CTA Section -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Create a Birthday Song Now',
+        href: 'https://app.yourbanger.com/auth?tab=signup',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Their Birthday Is Coming Up
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      You know who you're thinking about. You know what makes them laugh. <br class="hidden md:block" />
+      In 2 minutes, you could have a song that makes their year.
+    </Fragment>
+  </CallToAction>
+</Layout>

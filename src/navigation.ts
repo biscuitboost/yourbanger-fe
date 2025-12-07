@@ -14,6 +14,10 @@ export const headerData = {
       text: 'FAQ',
       href: getPermalink('/faq'),
     },
+    {
+      text: 'Blog',
+      href: getBlogPermalink(),
+    },
   ],
   actions: [
     { text: 'Sign In', href: 'https://app.yourbanger.com/auth', target: '_blank' },
@@ -29,6 +33,14 @@ export const footerData = {
         { text: 'Examples', href: getPermalink('/examples') },
         { text: 'Pricing', href: getPermalink('/pricing') },
         { text: 'FAQ', href: getPermalink('/faq') },
+      ],
+    },
+    {
+      title: 'Use Cases',
+      links: [
+        { text: 'Birthday Songs', href: getPermalink('/birthday-songs') },
+        { text: 'Wedding Songs', href: getPermalink('/wedding-songs') },
+        { text: 'Blog', href: getBlogPermalink() },
       ],
     },
     {

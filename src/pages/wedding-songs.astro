@@ -1,0 +1,327 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import { Icon } from 'astro-icon/components';
+
+const metadata = {
+  title: 'Personalized Wedding Songs | Custom Wedding & Anniversary Music | YourBanger',
+  description: 'Create a personalized wedding song for first dances, toasts, or anniversaries. Turn your love story into a custom AI song in minutes. Unique & unforgettable.',
+  openGraph: {
+    title: 'Personalized Wedding Songs - Your Love Story in Music',
+    description: 'Create a custom wedding song in minutes. Perfect for first dances, wedding toasts, and anniversaries.',
+    type: 'website',
+  },
+};
+
+const useCases = [
+  {
+    icon: 'tabler:heart',
+    title: 'First Dance',
+    description: 'A completely unique song about your journey together. Not a cover—your actual story.',
+  },
+  {
+    icon: 'tabler:microphone',
+    title: 'Wedding Toast',
+    description: 'Skip the nervous speech. Deliver a song that tells their story better than words.',
+  },
+  {
+    icon: 'tabler:calendar-heart',
+    title: 'Anniversary Surprise',
+    description: 'Celebrate your years together with a song about how far you\'ve come.',
+  },
+  {
+    icon: 'tabler:gift',
+    title: 'Couple\'s Gift',
+    description: 'The perfect gift from friends or family that the couple will treasure forever.',
+  },
+];
+
+const examples = [
+  {
+    title: 'Forever Starts Today',
+    style: 'Ballad',
+    description: 'A heartfelt ballad about meeting on a dating app, a terrible first date, and knowing anyway.',
+    gradient: 'from-rose-500 to-pink-500',
+  },
+  {
+    title: 'A Decade of Us',
+    style: 'R&B',
+    description: 'A smooth track about surviving IKEA furniture assembly and still choosing each other every day.',
+    gradient: 'from-purple-500 to-indigo-500',
+  },
+  {
+    title: 'Two Become One',
+    style: 'Acoustic',
+    description: 'An intimate acoustic piece capturing the quiet moments that built a lifetime together.',
+    gradient: 'from-amber-500 to-orange-500',
+  },
+];
+
+const testimonials = [
+  {
+    quote: "We used it for our first dance. Not a dry eye in the house—even the DJ was crying.",
+    author: 'Sarah & Mike',
+    location: 'Portland, OR',
+  },
+  {
+    quote: "Best man used this instead of a traditional toast. The couple made him play it twice.",
+    author: 'James T.',
+    location: 'Austin, TX',
+  },
+  {
+    quote: "Got one for my wife for our 10th anniversary. She's made it her ringtone.",
+    author: 'David K.',
+    location: 'Chicago, IL',
+  },
+];
+
+// Schema for SEO
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Personalized Wedding Song Creation',
+  description: 'AI-powered custom wedding and anniversary song creation service. Create unique love songs in minutes.',
+  provider: {
+    '@type': 'Organization',
+    name: 'YourBanger',
+    url: 'https://yourbanger.com'
+  },
+  serviceType: 'Custom Music Creation',
+  areaServed: 'Worldwide',
+  offers: {
+    '@type': 'Offer',
+    price: '1.40',
+    priceCurrency: 'USD',
+    description: 'Per song (10 songs for $14)'
+  }
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Service Schema for SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[var(--secondary)] rounded-full border border-[var(--border)] mb-6">
+        <Icon name="tabler:heart" class="w-4 h-4 text-rose-500" />
+        <span class="text-sm text-[var(--muted-foreground)]">Your Love Story Deserves Its Own Song</span>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
+        Personalized <span class="text-rose-500">Wedding Songs</span>
+      </h1>
+
+      <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">
+        Turn your love story into a custom song for first dances, toasts, and anniversaries. 
+        A completely unique piece of music that captures your journey together.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="https://app.yourbanger.com/auth?tab=signup"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center bg-rose-500 hover:bg-rose-600 text-white font-medium text-lg px-8 h-14 rounded-xl shadow-lg shadow-rose-500/25 hover:shadow-rose-500/40 transition-all"
+        >
+          Create Your Wedding Song
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/examples"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Hear Examples
+        </a>
+      </div>
+
+      <p class="text-sm text-[var(--muted-foreground)] mt-4">
+        Just $1.40 per song • Ready in minutes • Unforgettable forever
+      </p>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Perfect For Every Moment
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          From the ceremony to the celebration
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {useCases.map((useCase) => (
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-rose-500/50 transition-all">
+            <div class="w-12 h-12 bg-rose-500/10 rounded-xl flex items-center justify-center mb-4">
+              <Icon name={useCase.icon} class="w-6 h-6 text-rose-500" />
+            </div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">{useCase.title}</h3>
+            <p class="text-[var(--muted-foreground)]">{useCase.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Real Couples, Real Songs
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {testimonials.map((testimonial) => (
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+            <div class="flex gap-1 mb-4">
+              {[1,2,3,4,5].map(() => (
+                <svg class="w-5 h-5 text-yellow-500 fill-yellow-500" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+            <blockquote class="text-[var(--foreground)] mb-4">"{testimonial.quote}"</blockquote>
+            <div>
+              <p class="font-semibold text-[var(--foreground)]">{testimonial.author}</p>
+              <p class="text-sm text-[var(--muted-foreground)]">{testimonial.location}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Wedding Song Examples
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          Hear what your custom wedding song could sound like
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {examples.map((example) => (
+          <div class="group relative bg-[var(--card)] rounded-xl border border-[var(--border)] overflow-hidden hover:border-rose-500/50 transition-all">
+            <div class={`absolute inset-0 bg-gradient-to-br ${example.gradient} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
+            <div class="relative p-6">
+              <span class="inline-block px-3 py-1 bg-rose-500/10 text-rose-500 text-sm font-medium rounded-full mb-3">
+                {example.style}
+              </span>
+              <h3 class="text-xl font-semibold text-[var(--foreground)] mb-2">{example.title}</h3>
+              <p class="text-[var(--muted-foreground)]">{example.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/examples" class="inline-flex items-center text-rose-500 hover:underline font-medium">
+          Listen to all examples
+          <Icon name="tabler:arrow-right" class="w-4 h-4 ml-1" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Create Your Wedding Song in 3 Steps
+        </h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="flex items-start gap-4 p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold shrink-0">1</div>
+          <div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-1">Tell Your Love Story</h3>
+            <p class="text-[var(--muted-foreground)]">Share how you met, your favorite memories together, inside jokes, and what makes your relationship special.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold shrink-0">2</div>
+          <div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-1">Choose Your Style</h3>
+            <p class="text-[var(--muted-foreground)]">Pick from romantic ballads, upbeat pop, classic R&B, acoustic, or any genre that fits your love story.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold shrink-0">3</div>
+          <div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-1">Share the Magic</h3>
+            <p class="text-[var(--muted-foreground)]">Get your custom song instantly. Use it for your first dance, wedding toast, or anniversary surprise.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQs
+    title="Wedding Song Questions"
+    items={[
+      {
+        title: 'Can I use this for a first dance?',
+        description: 'Absolutely! Many couples use their personalized song for their first dance. It\'s completely unique to your story—not a cover of someone else\'s song.',
+      },
+      {
+        title: 'How do I include our story details?',
+        description: 'Share how you met, memorable dates, proposal stories, inside jokes, quirks you love about each other, and any specific moments you want mentioned. The more personal details, the more meaningful the song.',
+      },
+      {
+        title: 'Can the best man/maid of honor make a song for the toast?',
+        description: 'Yes! This is one of our most popular uses. Skip the nervous speech and deliver a song about the couple that everyone will remember.',
+      },
+      {
+        title: 'Is this good for anniversary gifts?',
+        description: 'Perfect for anniversaries! Include highlights from your years together—trips you\'ve taken, challenges you\'ve overcome, and how your love has grown.',
+      },
+      {
+        title: 'What if I\'m not happy with the song?',
+        description: 'You can edit the lyrics before final generation and regenerate with the same credit. We want you to have a song you\'ll treasure forever.',
+      },
+    ]}
+  />
+
+  <!-- CTA Section -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Create Your Wedding Song',
+        href: 'https://app.yourbanger.com/auth?tab=signup',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Your Love Story Deserves a Song
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      From how you met to where you're going—capture it all in music. <br class="hidden md:block" />
+      Create a wedding song they'll play at every anniversary.
+    </Fragment>
+  </CallToAction>
+</Layout>
