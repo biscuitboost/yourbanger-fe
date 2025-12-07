@@ -1,8 +1,9 @@
 ---
-publishDate: 2024-12-06T00:00:00Z
+publishDate: 2024-10-14T00:00:00Z
 title: "Last-Minute Gift Ideas That Don't Look Last-Minute"
 excerpt: "The party is tomorrow and you still don't have a gift. Don't panic. These last-minute gift ideas are thoughtful, personal, and can be ready in hours—not days."
-image: ~/assets/images/og-image.jpg
+image: ~/assets/images/blog/last-minute-gifts-hero.jpg
+# IMAGE NEEDED: Hero image showing someone on their phone/laptop quickly creating a gift, with a clock showing urgency - modern, clean aesthetic
 category: Gift Guides
 tags:
   - last minute gifts
@@ -34,6 +35,9 @@ Here are options that require no shipping and minimal panic.
 ## Instant Gifts That Feel Thoughtful
 
 ### 1. A Personalized Song (Ready in 2 Minutes)
+
+<!-- IMAGE: Screenshot or mockup of YourBanger interface showing quick song creation -->
+<!-- Alt text: "Creating a personalized song in just 2 minutes on YourBanger" -->
 
 **Time needed:** About 5 minutes total
 
@@ -88,6 +92,9 @@ Text 5-10 people who matter to them: "Send me a 30-second video saying what [Nam
 Even if you only get 3-4 responses in time, it's still meaningful. Compile using free tools like iMovie or Canva.
 
 ---
+
+<!-- IMAGE: Person wrapping a gift with a satisfied expression, clock visible -->
+<!-- Alt text: "Successfully prepared last-minute gift ready to give" -->
 
 ## Semi-Last-Minute (If You Have 24-48 Hours)
 

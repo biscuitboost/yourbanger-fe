@@ -1,0 +1,268 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import { Icon } from 'astro-icon/components';
+
+const metadata = {
+  title: 'Personalized Anniversary Songs | Custom Love Music | YourBanger',
+  description: 'Create a personalized anniversary song celebrating your years together. From 1st to 50th anniversary, turn your love story into custom music.',
+  openGraph: {
+    title: 'Personalized Anniversary Songs - Your Love Story in Music',
+    description: 'Create a custom anniversary song in minutes. Celebrate your journey together with personalized music.',
+    type: 'website',
+  },
+};
+
+const milestones = [
+  { year: '1st', name: 'Paper', description: 'Celebrate surviving the first year together' },
+  { year: '5th', name: 'Wood', description: 'Half a decade of inside jokes and adventures' },
+  { year: '10th', name: 'Tin', description: 'A decade of building your life together' },
+  { year: '25th', name: 'Silver', description: 'A quarter century of love and memories' },
+  { year: '50th', name: 'Gold', description: 'A lifetime of moments captured in song' },
+];
+
+const useCases = [
+  {
+    icon: 'tabler:calendar-heart',
+    title: 'Anniversary Surprise',
+    description: 'Wake them up to a song about your journey. Better than flowers.',
+  },
+  {
+    icon: 'tabler:music',
+    title: 'Renewal of Vows',
+    description: 'A custom song for your ceremony that captures everything since "I do."',
+  },
+  {
+    icon: 'tabler:heart',
+    title: 'Date Night',
+    description: 'Play it at dinner. Watch them realize what\'s happening.',
+  },
+  {
+    icon: 'tabler:gift',
+    title: 'The Gift',
+    description: 'Skip the jewelry store. Give them something truly one-of-a-kind.',
+  },
+];
+
+// Schema for SEO
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Personalized Anniversary Song Creation',
+  description: 'AI-powered custom anniversary song creation service. Create unique love songs celebrating your relationship in minutes.',
+  provider: {
+    '@type': 'Organization',
+    name: 'YourBanger',
+    url: 'https://yourbanger.com'
+  },
+  serviceType: 'Custom Music Creation',
+  areaServed: 'Worldwide',
+  offers: {
+    '@type': 'Offer',
+    price: '1.40',
+    priceCurrency: 'USD',
+    description: 'Per song (10 songs for $14)'
+  }
+};
+---
+
+<Layout metadata={metadata}>
+  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[var(--secondary)] rounded-full border border-[var(--border)] mb-6">
+        <Icon name="tabler:heart" class="w-4 h-4 text-red-500" />
+        <span class="text-sm text-[var(--muted-foreground)]">Celebrate Every Year Together</span>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
+        Personalized <span class="text-red-500">Anniversary Songs</span>
+      </h1>
+
+      <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">
+        From your first anniversary to your fiftieth, turn your years together into a custom song. 
+        Every adventure, every inside joke, every reason you'd choose them again.
+      </p>
+
+      <!-- IMAGE PLACEHOLDER -->
+      <!-- Hero image: Couple listening to something together, looking at each other lovingly, perhaps at dinner or at home -->
+      <!-- Alt text: "Couple enjoying personalized anniversary song together" -->
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="https://app.yourbanger.com/auth?tab=signup"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center bg-red-500 hover:bg-red-600 text-white font-medium text-lg px-8 h-14 rounded-xl shadow-lg shadow-red-500/25 hover:shadow-red-500/40 transition-all"
+        >
+          Create Your Anniversary Song
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/examples"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Hear Examples
+        </a>
+      </div>
+
+      <p class="text-sm text-[var(--muted-foreground)] mt-4">
+        Just $1.40 per song • Ready in minutes • Play it every year
+      </p>
+    </div>
+  </section>
+
+  <!-- Anniversary Milestones -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Every Milestone Deserves a Song
+        </h2>
+      </div>
+
+      <!-- IMAGE PLACEHOLDER -->
+      <!-- Image: Visual timeline showing different anniversary years with couples at various life stages -->
+      <!-- Alt text: "Anniversary milestones from 1st to 50th year" -->
+
+      <div class="flex flex-wrap justify-center gap-4">
+        {milestones.map((milestone) => (
+          <div class="p-4 bg-[var(--card)] rounded-xl border border-[var(--border)] text-center min-w-[140px]">
+            <div class="text-2xl font-bold text-red-500">{milestone.year}</div>
+            <div class="text-sm font-medium text-[var(--foreground)]">{milestone.name}</div>
+            <div class="text-xs text-[var(--muted-foreground)] mt-1">{milestone.description}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          How to Use Your Anniversary Song
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {useCases.map((useCase) => (
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-red-500/50 transition-all">
+            <div class="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center mb-4">
+              <Icon name={useCase.icon} class="w-6 h-6 text-red-500" />
+            </div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">{useCase.title}</h3>
+            <p class="text-[var(--muted-foreground)]">{useCase.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Include -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          What to Include in Your Anniversary Song
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-3">Your Beginning</h3>
+          <ul class="space-y-2 text-[var(--muted-foreground)]">
+            <li>• How you met</li>
+            <li>• First date details</li>
+            <li>• When you knew they were "the one"</li>
+            <li>• The proposal story</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-3">Your Adventures</h3>
+          <ul class="space-y-2 text-[var(--muted-foreground)]">
+            <li>• Trips you've taken</li>
+            <li>• Challenges you've overcome</li>
+            <li>• Homes you've made</li>
+            <li>• Milestones you've hit</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-3">Your Inside World</h3>
+          <ul class="space-y-2 text-[var(--muted-foreground)]">
+            <li>• Nicknames for each other</li>
+            <li>• Inside jokes only you understand</li>
+            <li>• Their quirks you love</li>
+            <li>• Phrases you always say</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-3">Your Future</h3>
+          <ul class="space-y-2 text-[var(--muted-foreground)]">
+            <li>• What you're looking forward to</li>
+            <li>• Dreams you share</li>
+            <li>• Why you'd choose them again</li>
+            <li>• What they mean to you</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQs
+    title="Anniversary Song Questions"
+    items={[
+      {
+        title: 'When should I surprise them with it?',
+        description: 'Popular moments: as a morning surprise, at dinner, during a quiet moment at home, or as part of a larger gift reveal. Some couples play it at their anniversary party.',
+      },
+      {
+        title: 'What style works best for love songs?',
+        description: 'It depends on your relationship! Ballads work for sentimental couples. Country for storytelling. Pop for upbeat celebrations. R&B for romantic vibes. Choose what matches your energy.',
+      },
+      {
+        title: 'Can I include our wedding song reference?',
+        description: 'Absolutely. Reference your wedding song, first dance, or any music that\'s meaningful to your relationship.',
+      },
+      {
+        title: 'What if we\'ve been together a really long time?',
+        description: 'Focus on highlights and themes rather than trying to cover everything chronologically. The best anniversary songs capture the feeling of your relationship, not just the timeline.',
+      },
+      {
+        title: 'Can I make it funny too?',
+        description: 'Yes! Many of the best anniversary songs include loving roasts—their terrible cooking, their snoring, their refusal to ask for directions. Love includes laughter.',
+      },
+    ]}
+  />
+
+  <!-- CTA Section -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Create Your Anniversary Song',
+        href: 'https://app.yourbanger.com/auth?tab=signup',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Your Story Deserves a Song
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Every year together is worth celebrating. <br class="hidden md:block" />
+      Create an anniversary song you'll play for years to come.
+    </Fragment>
+  </CallToAction>
+</Layout>

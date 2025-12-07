@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -40,6 +40,9 @@ export const footerData = {
       links: [
         { text: 'Birthday Songs', href: getPermalink('/birthday-songs') },
         { text: 'Wedding Songs', href: getPermalink('/wedding-songs') },
+        { text: 'Anniversary Songs', href: getPermalink('/anniversary-songs') },
+        { text: 'Retirement Songs', href: getPermalink('/retirement-songs') },
+        { text: 'Funny Songs', href: getPermalink('/funny-songs') },
         { text: 'Blog', href: getBlogPermalink() },
       ],
     },

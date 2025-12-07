@@ -1,0 +1,279 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import { Icon } from 'astro-icon/components';
+
+const metadata = {
+  title: 'Funny Personalized Songs | Custom Comedy Music | YourBanger',
+  description: 'Create hilarious personalized songs that roast your friends, celebrate inside jokes, and make everyone laugh. Perfect for parties, gifts, and unforgettable moments.',
+  openGraph: {
+    title: 'Funny Personalized Songs - Custom Comedy Music',
+    description: 'Create a hilarious custom song in minutes. Roast your friends, celebrate inside jokes, and make memories.',
+    type: 'website',
+  },
+};
+
+const useCases = [
+  {
+    icon: 'tabler:mood-happy',
+    title: 'Friend Roasts',
+    description: 'Lovingly mock their quirks, habits, and legendary fails in song form.',
+  },
+  {
+    icon: 'tabler:confetti',
+    title: 'Party Entertainment',
+    description: 'The best party trick: a custom song about the guest of honor.',
+  },
+  {
+    icon: 'tabler:gift',
+    title: 'Gag Gifts',
+    description: 'Better than a gift card. A song about their weird obsessions.',
+  },
+  {
+    icon: 'tabler:users',
+    title: 'Inside Jokes',
+    description: 'Turn your group\'s legendary moments into a professional track.',
+  },
+];
+
+const examples = [
+  {
+    title: 'The Parking Legend',
+    style: 'Pop',
+    description: 'A banger about someone\'s legendary inability to parallel park and their 47-point turns.',
+    gradient: 'from-pink-500 to-rose-500',
+  },
+  {
+    title: 'Coffee Addiction',
+    style: 'Rock',
+    description: 'An anthem celebrating their inability to function without their fourth espresso.',
+    gradient: 'from-amber-500 to-orange-500',
+  },
+  {
+    title: 'The Reply-All King',
+    style: 'Hip Hop',
+    description: 'A tribute to the coworker who\'s accidentally replied-all to the entire company. Twice.',
+    gradient: 'from-purple-500 to-indigo-500',
+  },
+];
+
+// Schema for SEO
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Funny Personalized Song Creation',
+  description: 'AI-powered custom comedy song creation service. Create hilarious roast songs and inside joke tracks in minutes.',
+  provider: {
+    '@type': 'Organization',
+    name: 'YourBanger',
+    url: 'https://yourbanger.com'
+  },
+  serviceType: 'Custom Music Creation',
+  areaServed: 'Worldwide',
+  offers: {
+    '@type': 'Offer',
+    price: '1.40',
+    priceCurrency: 'USD',
+    description: 'Per song (10 songs for $14)'
+  }
+};
+---
+
+<Layout metadata={metadata}>
+  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[var(--secondary)] rounded-full border border-[var(--border)] mb-6">
+        <Icon name="tabler:mood-happy" class="w-4 h-4 text-pink-500" />
+        <span class="text-sm text-[var(--muted-foreground)]">Make Them Laugh (Then Cry)</span>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
+        Funny <span class="text-pink-500">Personalized Songs</span>
+      </h1>
+
+      <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">
+        Turn inside jokes, embarrassing stories, and lovable quirks into a professional song. 
+        The ultimate roast. The perfect party moment. The gift they'll never forget.
+      </p>
+
+      <!-- IMAGE PLACEHOLDER -->
+      <!-- Hero image: Group of friends laughing together, one looking embarrassed but happy, perhaps at a party with a phone/speaker playing -->
+      <!-- Alt text: "Friends laughing while listening to funny personalized roast song" -->
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="https://app.yourbanger.com/auth?tab=signup"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center bg-pink-500 hover:bg-pink-600 text-white font-medium text-lg px-8 h-14 rounded-xl shadow-lg shadow-pink-500/25 hover:shadow-pink-500/40 transition-all"
+        >
+          Create a Funny Song
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/examples"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Hear Examples
+        </a>
+      </div>
+
+      <p class="text-sm text-[var(--muted-foreground)] mt-4">
+        Just $1.40 per song • Ready in minutes • Legendary forever
+      </p>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Perfect For Maximum Laughs
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          From friendly roasts to legendary party moments
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {useCases.map((useCase) => (
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-pink-500/50 transition-all">
+            <div class="w-12 h-12 bg-pink-500/10 rounded-xl flex items-center justify-center mb-4">
+              <Icon name={useCase.icon} class="w-6 h-6 text-pink-500" />
+            </div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">{useCase.title}</h3>
+            <p class="text-[var(--muted-foreground)]">{useCase.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Funny Song Examples
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          See what kind of hilarious songs you can create
+        </p>
+      </div>
+
+      <!-- IMAGE PLACEHOLDER -->
+      <!-- Image: Collage of funny moments - failed parking, coffee obsession, office mishaps -->
+      <!-- Alt text: "Funny moments that make great personalized song material" -->
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {examples.map((example) => (
+          <div class="group relative bg-[var(--card)] rounded-xl border border-[var(--border)] overflow-hidden hover:border-pink-500/50 transition-all">
+            <div class={`absolute inset-0 bg-gradient-to-br ${example.gradient} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
+            <div class="relative p-6">
+              <span class="inline-block px-3 py-1 bg-pink-500/10 text-pink-500 text-sm font-medium rounded-full mb-3">
+                {example.style}
+              </span>
+              <h3 class="text-xl font-semibold text-[var(--foreground)] mb-2">{example.title}</h3>
+              <p class="text-[var(--muted-foreground)]">{example.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/examples" class="inline-flex items-center text-pink-500 hover:underline font-medium">
+          Listen to all examples
+          <Icon name="tabler:arrow-right" class="w-4 h-4 ml-1" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roast Ideas -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          What Makes a Great Roast Song
+        </h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">🎯 Their Weird Obsessions</h3>
+          <p class="text-[var(--muted-foreground)]">The thing they're unreasonably passionate about. Their relationship with their plants. Their fantasy football intensity. Their strong opinions about the correct way to load a dishwasher.</p>
+        </div>
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">😅 Their Legendary Fails</h3>
+          <p class="text-[var(--muted-foreground)]">That time they locked themselves out. The infamous reply-all incident. The vacation that went completely sideways. The stories everyone still talks about.</p>
+        </div>
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">🤪 Their Quirks</h3>
+          <p class="text-[var(--muted-foreground)]">The phrases they overuse. Their snack preferences. Their inexplicable fears. The thing everyone notices but nobody says out loud.</p>
+        </div>
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">❤️ The Love Underneath</h3>
+          <p class="text-[var(--muted-foreground)]">The best roasts end with love. Include why they're actually amazing—it makes the jokes hit harder and the ending land better.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQs
+    title="Funny Song Questions"
+    items={[
+      {
+        title: 'Will they actually find it funny?',
+        description: 'If you know them well enough to include their real quirks and inside jokes, yes. The specificity is what makes it hilarious. Generic roasts fall flat—personal ones kill.',
+      },
+      {
+        title: 'How mean can I go?',
+        description: 'Keep it loving. The best roasts come from a place of affection. Mock the things they\'d mock themselves about. Avoid anything actually hurtful or sensitive.',
+      },
+      {
+        title: 'Can I make it about our friend group?',
+        description: 'Absolutely. Some of the funniest songs are about group dynamics, shared memories, and the running jokes your crew has accumulated over years.',
+      },
+      {
+        title: 'What if I\'m not funny?',
+        description: 'You don\'t have to be. Just share the real stories and quirks—the AI does the songwriting. Specificity is funnier than cleverness.',
+      },
+      {
+        title: 'Can I hear it before sharing?',
+        description: 'Yes! You can listen, edit the lyrics, and regenerate until it\'s perfect. Most people tweak a few lines to get the timing right.',
+      },
+    ]}
+  />
+
+  <!-- CTA Section -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Create a Funny Song',
+        href: 'https://app.yourbanger.com/auth?tab=signup',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      They'll Laugh. They'll Cry. They'll Play It Again.
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Turn inside jokes and legendary moments into music. <br class="hidden md:block" />
+      The best gifts are the ones everyone remembers.
+    </Fragment>
+  </CallToAction>
+</Layout>

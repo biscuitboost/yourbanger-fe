@@ -1,8 +1,9 @@
 ---
-publishDate: 2024-12-07T00:00:00Z
+publishDate: 2024-06-10T00:00:00Z
 title: "10 Unique Birthday Gift Ideas That Will Make Them Cry (Happy Tears)"
 excerpt: "Forget the gift card. These personalized birthday gift ideas will create moments they'll remember forever. From custom songs to handwritten letters, find the perfect meaningful gift."
-image: ~/assets/images/og-image.jpg
+image: ~/assets/images/blog/birthday-gift-ideas-hero.jpg
+# IMAGE NEEDED: Hero image showing wrapped birthday gifts with personal touches - perhaps a custom song QR code, photo book, and handwritten letter arranged aesthetically
 category: Gift Guides
 tags:
   - birthday gifts
@@ -27,6 +28,9 @@ Here are 10 unique birthday gift ideas that go beyond the ordinary.
 
 ## 1. A Personalized Song About Them
 
+<!-- IMAGE: Person reacting emotionally to hearing a personalized song, perhaps with headphones or at a party -->
+<!-- Alt text: "Person crying happy tears while listening to their personalized birthday song" -->
+
 **Why it works:** Nothing says "I really know you" like a song that mentions their quirks, your shared memories, and inside jokes only you two understand.
 
 **What it is:** A professionally produced song with custom lyrics about the birthday person. Services like [YourBanger](/) let you create personalized birthday songs in about 2 minutes—just share their story, pick a music style, and get a complete track.
@@ -38,6 +42,9 @@ Here are 10 unique birthday gift ideas that go beyond the ordinary.
 > "I made a song about my dad's obsession with his smoker grill. We played it at the party, and he called me the next morning to play it again." — Marcus T., Austin, TX
 
 ## 2. A Custom Photo Book with Commentary
+
+<!-- IMAGE: Open photo book showing photos with handwritten-style captions -->
+<!-- Alt text: "Custom photo book with funny personal captions next to photos" -->
 
 **Why it works:** Photos alone are nice. Photos with your hilarious commentary about what was really happening? Priceless.
 
@@ -126,6 +133,9 @@ This is different from option #1 because it's specifically the birthday celebrat
 **Cost:** Varies
 
 ---
+
+<!-- IMAGE: Collage of various personalized gifts including custom song player, photo book, memory jar -->
+<!-- Alt text: "Collection of personalized birthday gift ideas arranged on a table" -->
 
 ## The Common Thread
 

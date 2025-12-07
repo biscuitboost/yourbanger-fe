@@ -1,0 +1,303 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import { Icon } from 'astro-icon/components';
+
+const metadata = {
+  title: 'Personalized Retirement Songs | Custom Farewell Music | YourBanger',
+  description: 'Create a personalized retirement song to celebrate their career and legacy. Perfect for retirement parties, farewell speeches, and honoring decades of service.',
+  openGraph: {
+    title: 'Personalized Retirement Songs - Honor Their Legacy in Music',
+    description: 'Create a custom retirement song in minutes. Celebrate their career, inside jokes, and lasting impact.',
+    type: 'website',
+  },
+};
+
+const useCases = [
+  {
+    icon: 'tabler:briefcase',
+    title: 'Retirement Party',
+    description: 'Replace the awkward speech with a song that captures their entire career journey.',
+  },
+  {
+    icon: 'tabler:microphone',
+    title: 'Farewell Speech',
+    description: 'Skip the nervous public speaking. Let the song tell their story.',
+  },
+  {
+    icon: 'tabler:trophy',
+    title: 'Career Tribute',
+    description: 'Honor decades of dedication with something they\'ll treasure forever.',
+  },
+  {
+    icon: 'tabler:heart',
+    title: 'Team Gift',
+    description: 'The perfect group gift that shows you actually noticed who they are.',
+  },
+];
+
+const examples = [
+  {
+    title: 'The Legend Retires',
+    style: 'Rock Anthem',
+    description: 'An epic tribute to 35 years of legendary Monday morning meetings and coffee addiction.',
+    gradient: 'from-amber-500 to-orange-500',
+  },
+  {
+    title: 'Finally Free',
+    style: 'Country',
+    description: 'A heartfelt ballad about no more alarm clocks, endless golf, and grandkid time.',
+    gradient: 'from-emerald-500 to-teal-500',
+  },
+  {
+    title: 'The Boss',
+    style: 'R&B',
+    description: 'A smooth tribute to the manager who somehow remembered everyone\'s birthday.',
+    gradient: 'from-purple-500 to-indigo-500',
+  },
+];
+
+// Schema for SEO
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Personalized Retirement Song Creation',
+  description: 'AI-powered custom retirement and farewell song creation service. Create unique career tribute songs in minutes.',
+  provider: {
+    '@type': 'Organization',
+    name: 'YourBanger',
+    url: 'https://yourbanger.com'
+  },
+  serviceType: 'Custom Music Creation',
+  areaServed: 'Worldwide',
+  offers: {
+    '@type': 'Offer',
+    price: '1.40',
+    priceCurrency: 'USD',
+    description: 'Per song (10 songs for $14)'
+  }
+};
+---
+
+<Layout metadata={metadata}>
+  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[var(--secondary)] rounded-full border border-[var(--border)] mb-6">
+        <Icon name="tabler:trophy" class="w-4 h-4 text-amber-500" />
+        <span class="text-sm text-[var(--muted-foreground)]">Honor Their Legacy</span>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
+        Personalized <span class="text-amber-500">Retirement Songs</span>
+      </h1>
+
+      <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">
+        Celebrate decades of dedication with a custom song about their career, quirks, and lasting impact. 
+        Better than a gold watch. More memorable than a card signed by everyone.
+      </p>
+
+      <!-- IMAGE PLACEHOLDER -->
+      <!-- Hero image: Retirement party scene with colleagues gathered around, someone playing a custom song, retiree looking emotional and happy -->
+      <!-- Alt text: "Colleagues presenting personalized retirement song at farewell party" -->
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="https://app.yourbanger.com/auth?tab=signup"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-medium text-lg px-8 h-14 rounded-xl shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all"
+        >
+          Create Their Retirement Song
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/examples"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Hear Examples
+        </a>
+      </div>
+
+      <p class="text-sm text-[var(--muted-foreground)] mt-4">
+        Just $1.40 per song • Ready in minutes • A legacy gift
+      </p>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Perfect For Every Farewell
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          From intimate gatherings to company-wide celebrations
+        </p>
+      </div>
+
+      <!-- IMAGE PLACEHOLDER -->
+      <!-- Image: Split image showing different retirement celebration scenarios -->
+      <!-- Alt text: "Different retirement celebration scenarios where personalized songs shine" -->
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {useCases.map((useCase) => (
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-amber-500/50 transition-all">
+            <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center mb-4">
+              <Icon name={useCase.icon} class="w-6 h-6 text-amber-500" />
+            </div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">{useCase.title}</h3>
+            <p class="text-[var(--muted-foreground)]">{useCase.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Retirement Song Examples
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          Hear what a personalized retirement tribute could sound like
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {examples.map((example) => (
+          <div class="group relative bg-[var(--card)] rounded-xl border border-[var(--border)] overflow-hidden hover:border-amber-500/50 transition-all">
+            <div class={`absolute inset-0 bg-gradient-to-br ${example.gradient} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
+            <div class="relative p-6">
+              <span class="inline-block px-3 py-1 bg-amber-500/10 text-amber-500 text-sm font-medium rounded-full mb-3">
+                {example.style}
+              </span>
+              <h3 class="text-xl font-semibold text-[var(--foreground)] mb-2">{example.title}</h3>
+              <p class="text-[var(--muted-foreground)]">{example.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/examples" class="inline-flex items-center text-amber-500 hover:underline font-medium">
+          Listen to all examples
+          <Icon name="tabler:arrow-right" class="w-4 h-4 ml-1" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Include -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          What to Include in Their Song
+        </h2>
+      </div>
+
+      <!-- IMAGE PLACEHOLDER -->
+      <!-- Image: Infographic showing elements of a great retirement song -->
+      <!-- Alt text: "Key elements to include in a personalized retirement song" -->
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-3">Career Highlights</h3>
+          <ul class="space-y-2 text-[var(--muted-foreground)]">
+            <li>• Years of service and major milestones</li>
+            <li>• Promotions and achievements</li>
+            <li>• Famous projects or deals</li>
+            <li>• Industry reputation</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-3">Personal Touches</h3>
+          <ul class="space-y-2 text-[var(--muted-foreground)]">
+            <li>• Office quirks everyone knows</li>
+            <li>• Catchphrases they always say</li>
+            <li>• Legendary stories</li>
+            <li>• Their impact on colleagues</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-3">The Future</h3>
+          <ul class="space-y-2 text-[var(--muted-foreground)]">
+            <li>• Retirement plans (golf, travel, grandkids)</li>
+            <li>• What they're looking forward to</li>
+            <li>• Inside jokes about "freedom"</li>
+            <li>• Wishes from the team</li>
+          </ul>
+        </div>
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-3">The Roast (Optional)</h3>
+          <ul class="space-y-2 text-[var(--muted-foreground)]">
+            <li>• Lovingly mock their habits</li>
+            <li>• Reference running jokes</li>
+            <li>• Their "famous" quirks</li>
+            <li>• Embarrassing stories (keep it kind)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQs
+    title="Retirement Song Questions"
+    items={[
+      {
+        title: 'How does the team contribute to the song?',
+        description: 'Collect stories, quotes, and memories from colleagues via email or a shared doc. The more specific details you gather, the more personalized the song. One person then inputs everything into YourBanger.',
+      },
+      {
+        title: 'When should we play it at the party?',
+        description: 'Most teams play it during the speech/toast portion. Some use it as the finale. Either works—just make sure you have speakers ready and everyone\'s attention.',
+      },
+      {
+        title: 'Can we include the whole team\'s names?',
+        description: 'You can mention specific colleagues, departments, or inside jokes involving team members. The more personal details, the better the reaction.',
+      },
+      {
+        title: 'What if they worked here for 30+ years?',
+        description: 'Focus on the highlights and most memorable moments rather than a chronological list. The best retirement songs capture their personality and impact, not just their resume.',
+      },
+      {
+        title: 'Can we get it printed as a gift too?',
+        description: 'You get a shareable link and downloadable MP3. Some teams create a QR code linking to the song and frame it as a physical gift alongside the digital version.',
+      },
+    ]}
+  />
+
+  <!-- CTA Section -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Create Their Retirement Song',
+        href: 'https://app.yourbanger.com/auth?tab=signup',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      They Gave Years. Give Them a Song.
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      A career deserves more than a card. <br class="hidden md:block" />
+      Create a personalized retirement song they'll play for everyone who visits.
+    </Fragment>
+  </CallToAction>
+</Layout>
