@@ -2,38 +2,97 @@
 ---
 
 <span
-  class="logo-container self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-purple-600 dark:text-purple-400 whitespace-nowrap"
+  class="logo-container self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 dark:text-white whitespace-nowrap flex items-center gap-2"
 >
-  <span class="logo-note inline-block">🎵</span> yourbanger.com
+  <svg class="synth-icon" width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Synth body -->
+    <rect x="1" y="6" width="26" height="13" rx="2" fill="currentColor" class="synth-body"/>
+    <!-- Keys -->
+    <rect class="key key-1" x="4" y="10" width="3" height="8" rx="0.5" fill="white"/>
+    <rect class="key key-2" x="8" y="10" width="3" height="8" rx="0.5" fill="white"/>
+    <rect class="key key-3" x="12" y="10" width="3" height="8" rx="0.5" fill="white"/>
+    <rect class="key key-4" x="16" y="10" width="3" height="8" rx="0.5" fill="white"/>
+    <rect class="key key-5" x="20" y="10" width="3" height="8" rx="0.5" fill="white"/>
+    <!-- Sound waves -->
+    <path class="wave wave-1" d="M6 4C6 4 7 2 8 4C9 6 10 4 10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path class="wave wave-2" d="M12 3C12 3 13.5 0 15 3C16.5 6 18 3 18 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path class="wave wave-3" d="M20 4C20 4 21 2 22 4C23 6 24 4 24 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>
+  YourBanger.com
 </span>
 
 <style>
-  .logo-note {
-    animation: subtle-bounce 2.5s ease-in-out infinite;
+  .synth-body {
+    fill: #1f2937;
   }
 
-  @keyframes subtle-bounce {
+  :global(.dark) .synth-body {
+    fill: #e5e7eb;
+  }
+
+  .wave {
+    opacity: 0;
+    animation: wave-float 1.8s ease-in-out infinite;
+  }
+
+  .wave-1 {
+    animation-delay: 0s;
+  }
+
+  .wave-2 {
+    animation-delay: 0.3s;
+  }
+
+  .wave-3 {
+    animation-delay: 0.6s;
+  }
+
+  @keyframes wave-float {
     0%, 100% {
-      transform: translateY(0) rotate(0deg);
+      opacity: 0;
+      transform: translateY(2px);
     }
     50% {
-      transform: translateY(-2px) rotate(3deg);
+      opacity: 0.7;
+      transform: translateY(-1px);
     }
   }
 
-  .logo-container:hover .logo-note {
-    animation: note-wiggle 0.4s ease-in-out;
+  .key {
+    transition: transform 0.1s ease;
   }
 
-  @keyframes note-wiggle {
+  .logo-container:hover .key-1 {
+    animation: key-press 0.4s ease-in-out;
+    animation-delay: 0s;
+  }
+
+  .logo-container:hover .key-2 {
+    animation: key-press 0.4s ease-in-out;
+    animation-delay: 0.08s;
+  }
+
+  .logo-container:hover .key-3 {
+    animation: key-press 0.4s ease-in-out;
+    animation-delay: 0.16s;
+  }
+
+  .logo-container:hover .key-4 {
+    animation: key-press 0.4s ease-in-out;
+    animation-delay: 0.24s;
+  }
+
+  .logo-container:hover .key-5 {
+    animation: key-press 0.4s ease-in-out;
+    animation-delay: 0.32s;
+  }
+
+  @keyframes key-press {
     0%, 100% {
-      transform: rotate(0deg);
+      transform: translateY(0);
     }
-    25% {
-      transform: rotate(-8deg);
-    }
-    75% {
-      transform: rotate(8deg);
+    50% {
+      transform: translateY(2px);
     }
   }
 </style>
