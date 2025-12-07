@@ -1,9 +1,39 @@
 ---
-import { SITE } from 'astrowind:config';
 ---
 
 <span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent whitespace-nowrap"
+  class="logo-container self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-purple-600 dark:text-purple-400 whitespace-nowrap"
 >
-  🎵 {SITE?.name}
+  <span class="logo-note inline-block">🎵</span> yourbanger.com
 </span>
+
+<style>
+  .logo-note {
+    animation: subtle-bounce 2.5s ease-in-out infinite;
+  }
+
+  @keyframes subtle-bounce {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-2px) rotate(3deg);
+    }
+  }
+
+  .logo-container:hover .logo-note {
+    animation: note-wiggle 0.4s ease-in-out;
+  }
+
+  @keyframes note-wiggle {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-8deg);
+    }
+    75% {
+      transform: rotate(8deg);
+    }
+  }
+</style>
