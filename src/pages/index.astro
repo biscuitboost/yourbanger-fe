@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import DemoCard from '~/components/ui/DemoCard.astro';
+import AudioPlayer from '~/components/widgets/AudioPlayer.astro';
 import FloatingParticles from '~/components/ui/FloatingParticles.astro';
 import { Icon } from 'astro-icon/components';
 
@@ -41,29 +42,49 @@ const songs = [
     id: 1,
     title: "Sarah's Legendary 30th",
     genre: 'Rock',
-    description: "An epic rock anthem about Sarah's terrible karaoke skills and legendary weekend adventures.",
+    description: "An arena rock anthem about Sarah's obsession with true crime podcasts, her refusal to share fries, and that time she tried to fight a parking meter.",
     color: 'from-pink-500 to-rose-500',
+    audioSrc: '/audio/sample-rock.mp3',
   },
   {
     id: 2,
     title: 'Forever Starts Today',
     genre: 'Ballad',
-    description: "A heartfelt wedding ballad celebrating a couple's journey together.",
+    description: 'A heartfelt ballad about how they met on a dating app, their terrible first date at a restaurant that gave them food poisoning, and how they knew anyway.',
     color: 'from-blue-500 to-cyan-500',
+    audioSrc: '/audio/sample-ballad.mp3',
   },
   {
     id: 3,
-    title: 'Remember That Time?',
+    title: 'The Grill Master',
     genre: 'Country',
-    description: 'A country tune about that camping trip that shall not be spoken of.',
+    description: "A country tribute to Dad's 15-year relationship with his smoker grill, his legendary brisket, and his refusal to let anyone else touch the tongs.",
     color: 'from-amber-500 to-orange-500',
+    audioSrc: '/audio/sample-country.mp3',
   },
   {
     id: 4,
-    title: 'Office Legend',
+    title: 'Reply All Champion',
     genre: 'Pop',
-    description: "A pop anthem for a coworker who's finally retiring after 30 years.",
+    description: "A funky celebration of Linda's 30 years of legendary potluck contributions, confusing email signatures, and being the only one who knows how to fix the copier.",
     color: 'from-emerald-500 to-teal-500',
+    audioSrc: '/audio/sample-pop.mp3',
+  },
+  {
+    id: 5,
+    title: 'A Decade of Us',
+    genre: 'R&B',
+    description: 'A smooth R&B track about surviving IKEA furniture assembly, learning to love their weird pizza topping preferences, and still choosing each other every day.',
+    color: 'from-purple-500 to-violet-500',
+    audioSrc: '/audio/sample-rnb.mp3',
+  },
+  {
+    id: 6,
+    title: 'Against All Odds',
+    genre: 'Hip Hop',
+    description: 'A hype track about late-night study sessions, surviving on ramen, that one professor who had it out for them, and finally crossing that stage.',
+    color: 'from-red-500 to-orange-500',
+    audioSrc: '/audio/sample-hiphop.mp3',
   },
 ];
 
@@ -241,37 +262,22 @@ const features = [
         <p class="text-sm text-[var(--muted-foreground)]">Real songs created for real moments</p>
       </div>
 
-      <div class="grid sm:grid-cols-2 gap-4">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {songs.map((song) => (
           <div class="group relative bg-[var(--card)] rounded-xl border border-[var(--border)] overflow-hidden hover:border-[var(--primary)]/50 transition-all duration-300 gradient-border">
             <div class={`absolute inset-0 bg-gradient-to-br ${song.color} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
 
             <div class="relative p-4">
-              <div class="flex items-start gap-3 mb-3">
-                <div class="relative w-12 h-12 rounded-lg overflow-hidden shrink-0 bg-gradient-to-br from-[var(--primary)] to-purple-400 flex items-center justify-center">
-                  <Icon name="tabler:music" class="w-6 h-6 text-white" />
-                </div>
-                <div class="flex-1 min-w-0">
-                  <span class="inline-block px-2 py-0.5 bg-[var(--primary)]/10 text-[var(--primary)] text-xs font-medium rounded-full mb-1">
-                    {song.genre}
-                  </span>
-                  <h3 class="text-sm font-semibold text-[var(--foreground)] truncate">{song.title}</h3>
-                </div>
-                <button aria-label="Play song preview" class="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white hover:bg-[var(--primary)]/90 transition-all hover:scale-105 shrink-0 shadow-lg shadow-[var(--primary)]/20">
-                  <Icon name="tabler:player-play-filled" class="w-4 h-4 ml-0.5" />
-                </button>
+              <div class="mb-3">
+                <span class="inline-block px-2 py-0.5 bg-[var(--primary)]/10 text-[var(--primary)] text-xs font-medium rounded-full mb-2">
+                  {song.genre}
+                </span>
+                <h3 class="text-sm font-semibold text-[var(--foreground)]">{song.title}</h3>
               </div>
 
-              <p class="text-[var(--muted-foreground)] text-xs mb-3 line-clamp-2">{song.description}</p>
+              <p class="text-[var(--muted-foreground)] text-xs mb-4 line-clamp-2">{song.description}</p>
 
-              <div class="flex items-end justify-center gap-[1px] h-8">
-                {Array.from({ length: 50 }).map((_, i) => (
-                  <div
-                    class="w-0.5 rounded-full bg-[var(--primary)]"
-                    style={`height: ${20 + Math.sin(i * 0.3) * 15 + Math.sin(i * 0.7) * 10}%; opacity: 0.4;`}
-                  />
-                ))}
-              </div>
+              <AudioPlayer src={song.audioSrc} title={song.title} />
             </div>
           </div>
         ))}
