@@ -13,7 +13,7 @@
   --secondary: #f4f4f5;
   --secondary-foreground: #0a0a0f;
   --muted: #f4f4f5;
-  --muted-foreground: #71717a;
+  --muted-foreground: #52525b;
   --border: #e4e4e7;
   --ring: #9333ea;
 }
@@ -29,7 +29,7 @@
   --secondary: #1a1a24;
   --secondary-foreground: #fafafa;
   --muted: #1a1a24;
-  --muted-foreground: #a1a1aa;
+  --muted-foreground: #d4d4d8;
   --border: #27272a;
   --ring: #a855f7;
 }
