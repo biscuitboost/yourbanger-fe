@@ -52,7 +52,7 @@ const demoPrompt = "A rock anthem about my dad's obsession with his smoker grill
             <span id="typed-text"></span>
             <span id="cursor" class="inline-block w-0.5 h-3.5 bg-[var(--primary)] ml-0.5 animate-blink"></span>
           </div>
-          <button class="absolute bottom-2.5 right-2.5 w-7 h-7 bg-[var(--primary)] rounded-md flex items-center justify-center text-white hover:bg-[var(--primary)]/90 transition-colors">
+          <button aria-label="Submit story" class="absolute bottom-2.5 right-2.5 w-7 h-7 bg-[var(--primary)] rounded-md flex items-center justify-center text-white hover:bg-[var(--primary)]/90 transition-colors">
             <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="22" y1="2" x2="11" y2="13"></line>
               <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -83,13 +83,13 @@ const demoPrompt = "A rock anthem about my dad's obsession with his smoker grill
       <!-- Result (hidden initially) -->
       <div id="result-phase" class="space-y-3 hidden">
         <div class="flex items-center gap-3 p-3 bg-[var(--secondary)]/50 rounded-lg border border-[var(--primary)]/30">
-          <button id="play-btn" class="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white hover:bg-[var(--primary)]/90 transition-all hover:scale-105 shadow-lg shadow-[var(--primary)]/30">
+          <button id="play-btn" aria-label="Play song" class="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white hover:bg-[var(--primary)]/90 transition-all hover:scale-105 shadow-lg shadow-[var(--primary)]/30">
             <svg id="play-icon" class="w-4 h-4 ml-0.5" viewBox="0 0 24 24" fill="currentColor">
               <polygon points="5 3 19 12 5 21 5 3"></polygon>
             </svg>
             <svg id="pause-icon" class="w-4 h-4 hidden" viewBox="0 0 24 24" fill="currentColor">
               <rect x="6" y="4" width="4" height="16"></rect>
-              <rect x="14" y="4" width="4" height="16"></rect>
+              <rect x="14" y="4" width="16"></rect>
             </svg>
           </button>
           <div class="flex-1">
