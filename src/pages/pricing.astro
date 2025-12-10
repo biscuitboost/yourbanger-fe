@@ -4,37 +4,85 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pricing - $1.40 Per Song | Custom AI Music | YourBanger',
-  description: 'Get 10 personalized AI songs for just $14 ($1.40 each). No subscription, credits never expire. Create custom birthday songs, wedding songs & more in minutes.',
+  title: 'Pricing - From $1.20 Per Song | Custom AI Music | YourBanger',
+  description: 'Create personalized AI songs from $10. Choose from 3, 10, or 25 song packages. No subscription, credits never expire. Custom birthday songs, wedding songs & more.',
   openGraph: {
-    title: 'YourBanger.com Pricing - $1.40 Per Custom Song',
-    description: '10 songs for $14. No subscription. Credits never expire. Professional AI music creation.',
+    title: 'YourBanger.com Pricing - Custom AI Songs From $1.20 Each',
+    description: 'Song packages from $10. No subscription. Credits never expire. Professional AI music creation.',
     type: 'website',
   },
 };
+
+// Credit packages matching the app
+const packages = [
+  {
+    name: 'Starter',
+    credits: 3,
+    price: 10,
+    perSong: '3.33',
+    description: 'Perfect for trying it out',
+    popular: false,
+    savings: null,
+  },
+  {
+    name: 'Standard',
+    credits: 10,
+    price: 20,
+    perSong: '2.00',
+    description: 'Most popular choice',
+    popular: true,
+    savings: 'Save 40%',
+  },
+  {
+    name: 'Value',
+    credits: 25,
+    price: 30,
+    perSong: '1.20',
+    description: 'Best value for creators',
+    popular: false,
+    savings: 'Save 64%',
+  },
+];
 
 // Product schema data for SEO
 const productSchema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
   name: 'YourBanger.com Song Credits',
-  description: '10 personalized AI-generated songs. Create custom music for birthdays, weddings, and special moments.',
+  description: 'Personalized AI-generated songs. Create custom music for birthdays, weddings, and special moments.',
   brand: {
     '@type': 'Brand',
     name: 'YourBanger'
   },
-  offers: {
-    '@type': 'Offer',
-    price: '14.00',
-    priceCurrency: 'USD',
-    availability: 'https://schema.org/InStock',
-    url: 'https://yourbanger.com/pricing',
-    priceValidUntil: '2025-12-31',
-    seller: {
-      '@type': 'Organization',
-      name: 'YourBanger'
-    }
-  },
+  offers: [
+    {
+      '@type': 'Offer',
+      name: 'Starter - 3 Songs',
+      price: '10.00',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: 'https://yourbanger.com/pricing',
+      priceValidUntil: '2026-12-31',
+    },
+    {
+      '@type': 'Offer',
+      name: 'Standard - 10 Songs',
+      price: '20.00',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: 'https://yourbanger.com/pricing',
+      priceValidUntil: '2026-12-31',
+    },
+    {
+      '@type': 'Offer',
+      name: 'Value - 25 Songs',
+      price: '30.00',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: 'https://yourbanger.com/pricing',
+      priceValidUntil: '2026-12-31',
+    },
+  ],
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
@@ -53,98 +101,112 @@ const productSchema = {
   <section class="py-16 md:py-24">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
       <h1 class="text-4xl md:text-5xl font-bold text-[var(--foreground)] mb-4">
-        <span class="text-[var(--primary)]">$1.40</span> Per Song
+        Simple, Transparent Pricing
       </h1>
       <p class="text-xl text-[var(--muted-foreground)]">
-        No subscription. No hidden fees. Just buy credits and make songs.
+        No subscription. No hidden fees. Credits never expire.
       </p>
     </div>
   </section>
 
-  <!-- Pricing Card -->
-  <section class="py-16 md:py-20">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <div class="relative bg-[var(--card)] border border-[var(--border)] rounded-2xl p-8 md:p-12">
-        <div class="absolute -inset-4 bg-[var(--primary)]/20 rounded-3xl blur-2xl -z-10"></div>
-        <div class="text-center mb-8">
-          <h2 class="text-3xl md:text-4xl font-bold mb-2 text-[var(--foreground)]">$14 for 10 Songs</h2>
-          <p class="text-2xl text-[var(--primary)]">That's just $1.40 per song</p>
-          <p class="text-lg text-[var(--muted-foreground)] mt-2">No subscription • Credits never expire</p>
-        </div>
+  <!-- Pricing Cards -->
+  <section class="py-8 md:py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+        {packages.map((pkg) => (
+          <div class={`relative bg-[var(--card)] border rounded-2xl p-6 md:p-8 flex flex-col ${pkg.popular ? 'border-[var(--primary)] border-2' : 'border-[var(--border)]'}`}>
+            {pkg.popular && (
+              <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+                <span class="bg-[var(--primary)] text-white text-sm font-bold px-4 py-1 rounded-full">
+                  Most Popular
+                </span>
+              </div>
+            )}
+            {pkg.savings && (
+              <div class="absolute -top-3 right-4">
+                <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  {pkg.savings}
+                </span>
+              </div>
+            )}
+            
+            <div class="text-center mb-6">
+              <h2 class="text-2xl font-bold text-[var(--foreground)] mb-1">{pkg.name}</h2>
+              <p class="text-[var(--muted-foreground)] text-sm">{pkg.description}</p>
+            </div>
 
-        <div class="bg-[var(--secondary)]/50 rounded-xl p-6 md:p-8 mb-8 border border-[var(--border)]">
-          <h3 class="text-xl font-bold mb-4 text-[var(--foreground)]">What's Included:</h3>
-          <ul class="space-y-3 text-[var(--foreground)]">
-            <li class="flex items-start">
-              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                </svg>
+            <div class="text-center mb-6">
+              <div class="flex items-baseline justify-center">
+                <span class="text-4xl md:text-5xl font-bold text-[var(--foreground)]">${pkg.price}</span>
               </div>
-              <div><strong>AI-generated lyrics</strong> based on your story</div>
-            </li>
-            <li class="flex items-start">
-              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
-              <div><strong>Professional-quality</strong> music production</div>
-            </li>
-            <li class="flex items-start">
-              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
-              <div><strong>Choice of music style</strong> (Rock, Pop, Country, Rap, R&B, etc.)</div>
-            </li>
-            <li class="flex items-start">
-              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
-              <div><strong>Full editing control</strong> before generation</div>
-            </li>
-            <li class="flex items-start">
-              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
-              <div><strong>Shareable link</strong> for each song</div>
-            </li>
-            <li class="flex items-start">
-              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
-              <div><strong>Unlimited replays</strong> and downloads</div>
-            </li>
-            <li class="flex items-start">
-              <div class="w-5 h-5 bg-[var(--primary)]/20 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                <svg class="w-3 h-3 text-[var(--primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                </svg>
-              </div>
-              <div><strong>Lifetime access</strong> to your songs</div>
-            </li>
-          </ul>
-        </div>
+              <p class="text-lg text-[var(--primary)] font-semibold mt-1">
+                {pkg.credits} Songs
+              </p>
+              <p class="text-sm text-[var(--muted-foreground)]">
+                ${pkg.perSong} per song
+              </p>
+            </div>
 
-        <div class="text-center">
-          <a
-            href="https://app.yourbanger.com/auth?tab=signup"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-block px-8 py-4 text-lg font-bold bg-[var(--primary)] text-white rounded-xl hover:bg-[var(--primary)]/90 transition-all duration-200 shadow-lg shadow-[var(--primary)]/25"
-          >
-            Get Started with 10 Songs
-          </a>
-        </div>
+            <div class="flex-grow">
+              <ul class="space-y-3 text-sm text-[var(--foreground)] mb-6">
+                <li class="flex items-center">
+                  <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  2 unique versions per song
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  MP3 download to keep forever
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Shareable page with player
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Karaoke-style lyrics display
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Share to WhatsApp, Facebook & more
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Credits never expire
+                </li>
+              </ul>
+            </div>
+
+            <a
+              href="https://app.yourbanger.com/auth?tab=signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              class={`block w-full text-center px-6 py-3 font-bold rounded-xl transition-all duration-200 ${
+                pkg.popular 
+                  ? 'bg-[var(--primary)] text-white hover:bg-[var(--primary)]/90 shadow-lg shadow-[var(--primary)]/25' 
+                  : 'bg-[var(--secondary)] text-[var(--foreground)] hover:bg-[var(--secondary)]/80 border border-[var(--border)]'
+              }`}
+            >
+              Get {pkg.credits} Songs
+            </a>
+          </div>
+        ))}
       </div>
+
+      <p class="text-center text-[var(--muted-foreground)] mt-8 text-sm">
+        Each song credit generates 2 unique variations you can choose from. Secure payment via Stripe.
+      </p>
     </div>
   </section>
 
@@ -171,7 +233,7 @@ const productSchema = {
             <tbody class="divide-y divide-[var(--border)]">
               <tr class="bg-[var(--primary)]/10">
                 <td class="px-6 py-4 font-semibold text-[var(--primary)]">YourBanger</td>
-                <td class="px-6 py-4 text-[var(--foreground)] font-semibold">$1.40</td>
+                <td class="px-6 py-4 text-[var(--foreground)] font-semibold">From $1.20</td>
                 <td class="px-6 py-4 text-[var(--foreground)]">~3 minutes</td>
                 <td class="px-6 py-4 text-[var(--foreground)]">100% custom lyrics & music</td>
               </tr>
@@ -205,6 +267,10 @@ const productSchema = {
     title="Pricing Questions"
     items={[
       {
+        title: 'Which package should I choose?',
+        description: 'If you\'re new, start with the Starter pack (3 songs for $10) to try it out. The Standard pack (10 songs for $20) is our most popular and great value. The Value pack (25 songs for $30) is perfect if you\'re creating songs for multiple occasions.',
+      },
+      {
         title: 'Do credits expire?',
         description: 'No, use them whenever you want. They never expire.',
       },
@@ -228,7 +294,7 @@ const productSchema = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get 10 Songs for $14',
+        text: 'Start Creating Songs',
         href: 'https://app.yourbanger.com/auth?tab=signup',
         target: '_blank',
       },
@@ -240,7 +306,7 @@ const productSchema = {
 
     <Fragment slot="subtitle">
       That friend with the birthday coming up. Your parents' anniversary. <br class="hidden md:block" />
-      $1.40 and 2 minutes is all it takes.
+      Starting at just $10 for 3 songs.
     </Fragment>
   </CallToAction>
 </Layout>
