@@ -72,6 +72,6 @@ export const footerData = {
     { ariaLabel: 'TikTok', icon: 'tabler:brand-tiktok', href: '#' },
   ],
   footNote: `
-    © ${new Date().getFullYear()} YourBanger. All rights reserved.
+    © ${new Date().getFullYear()} YourBanger.com. All rights reserved.
   `,
 };

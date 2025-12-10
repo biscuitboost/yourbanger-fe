@@ -6,12 +6,12 @@ These assets need to be created and added to the `/public` directory:
 
 ### Social Media / SEO
 - [ ] `og-image.jpg` (1200x628px) - Open Graph image for social sharing
-  - Should feature YourBanger branding
+  - Should feature YourBanger.com branding
   - Include tagline: "Turn Your Story Into a Song"
   - Purple/pink gradient theme
 
 ### Branding
-- [ ] `favicon.svg` - Site favicon with YourBanger logo
+- [ ] `favicon.svg` - Site favicon with YourBanger.com logo
 - [ ] `logo.png` - Full logo for various uses
 - [ ] `apple-touch-icon.png` (180x180px) - iOS home screen icon
 

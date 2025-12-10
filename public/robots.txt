@@ -1,4 +1,4 @@
-# YourBanger robots.txt
+# YourBanger.com robots.txt
 # https://yourbanger.com
 
 User-agent: *

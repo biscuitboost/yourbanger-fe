@@ -10,7 +10,7 @@ tags:
   - personalized gifts
   - gift ideas
   - milestone celebrations
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Anniversary Gift Ideas by Year (1st to 50th) | YourBanger"
   description: "Complete guide to anniversary gifts by year. Traditional and modern gift ideas for 1st, 5th, 10th, 25th, 50th anniversaries and every year in between."

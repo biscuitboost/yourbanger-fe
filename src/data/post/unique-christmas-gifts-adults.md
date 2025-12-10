@@ -10,7 +10,7 @@ tags:
   - unique gifts
   - gifts for adults
   - hard to buy for
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Unique Christmas Gifts for Adults Who Have Everything | YourBanger"
   description: "Looking for unique Christmas gifts for adults who have everything? Skip the stuff. These gift ideas focus on experiences, personalization, and meaning."

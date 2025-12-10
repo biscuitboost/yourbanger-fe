@@ -10,7 +10,7 @@ tags:
   - personalized gifts
   - men's gifts
   - unique gifts
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Personalized Gift Ideas for Men That Actually Impress | YourBanger"
   description: "Looking for personalized gift ideas for men? Skip the boring stuff. These custom gifts for him show you actually know him—from songs to experiences."

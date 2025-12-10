@@ -7,13 +7,13 @@ _Last updated_: January 2025
 
 ## 1. The Basics
 
-Welcome to YourBanger! By using our service, you're agreeing to these terms. We tried to make them readable, but it's still legal stuff, so grab a coffee.
+Welcome to YourBanger.com. By using our service, you're agreeing to these terms. We tried to make them readable, but it's still legal stuff, so grab a coffee.
 
 If you don't agree with any of this, that's totally fine - just don't use the service.
 
 ## 2. What You're Getting
 
-YourBanger is a service that creates personalized songs using AI technology. You provide the details, we generate the lyrics and music, and you get a custom song.
+YourBanger.com is a service that creates personalized songs using AI technology. You provide the details, we generate the lyrics and music, and you get a custom song.
 
 **What we promise:** We'll do our best to create quality songs based on your input.
 
@@ -23,7 +23,7 @@ YourBanger is a service that creates personalized songs using AI technology. You
 
 You're responsible for keeping your account secure. Don't share your login info, and let us know immediately if someone else gets access to your account.
 
-You must be at least 13 years old to use YourBanger. If you're under 18, please get a parent's permission.
+You must be at least 13 years old to use YourBanger.com. If you're under 18, please get a parent's permission.
 
 ## 4. Payment & Credits
 
@@ -75,7 +75,7 @@ Our total liability for anything that goes wrong is limited to the amount you pa
 
 ## 10. Termination
 
-You can stop using YourBanger anytime. Just stop logging in. Your account and songs will stay accessible unless you ask us to delete them.
+You can stop using YourBanger.com anytime. Just stop logging in. Your account and songs will stay accessible unless you ask us to delete them.
 
 We can terminate accounts that violate these terms. If we do that, you'll lose access and any remaining credits. Don't make us do this.
 

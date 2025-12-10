@@ -10,7 +10,7 @@ tags:
   - gifts for dad
   - personalized gifts
   - unique gifts
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Father's Day Gift Ideas He'll Actually Use | YourBanger"
   description: "Looking for Father's Day gifts that aren't boring? These unique, personalized gift ideas show Dad you actually know him—from custom songs to experiences."

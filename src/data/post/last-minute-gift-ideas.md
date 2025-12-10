@@ -10,7 +10,7 @@ tags:
   - quick gifts
   - personalized gifts
   - birthday gifts
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Last-Minute Gift Ideas That Don't Look Last-Minute | YourBanger"
   description: "Need a gift fast? These last-minute gift ideas can be ready in hours but feel deeply personal. From custom songs to digital experiences—no shipping required."
@@ -36,8 +36,8 @@ Here are options that require no shipping and minimal panic.
 
 ### 1. A Personalized Song (Ready in 2 Minutes)
 
-<!-- IMAGE: Screenshot or mockup of YourBanger interface showing quick song creation -->
-<!-- Alt text: "Creating a personalized song in just 2 minutes on YourBanger" -->
+<!-- IMAGE: Screenshot or mockup of YourBanger.com interface showing quick song creation -->
+<!-- Alt text: "Creating a personalized song in just 2 minutes on YourBanger.com. -->
 
 **Time needed:** About 5 minutes total
 

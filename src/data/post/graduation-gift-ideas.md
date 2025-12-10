@@ -10,7 +10,7 @@ tags:
   - personalized gifts
   - unique gifts
   - milestone gifts
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Graduation Gift Ideas That Mark the Milestone | YourBanger"
   description: "Looking for graduation gift ideas beyond cash? These meaningful gifts celebrate their achievement and prepare them for the next chapter."

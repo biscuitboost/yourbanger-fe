@@ -10,7 +10,7 @@ tags:
   - personalized gifts
   - unique gifts
   - career tributes
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Retirement Gift Ideas That Honor Their Legacy | YourBanger"
   description: "Looking for retirement gift ideas beyond the gold watch? These meaningful gifts celebrate decades of work and the exciting freedom ahead."

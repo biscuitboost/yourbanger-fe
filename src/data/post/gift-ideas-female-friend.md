@@ -10,7 +10,7 @@ tags:
   - gifts for friends
   - personalized gifts
   - birthday gifts
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Gift Ideas for Female Friends They'll Actually Love | YourBanger"
   description: "Looking for gift ideas for your female friend? These thoughtful, unique presents show you actually pay attention. From custom songs to meaningful keepsakes."

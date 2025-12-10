@@ -1,4 +1,4 @@
-# YourBanger SEO Plan
+# YourBanger.com SEO Plan
 
 ## Executive Summary
 
@@ -77,7 +77,7 @@
 ## 3. On-Page SEO Action Items
 
 ### 3.1 Homepage Optimization
-**Current Title:** `YourBanger - Turn Your Story Into a Song`  
+**Current Title:** `YourBanger.com - Turn Your Story Into a Song`  
 **Recommended Title:** `Personalized AI Songs | Custom Music Gifts in Minutes | YourBanger`
 
 **Current Description:** Good, but add urgency  
@@ -153,7 +153,7 @@ Disallow: /_astro/
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "YourBanger Song Credits",
+  "name": "YourBanger.com Song Credits",
   "description": "10 personalized AI-generated songs",
   "offers": {
     "@type": "Offer",
@@ -316,7 +316,7 @@ Blog infrastructure enabled and first posts published.
 1. Hook/Problem statement (SEO-optimized H1)
 2. Quick solution preview (answer featured snippet queries)
 3. Detailed solutions (H2 sections for each idea)
-4. YourBanger integration (natural CTA placement)
+4. YourBanger.com integration (natural CTA placement)
 5. Related internal links (other posts + landing pages)
 
 **Word Count Targets:**

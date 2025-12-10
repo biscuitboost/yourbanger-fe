@@ -10,7 +10,7 @@ tags:
   - gift ideas
   - custom gifts
   - unique gifts
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Personalized Gift Ideas: The Ultimate Guide | YourBanger"
   description: "The complete guide to personalized gifts. Discover custom gift ideas for birthdays, weddings, holidays, and every occasion. Make every present meaningful."
@@ -50,8 +50,8 @@ The more elements you include, the more personal it becomes.
 
 ### 1. Custom Songs
 
-<!-- IMAGE: Person creating a song on laptop/phone with YourBanger, or someone receiving and reacting to a custom song -->
-<!-- Alt text: "Creating a personalized song gift on YourBanger" -->
+<!-- IMAGE: Person creating a song on laptop/phone with YourBanger.com. or someone receiving and reacting to a custom song -->
+<!-- Alt text: "Creating a personalized song gift on YourBanger.com. -->
 
 **What it is:** A professionally produced song with original lyrics about the person—their quirks, your memories, and what makes them special.
 

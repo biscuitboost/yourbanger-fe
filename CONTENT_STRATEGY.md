@@ -1,4 +1,4 @@
-# YourBanger SEO Content Strategy
+# YourBanger.com SEO Content Strategy
 
 **Last Updated:** December 7, 2025  
 **Data Source:** DataForSEO API  
@@ -379,6 +379,6 @@ For each piece of content, ensure:
 
 ---
 
-*Document maintained by YourBanger SEO Team*
+*Document maintained by YourBanger.com SEO Team*
 *Last updated: December 7, 2025 (Batch 2 Complete)*
 *Next review: January 7, 2026*

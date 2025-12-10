@@ -10,7 +10,7 @@ tags:
   - personalized gifts
   - holiday gifts
   - gift ideas
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Personalized Christmas Gifts That Actually Mean Something | YourBanger"
   description: "Looking for personalized Christmas gifts? Discover meaningful, custom gift ideas that show you really know them. From custom songs to unique keepsakes."

@@ -10,7 +10,7 @@ tags:
   - unique gifts
   - holiday gifts
   - christmas gifts
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Unique Gift Ideas for Him This Holiday | YourBanger"
   description: "Looking for unique gift ideas for him? These unexpected presents go beyond the usual suspects. From custom songs to personalized experiences."

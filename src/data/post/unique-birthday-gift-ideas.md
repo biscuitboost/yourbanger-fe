@@ -10,7 +10,7 @@ tags:
   - personalized gifts
   - unique gifts
   - gift ideas
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "10 Unique Birthday Gift Ideas That Will Make Them Cry | YourBanger"
   description: "Looking for unique birthday gift ideas? Discover personalized gifts that create unforgettable moments. Custom songs, memory books, and more meaningful alternatives to generic presents."

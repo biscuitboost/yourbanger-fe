@@ -10,7 +10,7 @@ tags:
   - milestone birthdays
   - personalized gifts
   - 50th birthday
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "50th Birthday Gift Ideas That Mark Half a Century | YourBanger"
   description: "Looking for 50th birthday gift ideas? These meaningful gifts celebrate five decades of life with personalized tributes, experiences, and milestone acknowledgments."

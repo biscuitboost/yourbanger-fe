@@ -10,7 +10,7 @@ tags:
   - wedding speech
   - wedding toast
   - how to
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "How to Write a Wedding Toast (Without the Stress) | YourBanger"
   description: "Nervous about giving a wedding toast? This complete guide covers what to say, what to avoid, how to be funny, and how to nail the landing."

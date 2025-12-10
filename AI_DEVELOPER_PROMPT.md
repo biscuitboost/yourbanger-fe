@@ -1,4 +1,4 @@
-# AI Developer Prompt: YourBanger Marketing Site
+# AI Developer Prompt: YourBanger.com Marketing Site
 
 ## Your Mission
 
@@ -23,7 +23,7 @@ People looking for unique, personalized gifts for birthdays, weddings, anniversa
 
 You have access to the **AstroWind template** (already installed). Your job is to:
 
-1. **Customize the template** with YourBanger branding
+1. **Customize the template** with YourBanger.com branding
 2. **Build the following pages:**
    - Homepage (hero, how it works, samples, testimonials, pricing preview)
    - Examples page (showcase variety of songs with audio players)
@@ -47,7 +47,7 @@ You have access to the **AstroWind template** (already installed). Your job is t
 
 ## Brand Guidelines
 
-**Name:** YourBanger  
+**Name:** YourBanger.com  
 **Tone:** Fun, casual, slightly irreverent, emotionally resonant  
 **Colors:** Purple/pink gradient (match the app's design - use purple-600, pink-600 as base)  
 **Vibe:** Modern, approachable, removes friction ("No musical talent needed")
@@ -220,13 +220,13 @@ Create placeholders or use sample audio for:
 
 ### Homepage Meta Tags
 ```html
-<title>YourBanger - Create Personalized AI Songs in Minutes</title>
+<title>YourBanger.com - Create Personalized AI Songs in Minutes</title>
 <meta name="description" content="Turn your story into a custom song. AI-powered personalized music for birthdays, weddings, and special moments. $14 for 10 songs. No musical talent required.">
 ```
 
 ### Open Graph Tags
 ```html
-<meta property="og:title" content="YourBanger - Turn Your Story Into a Song">
+<meta property="og:title" content="YourBanger.com - Turn Your Story Into a Song">
 <meta property="og:description" content="Create personalized AI-generated songs in minutes. Perfect for birthdays, weddings, and making someone feel special.">
 <meta property="og:image" content="https://yourbanger.com/og-image.jpg">
 <meta property="og:url" content="https://yourbanger.com">

@@ -118,13 +118,13 @@ We don't use third-party advertising cookies. We're not tracking you around the 
 
 ## 7. Children's Privacy
 
-YourBanger is not intended for children under 13. We don't knowingly collect information from children under 13. If you're under 13, please don't use the service.
+YourBanger.com is not intended for children under 13. We don't knowingly collect information from children under 13. If you're under 13, please don't use the service.
 
 If you're 13-17, please get a parent's permission before using YourBanger.
 
 ## 8. International Users
 
-We're based in Scotland, UK, but people from all over use YourBanger. If you're outside the UK, your data might be transferred to and processed in the UK.
+We're based in Scotland, UK, but people from all over use YourBanger.com. If you're outside the UK, your data might be transferred to and processed in the UK.
 
 By using the service, you consent to this transfer. We comply with applicable data protection laws, including GDPR for EU users.
 
@@ -138,7 +138,7 @@ Your songs stay accessible unless you delete them or delete your account.
 
 We might update this policy occasionally. If we make big changes, we'll email you and post a notice on the site. The "Last updated" date at the top will change too.
 
-Continued use of YourBanger after changes means you accept the new policy.
+Continued use of YourBanger.com after changes means you accept the new policy.
 
 ## 11. Contact Us
 

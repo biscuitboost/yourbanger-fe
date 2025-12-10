@@ -10,7 +10,7 @@ tags:
   - personalized gifts
   - unique gifts
   - gift ideas
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Unique Wedding Gift Ideas Beyond the Registry | YourBanger"
   description: "Looking for wedding gift ideas beyond the registry? These unique, personalized gifts stand out and create memories the couple will treasure forever."

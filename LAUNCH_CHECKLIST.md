@@ -1,4 +1,4 @@
-# YourBanger Marketing Site - Launch Checklist
+# YourBanger.com Marketing Site - Launch Checklist
 
 ## ✅ Completed
 

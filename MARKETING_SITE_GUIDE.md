@@ -1,4 +1,4 @@
-# YourBanger Marketing Site Development Guide
+# YourBanger.com Marketing Site Development Guide
 
 ## Project Overview
 
@@ -133,7 +133,7 @@ Each card shows:
 - No subscription, just credits
 
 **Comparison Section (Optional):**
-| Traditional | YourBanger |
+| Traditional | YourBanger.com |
 |------------|-----------|
 | Hire musician: $100-500 | $1.40 per song |
 | Wait 1-2 weeks | Ready in 3 minutes |
@@ -289,7 +289,7 @@ Each card shows:
 **2. Component Customizations**
 - Header: Add CTAs pointing to app subdomain
 - Footer: Update links and social media
-- Hero component: Customize for YourBanger brand
+- Hero component: Customize for YourBanger.com brand
 - Testimonial component: Text message style UI
 - Audio player component: For sample songs
 
@@ -334,9 +334,9 @@ Provide 2-3 variations of:
 
 ### Meta Tags (Each Page)
 ```html
-<title>YourBanger - AI-Powered Personalized Songs</title>
+<title>YourBanger.com - AI-Powered Personalized Songs</title>
 <meta name="description" content="Create personalized AI-generated songs in minutes. Turn memories into music. No talent required. $14 for 10 songs.">
-<meta property="og:title" content="YourBanger - Turn Your Story Into a Song">
+<meta property="og:title" content="YourBanger.com - Turn Your Story Into a Song">
 <meta property="og:description" content="...">
 <meta property="og:image" content="https://yourbanger.com/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">

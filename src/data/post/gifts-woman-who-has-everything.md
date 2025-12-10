@@ -10,7 +10,7 @@ tags:
   - unique gifts
   - hard to buy for
   - personalized gifts
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "10 Gifts for the Woman Who Has Everything | YourBanger"
   description: "What do you get the woman who has everything? These 10 unique gift ideas focus on experiences, personalization, and meaning over more stuff."

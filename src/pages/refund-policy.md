@@ -7,7 +7,7 @@ _Last updated_: January 07, 2025
 
 ## Our Commitment
 
-At YourBanger, we want you to be completely satisfied with every song you create. If you're not happy, we'll make it right.
+At YourBanger.com. we want you to be completely satisfied with every song you create. If you're not happy, we'll make it right.
 
 ## 30-Day Satisfaction Guarantee
 

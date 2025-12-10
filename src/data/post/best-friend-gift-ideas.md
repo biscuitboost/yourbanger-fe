@@ -10,7 +10,7 @@ tags:
   - personalized gifts
   - unique gifts
   - best friend gifts
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Best Friend Gift Ideas They'll Actually Love | YourBanger"
   description: "Looking for gift ideas for your best friend? These meaningful, personalized gifts prove you know them—from custom songs about your friendship to inside joke tributes."

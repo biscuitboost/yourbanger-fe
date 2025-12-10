@@ -10,7 +10,7 @@ tags:
   - gifts for her
   - personalized gifts
   - romantic gifts
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Unique Valentine's Day Gift Ideas for Her | YourBanger"
   description: "Looking for Valentine's Day gifts for her that aren't flowers? These unique, thoughtful gift ideas show you actually know her—from custom songs to meaningful experiences."

@@ -10,7 +10,7 @@ tags:
   - hard to buy for
   - gift ideas
   - personalized gifts
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "10 Gifts for Someone Who Has Everything | YourBanger"
   description: "What do you buy for someone who has everything? These unique, thoughtful gift ideas focus on experiences and personalization over more stuff."

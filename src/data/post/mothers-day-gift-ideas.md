@@ -10,7 +10,7 @@ tags:
   - gifts for mom
   - personalized gifts
   - unique gifts
-author: YourBanger Team
+author: YourBanger.com Team
 metadata:
   title: "Mother's Day Gift Ideas That'll Make Her Cry | YourBanger"
   description: "Looking for Mother's Day gifts that actually mean something? These unique, personalized gift ideas show Mom her real impact—from custom songs to unforgettable experiences."
