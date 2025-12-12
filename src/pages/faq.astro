@@ -13,7 +13,7 @@ const metadata = {
   },
 };
 
-// FAQ data for structured schema
+// FAQ data for structured schema (SEO-optimized questions)
 const faqSchemaData = [
   {
     '@type': 'Question',
@@ -57,6 +57,30 @@ const faqSchemaData = [
   },
   {
     '@type': 'Question',
+    name: 'Does the AI song have real vocals?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Yes! Real AI-generated vocals sing your custom lyrics. These aren\'t robotic text-to-speech voices—they\'re natural-sounding singers performing your personalized song with emotion and style.'
+    }
+  },
+  {
+    '@type': 'Question',
+    name: 'Do I get multiple versions of my song?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Yes! Every credit gives you two unique variations of your song with different vocal styles and arrangements. Pick your favorite or keep both.'
+    }
+  },
+  {
+    '@type': 'Question',
+    name: 'Can I download the song as an MP3?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Yes! Every song comes with a downloadable MP3 file. Save it to your phone, add it to a playlist, or use it in a video. It\'s yours to keep forever.'
+    }
+  },
+  {
+    '@type': 'Question',
     name: 'Do song credits expire?',
     acceptedAnswer: {
       '@type': 'Answer',
@@ -65,18 +89,18 @@ const faqSchemaData = [
   },
   {
     '@type': 'Question',
-    name: 'How do I share my personalized song?',
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: 'Every song gets a unique shareable link. Text it, email it, post it on social media, play it at a party. You also get a downloadable MP3 for offline use.'
-    }
-  },
-  {
-    '@type': 'Question',
     name: 'Is my story private?',
     acceptedAnswer: {
       '@type': 'Answer',
       text: 'Yes. The details you share are used only to create your song. We don\'t sell your data, share your stories, or train other AI models on your personal details.'
+    }
+  },
+  {
+    '@type': 'Question',
+    name: 'What occasions are personalized songs good for?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Birthdays, weddings, anniversaries, retirements, graduations, Valentine\'s Day, Mother\'s Day, Father\'s Day, Christmas, memorials, proposals, baby showers—any moment worth celebrating.'
     }
   }
 ];
@@ -130,16 +154,24 @@ const faqSchemaData = [
         description: 'Rock, pop, country, rap, R&B, ballad, indie, electronic, jazz, acoustic, and more. Want an epic rock anthem? A sweet acoustic ballad? A funny country roast? We\'ve got you covered.',
       },
       {
+        title: 'Can I choose male or female vocals?',
+        description: 'Yes! You pick the vocal style that fits your song best. Whether you want a powerful male voice for a rock anthem or a sweet female voice for a ballad, you\'re in control.',
+      },
+      {
         title: 'Can I edit the lyrics before the song is made?',
         description: 'Absolutely. After the AI generates the initial lyrics based on your story, you can edit every word. Add more inside jokes, remove anything that doesn\'t feel right, tweak the phrasing. Full control.',
       },
       {
         title: 'What if I don\'t like the first version?',
-        description: 'Regenerate with the same credit. Edit the story details, try a different music style, adjust the vibe. You\'re not locked into the first result.',
+        description: 'Every credit gives you two unique variations of your song—different vocal styles, slightly different arrangements. Pick your favorite, or keep both! And since AI brings a touch of creative randomness, each version has its own personality.',
       },
       {
         title: 'How long are the songs?',
         description: 'Typically 2-3 minutes. Long enough to tell the story, short enough that people will actually listen to the whole thing (multiple times, probably).',
+      },
+      {
+        title: 'Does the song have real vocals or is it instrumental?',
+        description: 'Real AI-generated vocals that sing your custom lyrics. These aren\'t robotic text-to-speech voices—they\'re natural-sounding singers performing your personalized song with emotion and style.',
       },
     ]}
   />
@@ -151,6 +183,10 @@ const faqSchemaData = [
       {
         title: 'How much does it cost?',
         description: '$20 for 10 songs ($2.00 each), or get 25 songs for $30 ($1.20 each). No subscriptions, no hidden fees, no gotchas. Just buy credits and use them whenever.',
+      },
+      {
+        title: 'Why isn\'t it free like other AI song generators?',
+        description: 'Free AI tools give you generic, low-quality output. We use premium AI models that create professional-sounding songs with real vocals, custom lyrics from your story, and multiple variations. The quality difference is night and day—and at $1.20-$2.00 per song, it\'s a fraction of what a custom song from a musician would cost.',
       },
       {
         title: 'Do credits expire?',
@@ -172,12 +208,43 @@ const faqSchemaData = [
         description: 'Every song gets a unique shareable link. Text it, email it, post it on social media, include it in a presentation, play it at a party. You also get a downloadable MP3 for offline use.',
       },
       {
+        title: 'Can I download the song as an MP3?',
+        description: 'Yes! Every song comes with a downloadable MP3 file. Save it to your phone, burn it to a CD, add it to a playlist, or use it in a video. It\'s yours to keep forever.',
+      },
+      {
+        title: 'Can I add my own cover image?',
+        description: 'Absolutely. Each song comes with an AI-generated cover image, but you can upload your own photo to make it even more personal. Perfect for adding a picture of the person you\'re celebrating.',
+      },
+      {
         title: 'Can I post it on social media?',
         description: 'Yes! It\'s your song. Post it wherever you want. Tag us if you\'d like—we love seeing reactions.',
       },
       {
         title: 'Do I own the song?',
         description: 'You have full rights to use the song for personal purposes. Post it, share it, play it at events. For commercial use, check our terms or reach out.',
+      },
+    ]}
+  />
+
+  <!-- Use Cases & Occasions -->
+  <FAQs
+    title="Perfect For Any Occasion"
+    items={[
+      {
+        title: 'What occasions work best for a personalized song?',
+        description: 'Birthdays, weddings, anniversaries, retirements, graduations, Valentine\'s Day, Mother\'s Day, Father\'s Day, Christmas, memorials, proposals, baby showers—basically any moment worth celebrating. If there\'s a story to tell, there\'s a song to make.',
+      },
+      {
+        title: 'Can I make a funny song or does it have to be serious?',
+        description: 'Both! Choose an "uplifting" or "heartfelt" vibe for emotional songs, or go "funny" for roasts, inside jokes, and comedy. Some of our best songs are the ones that make people laugh until they cry.',
+      },
+      {
+        title: 'Is this a good gift idea?',
+        description: 'It\'s one of the most unique gifts you can give. Unlike a gift card or flowers, a personalized song shows you put thought into it. People keep these forever—we\'ve heard of songs being played at every family gathering for years.',
+      },
+      {
+        title: 'Can I make a song for someone who passed away?',
+        description: 'Yes, many people create memorial songs to honor loved ones. Share their story, their quirks, the memories you cherish. It becomes a beautiful way to celebrate their life and keep their memory alive.',
       },
     ]}
   />
@@ -193,6 +260,10 @@ const faqSchemaData = [
       {
         title: 'Can other people see my songs?',
         description: 'Only if you share the link. Your songs are not publicly listed anywhere. You control who sees them.',
+      },
+      {
+        title: 'Do you use my song to train AI?',
+        description: 'No. Your lyrics, stories, and songs are not used to train any AI models. What you create is yours alone.',
       },
     ]}
   />
