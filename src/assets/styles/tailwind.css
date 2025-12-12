@@ -81,23 +81,6 @@
   }
   
   /* Animations */
-  @keyframes float {
-    0% {
-      transform: translateY(100vh) rotate(0deg);
-      opacity: 0;
-    }
-    10% {
-      opacity: 0.3;
-    }
-    90% {
-      opacity: 0.3;
-    }
-    100% {
-      transform: translateY(-100vh) rotate(360deg);
-      opacity: 0;
-    }
-  }
-  
   @keyframes marquee {
     0% {
       transform: translateX(0);
@@ -132,10 +115,6 @@
     50% {
       opacity: 1;
     }
-  }
-  
-  .animate-float {
-    animation: float linear infinite;
   }
   
   .animate-marquee {
