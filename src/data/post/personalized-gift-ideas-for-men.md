@@ -41,7 +41,7 @@ Personalized gifts work because they require knowing him specifically. And that'
 
 **Perfect for:** Birthdays, Father's Day, retirement, anniversaries, or "just because you're awesome."
 
-**Cost:** $1.40
+**Cost:** from $1.20
 
 > "I made a song about my husband's relationship with his smoker grill. The lyrics mentioned his 'low and slow' philosophy and his refusal to let anyone else touch the meat. He's played it every time he grills since." — Lauren M.
 
@@ -227,7 +227,7 @@ If you want something truly unique that he'll never expect:
 
 A [personalized song](/) takes about 2 minutes to create. Share his story—the hobbies, the quirks, the inside jokes—and get a professionally produced track about him.
 
-It costs $1.40. He'll remember it forever.
+It costs from $1.20. He'll remember it forever.
 
 **[Create a song for him →](https://app.yourbanger.com/auth?tab=signup)**
 

@@ -11,7 +11,7 @@ metadata:
   title:
     default: YourBanger.com - Create Personalized AI Songs in Minutes
     template: '%s — YourBanger'
-  description: "Turn your story into a custom song. AI-powered personalized music for birthdays, weddings, and special moments. $14 for 10 songs. No musical talent required."
+  description: "Turn your story into a custom song. AI-powered personalized music for birthdays, weddings, and special moments. From $1.20 per song. No musical talent required."
   robots:
     index: true
     follow: true

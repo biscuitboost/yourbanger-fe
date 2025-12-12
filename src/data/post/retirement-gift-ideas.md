@@ -39,7 +39,7 @@ Here are retirement gift ideas that actually mean something.
 
 **The moment:** Play it at the retirement party instead of (or during) the speech. Watch everyone react to the inside jokes.
 
-**Cost:** $1.40
+**Cost:** From $1.20
 
 > "We made a song for our office manager who'd been with us for 28 years. It mentioned her famous 'Monday morning meetings,' her obsession with the snack cabinet, and how she somehow remembered every employee's birthday. There wasn't a dry eye in the room." — Finance Team, Chicago
 
@@ -182,7 +182,7 @@ After decades of work, what retirees want most is **acknowledgment of their impa
 
 A [personalized retirement song](/retirement-songs) delivers exactly that—their career highlights, their legendary quirks, their lasting legacy, all captured in music they can play forever.
 
-It takes 2 minutes to create. It costs $1.40. It honors years of dedication.
+It takes 2 minutes to create. It costs from $1.20. It honors years of dedication.
 
 **[Create a retirement song →](https://app.yourbanger.com/auth?tab=signup)**
 

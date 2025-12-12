@@ -58,7 +58,7 @@ The more elements you include, the more personal it becomes.
 **Why it works:** It's the ultimate personalized gift. A song literally cannot be about anyone else.
 
 **Best for:** Birthdays, weddings, anniversaries, retirements, any milestone
-**Cost:** $1.40 per song with [YourBanger](/)
+**Cost:** from $1.20 per song with [YourBanger](/)
 **Time to create:** About 2 minutes
 
 > "I made a song about my dad's obsession with his grill for his birthday. He's played it for every visitor since." — Marcus T.
@@ -169,7 +169,7 @@ The more elements you include, the more personal it becomes.
 
 | Gift | Why It Works | Cost |
 |------|--------------|------|
-| Custom song | Unique & emotional | $1.40 |
+| Custom song | Unique & emotional | from $1.20 |
 | Jewelry with coordinates | Subtle but meaningful | $50-150 |
 | Photo book with commentary | Captures your history | $40-80 |
 | Custom portrait | Fun & decorative | $50-150 |
@@ -179,7 +179,7 @@ The more elements you include, the more personal it becomes.
 
 | Gift | Why It Works | Cost |
 |------|--------------|------|
-| Custom song | Unexpected & memorable | $1.40 |
+| Custom song | Unexpected & memorable | from $1.20 |
 | Engraved watch/leather | Quality + personal | $50-300 |
 | Custom map of meaningful place | Subtle sentiment | $40-80 |
 | Sports memorabilia with personal touch | Combines interests | Varies |
@@ -189,7 +189,7 @@ The more elements you include, the more personal it becomes.
 
 | Gift | Why It Works | Cost |
 |------|--------------|------|
-| Custom song about family | Captures your relationship | $1.40 |
+| Custom song about family | Captures your relationship | from $1.20 |
 | Photo book spanning years | Documents family history | $50-100 |
 | Video montage from family | Shows family coordination | Free |
 | Grandchildren artwork compilation | Involves the kids | $30-80 |
@@ -199,7 +199,7 @@ The more elements you include, the more personal it becomes.
 
 | Gift | Why It Works | Cost |
 |------|--------------|------|
-| Custom song about friendship | Celebrates your bond | $1.40 |
+| Custom song about friendship | Celebrates your bond | from $1.20 |
 | Inside joke merchandise | Only you two get it | $20-50 |
 | Friendship photo book | Documents adventures | $40-70 |
 | Experience together | Quality time | Varies |
@@ -299,7 +299,7 @@ If you want maximum personalization with minimal effort, a custom song is hard t
 - **100% about them** - Impossible to be generic
 - **Takes 2 minutes** - Share their story, pick a style
 - **Professional quality** - Sounds like a real song
-- **$1.40 per song** - Less than a greeting card at Walgreens
+- **from $1.20 per song** - Less than a greeting card at Walgreens
 - **Instantly shareable** - Link + MP3 ready immediately
 - **Lasts forever** - They can play it for years
 

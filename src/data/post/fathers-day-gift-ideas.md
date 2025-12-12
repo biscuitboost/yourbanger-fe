@@ -41,7 +41,7 @@ These Father's Day gift ideas actually deliver that.
 
 **The moment:** Play it at the Father's Day gathering. Watch him pretend he's not crying.
 
-**Cost:** $1.40
+**Cost:** From $1.20
 
 > "I made a song about my dad's 30-year obsession with his smoker grill, his refusal to ask for directions, and how he always falls asleep on the couch at 8pm. He's played it for literally every person who's visited since." — Sarah K.
 
@@ -177,7 +177,7 @@ Here's the secret: Dad doesn't care about the price tag. He cares about proof th
 - **Value what he's given** (time, lessons, sacrifice)
 - **Want to spend time with him** (not out of obligation)
 
-A [custom song](/) about your relationship does all three. It takes 2 minutes, costs $1.40, and makes a grown man pretend he has allergies.
+A [custom song](/) about your relationship does all three. It takes 2 minutes, costs from $1.20, and makes a grown man pretend he has allergies.
 
 **[Create a Father's Day song →](https://app.yourbanger.com/auth?tab=signup)**
 

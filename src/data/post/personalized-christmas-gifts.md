@@ -41,7 +41,7 @@ This Christmas, skip the generic. Here's how to give gifts that actually mean so
 
 **Perfect for:** Parents, partners, best friends, anyone with a good sense of humor or memorable story.
 
-**Cost:** $1.40 per song
+**Cost:** from $1.20 per song
 
 > "I made a Christmas song for my mom about all our family traditions and inside jokes. She plays it every time someone visits during the holidays now." — Sarah K.
 
@@ -172,7 +172,7 @@ Running out of time? These work even on Christmas Eve:
 
 The best Christmas gifts aren't about money or even creativity. They're about **proof that you pay attention**.
 
-A custom song about your dad's obsession with his grill costs $1.40 but contains years of noticing him.
+A custom song about your dad's obsession with his grill costs from $1.20 but contains years of noticing him.
 
 A photo book with real captions costs $50 but represents countless shared experiences.
 

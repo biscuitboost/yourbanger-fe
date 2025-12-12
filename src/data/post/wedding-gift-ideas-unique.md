@@ -43,7 +43,7 @@ Here are unique wedding gift ideas that stand out from the stack of identical bo
 - Give it as a gift they can play at home
 - Include QR code in a beautiful card
 
-**Cost:** $1.40
+**Cost:** From $1.20
 
 > "We made a song about how the couple met at a terrible bar, their first disaster of a date, and how they knew immediately anyway. They played it at the reception and everyone who knew the story was laughing and crying." — Maid of Honor, Austin
 

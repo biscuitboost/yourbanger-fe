@@ -27,7 +27,7 @@ You must be at least 13 years old to use YourBanger.com. If you're under 18, ple
 
 ## 4. Payment & Credits
 
-Songs cost credits. You buy credits, you spend them on songs. Currently: 10 songs for $14.
+Songs cost credits. You buy credits, you spend them on songs. Currently: 10 songs for $20.
 
 **Refunds:** If something breaks on our end, we'll make it right. If you just changed your mind after creating a song, we generally can't refund those credits since the song was already generated.
 

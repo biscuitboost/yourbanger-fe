@@ -39,7 +39,7 @@ These Mother's Day gift ideas deliver that.
 
 **The moment:** Play it at brunch. Hand her tissues first.
 
-**Cost:** $1.40
+**Cost:** From $1.20
 
 > "I made a song about my mom's famous lasagna, her 'because I said so' catchphrase, and how she somehow always knew when I was lying. I played it at Mother's Day brunch. She made me play it twice, then immediately sent it to all her friends." — Jessica T.
 
@@ -173,7 +173,7 @@ The secret: Mom doesn't care about expensive gifts. She cares about proof that:
 - **You appreciate her sacrifices** (specifically, not vaguely)
 - **You want her in your life** (not out of obligation)
 
-A [custom song](/) does all three. It takes 2 minutes, costs $1.40, and requires you to actually think about what she means to you.
+A [custom song](/) does all three. It takes 2 minutes, costs from $1.20, and requires you to actually think about what she means to you.
 
 She'll cry. She'll play it for everyone. She'll remember this Mother's Day.
 

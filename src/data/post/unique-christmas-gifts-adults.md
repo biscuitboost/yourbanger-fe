@@ -39,7 +39,7 @@ So this Christmas, stop trying to find stuff. Start looking for something they c
 
 **Perfect for:** Parents, in-laws, siblings, friends who are impossible to shop for.
 
-**Cost:** $1.40
+**Cost:** from $1.20
 
 > "Every year I struggle with what to get my in-laws. This year I made a song about their legendary holiday traditions and their 40 years of marriage. My mother-in-law played it for everyone at Christmas dinner." — Jennifer T.
 

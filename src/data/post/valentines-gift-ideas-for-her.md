@@ -39,7 +39,7 @@ Here are unique Valentine's Day gift ideas that go beyond the pharmacy aisle.
 
 **The reveal:** Play it at dinner. Watch her face change as she realizes it's about her.
 
-**Cost:** $1.40
+**Cost:** From $1.20
 
 > "I made a song about how we met at that terrible party and our first date at the dive bar. She made me play it three times. Then she sent it to her mom." — David R.
 

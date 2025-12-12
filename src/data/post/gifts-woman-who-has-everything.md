@@ -41,7 +41,7 @@ So what do you get the woman who has everything?
 
 **The pitch:** "I couldn't find anything good enough, so I made you something that doesn't exist anywhere else in the world."
 
-**Cost:** $1.40
+**Cost:** from $1.20
 
 > "My mom has everything. I'm not exaggerating—everything. I made her a song about our family traditions, her famous lasagna, and how she holds the family together. She cried, then made me play it for every relative." — Sarah K.
 

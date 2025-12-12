@@ -39,7 +39,7 @@ This holiday season, try something different. Here are unique gift ideas for him
 
 **Example:** A rock anthem about his legendary brisket, his obsession with weather apps, and his refusal to ask for directions.
 
-**Cost:** $1.40
+**Cost:** from $1.20
 
 > "I made a song about my brother's fantasy football obsession and his decades-long rivalry with our cousin. We played it at Christmas dinner. He's talked about it more than any gift he's ever received." — Mike R.
 

@@ -37,7 +37,7 @@ That kind of friendship deserves a gift that proves you've been paying attention
 
 **Perfect for:** Birthdays, milestone moments, "just because you're my person" occasions.
 
-**Cost:** $1.40
+**Cost:** From $1.20
 
 > "I made a song for my best friend's birthday about our terrible road trip, her obsession with true crime podcasts, and all the times she's saved me from bad decisions. She ugly-cried. Then she played it for everyone at the party." — Jenna, Chicago
 
