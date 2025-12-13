@@ -12,7 +12,7 @@ tags:
   - career tributes
 author: YourBanger.com Team
 metadata:
-  title: "Retirement Gift Ideas That Honor Their Legacy | YourBanger"
+  title: "Retirement Gift Ideas That Honor Their Legacy | YourBanger.com"
   description: "Looking for retirement gift ideas beyond the gold watch? These meaningful gifts celebrate decades of work and the exciting freedom ahead."
 ---
 
@@ -35,7 +35,7 @@ Here are retirement gift ideas that actually mean something.
 
 **Why it works:** They've had thousands of work meetings. They've never had a song written about their career.
 
-**What it is:** A professionally produced song about their professional journey—the legendary projects, the office quirks, the impact they've had, and the freedom ahead. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A professionally produced song about their professional journey—the legendary projects, the office quirks, the impact they've had, and the freedom ahead. [YourBanger.com](/) creates these in about 2 minutes.
 
 **The moment:** Play it at the retirement party instead of (or during) the speech. Watch everyone react to the inside jokes.
 

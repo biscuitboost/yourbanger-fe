@@ -12,7 +12,7 @@ tags:
   - unique gifts
 author: YourBanger.com Team
 metadata:
-  title: "Personalized Happy Birthday Songs - Create Custom Birthday Music | YourBanger"
+  title: "Personalized Happy Birthday Songs - Create Custom Birthday Music | YourBanger.com"
   description: "Create a personalized happy birthday song in 2 minutes. Turn their quirks, memories, and inside jokes into a custom song they'll play on repeat. from $1.20 per song."
 ---
 
@@ -67,11 +67,11 @@ Unlike a card that gets thrown away, a personalized song gets played again. And 
 
 ## How to Create a Personalized Birthday Song
 
-Creating a custom birthday song with [YourBanger](/) takes about 2 minutes:
+Creating a custom birthday song with [YourBanger.com](/) takes about 2 minutes:
 
 ### Step 1: Share Their Story
 
-<!-- IMAGE: Screenshot of YourBanger's story input interface -->
+<!-- IMAGE: Screenshot of YourBanger.com's story input interface -->
 <!-- Alt text: "YourBanger.com interface where you share the birthday person's story" -->
 
 Tell us about the birthday person:

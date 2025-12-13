@@ -12,7 +12,7 @@ tags:
   - christmas gifts
 author: YourBanger.com Team
 metadata:
-  title: "Unique Gift Ideas for Him This Holiday | YourBanger"
+  title: "Unique Gift Ideas for Him This Holiday | YourBanger.com"
   description: "Looking for unique gift ideas for him? These unexpected presents go beyond the usual suspects. From custom songs to personalized experiences."
 ---
 
@@ -35,7 +35,7 @@ This holiday season, try something different. Here are unique gift ideas for him
 
 **Why it's unique:** He's received ties. He's never had a professionally produced song written about his life.
 
-**What it is:** A complete, original song with lyrics about him—his quirks, hobbies, your memories together, and what makes him legendary. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A complete, original song with lyrics about him—his quirks, hobbies, your memories together, and what makes him legendary. [YourBanger.com](/) creates these in about 2 minutes.
 
 **Example:** A rock anthem about his legendary brisket, his obsession with weather apps, and his refusal to ask for directions.
 

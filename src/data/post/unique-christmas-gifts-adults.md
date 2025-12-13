@@ -12,7 +12,7 @@ tags:
   - hard to buy for
 author: YourBanger.com Team
 metadata:
-  title: "Unique Christmas Gifts for Adults Who Have Everything | YourBanger"
+  title: "Unique Christmas Gifts for Adults Who Have Everything | YourBanger.com"
   description: "Looking for unique Christmas gifts for adults who have everything? Skip the stuff. These gift ideas focus on experiences, personalization, and meaning."
 ---
 
@@ -35,7 +35,7 @@ So this Christmas, stop trying to find stuff. Start looking for something they c
 
 **Why it works:** They have Amazon. They don't have a song written specifically about their life.
 
-**What it is:** A professionally produced song with custom lyrics about them—their personality, your shared memories, inside jokes. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A professionally produced song with custom lyrics about them—their personality, your shared memories, inside jokes. [YourBanger.com](/) creates these in about 2 minutes.
 
 **Perfect for:** Parents, in-laws, siblings, friends who are impossible to shop for.
 

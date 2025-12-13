@@ -2,13 +2,13 @@
 
 ## Your Mission
 
-Build a high-converting marketing website for **YourBanger** (yourbanger.com) using the AstroWind template. This site will drive user acquisition for the web app at app.yourbanger.com.
+Build a high-converting marketing website for **YourBanger.com** (yourbanger.com) using the AstroWind template. This site will drive user acquisition for the web app at app.yourbanger.com.
 
 ---
 
 ## Project Context
 
-**What is YourBanger?**  
+**What is YourBanger.com?**  
 An AI-powered platform that creates personalized songs in minutes. Users share a story, memory, or inside joke, and get a custom song with AI-generated lyrics and professional music production.
 
 **Business Model:**  

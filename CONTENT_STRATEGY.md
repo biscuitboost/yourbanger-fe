@@ -305,7 +305,7 @@ For each piece of content, ensure:
 - [ ] Answers search intent
 - [ ] Provides unique value
 - [ ] Includes actionable advice
-- [ ] Has clear CTA to YourBanger
+- [ ] Has clear CTA to YourBanger.com
 - [ ] Naturally promotes personalized songs as solution
 - [ ] Updated publish date (spread across 12 months)
 

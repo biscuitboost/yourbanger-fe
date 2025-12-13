@@ -6,7 +6,7 @@ interface Props {
   class?: string;
 }
 
-const { src, title, artist = 'YourBanger', class: className = '' } = Astro.props;
+const { src, title, artist = 'YourBanger.com', class: className = '' } = Astro.props;
 ---
 
 <div class={`audio-player bg-[var(--secondary)]/50 rounded-xl p-4 border border-[var(--border)] ${className}`}>

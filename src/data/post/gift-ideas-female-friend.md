@@ -12,7 +12,7 @@ tags:
   - birthday gifts
 author: YourBanger.com Team
 metadata:
-  title: "Gift Ideas for Female Friends They'll Actually Love | YourBanger"
+  title: "Gift Ideas for Female Friends They'll Actually Love | YourBanger.com"
   description: "Looking for gift ideas for your female friend? These thoughtful, unique presents show you actually pay attention. From custom songs to meaningful keepsakes."
 ---
 
@@ -35,7 +35,7 @@ These gift ideas for female friends hit that sweet spot between thoughtful and f
 
 **Why she'll love it:** Because it's not just a gift—it's a record of your friendship that doesn't exist anywhere else.
 
-**What it is:** A professionally produced song with lyrics about your friendship—the inside jokes, the memories, maybe even that Vegas trip that shall not be spoken of. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A professionally produced song with lyrics about your friendship—the inside jokes, the memories, maybe even that Vegas trip that shall not be spoken of. [YourBanger.com](/) creates these in about 2 minutes.
 
 **Perfect for:** Best friends, long-term friendships, friends with a good sense of humor, milestone birthdays.
 

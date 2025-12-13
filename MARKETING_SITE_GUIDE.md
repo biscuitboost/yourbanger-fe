@@ -12,7 +12,7 @@
 ## Brand Identity
 
 ### Company Name
-**YourBanger**
+**YourBanger.com**
 
 ### Value Proposition
 Create personalized AI-generated songs in minutes. Turn inside jokes, memories, and special moments into custom songs that make people laugh, cry, and feel special.
@@ -210,7 +210,7 @@ Each card shows:
 ### 5. About Page (`/about`) [Optional]
 
 **The Story**
-- Why we built YourBanger
+- Why we built YourBanger.com
 - The problem: Greeting cards are boring, hiring musicians is expensive
 - The solution: AI-powered personalization at scale
 - The mission: Make everyone feel like a legend

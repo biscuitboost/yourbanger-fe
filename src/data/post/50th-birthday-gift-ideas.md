@@ -12,7 +12,7 @@ tags:
   - 50th birthday
 author: YourBanger.com Team
 metadata:
-  title: "50th Birthday Gift Ideas That Mark Half a Century | YourBanger"
+  title: "50th Birthday Gift Ideas That Mark Half a Century | YourBanger.com"
   description: "Looking for 50th birthday gift ideas? These meaningful gifts celebrate five decades of life with personalized tributes, experiences, and milestone acknowledgments."
 ---
 
@@ -33,7 +33,7 @@ Generic gifts won't cut it. This milestone deserves something that acknowledges 
 
 **Why it works:** Fifty years of stories, condensed into a few minutes of music. Nothing captures a life like that.
 
-**What it is:** A professionally produced song about their journey—the highlights, the quirks, the relationships, the impact. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A professionally produced song about their journey—the highlights, the quirks, the relationships, the impact. [YourBanger.com](/) creates these in about 2 minutes.
 
 **The moment:** Play it at the party. Watch five decades flash before everyone's eyes.
 

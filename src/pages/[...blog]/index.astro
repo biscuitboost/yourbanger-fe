@@ -71,12 +71,12 @@ const articleSchema = {
   dateModified: post.updateDate ? new Date(post.updateDate).toISOString() : (post.publishDate ? new Date(post.publishDate).toISOString() : undefined),
   author: {
     '@type': 'Organization',
-    name: post.author || 'YourBanger',
+    name: post.author || 'YourBanger.com',
     url: SITE.site,
   },
   publisher: {
     '@type': 'Organization',
-    name: 'YourBanger',
+    name: 'YourBanger.com',
     logo: {
       '@type': 'ImageObject',
       url: `${SITE.site}/favicon.svg`,

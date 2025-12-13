@@ -12,7 +12,7 @@ tags:
   - unique gifts
 author: YourBanger.com Team
 metadata:
-  title: "Father's Day Gift Ideas He'll Actually Use | YourBanger"
+  title: "Father's Day Gift Ideas He'll Actually Use | YourBanger.com"
   description: "Looking for Father's Day gifts that aren't boring? These unique, personalized gift ideas show Dad you actually know him—from custom songs to experiences."
 ---
 
@@ -37,7 +37,7 @@ These Father's Day gift ideas actually deliver that.
 
 **Why it works:** Dads don't expect songs about them. That's exactly why it hits so hard.
 
-**What it is:** A professionally produced song with custom lyrics about him—his quirks, your memories together, the things he taught you, and why he's legendary. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A professionally produced song with custom lyrics about him—his quirks, your memories together, the things he taught you, and why he's legendary. [YourBanger.com](/) creates these in about 2 minutes.
 
 **The moment:** Play it at the Father's Day gathering. Watch him pretend he's not crying.
 

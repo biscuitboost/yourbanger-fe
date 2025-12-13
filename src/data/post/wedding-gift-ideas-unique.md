@@ -12,7 +12,7 @@ tags:
   - gift ideas
 author: YourBanger.com Team
 metadata:
-  title: "Unique Wedding Gift Ideas Beyond the Registry | YourBanger"
+  title: "Unique Wedding Gift Ideas Beyond the Registry | YourBanger.com"
   description: "Looking for wedding gift ideas beyond the registry? These unique, personalized gifts stand out and create memories the couple will treasure forever."
 ---
 
@@ -35,7 +35,7 @@ Here are unique wedding gift ideas that stand out from the stack of identical bo
 
 **Why it works:** They can buy a KitchenAid. They cannot buy a professionally produced song that's literally about their relationship.
 
-**What it is:** A custom song with lyrics about how they met, their journey together, inside jokes, and what makes them perfect for each other. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A custom song with lyrics about how they met, their journey together, inside jokes, and what makes them perfect for each other. [YourBanger.com](/) creates these in about 2 minutes.
 
 **How to present it:**
 - As a first dance song (coordinate with DJ)

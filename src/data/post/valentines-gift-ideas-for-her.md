@@ -12,7 +12,7 @@ tags:
   - romantic gifts
 author: YourBanger.com Team
 metadata:
-  title: "Unique Valentine's Day Gift Ideas for Her | YourBanger"
+  title: "Unique Valentine's Day Gift Ideas for Her | YourBanger.com"
   description: "Looking for Valentine's Day gifts for her that aren't flowers? These unique, thoughtful gift ideas show you actually know her—from custom songs to meaningful experiences."
 ---
 
@@ -35,7 +35,7 @@ Here are unique Valentine's Day gift ideas that go beyond the pharmacy aisle.
 
 **Why it works:** She can buy herself flowers. She cannot buy a professionally produced song that's literally about your love story.
 
-**What it is:** A custom song with lyrics about how you met, your inside jokes, what you love about her, and why you'd choose her again. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A custom song with lyrics about how you met, your inside jokes, what you love about her, and why you'd choose her again. [YourBanger.com](/) creates these in about 2 minutes.
 
 **The reveal:** Play it at dinner. Watch her face change as she realizes it's about her.
 

@@ -12,7 +12,7 @@ tags:
   - best friend gifts
 author: YourBanger.com Team
 metadata:
-  title: "Best Friend Gift Ideas They'll Actually Love | YourBanger"
+  title: "Best Friend Gift Ideas They'll Actually Love | YourBanger.com"
   description: "Looking for gift ideas for your best friend? These meaningful, personalized gifts prove you know them—from custom songs about your friendship to inside joke tributes."
 ---
 
@@ -33,7 +33,7 @@ That kind of friendship deserves a gift that proves you've been paying attention
 
 **Why it works:** Your friendship has stories. A song captures all of them.
 
-**What it is:** A professionally produced song about your friendship—the chaos, the memories, the inside jokes, the reasons they're irreplaceable. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A professionally produced song about your friendship—the chaos, the memories, the inside jokes, the reasons they're irreplaceable. [YourBanger.com](/) creates these in about 2 minutes.
 
 **Perfect for:** Birthdays, milestone moments, "just because you're my person" occasions.
 

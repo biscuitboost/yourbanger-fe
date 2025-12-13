@@ -12,7 +12,7 @@ tags:
   - unique gifts
 author: YourBanger.com Team
 metadata:
-  title: "Mother's Day Gift Ideas That'll Make Her Cry | YourBanger"
+  title: "Mother's Day Gift Ideas That'll Make Her Cry | YourBanger.com"
   description: "Looking for Mother's Day gifts that actually mean something? These unique, personalized gift ideas show Mom her real impact—from custom songs to unforgettable experiences."
 ---
 
@@ -35,7 +35,7 @@ These Mother's Day gift ideas deliver that.
 
 **Why it works:** You probably don't tell her often enough. A song forces you to put it all into words—and music.
 
-**What it is:** A professionally produced song with custom lyrics about her—the things she taught you, the sacrifices she made, the phrases she always says, and why she's legendary. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A professionally produced song with custom lyrics about her—the things she taught you, the sacrifices she made, the phrases she always says, and why she's legendary. [YourBanger.com](/) creates these in about 2 minutes.
 
 **The moment:** Play it at brunch. Hand her tissues first.
 

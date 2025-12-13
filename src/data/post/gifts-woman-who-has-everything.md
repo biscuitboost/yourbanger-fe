@@ -12,7 +12,7 @@ tags:
   - personalized gifts
 author: YourBanger.com Team
 metadata:
-  title: "10 Gifts for the Woman Who Has Everything | YourBanger"
+  title: "10 Gifts for the Woman Who Has Everything | YourBanger.com"
   description: "What do you get the woman who has everything? These 10 unique gift ideas focus on experiences, personalization, and meaning over more stuff."
 ---
 
@@ -37,7 +37,7 @@ So what do you get the woman who has everything?
 
 **Why it works:** She can buy anything at the store. She cannot buy a song that's literally about her life.
 
-**What it is:** A professionally produced song with custom lyrics about her—her personality, your memories together, inside jokes, and what makes her uniquely her. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A professionally produced song with custom lyrics about her—her personality, your memories together, inside jokes, and what makes her uniquely her. [YourBanger.com](/) creates these in about 2 minutes.
 
 **The pitch:** "I couldn't find anything good enough, so I made you something that doesn't exist anywhere else in the world."
 

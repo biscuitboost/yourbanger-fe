@@ -12,7 +12,7 @@ tags:
   - unique gifts
 author: YourBanger.com Team
 metadata:
-  title: "Personalized Gift Ideas: The Ultimate Guide | YourBanger"
+  title: "Personalized Gift Ideas: The Ultimate Guide | YourBanger.com"
   description: "The complete guide to personalized gifts. Discover custom gift ideas for birthdays, weddings, holidays, and every occasion. Make every present meaningful."
 ---
 
@@ -58,7 +58,7 @@ The more elements you include, the more personal it becomes.
 **Why it works:** It's the ultimate personalized gift. A song literally cannot be about anyone else.
 
 **Best for:** Birthdays, weddings, anniversaries, retirements, any milestone
-**Cost:** from $1.20 per song with [YourBanger](/)
+**Cost:** from $1.20 per song with [YourBanger.com](/)
 **Time to create:** About 2 minutes
 
 > "I made a song about my dad's obsession with his grill for his birthday. He's played it for every visitor since." — Marcus T.

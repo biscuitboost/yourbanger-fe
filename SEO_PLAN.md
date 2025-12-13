@@ -78,7 +78,7 @@
 
 ### 3.1 Homepage Optimization
 **Current Title:** `YourBanger.com - Turn Your Story Into a Song`  
-**Recommended Title:** `Personalized AI Songs | Custom Music Gifts in Minutes | YourBanger`
+**Recommended Title:** `Personalized AI Songs | Custom Music Gifts in Minutes | YourBanger.com`
 
 **Current Description:** Good, but add urgency  
 **Recommended:**
@@ -92,12 +92,12 @@ Create personalized AI songs in 2 minutes. Perfect for birthdays, weddings & spe
 - H3: Individual feature/testimonial headings
 
 ### 3.2 Pricing Page
-**Recommended Title:** `Pricing - $1.40 Per Song | Custom AI Music | YourBanger`
+**Recommended Title:** `Pricing - $1.40 Per Song | Custom AI Music | YourBanger.com`
 
 **Add FAQ Schema** for pricing questions (see Section 4)
 
 ### 3.3 Examples Page
-**Recommended Title:** `Song Examples | Hear Real Personalized AI Songs | YourBanger`
+**Recommended Title:** `Song Examples | Hear Real Personalized AI Songs | YourBanger.com`
 
 **Add:**
 - Individual song schema (MusicRecording)
@@ -105,7 +105,7 @@ Create personalized AI songs in 2 minutes. Perfect for birthdays, weddings & spe
 - Audio transcripts for accessibility + SEO
 
 ### 3.4 FAQ Page
-**Recommended Title:** `FAQ - How AI Personalized Songs Work | YourBanger`
+**Recommended Title:** `FAQ - How AI Personalized Songs Work | YourBanger.com`
 
 **Add FAQPage Schema** (high impact for featured snippets)
 
@@ -132,7 +132,7 @@ Disallow: /_astro/
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "YourBanger",
+  "name": "YourBanger.com",
   "url": "https://yourbanger.com",
   "logo": "https://yourbanger.com/logo.png",
   "description": "AI-powered personalized song creation service",
@@ -270,7 +270,7 @@ Blog infrastructure enabled and first posts published.
 | 13 | "50th Birthday Ideas That Will Go Down in History" | 50th birthday ideas | 3,600 | Gift Guide |
 | 14 | "What Makes a Personalized Gift Special" | personalized gift meaning | - | Thought Leadership |
 | 14 | "Personalized Gifts for Dad: Show Him You Get It" | personalized gifts for dad | 8,100 | Gift Guide |
-| 15 | "How AI Creates Music: Behind YourBanger's Technology" | ai song generator | 60,500 | Educational |
+| 15 | "How AI Creates Music: Behind YourBanger.com's Technology" | ai song generator | 60,500 | Educational |
 | 15 | "Creative Wedding Gift Ideas the Couple Will Love" | creative wedding gift | 2,900 | Gift Guide |
 | 16 | "Useful Gifts for Men They'll Actually Appreciate" | useful gifts for men | 9,900 | Gift Guide |
 

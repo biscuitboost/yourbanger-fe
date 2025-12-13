@@ -12,7 +12,7 @@ tags:
   - birthday gifts
 author: YourBanger.com Team
 metadata:
-  title: "Last-Minute Gift Ideas That Don't Look Last-Minute | YourBanger"
+  title: "Last-Minute Gift Ideas That Don't Look Last-Minute | YourBanger.com"
   description: "Need a gift fast? These last-minute gift ideas can be ready in hours but feel deeply personal. From custom songs to digital experiences—no shipping required."
 ---
 
@@ -47,7 +47,7 @@ This might be the perfect last-minute gift because:
 - It's unique—no one else has this song
 - You get a shareable link immediately
 
-**How it works:** Go to [YourBanger](/), tell us about the person (their quirks, your memories, inside jokes), pick a music style, and get a professionally produced song in about 2 minutes.
+**How it works:** Go to [YourBanger.com](/), tell us about the person (their quirks, your memories, inside jokes), pick a music style, and get a professionally produced song in about 2 minutes.
 
 Cost: from $1.20 per song (10 songs for $20)
 

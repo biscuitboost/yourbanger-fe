@@ -27,7 +27,7 @@ These assets need to be created and added to the `/public` directory:
 
 The site is functional without these assets but will use:
 - Default favicon
-- Text-only logo (🎵 YourBanger)
+- Text-only logo (🎵 YourBanger.com)
 - Default OG image (will need to be created)
 - Audio players without actual audio (UI ready)
 

@@ -12,7 +12,7 @@ tags:
   - unique gifts
 author: YourBanger.com Team
 metadata:
-  title: "Personalized Gift Ideas for Men That Actually Impress | YourBanger"
+  title: "Personalized Gift Ideas for Men That Actually Impress | YourBanger.com"
   description: "Looking for personalized gift ideas for men? Skip the boring stuff. These custom gifts for him show you actually know him—from songs to experiences."
 ---
 
@@ -37,7 +37,7 @@ Personalized gifts work because they require knowing him specifically. And that'
 
 **Why it works:** Most guys don't expect to have a song written about them. That's what makes it hit so hard.
 
-**What it is:** A professionally produced song with custom lyrics about him—his hobbies, quirks, your memories together, and what makes him legendary. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A professionally produced song with custom lyrics about him—his hobbies, quirks, your memories together, and what makes him legendary. [YourBanger.com](/) creates these in about 2 minutes.
 
 **Perfect for:** Birthdays, Father's Day, retirement, anniversaries, or "just because you're awesome."
 

@@ -1,5 +1,5 @@
 site:
-  name: YourBanger
+  name: YourBanger.com
   site: 'https://yourbanger.com'
   base: '/'
   trailingSlash: false
@@ -10,13 +10,13 @@ site:
 metadata:
   title:
     default: YourBanger.com - Create Personalized AI Songs in Minutes
-    template: '%s — YourBanger'
+    template: '%s — YourBanger.com'
   description: "Turn your story into a custom song. AI-powered personalized music for birthdays, weddings, and special moments. From $1.20 per song. No musical talent required."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: YourBanger
+    site_name: YourBanger.com
     images:
       - url: '~/assets/images/og-image.jpg'
         width: 1200

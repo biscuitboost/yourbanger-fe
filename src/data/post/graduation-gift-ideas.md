@@ -12,7 +12,7 @@ tags:
   - milestone gifts
 author: YourBanger.com Team
 metadata:
-  title: "Graduation Gift Ideas That Mark the Milestone | YourBanger"
+  title: "Graduation Gift Ideas That Mark the Milestone | YourBanger.com"
   description: "Looking for graduation gift ideas beyond cash? These meaningful gifts celebrate their achievement and prepare them for the next chapter."
 ---
 
@@ -35,7 +35,7 @@ These graduation gift ideas celebrate what they've accomplished while setting th
 
 **Why it works:** They spent years working toward this. A song captures the entire journey.
 
-**What it is:** A professionally produced song about their path to graduation—the late nights, the struggles, the victories, and what they've become. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A professionally produced song about their path to graduation—the late nights, the struggles, the victories, and what they've become. [YourBanger.com](/) creates these in about 2 minutes.
 
 **Perfect for:** High school, college, grad school, trade school—any graduation worth celebrating.
 

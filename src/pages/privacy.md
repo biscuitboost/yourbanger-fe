@@ -120,7 +120,7 @@ We don't use third-party advertising cookies. We're not tracking you around the 
 
 YourBanger.com is not intended for children under 13. We don't knowingly collect information from children under 13. If you're under 13, please don't use the service.
 
-If you're 13-17, please get a parent's permission before using YourBanger.
+If you're 13-17, please get a parent's permission before using YourBanger.com.
 
 ## 8. International Users
 

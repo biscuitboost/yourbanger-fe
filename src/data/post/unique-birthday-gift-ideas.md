@@ -12,7 +12,7 @@ tags:
   - gift ideas
 author: YourBanger.com Team
 metadata:
-  title: "10 Unique Birthday Gift Ideas That Will Make Them Cry | YourBanger"
+  title: "10 Unique Birthday Gift Ideas That Will Make Them Cry | YourBanger.com"
   description: "Looking for unique birthday gift ideas? Discover personalized gifts that create unforgettable moments. Custom songs, memory books, and more meaningful alternatives to generic presents."
 ---
 
@@ -33,7 +33,7 @@ Here are 10 unique birthday gift ideas that go beyond the ordinary.
 
 **Why it works:** Nothing says "I really know you" like a song that mentions their quirks, your shared memories, and inside jokes only you two understand.
 
-**What it is:** A professionally produced song with custom lyrics about the birthday person. Services like [YourBanger](/) let you create personalized birthday songs in about 2 minutes—just share their story, pick a music style, and get a complete track.
+**What it is:** A professionally produced song with custom lyrics about the birthday person. Services like [YourBanger.com](/) let you create personalized birthday songs in about 2 minutes—just share their story, pick a music style, and get a complete track.
 
 **Perfect for:** Anyone who loves music, has a great sense of humor, or has a lot of inside jokes worth celebrating.
 

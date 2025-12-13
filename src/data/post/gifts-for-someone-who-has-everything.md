@@ -12,7 +12,7 @@ tags:
   - personalized gifts
 author: YourBanger.com Team
 metadata:
-  title: "10 Gifts for Someone Who Has Everything | YourBanger"
+  title: "10 Gifts for Someone Who Has Everything | YourBanger.com"
   description: "What do you buy for someone who has everything? These unique, thoughtful gift ideas focus on experiences and personalization over more stuff."
 ---
 
@@ -37,7 +37,7 @@ So what do you get someone who has everything?
 
 **Why it works for "has everything" people:** They can buy any song on iTunes. They cannot buy a song that's literally about them.
 
-**What it is:** A professionally produced song with custom lyrics about them—their quirks, your shared memories, inside jokes. [YourBanger](/) creates these in about 2 minutes.
+**What it is:** A professionally produced song with custom lyrics about them—their quirks, your shared memories, inside jokes. [YourBanger.com](/) creates these in about 2 minutes.
 
 **The pitch:** "I know you don't need anything. So I made you something that doesn't exist anywhere else in the world."
 

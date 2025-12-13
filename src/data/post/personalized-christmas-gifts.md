@@ -12,7 +12,7 @@ tags:
   - gift ideas
 author: YourBanger.com Team
 metadata:
-  title: "Personalized Christmas Gifts That Actually Mean Something | YourBanger"
+  title: "Personalized Christmas Gifts That Actually Mean Something | YourBanger.com"
   description: "Looking for personalized Christmas gifts? Discover meaningful, custom gift ideas that show you really know them. From custom songs to unique keepsakes."
 ---
 
@@ -37,7 +37,7 @@ This Christmas, skip the generic. Here's how to give gifts that actually mean so
 
 **Why it works:** Imagine their face when they hear a professionally produced song that mentions their quirks, your shared memories, and inside jokes only you two understand.
 
-**What it is:** [YourBanger](/) lets you create personalized songs in about 2 minutes. Share their story, pick a music style (rock, pop, country, ballad), and get a complete track they can play over and over.
+**What it is:** [YourBanger.com](/) lets you create personalized songs in about 2 minutes. Share their story, pick a music style (rock, pop, country, ballad), and get a complete track they can play over and over.
 
 **Perfect for:** Parents, partners, best friends, anyone with a good sense of humor or memorable story.
 
