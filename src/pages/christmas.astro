@@ -1,0 +1,367 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import { Icon } from 'astro-icon/components';
+
+
+const metadata = {
+  title: 'Personalised Christmas Songs | Custom Christmas Music Gift | YourBanger',
+  description: 'Create a personalised Christmas song in 2 minutes. The perfect last-minute gift that hits different. Turn their name, memories & inside jokes into a custom song. From £1.20 per song.',
+  openGraph: {
+    title: 'Personalised Christmas Songs - The Gift They\'ll Never Forget',
+    description: 'Make Christmas unforgettable with a personalised AI song about them. 2 minutes to create, memories that last forever.',
+    type: 'website',
+  },
+};
+
+const examples = [
+  {
+    title: "Nan's Christmas Anthem",
+    style: 'Country',
+    description: 'A heartfelt country tune about her legendary roast potatoes, the time she accidentally set the Christmas pudding on fire, and 40 years of family chaos.',
+    gradient: 'from-red-500 to-rose-500',
+  },
+  {
+    title: "Dad's Christmas Roast",
+    style: 'Rock',
+    description: 'An arena rock tribute to his annual battle with the turkey, his refusal to read instructions, and his legendary Christmas jumper collection.',
+    gradient: 'from-green-500 to-emerald-500',
+  },
+  {
+    title: "Best Mate's Banger",
+    style: 'Pop',
+    description: 'A pop anthem celebrating a decade of friendship, terrible Secret Santa gifts, and that time you both got lost coming home from the Christmas party.',
+    gradient: 'from-amber-500 to-orange-500',
+  },
+];
+
+const benefits = [
+  {
+    icon: 'tabler:clock',
+    title: '2 Minutes to Create',
+    description: 'Share their story, pick a style, and get a professional song almost instantly. Perfect for last-minute gifts.',
+  },
+  {
+    icon: 'tabler:heart',
+    title: 'Deeply Personal',
+    description: 'Include inside jokes, memories, and details that only you know about them. Way better than socks.',
+  },
+  {
+    icon: 'tabler:gift',
+    title: 'Instant Delivery',
+    description: 'No shipping, no waiting. Get a shareable link and downloadable MP3 immediately. Play it on Christmas morning.',
+  },
+  {
+    icon: 'tabler:currency-pound',
+    title: 'From £1.20 Per Song',
+    description: 'Cheaper than a card and a box of chocolates. More memorable than anything else under the tree.',
+  },
+];
+
+const urgencyReasons = [
+  {
+    icon: 'tabler:calendar-event',
+    title: 'Christmas is Coming',
+    description: 'Only days left to create the perfect gift. Don\'t leave it to the last minute... or do, we\'ve got you covered.',
+  },
+  {
+    icon: 'tabler:truck-off',
+    title: 'No Delivery Stress',
+    description: 'While everyone else is panicking about shipping delays, you\'ll have your gift ready in minutes.',
+  },
+  {
+    icon: 'tabler:device-mobile',
+    title: 'Share Instantly',
+    description: 'Text it, email it, or play it on the big day. Works anywhere, no wrapping required.',
+  },
+];
+
+// Schema for SEO
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Personalised Christmas Song Creation',
+  description: 'AI-powered custom Christmas song creation service. Create unique, personalised Christmas songs in minutes.',
+  provider: {
+    '@type': 'Organization',
+    name: 'YourBanger',
+    url: 'https://yourbanger.com'
+  },
+  serviceType: 'Custom Music Creation',
+  areaServed: 'Worldwide',
+  offers: {
+    '@type': 'Offer',
+    price: '1.20',
+    priceCurrency: 'GBP',
+    description: 'Per song (25 songs for £25)'
+  }
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Service Schema for SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+
+  <!-- Hero Section with Christmas Theme -->
+  <section class="py-16 md:py-24 relative overflow-hidden">
+    <!-- Christmas-themed background -->
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      <!-- Urgency badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 rounded-full border border-red-500/20 mb-6">
+        <Icon name="tabler:snowflake" class="w-4 h-4 text-red-500" />
+        <span class="text-sm font-medium text-red-600 dark:text-red-400">🎄 The Last-Minute Gift That Hits Different</span>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
+        Personalised <span class="text-[var(--primary)]">Christmas Songs</span>
+      </h1>
+
+      <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">
+        Turn their name, quirks, and your favourite memories into a custom song they'll play every Christmas. 
+        Create it in 2 minutes. Make them cry happy tears.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="https://app.yourbanger.com/auth?tab=signup"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium text-lg px-8 h-14 rounded-xl shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
+        >
+          Create a Christmas Song
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/examples"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Hear Examples
+        </a>
+      </div>
+
+      <p class="text-sm text-[var(--muted-foreground)] mt-4">
+        From £1.20 per song • No subscription • Ready in minutes
+      </p>
+    </div>
+  </section>
+
+  <!-- Urgency Section -->
+  <section class="py-12 bg-gradient-to-r from-red-500/5 via-green-500/5 to-red-500/5">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-3 gap-6">
+        {urgencyReasons.map((reason) => (
+          <div class="flex items-start gap-4 p-5 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+            <div class="w-10 h-10 bg-red-500/10 rounded-lg flex items-center justify-center shrink-0">
+              <Icon name={reason.icon} class="w-5 h-5 text-red-500" />
+            </div>
+            <div>
+              <h3 class="font-semibold text-[var(--foreground)] mb-1">{reason.title}</h3>
+              <p class="text-sm text-[var(--muted-foreground)]">{reason.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Why a Personalised Christmas Song?
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          Because they deserve more than another gift voucher
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {benefits.map((benefit) => (
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all">
+            <div class="w-12 h-12 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center mb-4">
+              <Icon name={benefit.icon} class="w-6 h-6 text-[var(--primary)]" />
+            </div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">{benefit.title}</h3>
+            <p class="text-[var(--muted-foreground)]">{benefit.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Real Christmas Songs We've Made
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          Every one created in under 2 minutes
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {examples.map((example) => (
+          <div class="group relative bg-[var(--card)] rounded-xl border border-[var(--border)] overflow-hidden hover:border-[var(--primary)]/50 transition-all">
+            <div class={`absolute inset-0 bg-gradient-to-br ${example.gradient} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
+            <div class="relative p-6">
+              <span class="inline-block px-3 py-1 bg-[var(--primary)]/10 text-[var(--primary)] text-sm font-medium rounded-full mb-3">
+                {example.style}
+              </span>
+              <h3 class="text-xl font-semibold text-[var(--foreground)] mb-2">{example.title}</h3>
+              <p class="text-[var(--muted-foreground)]">{example.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/examples" class="inline-flex items-center text-[var(--primary)] hover:underline font-medium">
+          See all examples
+          <Icon name="tabler:arrow-right" class="w-4 h-4 ml-1" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          How to Create a Christmas Song
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          Easier than wrapping a present
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        <div class="flex items-start gap-4 p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white font-bold shrink-0">1</div>
+          <div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-1">Share Their Story</h3>
+            <p class="text-[var(--muted-foreground)]">Tell us about them—their quirks, your favourite memories together, inside jokes, and what makes them special to you.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white font-bold shrink-0">2</div>
+          <div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-1">Pick the Perfect Style</h3>
+            <p class="text-[var(--muted-foreground)]">Choose from rock, pop, country, R&B, ballad, and more. Match the music to their personality.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white font-bold shrink-0">3</div>
+          <div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-1">Watch Their Reaction</h3>
+            <p class="text-[var(--muted-foreground)]">Get your song instantly. Play it on Christmas morning, share it in the family group chat, or save it for the big reveal. Don't forget to record their face!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gift Ideas Section -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Perfect For Everyone on Your List
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="p-5 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all">
+          <div class="text-2xl mb-2">👨‍👩‍👧‍👦</div>
+          <h3 class="font-semibold text-[var(--foreground)] mb-1">Parents & Grandparents</h3>
+          <p class="text-sm text-[var(--muted-foreground)]">Celebrate decades of memories, their legendary cooking, and all the times they've been there.</p>
+        </div>
+        <div class="p-5 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all">
+          <div class="text-2xl mb-2">💑</div>
+          <h3 class="font-semibold text-[var(--foreground)] mb-1">Partners</h3>
+          <p class="text-sm text-[var(--muted-foreground)]">Your first Christmas together, your hundredth—make it one they'll never forget.</p>
+        </div>
+        <div class="p-5 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all">
+          <div class="text-2xl mb-2">🍻</div>
+          <h3 class="font-semibold text-[var(--foreground)] mb-1">Best Mates</h3>
+          <p class="text-sm text-[var(--muted-foreground)]">All those nights out, inside jokes, and legendary moments deserve a proper anthem.</p>
+        </div>
+        <div class="p-5 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all">
+          <div class="text-2xl mb-2">👶</div>
+          <h3 class="font-semibold text-[var(--foreground)] mb-1">Kids</h3>
+          <p class="text-sm text-[var(--muted-foreground)]">A song about their favourite things, their achievements, and how proud you are of them.</p>
+        </div>
+        <div class="p-5 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all">
+          <div class="text-2xl mb-2">💼</div>
+          <h3 class="font-semibold text-[var(--foreground)] mb-1">Colleagues</h3>
+          <p class="text-sm text-[var(--muted-foreground)]">Secret Santa sorted. A song about their office quirks beats another mug any day.</p>
+        </div>
+        <div class="p-5 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all">
+          <div class="text-2xl mb-2">🐕</div>
+          <h3 class="font-semibold text-[var(--foreground)] mb-1">Pet Parents</h3>
+          <p class="text-sm text-[var(--muted-foreground)]">Yes, we've made songs about dogs. And cats. And that one hamster. They loved it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Christmas FAQ -->
+  <FAQs
+    title="Christmas Song Questions"
+    items={[
+      {
+        title: 'Is this really a last-minute gift option?',
+        description: 'Absolutely. You can create a personalised song in about 2 minutes, and it\'s ready to share immediately. Even if it\'s Christmas Eve and the shops are closed, you\'ve got this.',
+      },
+      {
+        title: 'What details should I include for a Christmas song?',
+        description: 'Include their name, personality traits, your favourite memories together, inside jokes, their quirks, and anything that makes them uniquely them. The more specific, the more personal the song.',
+      },
+      {
+        title: 'How do I give it as a gift?',
+        description: 'You get a shareable link and downloadable MP3. You can text it, email it, play it on a speaker on Christmas morning, or even put a QR code in a card. Get creative!',
+      },
+      {
+        title: 'What if I need to make changes?',
+        description: 'You can edit the lyrics before the final song is generated. Once you\'re happy with the words, we create the music. You\'re in control.',
+      },
+      {
+        title: 'How much does it cost?',
+        description: 'Songs start from just £1.20 each when you buy a bundle. That\'s cheaper than a card and chocolates, and infinitely more memorable.',
+      },
+    ]}
+  />
+
+  <!-- Final CTA Section -->
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Create a Christmas Song Now',
+        href: 'https://app.yourbanger.com/auth?tab=signup',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      🎄 Make This Christmas Unforgettable
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      You know who you're thinking about. You know what makes them laugh. <br class="hidden md:block" />
+      In 2 minutes, you could have a gift that makes their whole year.
+    </Fragment>
+  </CallToAction>
+</Layout>
