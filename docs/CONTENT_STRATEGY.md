@@ -1,7 +1,7 @@
 # YourBanger.com SEO Content Strategy
 
-**Last Updated:** December 7, 2025  
-**Data Source:** DataForSEO API  
+**Last Updated:** December 14, 2025  
+**Data Source:** DataForSEO API (Live SERP + Labs)  
 **Target Market:** United States (English)
 
 ---
@@ -16,6 +16,36 @@ This document tracks our keyword targeting strategy, content status, and SEO per
 - **Total Monthly Search Volume (Current):** ~750,000+
 - **Blog Posts Published:** 41
 - **Landing Pages:** 5
+
+---
+
+## 🏆 COMPETITIVE LANDSCAPE (Dec 2024 Update)
+
+### Direct Competitors Ranking for Our Target Keywords
+
+| Competitor | Organic Rank ("custom song gift") | Price | Our Advantage |
+|------------|----------------------------------|-------|---------------|
+| customsonggift.com | #1 | $99 | 7x cheaper |
+| songfinch.com | #2 | $199+ | 14x cheaper, instant |
+| songlorious.com | #3 | ~$200 | 14x cheaper, instant |
+| songoven.com | #5 | $23.99 | Better quality AI |
+| songheart.co | #6 | $139+ | 10x cheaper |
+| giftsong.ai | #7 | Varies | Established brand |
+
+### Key Competitive Insights
+
+1. **Price is our weapon:** At $1.40/song, we're the cheapest quality option
+2. **Speed differentiator:** Competitors take 24h-7 days; we're instant
+3. **Songoven is closest competitor:** Similar AI approach but we have better UX
+4. **Market leaders (Songfinch, Songlorious):** Premium positioning leaves budget gap
+
+### SERP Features to Target
+
+From live SERP analysis, these features appear for our keywords:
+- **AI Overview:** Appears for "custom song gift" - optimize for AI citations
+- **People Also Ask:** High opportunity for FAQ content
+- **Video carousels:** Instagram Reels dominating - create reaction videos
+- **Related searches:** "custom song gift for him/boyfriend" - create targeted pages
 
 ---
 
@@ -153,6 +183,25 @@ Lower volume but high intent and easier to rank for.
 | get well gift ideas | 3,600 | - | "Get Well Gift Ideas" |
 
 **Potential Monthly Traffic: ~35,000+**
+
+### 🆕 COMPETITOR-DERIVED KEYWORDS (Dec 2024 - From SERP Analysis)
+
+These keywords were identified from analyzing competitor rankings and "People Also Ask" sections:
+
+| Keyword | Source | Intent | Recommended Content |
+|---------|--------|--------|--------------------|
+| custom song gift for him | Related searches | Transactional | Landing page: /songs-for-him |
+| custom song gift for boyfriend | Related searches | Transactional | Landing page: /songs-for-boyfriend |
+| best personalized song company | PAA | Commercial | Comparison article |
+| is custom song gift legit | PAA | Informational | Trust/review content |
+| how much does a custom song gift cost | PAA | Commercial | Pricing comparison article |
+| free personalized song | Related searches | Informational | Freemium hook content |
+| custom song creator | Related searches | Commercial | How-to/tool content |
+| create a song for my wife | Related searches | Transactional | Landing page: /songs-for-wife |
+| songfinch alternative | Competitor | Commercial | "Songfinch vs YourBanger" comparison |
+| songlorious alternative | Competitor | Commercial | "Songlorious vs YourBanger" comparison |
+
+**Strategy:** Create comparison content targeting competitor brand names + "alternative" / "vs" keywords
 
 ### SEASONAL PRIORITY (Create before season)
 
@@ -379,6 +428,34 @@ For each piece of content, ensure:
 
 ---
 
+## 🔍 COMPETITOR MONITORING
+
+### Tools for Ongoing Research
+
+| Tool | Purpose | Frequency |
+|------|---------|----------|
+| [Google Ads Transparency Center](https://adstransparency.google.com) | Monitor competitor ad creatives | Weekly |
+| DataForSEO SERP API | Track ranking changes | Weekly |
+| DataForSEO Ads Advertisers API | See who's bidding on keywords | Monthly |
+| Google Search Console | Our own performance | Daily |
+
+### Competitors to Track
+
+1. **songfinch.com** - Market leader, watch for new features/pricing
+2. **songlorious.com** - Shark Tank brand, high authority
+3. **customsonggift.com** - Ranks #1 for core keyword
+4. **songoven.com** - Closest AI competitor, price-sensitive
+5. **giftsong.ai** - AI competitor, similar positioning
+
+### Key Metrics to Monitor
+
+- Competitor ranking changes for "custom song gift", "personalized song"
+- New competitor landing pages or blog content
+- Competitor ad copy and offers
+- New entrants to the market
+
+---
+
 *Document maintained by YourBanger.com SEO Team*
-*Last updated: December 7, 2025 (Batch 2 Complete)*
-*Next review: January 7, 2026*
+*Last updated: December 14, 2025 (Competitor Analysis Added)*
+*Next review: January 14, 2026*

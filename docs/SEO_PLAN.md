@@ -331,29 +331,87 @@ Blog infrastructure enabled and first posts published.
 
 ---
 
-## 6. Off-Page SEO
+## 6. Competitive Analysis (Dec 2024 - DataForSEO)
 
-### 6.1 Link Building Opportunities
+### 6.1 Direct Competitors
+
+| Competitor | Price | Delivery | Positioning | Threat Level |
+|------------|-------|----------|-------------|-------------|
+| **songfinch.com** | $199+ | Varies | Market leader, human artists, "Instant Song" feature | 🔴 High |
+| **songlorious.com** | ~$200+ | Varies | Shark Tank credibility, premium positioning | 🔴 High |
+| **customsonggift.com** | $99 | 2 days | Budget-friendly human option | 🟡 Medium |
+| **songheart.co** | $139+ | 24h-30 days | Premium artists, fast options | 🟡 Medium |
+| **songoven.com** | $23.99 | 24 hours | **Cheapest - AI-powered** (closest competitor) | 🔴 High |
+| **giftsong.ai** | Varies | Fast | AI-focused, similar positioning | 🟡 Medium |
+| **melodfy.com** | Varies | 24-72h | Multi-language support | 🟢 Low |
+
+### 6.2 YourBanger Competitive Positioning
+
+**Price Point:** $14 for 10 songs ($1.40/song) - **Significantly cheaper than all competitors**
+
+**Key Differentiators to Emphasize:**
+- ⚡ **Speed:** Instant generation (~2 min) vs. hours/days
+- 💰 **Value:** 10 songs for $14 vs. $99-$199 for 1 song
+- 🎯 **Iteration:** Multiple versions to find the perfect one
+- 🤖 **AI Quality:** Better than budget AI alternatives (Songoven)
+
+**Messaging Against Competitors:**
+- vs. Songfinch/Songlorious: "Same emotional impact, fraction of the price"
+- vs. Songoven: "Better quality AI, more customization options"
+- vs. Human services: "Instant delivery, unlimited revisions"
+
+### 6.3 Competitor Keywords to Target
+
+From SERP analysis, competitors rank for these high-value terms:
+
+| Keyword | Top Competitor | Our Opportunity |
+|---------|---------------|----------------|
+| "custom song gift" | customsonggift.com | Target with price advantage |
+| "personalized song" | songfinch.com | Long-tail variations |
+| "custom song for wife" | Multiple | Create dedicated landing page |
+| "custom song for anniversary" | songlorious.com | /anniversary-songs optimization |
+| "AI song generator" | songoven.com | Educational content |
+| "best personalized song company" | songfinch.com | Comparison content |
+
+### 6.4 Competitor Ad Intelligence
+
+**Google Ads Transparency Research:**
+- Use [Google Ads Transparency Center](https://adstransparency.google.com) to monitor competitor ads
+- DataForSEO Ads Advertisers API can track who's bidding on target keywords
+- Key insight: Most competitors focus on occasion-based keywords (birthday, wedding, anniversary)
+
+**Recommended PPC Keywords (based on competitor gaps):**
+- "cheap custom song" (price-focused)
+- "instant personalized song" (speed-focused)
+- "AI song gift" (technology-focused)
+- "last minute song gift" (urgency-focused)
+
+---
+
+## 7. Off-Page SEO
+
+### 7.1 Link Building Opportunities
 - **Gift guide roundups** - Pitch to lifestyle blogs
 - **Wedding blogs** - Guest posts about unique wedding toast ideas
 - **Product Hunt** - Launch for backlinks + traffic
 - **Podcast appearances** - AI/tech podcasts, gift/lifestyle podcasts
 - **HARO (Help a Reporter Out)** - Respond to journalist queries
+- **Comparison articles** - "Songfinch vs YourBanger" type content
 
-### 6.2 Social Signals
+### 7.2 Social Signals
 - Share customer reactions on social media
 - Create short-form video content (TikTok/Reels) of song reactions
 - Encourage customers to share their songs
 
-### 6.3 Local SEO (Optional)
+### 7.3 Local SEO (Optional)
 If targeting specific regions, create location pages:
 - "Personalized Songs [City]"
 
 ---
 
-## 7. Analytics & Tracking Setup
+## 8. Analytics & Tracking Setup
 
-### 7.1 Google Analytics 4 ✅ CONFIGURED
+### 8.1 Google Analytics 4 ✅ CONFIGURED
 ```yaml
 analytics:
   vendors:
@@ -361,12 +419,12 @@ analytics:
       id: "G-9HMNB359RY"  # Active
 ```
 
-### 7.2 Google Search Console
+### 8.2 Google Search Console
 - Already verified ✅
 - Submit sitemap: `https://yourbanger.com/sitemap-index.xml`
 - Monitor: Search performance, coverage, Core Web Vitals
 
-### 7.3 Conversion Tracking
+### 8.3 Conversion Tracking
 Track these events:
 - CTA clicks (to app.yourbanger.com)
 - Audio plays on examples page
@@ -375,7 +433,7 @@ Track these events:
 
 ---
 
-## 8. Implementation Priority
+## 9. Implementation Priority
 
 ### Phase 1: Quick Wins (Week 1-2) ✅ COMPLETED
 - [x] Update `robots.txt` with sitemap
@@ -405,7 +463,7 @@ Track these events:
 
 ---
 
-## 9. KPIs & Goals
+## 10. KPIs & Goals
 
 ### 3-Month Goals
 - Organic traffic: 500 → 2,000 monthly visitors
@@ -427,7 +485,7 @@ Track these events:
 
 ---
 
-## 10. Tools Recommended
+## 11. Tools Recommended
 
 | Tool | Purpose | Cost |
 |------|---------|------|
