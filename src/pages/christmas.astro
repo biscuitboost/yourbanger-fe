@@ -115,8 +115,8 @@ const pageSchema = {
     <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
       <!-- Urgency badge -->
       <div class="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 rounded-full border border-red-500/20 mb-6">
-        <Icon name="tabler:snowflake" class="w-4 h-4 text-red-500" />
-        <span class="text-sm font-medium text-red-600 dark:text-red-400">🎄 The Last-Minute Gift That Hits Different</span>
+        <Icon name="tabler:gift" class="w-4 h-4 text-red-500" />
+        <span class="text-sm font-medium text-red-600 dark:text-red-400">🎁 Sign Up & Get 1 Free Song!</span>
       </div>
 
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
@@ -135,7 +135,7 @@ const pageSchema = {
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium text-lg px-8 h-14 rounded-xl shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
         >
-          Create a Christmas Song
+          Get Your Free Song
           <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
         </a>
         <a
@@ -147,7 +147,7 @@ const pageSchema = {
       </div>
 
       <p class="text-sm text-[var(--muted-foreground)] mt-4">
-        From £1.20 per song • No subscription • Ready in minutes
+        🎁 <span class="font-semibold text-[var(--primary)]">Sign up free & get 1 song on us</span> • No credit card required
       </p>
     </div>
   </section>
@@ -349,18 +349,18 @@ const pageSchema = {
     actions={[
       {
         variant: 'primary',
-        text: 'Create a Christmas Song Now',
+        text: 'Sign Up & Get Your Free Song',
         href: 'https://app.yourbanger.com/auth?tab=signup',
         target: '_blank',
       },
     ]}
   >
     <Fragment slot="title">
-      🎄 Make This Christmas Unforgettable
+      🎁 Sign Up & Get 1 Free Song
     </Fragment>
 
     <Fragment slot="subtitle">
-      You know who you're thinking about. You know what makes them laugh. <br class="hidden md:block" />
+      Create your first personalised Christmas song completely free. No credit card required. <br class="hidden md:block" />
       In 2 minutes, you could have a gift that makes their whole year.
     </Fragment>
   </CallToAction>
