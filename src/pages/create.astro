@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import SongCreationForm from '~/components/widgets/SongCreationForm';
+import SongCreationForm from '~/components/widgets/SongCreationForm.astro';
 
 const metadata = {
   title: 'Create Your Song | YourBanger.com',
@@ -20,7 +20,7 @@ const metadata = {
         </p>
       </div>
 
-      <SongCreationForm client:load />
+      <SongCreationForm />
     </div>
   </section>
 </Layout>
