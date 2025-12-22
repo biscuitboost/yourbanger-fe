@@ -25,13 +25,13 @@ You're responsible for keeping your account secure. Don't share your login info,
 
 You must be at least 13 years old to use YourBanger.com. If you're under 18, please get a parent's permission.
 
-## 4. Payment & Credits
+## 4. Payment
 
-Songs cost credits. You buy credits, you spend them on songs. Currently: 10 songs for $20.
+Song gifts cost $19.99 per order.
 
-**Refunds:** If something breaks on our end, we'll make it right. If you just changed your mind after creating a song, we generally can't refund those credits since the song was already generated.
+Each song gift order includes up to 3 generations (6 track options). You select one final track to download and share via a gift link.
 
-**Credits don't expire.** Buy them today, use them next year. We're not going to take them away from you.
+**Refunds:** If something breaks on our end, we'll make it right. If you just changed your mind after your order was successfully processed and the song was already generated, we generally can't refund it.
 
 ## 5. Ownership & Usage Rights
 
@@ -51,7 +51,7 @@ Don't be a jerk. Specifically:
 - Don't resell our service or pretend you made it
 - Don't use the songs to harass or harm anyone
 
-If you do any of this, we'll suspend your account and you'll lose your credits. Don't test us.
+If you do any of this, we'll suspend your account. Don't test us.
 
 ## 7. AI-Generated Content Disclaimer
 
@@ -71,13 +71,13 @@ Sometimes the service might be down for maintenance or because the internet grem
 
 We're not responsible for how you use the songs, what happens when you share them, or any indirect consequences of using our service. We provide the tool, you use it responsibly.
 
-Our total liability for anything that goes wrong is limited to the amount you paid us for the credits you used. That's fair, right?
+Our total liability for anything that goes wrong is limited to the amount you paid us for the order in question. That's fair, right?
 
 ## 10. Termination
 
 You can stop using YourBanger.com anytime. Just stop logging in. Your account and songs will stay accessible unless you ask us to delete them.
 
-We can terminate accounts that violate these terms. If we do that, you'll lose access and any remaining credits. Don't make us do this.
+We can terminate accounts that violate these terms. If we do that, you'll lose access. Don't make us do this.
 
 ## 11. Changes to These Terms
 

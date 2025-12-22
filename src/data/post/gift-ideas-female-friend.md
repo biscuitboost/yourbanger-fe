@@ -39,9 +39,9 @@ These gift ideas for female friends hit that sweet spot between thoughtful and f
 
 **Perfect for:** Best friends, long-term friendships, friends with a good sense of humor, milestone birthdays.
 
-**Cost:** from $1.20
+**Cost:** $19.99
 
-> "I made a song for my best friend's 30th birthday about our terrible road trip, her obsession with her cat, and all the times she's saved me from bad decisions. She ugly-cried. Best from $1.20 I ever spent." — Jenna M.
+> "I made a song for my best friend's 30th birthday about our terrible road trip, her obsession with her cat, and all the times she's saved me from bad decisions. She ugly-cried. Best $19.99 I ever spent." — Jenna M.
 
 ### 2. A Spa Day (That You Attend Too)
 

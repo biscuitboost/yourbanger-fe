@@ -4,85 +4,34 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pricing - From $1.20 Per Song | Custom AI Music | YourBanger.com',
-  description: 'Create personalized AI songs from $10. Choose from 3, 10, or 25 song packages. No subscription, credits never expire. Custom birthday songs, wedding songs & more.',
+  title: 'Pricing - $19.99 Song Gift | Custom AI Music | YourBanger.com',
+  description: 'Create a personalized song gift for $19.99. Includes up to 3 generations (6 tracks) and one final track to download and share. No subscription.',
   openGraph: {
-    title: 'YourBanger.com Pricing - Custom AI Songs From $1.20 Each',
-    description: 'Song packages from $10. No subscription. Credits never expire. Professional AI music creation.',
+    title: 'YourBanger.com Pricing - $19.99 Song Gift',
+    description: 'Create a personalized song gift for $19.99. Includes up to 3 generations (6 tracks) and one final track to download and share.',
     type: 'website',
   },
 };
-
-// Credit packages matching the app
-const packages = [
-  {
-    name: 'Starter',
-    credits: 3,
-    price: 10,
-    perSong: '3.33',
-    description: 'Perfect for trying it out',
-    popular: false,
-    savings: null,
-  },
-  {
-    name: 'Standard',
-    credits: 10,
-    price: 20,
-    perSong: '2.00',
-    description: 'Most popular choice',
-    popular: true,
-    savings: 'Save 40%',
-  },
-  {
-    name: 'Value',
-    credits: 25,
-    price: 30,
-    perSong: '1.20',
-    description: 'Best value for creators',
-    popular: false,
-    savings: 'Save 64%',
-  },
-];
 
 // Product schema data for SEO
 const productSchema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
-  name: 'YourBanger.com Song Credits',
-  description: 'Personalized AI-generated songs. Create custom music for birthdays, weddings, and special moments.',
+  name: 'YourBanger.com Song Gift',
+  description: 'Personalized AI-generated song gift. Create custom music for birthdays, weddings, and special moments.',
   brand: {
     '@type': 'Brand',
     name: 'YourBanger.com'
   },
-  offers: [
-    {
-      '@type': 'Offer',
-      name: 'Starter - 3 Songs',
-      price: '10.00',
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-      url: 'https://yourbanger.com/pricing',
-      priceValidUntil: '2026-12-31',
-    },
-    {
-      '@type': 'Offer',
-      name: 'Standard - 10 Songs',
-      price: '20.00',
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-      url: 'https://yourbanger.com/pricing',
-      priceValidUntil: '2026-12-31',
-    },
-    {
-      '@type': 'Offer',
-      name: 'Value - 25 Songs',
-      price: '30.00',
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-      url: 'https://yourbanger.com/pricing',
-      priceValidUntil: '2026-12-31',
-    },
-  ],
+  offers: {
+    '@type': 'Offer',
+    name: 'Song Gift',
+    price: '19.99',
+    priceCurrency: 'USD',
+    availability: 'https://schema.org/InStock',
+    url: 'https://yourbanger.com/pricing',
+    priceValidUntil: '2026-12-31',
+  },
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
@@ -104,7 +53,7 @@ const productSchema = {
         Simple, Transparent Pricing
       </h1>
       <p class="text-xl text-[var(--muted-foreground)]">
-        No subscription. No hidden fees. Credits never expire.
+        No subscription. No hidden fees. Just a song gift.
       </p>
     </div>
   </section>
@@ -112,101 +61,62 @@ const productSchema = {
   <!-- Pricing Cards -->
   <section class="py-8 md:py-12">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
-        {packages.map((pkg) => (
-          <div class={`relative bg-[var(--card)] border rounded-2xl p-6 md:p-8 flex flex-col ${pkg.popular ? 'border-[var(--primary)] border-2' : 'border-[var(--border)]'}`}>
-            {pkg.popular && (
-              <div class="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span class="bg-[var(--primary)] text-white text-sm font-bold px-4 py-1 rounded-full">
-                  Most Popular
-                </span>
-              </div>
-            )}
-            {pkg.savings && (
-              <div class="absolute -top-3 right-4">
-                <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                  {pkg.savings}
-                </span>
-              </div>
-            )}
-            
-            <div class="text-center mb-6">
-              <h2 class="text-2xl font-bold text-[var(--foreground)] mb-1">{pkg.name}</h2>
-              <p class="text-[var(--muted-foreground)] text-sm">{pkg.description}</p>
+      <div class="max-w-2xl mx-auto">
+        <div class="relative bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 md:p-8">
+          <div class="text-center mb-6">
+            <h2 class="text-2xl font-bold text-[var(--foreground)] mb-2">Song Gift</h2>
+            <div class="flex items-baseline justify-center gap-2">
+              <span class="text-4xl md:text-5xl font-bold text-[var(--foreground)]">$19.99</span>
+              <span class="text-sm text-[var(--muted-foreground)]">per order</span>
             </div>
-
-            <div class="text-center mb-6">
-              <div class="flex items-baseline justify-center">
-                <span class="text-4xl md:text-5xl font-bold text-[var(--foreground)]">${pkg.price}</span>
-              </div>
-              <p class="text-lg text-[var(--primary)] font-semibold mt-1">
-                {pkg.credits} Songs
-              </p>
-              <p class="text-sm text-[var(--muted-foreground)]">
-                ${pkg.perSong} per song
-              </p>
-            </div>
-
-            <div class="flex-grow">
-              <ul class="space-y-3 text-sm text-[var(--foreground)] mb-6">
-                <li class="flex items-center">
-                  <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  2 unique versions per song
-                </li>
-                <li class="flex items-center">
-                  <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  MP3 download to keep forever
-                </li>
-                <li class="flex items-center">
-                  <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  Shareable page with player
-                </li>
-                <li class="flex items-center">
-                  <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  Karaoke-style lyrics display
-                </li>
-                <li class="flex items-center">
-                  <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  Share to WhatsApp, Facebook & more
-                </li>
-                <li class="flex items-center">
-                  <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  Credits never expire
-                </li>
-              </ul>
-            </div>
-
-            <a
-              href="https://app.yourbanger.com/auth?tab=signup"
-              target="_blank"
-              rel="noopener noreferrer"
-              class={`block w-full text-center px-6 py-3 font-bold rounded-xl transition-all duration-200 ${
-                pkg.popular 
-                  ? 'bg-[var(--primary)] text-white hover:bg-[var(--primary)]/90 shadow-lg shadow-[var(--primary)]/25' 
-                  : 'bg-[var(--secondary)] text-[var(--foreground)] hover:bg-[var(--secondary)]/80 border border-[var(--border)]'
-              }`}
-            >
-              Get {pkg.credits} Songs
-            </a>
+            <p class="text-[var(--muted-foreground)] mt-2">
+              Includes up to 3 generations (6 track options). Pick one final track to download and share via a gift link.
+            </p>
           </div>
-        ))}
-      </div>
 
-      <p class="text-center text-[var(--muted-foreground)] mt-8 text-sm">
-        Each song credit generates 2 unique variations you can choose from. Secure payment via Stripe.
-      </p>
+          <div class="mb-6">
+            <ul class="space-y-3 text-sm text-[var(--foreground)]">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Up to 3 generations included (6 track options)
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+                One final track to download and share
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+                MP3 download to keep forever
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-[var(--primary)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Shareable gift page with a player
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href="https://app.yourbanger.com/auth?tab=signup"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block w-full text-center px-6 py-3 font-bold rounded-xl transition-all duration-200 bg-[var(--primary)] text-white hover:bg-[var(--primary)]/90 shadow-lg shadow-[var(--primary)]/25"
+          >
+            Create a Song Gift
+          </a>
+
+          <p class="text-center text-[var(--muted-foreground)] mt-4 text-sm">
+            Secure payment via Stripe.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -233,25 +143,25 @@ const productSchema = {
             <tbody class="divide-y divide-[var(--border)]">
               <tr class="bg-[var(--primary)]/10">
                 <td class="px-6 py-4 font-semibold text-[var(--primary)]">YourBanger.com</td>
-                <td class="px-6 py-4 text-[var(--foreground)] font-semibold">From $1.20</td>
+                <td class="px-6 py-4 text-[var(--foreground)] font-semibold">$19.99</td>
                 <td class="px-6 py-4 text-[var(--foreground)]">~3 minutes</td>
                 <td class="px-6 py-4 text-[var(--foreground)]">100% custom lyrics & music</td>
               </tr>
               <tr>
                 <td class="px-6 py-4 text-[var(--foreground)]">Hire a musician on Fiverr</td>
-                <td class="px-6 py-4 text-[var(--muted-foreground)]">$100–500+</td>
+                <td class="px-6 py-4 text-[var(--muted-foreground)]">High</td>
                 <td class="px-6 py-4 text-[var(--muted-foreground)]">3–14 days</td>
                 <td class="px-6 py-4 text-[var(--muted-foreground)]">Limited revisions</td>
               </tr>
               <tr>
                 <td class="px-6 py-4 text-[var(--foreground)]">Cameo video</td>
-                <td class="px-6 py-4 text-[var(--muted-foreground)]">$50–500</td>
+                <td class="px-6 py-4 text-[var(--muted-foreground)]">Varies</td>
                 <td class="px-6 py-4 text-[var(--muted-foreground)]">1–7 days</td>
                 <td class="px-6 py-4 text-[var(--muted-foreground)]">30-second shoutout</td>
               </tr>
               <tr>
                 <td class="px-6 py-4 text-[var(--foreground)]">Greeting card</td>
-                <td class="px-6 py-4 text-[var(--muted-foreground)]">$5–10</td>
+                <td class="px-6 py-4 text-[var(--muted-foreground)]">Low</td>
                 <td class="px-6 py-4 text-[var(--muted-foreground)]">Instant</td>
                 <td class="px-6 py-4 text-[var(--muted-foreground)]">Your handwriting (maybe)</td>
               </tr>
@@ -267,24 +177,20 @@ const productSchema = {
     title="Pricing Questions"
     items={[
       {
-        title: 'Which package should I choose?',
-        description: 'If you\'re new, start with the Starter pack (3 songs for $10) to try it out. The Standard pack (10 songs for $20) is our most popular and great value. The Value pack (25 songs for $30) is perfect if you\'re creating songs for multiple occasions.',
+        title: 'How much does it cost?',
+        description: 'A song gift is $19.99 per order. It includes up to 3 generations (6 track options) and one final track to download and share.',
       },
       {
-        title: 'Do credits expire?',
-        description: 'No, use them whenever you want. They never expire.',
+        title: 'What\'s included?',
+        description: 'Up to 3 generations are included (6 track options). You pick one final track to download and share via a gift link.',
       },
       {
-        title: 'Can I buy more credits?',
-        description: 'Yes, you can purchase additional credits anytime from your dashboard.',
+        title: 'Is there a subscription?',
+        description: 'No. It\'s a one-time purchase per song gift.',
       },
       {
         title: 'What\'s the refund policy?',
         description: 'If you\'re not happy with your song, we\'ll make it right. See our refund policy for details.',
-      },
-      {
-        title: 'Is there a subscription?',
-        description: 'Nope! Just buy credits when you need them. No recurring charges.',
       },
     ]}
   />
@@ -306,7 +212,7 @@ const productSchema = {
 
     <Fragment slot="subtitle">
       That friend with the birthday coming up. Your parents' anniversary. <br class="hidden md:block" />
-      Starting at just $10 for 3 songs.
+      $19.99 per song gift.
     </Fragment>
   </CallToAction>
 </Layout>

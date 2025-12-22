@@ -37,7 +37,7 @@ Generic gifts won't cut it. This milestone deserves something that acknowledges 
 
 **The moment:** Play it at the party. Watch five decades flash before everyone's eyes.
 
-**Cost:** From $1.20
+**Cost:** $19.99
 
 > "I made a song for my husband's 50th that covered our college years, raising kids, his career, and his obsession with his fantasy football league. He pretended he wasn't crying. The video proves otherwise." — Wife, 50th Birthday Party
 
@@ -173,7 +173,7 @@ Five decades is too much to cover in a card. But a song? That works.
 
 A [personalized birthday song](/birthday-songs) captures their whole journey in a few minutes—the people, the stories, the quirks, the legacy. It's not just a gift; it's a tribute.
 
-Takes 2 minutes to create. Costs from $1.20. Honors 50 years.
+Takes 2 minutes to create. Costs $19.99. Honors 50 years.
 
 **[Create a 50th birthday song →](https://app.yourbanger.com/auth?tab=signup)**
 

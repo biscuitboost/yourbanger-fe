@@ -5,7 +5,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'FAQ - How AI Personalized Songs Work | YourBanger.com',
-  description: 'Common questions about creating personalized AI songs. Learn how it works, pricing (from $1.20/song), song quality, music styles, and how to share your custom songs.',
+  description: 'Common questions about creating personalized song gifts. Learn how it works, pricing ($19.99), song quality, music styles, and how to share your custom songs.',
   openGraph: {
     title: 'YourBanger.com FAQ - Everything About Personalized AI Songs',
     description: 'How does AI song creation work? How much does it cost? Get all your questions answered.',
@@ -28,7 +28,7 @@ const faqSchemaData = [
     name: 'How much does YourBanger.com cost?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: '$20 for 10 songs ($2.00 each), or get 25 songs for $30 ($1.20 each). No subscriptions, no hidden fees. Credits never expire.'
+      text: '$19.99 per song gift order. Each order includes up to 3 generations (6 track options). You pick one final track to download and share via a gift link.'
     }
   },
   {
@@ -68,7 +68,7 @@ const faqSchemaData = [
     name: 'Do I get multiple versions of my song?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'Yes! Every credit gives you two unique variations of your song with different vocal styles and arrangements. Pick your favorite or keep both.'
+      text: 'Yes. Each song gift order includes up to 3 generations (6 track options). You can generate multiple variations and then pick one final track to download and share.'
     }
   },
   {
@@ -77,14 +77,6 @@ const faqSchemaData = [
     acceptedAnswer: {
       '@type': 'Answer',
       text: 'Yes! Every song comes with a downloadable MP3 file. Save it to your phone, add it to a playlist, or use it in a video. It\'s yours to keep forever.'
-    }
-  },
-  {
-    '@type': 'Question',
-    name: 'Do song credits expire?',
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: 'No, credits never expire. Buy them now, use them in 3 years. They\'re yours forever.'
     }
   },
   {
@@ -176,21 +168,21 @@ const faqSchemaData = [
     ]}
   />
 
-  <!-- Pricing & Credits -->
+  <!-- Pricing -->
   <FAQs
-    title="Pricing & Credits"
+    title="Pricing"
     items={[
       {
         title: 'How much does it cost?',
-        description: '$20 for 10 songs ($2.00 each), or get 25 songs for $30 ($1.20 each). No subscriptions, no hidden fees, no gotchas. Just buy credits and use them whenever.',
+        description: '$19.99 per song gift order. No subscription.',
+      },
+      {
+        title: 'What\'s included in the $19.99?',
+        description: 'Up to 3 generations are included (6 track options). You pick one final track to download and share via a gift link.',
       },
       {
         title: 'Why isn\'t it free like other AI song generators?',
-        description: 'Free AI tools give you generic, low-quality output. We use premium AI models that create professional-sounding songs with real vocals, custom lyrics from your story, and multiple variations. The quality difference is night and day—and at $1.20-$2.00 per song, it\'s a fraction of what a custom song from a musician would cost.',
-      },
-      {
-        title: 'Do credits expire?',
-        description: 'Nope. Buy them now, use them in 3 years. They\'re yours forever.',
+        description: 'We use premium AI models that create professional-sounding songs with real vocals and custom lyrics from your story. $19.99 covers the compute required to generate multiple variations so you can pick the best final track.',
       },
       {
         title: 'What if I want a refund?',

@@ -7,7 +7,7 @@ import { Icon } from 'astro-icon/components';
 
 const metadata = {
   title: 'Personalised Christmas Songs | Custom Christmas Music Gift | YourBanger.com',
-  description: 'Create a personalised Christmas song in 2 minutes. The perfect last-minute gift that hits different. Turn their name, memories & inside jokes into a custom song. From £1.20 per song.',
+  description: 'Create a personalised Christmas song in 2 minutes. The perfect last-minute gift that hits different. Turn their name, memories & inside jokes into a custom song. $19.99 per song gift.',
   openGraph: {
     title: 'Personalised Christmas Songs - The Gift They\'ll Never Forget',
     description: 'Make Christmas unforgettable with a personalised AI song about them. 2 minutes to create, memories that last forever.',
@@ -53,9 +53,9 @@ const benefits = [
     description: 'No shipping, no waiting. Get a shareable link and downloadable MP3 immediately. Play it on Christmas morning.',
   },
   {
-    icon: 'tabler:currency-pound',
-    title: 'From £1.20 Per Song',
-    description: 'Cheaper than a card and a box of chocolates. More memorable than anything else under the tree.',
+    icon: 'tabler:credit-card',
+    title: '$19.99 Per Song Gift',
+    description: 'More memorable than anything else under the tree. Includes multiple generations so you can pick the best final track.',
   },
 ];
 
@@ -92,9 +92,9 @@ const pageSchema = {
   areaServed: 'Worldwide',
   offers: {
     '@type': 'Offer',
-    price: '1.20',
-    priceCurrency: 'GBP',
-    description: 'Per song (25 songs for £25)'
+    price: '19.99',
+    priceCurrency: 'USD',
+    description: 'Per song gift order'
   }
 };
 ---
@@ -116,7 +116,7 @@ const pageSchema = {
       <!-- Urgency badge -->
       <div class="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 rounded-full border border-red-500/20 mb-6">
         <Icon name="tabler:gift" class="w-4 h-4 text-red-500" />
-        <span class="text-sm font-medium text-red-600 dark:text-red-400">🎁 Sign Up & Get 1 Free Song!</span>
+        <span class="text-sm font-medium text-red-600 dark:text-red-400">🎁 Give a Christmas song they'll never forget</span>
       </div>
 
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
@@ -135,7 +135,7 @@ const pageSchema = {
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium text-lg px-8 h-14 rounded-xl shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
         >
-          Get Your Free Song
+          Create a Christmas Song Gift
           <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
         </a>
         <a
@@ -147,7 +147,7 @@ const pageSchema = {
       </div>
 
       <p class="text-sm text-[var(--muted-foreground)] mt-4">
-        🎁 <span class="font-semibold text-[var(--primary)]">Sign up free & get 1 song on us</span> • No credit card required
+        $19.99 per song gift • No subscription
       </p>
     </div>
   </section>
@@ -339,7 +339,7 @@ const pageSchema = {
       },
       {
         title: 'How much does it cost?',
-        description: 'Songs start from just £1.20 each when you buy a bundle. That\'s cheaper than a card and chocolates, and infinitely more memorable.',
+        description: 'A Christmas song gift is $19.99 per order. It includes up to 3 generations (6 track options) and one final track to download and share via a gift link.',
       },
     ]}
   />
@@ -349,18 +349,18 @@ const pageSchema = {
     actions={[
       {
         variant: 'primary',
-        text: 'Sign Up & Get Your Free Song',
+        text: 'Create a Christmas Song Gift',
         href: 'https://app.yourbanger.com/auth?tab=signup',
         target: '_blank',
       },
     ]}
   >
     <Fragment slot="title">
-      🎁 Sign Up & Get 1 Free Song
+      🎁 Create a Christmas Song Gift
     </Fragment>
 
     <Fragment slot="subtitle">
-      Create your first personalised Christmas song completely free. No credit card required. <br class="hidden md:block" />
+      Create a personalised Christmas song gift for $19.99. <br class="hidden md:block" />
       In 2 minutes, you could have a gift that makes their whole year.
     </Fragment>
   </CallToAction>

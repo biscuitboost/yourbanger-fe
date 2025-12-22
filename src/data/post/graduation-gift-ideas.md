@@ -39,7 +39,7 @@ These graduation gift ideas celebrate what they've accomplished while setting th
 
 **Perfect for:** High school, college, grad school, trade school—any graduation worth celebrating.
 
-**Cost:** From $1.20
+**Cost:** $19.99
 
 > "I made a graduation song for my daughter about her switching majors three times, her obsession with coffee during finals, and how proud we are of who she's become. She played it at the graduation party, and everyone was crying." — Parent, Ohio
 
@@ -183,7 +183,7 @@ After years of work, what they want is acknowledgment of what they've done.
 
 A [personalized song](/) captures it all—the journey, the struggles, the growth, the victory. It's not just a gift; it's documentation of a major life moment.
 
-Takes 2 minutes. Costs from $1.20. Means forever.
+Takes 2 minutes. Costs $19.99. Means forever.
 
 **[Create a graduation song →](https://app.yourbanger.com/auth?tab=signup)**
 

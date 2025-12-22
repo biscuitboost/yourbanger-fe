@@ -11,7 +11,7 @@ At YourBanger.com. we want you to be completely satisfied with every song you cr
 
 ## 30-Day Satisfaction Guarantee
 
-We offer a 30-day satisfaction guarantee on all purchases. If you're not satisfied with your songs, you can request a refund within 30 days of purchase.
+We offer a 30-day satisfaction guarantee on song gift orders. If you're not satisfied, you can request a refund within 30 days of purchase.
 
 ## Refund Eligibility
 
@@ -42,24 +42,16 @@ Most issues can be resolved by simply recreating the song with your feedback.
 
 - Refunds are issued to the original payment method
 - Processing time: 5-7 business days
-- Unused credits will be deactivated upon refund
+- If a refund is issued for an order, access to that order may be revoked
 - You'll receive a confirmation email once the refund is processed
 
 ## Non-Refundable Situations
 
 Refunds cannot be issued for:
 
-- Songs created more than 30 days ago
-- Credits that have already been fully used
-- Songs that were successfully created as described
+- Orders created more than 30 days ago
+- Orders that were successfully created as described
 - Dissatisfaction with the story/lyrics you provided (we can remake these!)
-
-## Credit System
-
-- Credits never expire
-- Unused credits remain in your account
-- If you request a refund, only unused credits can be refunded
-- Used credits (songs already generated) are non-refundable unless there was a technical issue
 
 ## Technical Issues
 
@@ -67,7 +59,7 @@ If you experience technical problems:
 
 1. Contact us immediately at support@yourbanger.com
 2. We'll troubleshoot and resolve the issue
-3. If we can't resolve it, we'll issue a full refund or credit
+3. If we can't resolve it, we'll issue a full refund
 
 ## Disputes
 

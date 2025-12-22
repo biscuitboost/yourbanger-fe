@@ -13,7 +13,7 @@ tags:
 author: YourBanger.com Team
 metadata:
   title: "Personalized Happy Birthday Songs - Create Custom Birthday Music | YourBanger.com"
-  description: "Create a personalized happy birthday song in 2 minutes. Turn their quirks, memories, and inside jokes into a custom song they'll play on repeat. from $1.20 per song."
+  description: "Create a personalized happy birthday song in 2 minutes. Turn their quirks, memories, and inside jokes into a custom song they'll play on repeat. $19.99 per song gift."
 ---
 
 ## The Problem with "Happy Birthday to You"
@@ -170,7 +170,7 @@ Check out more [examples here](/examples).
 
 | Gift | Cost | Time to Create | Personalization | Lasting Impact |
 |------|------|----------------|-----------------|----------------|
-| **Custom Song** | from $1.20 | 2 minutes | 100% about them | Played forever |
+| **Custom Song** | $19.99 | 2 minutes | 100% about them | Played forever |
 | Gift Card | $25-100 | 1 minute | Generic | Forgotten |
 | Greeting Card | $5-10 | 5 minutes | Your handwriting | Thrown away |
 | Hired Musician | $100-500 | 1-2 weeks | Limited | One performance |
@@ -202,7 +202,7 @@ It's the best last-minute gift that doesn't feel last-minute.
 
 Skip the awkward group sing-along. Give them a song that's actually about them—their quirks, your memories, the stories that make them legendary.
 
-It takes 2 minutes. It costs from $1.20. They'll play it forever.
+It takes 2 minutes. It costs $19.99. They'll play it forever.
 
 **[Create a personalized birthday song →](https://app.yourbanger.com/auth?tab=signup)**
 
