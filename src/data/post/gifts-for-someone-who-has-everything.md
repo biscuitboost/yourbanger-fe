@@ -41,7 +41,7 @@ So what do you get someone who has everything?
 
 **The pitch:** "I know you don't need anything. So I made you something that doesn't exist anywhere else in the world."
 
-**Cost:** from $1.20
+**Cost:** $19.99
 
 > "My dad has everything. Literally everything. I made him a song about his golf obsession and our camping trips. He's played it for every person who's visited in the last month." — Michael T.
 

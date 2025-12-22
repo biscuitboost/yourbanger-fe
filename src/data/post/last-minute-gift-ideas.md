@@ -49,7 +49,7 @@ This might be the perfect last-minute gift because:
 
 **How it works:** Go to [YourBanger.com](/), tell us about the person (their quirks, your memories, inside jokes), pick a music style, and get a professionally produced song in about 2 minutes.
 
-Cost: from $1.20 per song (10 songs for $20)
+Cost: $19.99 per song gift
 
 > "Got one for my mom's birthday at midnight. Played it for her the next morning. She cried and made me play it for everyone who visited that week." — Sarah M.
 

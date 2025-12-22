@@ -39,7 +39,7 @@ Here are retirement gift ideas that actually mean something.
 
 **The moment:** Play it at the retirement party instead of (or during) the speech. Watch everyone react to the inside jokes.
 
-**Cost:** From $1.20
+**Cost:** $19.99
 
 > "We made a song for our office manager who'd been with us for 28 years. It mentioned her famous 'Monday morning meetings,' her obsession with the snack cabinet, and how she somehow remembered every employee's birthday. There wasn't a dry eye in the room." — Finance Team, Chicago
 

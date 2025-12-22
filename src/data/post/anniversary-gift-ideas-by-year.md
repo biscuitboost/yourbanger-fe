@@ -273,7 +273,7 @@ A [personalized anniversary song](/anniversary-songs) works for any year because
 
 The easiest way to make any anniversary special: a custom song about your years together.
 
-It takes 2 minutes. It costs from $1.20. It captures your story in music they'll play every anniversary to come.
+It takes 2 minutes. **Cost:** $19.99. It captures your story in music they'll play every anniversary to come.
 
 **[Create your anniversary song →](https://app.yourbanger.com/auth?tab=signup)**
 

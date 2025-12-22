@@ -41,7 +41,7 @@ Personalized gifts work because they require knowing him specifically. And that'
 
 **Perfect for:** Birthdays, Father's Day, retirement, anniversaries, or "just because you're awesome."
 
-**Cost:** from $1.20
+**Cost:** $19.99
 
 > "I made a song about my husband's relationship with his smoker grill. The lyrics mentioned his 'low and slow' philosophy and his refusal to let anyone else touch the meat. He's played it every time he grills since." — Lauren M.
 
