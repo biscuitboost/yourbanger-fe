@@ -51,7 +51,7 @@ The more elements you include, the more personal it becomes.
 ### 1. Custom Songs
 
 <!-- IMAGE: Person creating a song on laptop/phone with YourBanger.com. or someone receiving and reacting to a custom song -->
-<!-- Alt text: "Creating a personalized song gift on YourBanger.com. -->
+<!-- Alt text: "Creating a personalized songs on YourBanger.com. -->
 
 **What it is:** A professionally produced song with original lyrics about the person—their quirks, your memories, and what makes them special.
 

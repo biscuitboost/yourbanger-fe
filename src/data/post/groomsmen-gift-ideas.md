@@ -46,7 +46,7 @@ Imagine their faces when they hear a professionally produced track about that ro
 [Create a custom groomsmen song →](/pricing)
 
 <!-- IMAGE: Groomsman listening to headphones with surprised/emotional expression -->
-<!-- Alt text: "Man listening to personalized song gift through headphones with moved expression" -->
+<!-- Alt text: "Man listening to personalized songs through headphones with moved expression" -->
 
 ### Engraved Watches
 

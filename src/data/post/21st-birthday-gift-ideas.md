@@ -75,7 +75,7 @@ Include inside jokes, embarrassing childhood stories, proud moments, and hopes f
 [Create a 21st birthday song →](/pricing)
 
 <!-- IMAGE: Young person listening to phone with emotional expression -->
-<!-- Alt text: "21-year-old emotionally listening to personalized birthday song gift" -->
+<!-- Alt text: "21-year-old emotionally listening to personalized birthday songs" -->
 
 ### Letter Collection
 

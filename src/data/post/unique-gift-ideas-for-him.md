@@ -31,7 +31,7 @@ This holiday season, try something different. Here are unique gift ideas for him
 ### 1. A Custom Song About Him
 
 <!-- IMAGE: Man looking genuinely surprised and happy receiving/hearing a gift -->
-<!-- Alt text: "Man receiving unique personalized song gift" -->
+<!-- Alt text: "Man receiving unique personalized songs" -->
 
 **Why it's unique:** He's received ties. He's never had a professionally produced song written about his life.
 

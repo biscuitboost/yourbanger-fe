@@ -33,7 +33,7 @@ So what do you get the woman who has everything?
 ### 1. A Custom Song About Her
 
 <!-- IMAGE: Elegant woman looking touched/emotional while listening to something -->
-<!-- Alt text: "Woman who has everything emotionally moved by personalized song gift" -->
+<!-- Alt text: "Woman who has everything emotionally moved by personalized songs" -->
 
 **Why it works:** She can buy anything at the store. She cannot buy a song that's literally about her life.
 

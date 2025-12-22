@@ -52,7 +52,7 @@ She can listen to it whenever she needs a reminder of what she's capable of.
 [Create a graduation song →](/pricing)
 
 <!-- IMAGE: Graduate listening to phone with emotional expression -->
-<!-- Alt text: "Female graduate emotionally listening to personalized graduation song gift" -->
+<!-- Alt text: "Female graduate emotionally listening to personalized graduation songs" -->
 
 ### Letter for the Future
 

@@ -46,7 +46,7 @@ Include how you met, inside jokes, embarrassing stories, and why they mean so mu
 [Create a custom bridesmaid song →](/pricing)
 
 <!-- IMAGE: Bridesmaid listening to phone with emotional expression, wiping tears -->
-<!-- Alt text: "Emotional bridesmaid listening to personalized song gift on her phone" -->
+<!-- Alt text: "Emotional bridesmaid listening to personalized songs on her phone" -->
 
 ### Personalized Jewelry
 

@@ -50,7 +50,7 @@ It's a permanent reminder of your relationship they can listen to anytime.
 [Create a meaningful song →](/pricing)
 
 <!-- IMAGE: Two people sharing emotional moment over personalized gift -->
-<!-- Alt text: "Emotional moment as person listens to personalized song gift about their relationship" -->
+<!-- Alt text: "Emotional moment as person listens to personalized songs about their relationship" -->
 
 ### Memory Collections
 

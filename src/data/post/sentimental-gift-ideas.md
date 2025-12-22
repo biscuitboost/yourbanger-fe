@@ -54,7 +54,7 @@ It's like a love letter set to music—something they can listen to whenever the
 [Create a sentimental song →](/pricing)
 
 <!-- IMAGE: Person listening to music with tears of joy -->
-<!-- Alt text: "Person emotionally listening to personalized song gift, moved to happy tears" -->
+<!-- Alt text: "Person emotionally listening to personalized songs, moved to happy tears" -->
 
 ### Written Love Letters or Memory Books
 

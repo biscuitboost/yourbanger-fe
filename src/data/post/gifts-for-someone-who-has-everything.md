@@ -33,7 +33,7 @@ So what do you get someone who has everything?
 ### 1. A Custom Song About Your Relationship
 
 <!-- IMAGE: Person looking surprised and touched while listening to something on their phone -->
-<!-- Alt text: "Wealthy adult emotionally moved by receiving a personalized song gift" -->
+<!-- Alt text: "Wealthy adult emotionally moved by receiving a personalized songs" -->
 
 **Why it works for "has everything" people:** They can buy any song on iTunes. They cannot buy a song that's literally about them.
 

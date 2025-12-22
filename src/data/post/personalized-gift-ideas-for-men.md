@@ -33,7 +33,7 @@ Personalized gifts work because they require knowing him specifically. And that'
 ### 1. A Custom Song About Him
 
 <!-- IMAGE: Man looking pleasantly surprised listening to something on his phone or speaker -->
-<!-- Alt text: "Man emotionally reacting to hearing his personalized song gift" -->
+<!-- Alt text: "Man emotionally reacting to hearing his personalized songs" -->
 
 **Why it works:** Most guys don't expect to have a song written about them. That's what makes it hit so hard.
 

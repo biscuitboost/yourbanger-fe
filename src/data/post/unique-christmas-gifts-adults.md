@@ -31,7 +31,7 @@ So this Christmas, stop trying to find stuff. Start looking for something they c
 ### 1. A Custom Song About Them
 
 <!-- IMAGE: Adult couple or family member looking moved while listening to custom song at Christmas -->
-<!-- Alt text: "Adult receiving personalized Christmas song gift" -->
+<!-- Alt text: "Adult receiving personalized Christmas songs" -->
 
 **Why it works:** They have Amazon. They don't have a song written specifically about their life.
 

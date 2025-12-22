@@ -53,7 +53,7 @@ He can listen to it whenever, share it with others, or keep it as a private remi
 [Create a personalized song →](/pricing)
 
 <!-- IMAGE: Man listening to headphones with moved expression -->
-<!-- Alt text: "Man emotionally listening to personalized song gift, touched by the thoughtful gesture" -->
+<!-- Alt text: "Man emotionally listening to personalized songs, touched by the thoughtful gesture" -->
 
 ### Adventure Experiences
 
