@@ -37,7 +37,7 @@ Here are 10 unique birthday gift ideas that go beyond the ordinary.
 
 **Perfect for:** Anyone who loves music, has a great sense of humor, or has a lot of inside jokes worth celebrating.
 
-**Cost:** $19.99 per song gift
+**Cost:** $19.99 per song
 
 > "I made a song about my dad's obsession with his smoker grill. We played it at the party, and he called me the next morning to play it again." — Marcus T., Austin, TX
 

@@ -58,7 +58,7 @@ The more elements you include, the more personal it becomes.
 **Why it works:** It's the ultimate personalized gift. A song literally cannot be about anyone else.
 
 **Best for:** Birthdays, weddings, anniversaries, retirements, any milestone
-**Cost:** $19.99 per song gift with [YourBanger.com](/)
+**Cost:** $19.99 per song with [YourBanger.com](/)
 **Time to create:** About 2 minutes
 
 > "I made a song about my dad's obsession with his grill for his birthday. He's played it for every visitor since." — Marcus T.
@@ -299,7 +299,7 @@ If you want maximum personalization with minimal effort, a custom song is hard t
 - **100% about them** - Impossible to be generic
 - **Takes 2 minutes** - Share their story, pick a style
 - **Professional quality** - Sounds like a real song
-- **$19.99 per song gift** - A gift they'll keep forever
+- **$19.99 per song** - A gift they'll keep forever
 - **Instantly shareable** - Link + MP3 ready immediately
 - **Lasts forever** - They can play it for years
 

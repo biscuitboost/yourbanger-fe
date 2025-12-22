@@ -50,7 +50,7 @@ We use your info to:
 
 - **Create your songs** - Obviously. That's what you're here for.
 - **Run your account** - Login, manage your gift orders, save your songs.
-- **Process payments** - So you can purchase song gifts.
+- **Process payments** - So you can purchase songs.
 - **Send important emails** - Account stuff, receipts, service updates. Not spam.
 - **Improve the service** - Fix bugs, add features, make things better.
 - **Prevent abuse** - Stop fraud, bots, and people being jerks.

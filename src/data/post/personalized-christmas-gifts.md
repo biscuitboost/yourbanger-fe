@@ -41,7 +41,7 @@ This Christmas, skip the generic. Here's how to give gifts that actually mean so
 
 **Perfect for:** Parents, partners, best friends, anyone with a good sense of humor or memorable story.
 
-**Cost:** $19.99 per song gift
+**Cost:** $19.99 per song
 
 > "I made a Christmas song for my mom about all our family traditions and inside jokes. She plays it every time someone visits during the holidays now." — Sarah K.
 

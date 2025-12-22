@@ -11,7 +11,7 @@ At YourBanger.com. we want you to be completely satisfied with every song you cr
 
 ## 30-Day Satisfaction Guarantee
 
-We offer a 30-day satisfaction guarantee on song gift orders. If you're not satisfied, you can request a refund within 30 days of purchase.
+We offer a 30-day satisfaction guarantee on song orders. If you're not satisfied, you can request a refund within 30 days of purchase.
 
 ## Refund Eligibility
 

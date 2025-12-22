@@ -23,7 +23,7 @@ This document tracks our keyword targeting strategy, content status, and SEO per
 
 ### Direct Competitors Ranking for Our Target Keywords
 
-| Competitor | Organic Rank ("custom song gift") | Price | Our Advantage |
+| Competitor | Organic Rank ("custom ") | Price | Our Advantage |
 |------------|----------------------------------|-------|---------------|
 | customsonggift.com | #1 | $99 | 7x cheaper |
 | songfinch.com | #2 | $199+ | 14x cheaper, instant |
@@ -42,10 +42,10 @@ This document tracks our keyword targeting strategy, content status, and SEO per
 ### SERP Features to Target
 
 From live SERP analysis, these features appear for our keywords:
-- **AI Overview:** Appears for "custom song gift" - optimize for AI citations
+- **AI Overview:** Appears for "custom " - optimize for AI citations
 - **People Also Ask:** High opportunity for FAQ content
 - **Video carousels:** Instagram Reels dominating - create reaction videos
-- **Related searches:** "custom song gift for him/boyfriend" - create targeted pages
+- **Related searches:** "custom  for him/boyfriend" - create targeted pages
 
 ---
 
@@ -120,7 +120,7 @@ Lower volume but high intent and easier to rank for.
 
 | Keyword | Monthly Volume | Difficulty | CPC | Intent | Status | Article/Page |
 |---------|---------------|------------|-----|--------|--------|--------------|
-| personalized song gift | 480 | - | $8.19 | Transactional | ✅ Published | [/](/), [/birthday-songs](/birthday-songs) |
+| personalized  | 480 | - | $8.19 | Transactional | ✅ Published | [/](/), [/birthday-songs](/birthday-songs) |
 | custom music gift | 390 | - | $2.32 | Transactional | 📋 Planned | - |
 | how to write wedding toast | 320 | - | $0.91 | Informational | ✅ Published | [/how-to-write-wedding-toast](/how-to-write-wedding-toast) |
 | personalized birthday song | 260 | - | $3.50 | Commercial | ✅ Published | [/birthday-songs](/birthday-songs), [/personalized-happy-birthday-songs](/personalized-happy-birthday-songs) |
@@ -190,11 +190,11 @@ These keywords were identified from analyzing competitor rankings and "People Al
 
 | Keyword | Source | Intent | Recommended Content |
 |---------|--------|--------|--------------------|
-| custom song gift for him | Related searches | Transactional | Landing page: /songs-for-him |
-| custom song gift for boyfriend | Related searches | Transactional | Landing page: /songs-for-boyfriend |
+| custom  for him | Related searches | Transactional | Landing page: /songs-for-him |
+| custom  for boyfriend | Related searches | Transactional | Landing page: /songs-for-boyfriend |
 | best personalized song company | PAA | Commercial | Comparison article |
-| is custom song gift legit | PAA | Informational | Trust/review content |
-| how much does a custom song gift cost | PAA | Commercial | Pricing comparison article |
+| is custom  legit | PAA | Informational | Trust/review content |
+| how much does a custom  cost | PAA | Commercial | Pricing comparison article |
 | free personalized song | Related searches | Informational | Freemium hook content |
 | custom song creator | Related searches | Commercial | How-to/tool content |
 | create a song for my wife | Related searches | Transactional | Landing page: /songs-for-wife |
@@ -449,7 +449,7 @@ For each piece of content, ensure:
 
 ### Key Metrics to Monitor
 
-- Competitor ranking changes for "custom song gift", "personalized song"
+- Competitor ranking changes for "custom ", "personalized song"
 - New competitor landing pages or blog content
 - Competitor ad copy and offers
 - New entrants to the market

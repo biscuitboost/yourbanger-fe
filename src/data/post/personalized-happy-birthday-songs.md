@@ -13,7 +13,7 @@ tags:
 author: YourBanger.com Team
 metadata:
   title: "Personalized Happy Birthday Songs - Create Custom Birthday Music | YourBanger.com"
-  description: "Create a personalized happy birthday song in 2 minutes. Turn their quirks, memories, and inside jokes into a custom song they'll play on repeat. $19.99 per song gift."
+  description: "Create a personalized happy birthday song in 2 minutes. Turn their quirks, memories, and inside jokes into a custom song they'll play on repeat. $19.99 per song."
 ---
 
 ## The Problem with "Happy Birthday to You"

@@ -27,9 +27,9 @@ You must be at least 13 years old to use YourBanger.com. If you're under 18, ple
 
 ## 4. Payment
 
-Song gifts cost $19.99 per order.
+Songs cost $19.99 per order.
 
-Each song gift order includes up to 3 generations (6 track options). You select one final track to download and share via a gift link.
+Each song order includes up to 3 generations (6 track options). You select one final track to download and share via a gift link.
 
 **Refunds:** If something breaks on our end, we'll make it right. If you just changed your mind after your order was successfully processed and the song was already generated, we generally can't refund it.
 
