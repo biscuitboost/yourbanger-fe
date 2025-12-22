@@ -282,7 +282,6 @@ const STEPS = [
 
   <!-- Price Info -->
   <div class="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
-    <p>One-time payment of <strong>$19.99</strong></p>
     <p>Create 3 unique song variations to choose from</p>
   </div>
 </div>
@@ -316,14 +315,14 @@ const STEPS = [
         } else {
           localStorage.removeItem(STORAGE_KEY)
         }
-      } catch (e) {
+      } catch {
         localStorage.removeItem(STORAGE_KEY)
       }
     }
   }
 
   // Auto-save with debouncing
-  let saveTimeout: number
+  let saveTimeout: NodeJS.Timeout
   function autoSave() {
     clearTimeout(saveTimeout)
     saveTimeout = setTimeout(() => {
