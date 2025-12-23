@@ -1,29 +1,30 @@
 ---
-const ARTIST_PERSONAS = [
-  { id: 'milo', slug: 'heartfelt-acoustic', name: 'Milo', avatar: '🎸', genreLabel: 'Acoustic Folk', tagline: 'Warm, intimate, and deeply personal', gender: 'm', color: 'amber' },
-  { id: 'jada', slug: 'romantic-rnb', name: 'Jada', avatar: '🎤', genreLabel: 'R&B Soul', tagline: 'Smooth, soulful, and passionate', gender: 'f', color: 'rose' },
-  { id: 'axel', slug: 'uplifting-rock', name: 'Axel', avatar: '🎸', genreLabel: 'Pop Rock', tagline: 'Energetic, anthemic, and powerful', gender: 'm', color: 'orange' },
-  { id: 'luna', slug: 'nostalgic-pop', name: 'Luna', avatar: '✨', genreLabel: 'Indie Pop', tagline: 'Dreamy, reflective, and bittersweet', gender: 'f', color: 'violet' },
-  { id: 'marcus', slug: 'celebratory-hiphop', name: 'Marcus', avatar: '🎧', genreLabel: 'Hip-Hop', tagline: 'Fresh, confident, and triumphant', gender: 'm', color: 'emerald' },
-  { id: 'bella', slug: 'sentimental-country', name: 'Bella', avatar: '🤠', genreLabel: 'Country', tagline: 'Storytelling with heart and soul', gender: 'f', color: 'yellow' },
-  { id: 'kai', slug: 'chill-lofi', name: 'Kai', avatar: '🌙', genreLabel: 'Lo-Fi Chill', tagline: 'Laid-back, cozy, and mellow', gender: 'm', color: 'sky' },
-  { id: 'nova', slug: 'empowering-pop', name: 'Nova', avatar: '💫', genreLabel: 'Pop', tagline: 'Bold, catchy, and inspirational', gender: 'f', color: 'pink' },
+// 8 Featured Personas - Shown by default
+const FEATURED_PERSONAS = [
+  { id: 'dolly-mae', slug: 'dolly-mae', name: 'Dolly Mae', avatar: '🤠', genreLabel: 'Country', tagline: 'Witty Southern storyteller with comedic charm', gender: 'f', color: 'amber' },
+  { id: 'valentino', slug: 'valentino', name: 'Valentino', avatar: '🎤', genreLabel: 'R&B Soul', tagline: 'Old-school romantic, smooth and sincere', gender: 'm', color: 'rose' },
+  { id: 'sasha-vex', slug: 'sasha-vex', name: 'Sasha Vex', avatar: '⚡', genreLabel: 'Synth-Pop', tagline: 'Sharp-tongued electro-pop provocateur', gender: 'f', color: 'violet' },
+  { id: 'breezy', slug: 'breezy', name: 'Breezy', avatar: '🌊', genreLabel: 'Acoustic Pop', tagline: 'Sunny, optimistic beach vibes', gender: 'f', color: 'sky' },
+  { id: 'theodore-bloom', slug: 'theodore-bloom', name: 'Theodore Bloom', avatar: '�', genreLabel: 'Piano Ballad', tagline: 'Melancholic pianist for movie crying scenes', gender: 'm', color: 'slate' },
+  { id: 'cosmo', slug: 'cosmo', name: 'Cosmo', avatar: '�', genreLabel: 'Funk/Disco', tagline: 'Interstellar funk ambassador', gender: 'm', color: 'fuchsia' },
+  { id: 'riot', slug: 'riot', name: 'Riot', avatar: '🔥', genreLabel: 'Pop-Punk', tagline: 'Songs for slamming bedroom doors', gender: 'f', color: 'red' },
+  { id: 'maple', slug: 'maple', name: 'Maple', avatar: '🍂', genreLabel: 'Indie Folk', tagline: 'Cozy music that sounds like autumn', gender: 'f', color: 'orange' },
 ]
 
-// 12 Custom Power Pairings
-const CUSTOM_PAIRINGS = [
-  { id: 'acoustic-sentimental', slug: 'sentimental-acoustic', label: 'Acoustic Sentimental', emoji: '🎸', description: 'Tender and nostalgic', gender: 'm' },
-  { id: 'pop-uplifting', slug: 'uplifting-pop', label: 'Pop Uplifting', emoji: '🎤', description: 'Feel-good and catchy', gender: 'f' },
-  { id: 'rnb-romantic', slug: 'romantic-rnb', label: 'R&B Romantic', emoji: '💜', description: 'Smooth and passionate', gender: 'f' },
-  { id: 'country-heartfelt', slug: 'heartfelt-country', label: 'Country Heartfelt', emoji: '🤠', description: 'Storytelling with soul', gender: 'f' },
-  { id: 'rock-energetic', slug: 'celebratory-rock', label: 'Rock Energetic', emoji: '🎸', description: 'Powerful and anthemic', gender: 'm' },
-  { id: 'soul-emotional', slug: 'bittersweet-soul', label: 'Soul Emotional', emoji: '🎷', description: 'Deep and moving', gender: 'f' },
-  { id: 'indie-dreamy', slug: 'nostalgic-indie', label: 'Indie Dreamy', emoji: '🌿', description: 'Quirky and reflective', gender: 'f' },
-  { id: 'hiphop-celebratory', slug: 'celebratory-hiphop', label: 'Hip-Hop Celebratory', emoji: '🎧', description: 'Fresh and triumphant', gender: 'm' },
-  { id: 'folk-nostalgic', slug: 'nostalgic-folk', label: 'Folk Nostalgic', emoji: '🌾', description: 'Earthy and timeless', gender: 'm' },
-  { id: 'synth-retro', slug: 'nostalgic-synth-pop', label: 'Synth Retro', emoji: '🌌', description: '80s-inspired vibes', gender: 'm' },
-  { id: 'jazz-romantic', slug: 'romantic-jazz', label: 'Jazz Romantic', emoji: '🎺', description: 'Sophisticated and smooth', gender: 'm' },
-  { id: 'pop-funny', slug: 'funny-pop', label: 'Pop Playful', emoji: '😄', description: 'Light and entertaining', gender: 'f' },
+// 12 More Artists - Available via "Show More"
+const MORE_PERSONAS = [
+  { id: 'river', slug: 'river', name: 'River', avatar: '🌿', genreLabel: 'Acoustic Folk', tagline: 'Gentle songs for rainy Sunday mornings', gender: 'nb', color: 'emerald' },
+  { id: 'hank-colder', slug: 'hank-colder', name: 'Hank Colder', avatar: '🛻', genreLabel: 'Outlaw Country', tagline: 'Grizzled trucker-poet with road-worn wisdom', gender: 'm', color: 'stone' },
+  { id: 'ghost', slug: 'ghost', name: 'Ghost', avatar: '�', genreLabel: 'Lo-Fi Hip-Hop', tagline: 'Music for 3am feelings', gender: 'm', color: 'zinc' },
+  { id: 'carmen-fuego', slug: 'carmen-fuego', name: 'Carmen Fuego', avatar: '💃', genreLabel: 'Latin Pop', tagline: 'Fiery reggaeton swagger and bachata romance', gender: 'f', color: 'red' },
+  { id: 'ziggy-chrome', slug: 'ziggy-chrome', name: 'Ziggy Chrome', avatar: '✨', genreLabel: 'Glam Rock', tagline: 'Theatrical revivalist, maximum drama', gender: 'm', color: 'purple' },
+  { id: 'duke-silver', slug: 'duke-silver', name: 'Duke Silver', avatar: '🎷', genreLabel: 'Jazz/Lounge', tagline: 'Suave crooner for smoky clubs', gender: 'm', color: 'indigo' },
+  { id: 'solomon-grace', slug: 'solomon-grace', name: 'Solomon Grace', avatar: '🙏', genreLabel: 'Gospel Soul', tagline: 'Gospel-trained powerhouse, sacred intensity', gender: 'm', color: 'amber' },
+  { id: 'lila-moon', slug: 'lila-moon', name: 'Lila Moon', avatar: '�', genreLabel: 'Dream Pop', tagline: 'Ethereal bedroom-pop, half-asleep at 2am', gender: 'f', color: 'violet' },
+  { id: 'big-tiny', slug: 'big-tiny', name: 'Big Tiny', avatar: '💚', genreLabel: 'Conscious Hip-Hop', tagline: "Hip-hop's most wholesome voice", gender: 'm', color: 'green' },
+  { id: 'scarlett-raine', slug: 'scarlett-raine', name: 'Scarlett Raine', avatar: '🥀', genreLabel: 'Dark Ballad', tagline: 'Torch singer making heartbreak gorgeous', gender: 'f', color: 'rose' },
+  { id: 'wren', slug: 'wren', name: 'Wren', avatar: '🕊️', genreLabel: 'Chamber Folk', tagline: 'Delicate songs about grief and growing', gender: 'f', color: 'neutral' },
+  { id: 'blaze-wheeler', slug: 'blaze-wheeler', name: 'Blaze Wheeler', avatar: '�', genreLabel: 'Blues Rock', tagline: 'Voice like gravel soaked in bourbon', gender: 'm', color: 'orange' },
 ]
 
 const STEPS = [
@@ -200,11 +201,11 @@ const OCCASIONS = ALL_OCCASIONS.sort((a, b) => a.priority - b.priority)
           <span class="text-xl">✨</span>
           <h2 class="text-xl font-semibold">Choose Your Artist</h2>
         </div>
-        <p class="text-gray-600 dark:text-gray-400">Pick an artist persona or customize your own combination.</p>
+        <p class="text-gray-600 dark:text-gray-400">Pick an artist persona to write your song.</p>
 
-        <!-- Artist Persona Grid - 2 cols mobile, 4 cols desktop -->
+        <!-- Featured Personas Grid - 2 cols mobile, 4 cols desktop -->
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
-          {ARTIST_PERSONAS.map((persona) => (
+          {FEATURED_PERSONAS.map((persona) => (
             <button
               type="button"
               class="persona-btn relative flex flex-col items-center p-3 sm:p-4 rounded-xl border-2 transition-all duration-200 hover:shadow-md hover:scale-[1.02] min-h-[140px] sm:min-h-[160px] border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 hover:border-[var(--primary)]/30"
@@ -234,39 +235,85 @@ const OCCASIONS = ALL_OCCASIONS.sort((a, b) => a.priority - b.priority)
           ))}
         </div>
 
-        <!-- Custom Option Toggle -->
+        <!-- More Artists Toggle -->
         <div class="pt-2">
           <button
             type="button"
-            id="custom-toggle"
+            id="more-toggle"
             class="w-full flex items-center justify-between p-4 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-600 transition-all hover:border-[var(--primary)]/50"
           >
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100 dark:bg-gray-700">
-                <span class="text-lg">🎛️</span>
+                <span class="text-lg">👥</span>
               </div>
               <div class="text-left">
-                <p class="font-medium">Custom Style</p>
-                <p id="custom-subtitle" class="text-sm text-gray-500 dark:text-gray-400">Choose from 12 curated combinations</p>
+                <p class="font-medium">More Artists</p>
+                <p id="more-subtitle" class="text-sm text-gray-500 dark:text-gray-400">12 more unique styles to explore</p>
               </div>
             </div>
-            <span id="custom-chevron" class="text-gray-400">▼</span>
+            <span id="more-chevron" class="text-gray-400">▼</span>
           </button>
 
-          <!-- Custom Pairings Panel (hidden by default) -->
-          <div id="custom-panel" class="hidden mt-4 p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {CUSTOM_PAIRINGS.map((pairing) => (
+          <!-- More Artists Panel (hidden by default) -->
+          <div id="more-panel" class="hidden mt-4 p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700">
+            <!-- Mobile: Horizontal scroll -->
+            <div class="lg:hidden overflow-x-auto pb-2 -mx-1 px-1">
+              <div class="flex gap-3" style="width: max-content;">
+                {MORE_PERSONAS.map((persona) => (
+                  <button
+                    type="button"
+                    class="more-persona-btn relative flex flex-col items-center p-3 rounded-xl border-2 transition-all duration-200 hover:shadow-md min-h-[120px] w-[140px] flex-shrink-0 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 hover:border-[var(--primary)]/30"
+                    data-id={persona.id}
+                    data-slug={persona.slug}
+                    data-gender={persona.gender}
+                  >
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center text-xl mb-2 bg-gray-100 dark:bg-gray-700">
+                      {persona.avatar}
+                    </div>
+                    <p class="font-semibold text-xs">{persona.name}</p>
+                    <span class="text-[9px] px-2 py-0.5 rounded-full mt-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+                      {persona.genreLabel}
+                    </span>
+                    <!-- Selection indicator (hidden by default) -->
+                    <div class="persona-check absolute top-1 right-1 hidden">
+                      <div class="w-4 h-4 rounded-full flex items-center justify-center border-2 border-[var(--primary)] bg-white dark:bg-gray-900">
+                        <svg class="w-2.5 h-2.5 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+            <!-- Desktop: Grid -->
+            <div class="hidden lg:grid grid-cols-4 gap-3">
+              {MORE_PERSONAS.map((persona) => (
                 <button
                   type="button"
-                  class="custom-btn flex flex-col items-center gap-1 p-3 rounded-lg border transition-all text-center hover:border-[var(--primary)]/50 overflow-hidden border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700"
-                  data-id={pairing.id}
-                  data-slug={pairing.slug}
-                  data-gender={pairing.gender}
+                  class="more-persona-btn relative flex flex-col items-center p-3 sm:p-4 rounded-xl border-2 transition-all duration-200 hover:shadow-md hover:scale-[1.02] min-h-[140px] sm:min-h-[160px] border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 hover:border-[var(--primary)]/30"
+                  data-id={persona.id}
+                  data-slug={persona.slug}
+                  data-gender={persona.gender}
                 >
-                  <span class="text-2xl">{pairing.emoji}</span>
-                  <p class="text-xs sm:text-sm font-medium w-full">{pairing.label}</p>
-                  <p class="text-[10px] text-gray-500 dark:text-gray-400 w-full">{pairing.description}</p>
+                  <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-2 bg-gray-100 dark:bg-gray-700">
+                    {persona.avatar}
+                  </div>
+                  <p class="font-semibold text-sm sm:text-base">{persona.name}</p>
+                  <span class="text-[10px] sm:text-xs px-2 py-0.5 rounded-full mt-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+                    {persona.genreLabel}
+                  </span>
+                  <p class="hidden sm:block text-xs text-gray-500 dark:text-gray-400 text-center mt-2 line-clamp-2">
+                    {persona.tagline}
+                  </p>
+                  <!-- Selection indicator (hidden by default) -->
+                  <div class="persona-check absolute top-2 right-2 hidden">
+                    <div class="w-5 h-5 rounded-full flex items-center justify-center border-2 border-[var(--primary)] bg-white dark:bg-gray-900">
+                      <svg class="w-3 h-3 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                  </div>
                 </button>
               ))}
             </div>
@@ -348,16 +395,16 @@ const OCCASIONS = ALL_OCCASIONS.sort((a, b) => a.priority - b.priority)
   const APP_URL = 'https://app.yourbanger.com'
   
   let currentStep = 0
-  let showCustomPanel = false
+  let showMorePanel = false
   let saveTimeout: NodeJS.Timeout
   
-  // New styleSelection format
+  // StyleSelection format
   const formData = {
     occasion: '',
     recipientName: '',
     senderName: '',
     giftMessage: '',
-    styleSelection: null as { type: 'persona' | 'custom'; id: string; slug: string; gender: 'm' | 'f' } | null,
+    styleSelection: null as { type: 'persona'; id: string; slug: string; gender: 'm' | 'f' | 'nb' } | null,
     songFocus: '',
     personalDetails: '',
   }
@@ -441,18 +488,26 @@ const OCCASIONS = ALL_OCCASIONS.sort((a, b) => a.priority - b.priority)
     
     // Restore styleSelection
     if (formData.styleSelection) {
-      if (formData.styleSelection.type === 'persona') {
-        const btn = document.querySelector(`.persona-btn[data-id="${formData.styleSelection.id}"]`)
-        btn?.classList.add('border-[var(--primary)]', 'bg-[var(--primary)]/10', 'shadow-lg', 'ring-2', 'ring-[var(--primary)]/20')
-        btn?.querySelector('.persona-check')?.classList.remove('hidden')
-      } else if (formData.styleSelection.type === 'custom') {
-        const btn = document.querySelector(`.custom-btn[data-id="${formData.styleSelection.id}"]`)
-        btn?.classList.add('border-[var(--primary)]', 'bg-[var(--primary)]/10', 'shadow-sm')
-        const toggle = document.getElementById('custom-toggle')
-        toggle?.classList.add('border-[var(--primary)]', 'bg-[var(--primary)]/5')
-        toggle?.classList.remove('border-dashed')
-        const label = btn?.querySelector('p.font-medium')?.textContent || ''
-        document.getElementById('custom-subtitle')!.textContent = `Selected: ${label}`
+      // Try featured personas first
+      let btn = document.querySelector(`.persona-btn[data-id="${formData.styleSelection.id}"]`)
+      if (btn) {
+        btn.classList.add('border-[var(--primary)]', 'bg-[var(--primary)]/10', 'shadow-lg', 'ring-2', 'ring-[var(--primary)]/20')
+        btn.querySelector('.persona-check')?.classList.remove('hidden')
+      } else {
+        // Try more personas
+        btn = document.querySelector(`.more-persona-btn[data-id="${formData.styleSelection.id}"]`)
+        if (btn) {
+          btn.classList.add('border-[var(--primary)]', 'bg-[var(--primary)]/10', 'shadow-lg', 'ring-2', 'ring-[var(--primary)]/20')
+          btn.querySelector('.persona-check')?.classList.remove('hidden')
+          // Show the more panel and update toggle
+          document.getElementById('more-panel')?.classList.remove('hidden')
+          document.getElementById('more-chevron')!.textContent = '▲'
+          const toggle = document.getElementById('more-toggle')
+          toggle?.classList.add('border-[var(--primary)]', 'bg-[var(--primary)]/5')
+          toggle?.classList.remove('border-dashed')
+          const name = btn.querySelector('p.font-semibold')?.textContent || ''
+          document.getElementById('more-subtitle')!.textContent = `Selected: ${name}`
+        }
       }
     }
 
@@ -553,56 +608,56 @@ const OCCASIONS = ALL_OCCASIONS.sort((a, b) => a.priority - b.priority)
     })
   })
 
-  // Persona selection
+  // Helper to clear all persona selections
+  function clearAllPersonaSelections() {
+    document.querySelectorAll('.persona-btn, .more-persona-btn').forEach(b => {
+      b.classList.remove('border-[var(--primary)]', 'bg-[var(--primary)]/10', 'shadow-lg', 'ring-2', 'ring-[var(--primary)]/20')
+      b.classList.add('border-gray-200', 'dark:border-gray-600')
+      b.querySelector('.persona-check')?.classList.add('hidden')
+    })
+    // Reset more toggle
+    document.getElementById('more-toggle')?.classList.remove('border-[var(--primary)]', 'bg-[var(--primary)]/5')
+    document.getElementById('more-toggle')?.classList.add('border-dashed', 'border-gray-300', 'dark:border-gray-600')
+    document.getElementById('more-subtitle')!.textContent = '12 more unique styles to explore'
+  }
+
+  // Featured persona selection
   document.querySelectorAll('.persona-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       const target = e.currentTarget as HTMLElement
       
-      // Clear all persona selections
-      document.querySelectorAll('.persona-btn').forEach(b => {
-        b.classList.remove('border-[var(--primary)]', 'bg-[var(--primary)]/10', 'shadow-lg', 'ring-2', 'ring-[var(--primary)]/20')
-        b.classList.add('border-gray-200', 'dark:border-gray-600')
-        b.querySelector('.persona-check')?.classList.add('hidden')
-      })
-      
-      // Clear custom selections
-      document.querySelectorAll('.custom-btn').forEach(b => {
-        b.classList.remove('border-[var(--primary)]', 'bg-[var(--primary)]/10', 'shadow-sm')
-        b.classList.add('border-gray-200', 'dark:border-gray-600')
-      })
-      document.getElementById('custom-toggle')?.classList.remove('border-[var(--primary)]', 'bg-[var(--primary)]/5')
-      document.getElementById('custom-toggle')?.classList.add('border-dashed', 'border-gray-300', 'dark:border-gray-600')
-      document.getElementById('custom-subtitle')!.textContent = 'Choose from 12 curated combinations'
+      // Clear all selections
+      clearAllPersonaSelections()
       
       // Select this persona
       target.classList.add('border-[var(--primary)]', 'bg-[var(--primary)]/10', 'shadow-lg', 'ring-2', 'ring-[var(--primary)]/20')
       target.classList.remove('border-gray-200', 'dark:border-gray-600')
       target.querySelector('.persona-check')?.classList.remove('hidden')
       
-      // Close custom panel
-      showCustomPanel = false
-      document.getElementById('custom-panel')?.classList.add('hidden')
-      document.getElementById('custom-chevron')!.textContent = '▼'
+      // Close more panel
+      showMorePanel = false
+      document.getElementById('more-panel')?.classList.add('hidden')
+      document.getElementById('more-chevron')!.textContent = '▼'
       
       // Update form data
       formData.styleSelection = {
         type: 'persona',
         id: target.dataset.id || '',
         slug: target.dataset.slug || '',
-        gender: (target.dataset.gender as 'm' | 'f') || 'm',
+        gender: (target.dataset.gender as 'm' | 'f' | 'nb') || 'm',
       }
       autoSave()
       validateStep()
     })
   })
 
-  // Custom toggle
-  document.getElementById('custom-toggle')?.addEventListener('click', () => {
-    showCustomPanel = !showCustomPanel
-    const panel = document.getElementById('custom-panel')
-    const chevron = document.getElementById('custom-chevron')
+  // More Artists toggle
+  document.getElementById('more-toggle')?.addEventListener('click', () => {
+    showMorePanel = !showMorePanel
+    const panel = document.getElementById('more-panel')
+    const chevron = document.getElementById('more-chevron')
     
-    if (showCustomPanel) {
+    if (showMorePanel) {
       panel?.classList.remove('hidden')
       chevron!.textContent = '▲'
     } else {
@@ -611,43 +666,34 @@ const OCCASIONS = ALL_OCCASIONS.sort((a, b) => a.priority - b.priority)
     }
   })
 
-  // Custom pairing selection
-  document.querySelectorAll('.custom-btn').forEach(btn => {
+  // More persona selection
+  document.querySelectorAll('.more-persona-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       const target = e.currentTarget as HTMLElement
       
-      // Clear all persona selections
-      document.querySelectorAll('.persona-btn').forEach(b => {
-        b.classList.remove('border-[var(--primary)]', 'bg-[var(--primary)]/10', 'shadow-lg', 'ring-2', 'ring-[var(--primary)]/20')
-        b.classList.add('border-gray-200', 'dark:border-gray-600')
-        b.querySelector('.persona-check')?.classList.add('hidden')
-      })
+      // Clear all selections
+      clearAllPersonaSelections()
       
-      // Clear other custom selections
-      document.querySelectorAll('.custom-btn').forEach(b => {
-        b.classList.remove('border-[var(--primary)]', 'bg-[var(--primary)]/10', 'shadow-sm')
-        b.classList.add('border-gray-200', 'dark:border-gray-600')
-      })
-      
-      // Select this custom pairing
-      target.classList.add('border-[var(--primary)]', 'bg-[var(--primary)]/10', 'shadow-sm')
+      // Select this persona
+      target.classList.add('border-[var(--primary)]', 'bg-[var(--primary)]/10', 'shadow-lg', 'ring-2', 'ring-[var(--primary)]/20')
       target.classList.remove('border-gray-200', 'dark:border-gray-600')
+      target.querySelector('.persona-check')?.classList.remove('hidden')
       
-      // Update custom toggle to show selected
-      const toggle = document.getElementById('custom-toggle')
+      // Update more toggle to show selected
+      const toggle = document.getElementById('more-toggle')
       toggle?.classList.add('border-[var(--primary)]', 'bg-[var(--primary)]/5')
       toggle?.classList.remove('border-dashed', 'border-gray-300', 'dark:border-gray-600')
       
-      // Find the label for this pairing
-      const label = target.querySelector('p.font-medium')?.textContent || ''
-      document.getElementById('custom-subtitle')!.textContent = `Selected: ${label}`
+      // Find the name for this persona
+      const name = target.querySelector('p.font-semibold')?.textContent || ''
+      document.getElementById('more-subtitle')!.textContent = `Selected: ${name}`
       
       // Update form data
       formData.styleSelection = {
-        type: 'custom',
+        type: 'persona',
         id: target.dataset.id || '',
         slug: target.dataset.slug || '',
-        gender: (target.dataset.gender as 'm' | 'f') || 'm',
+        gender: (target.dataset.gender as 'm' | 'f' | 'nb') || 'm',
       }
       autoSave()
       validateStep()
