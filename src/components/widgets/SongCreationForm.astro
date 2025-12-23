@@ -1,16 +1,4 @@
 ---
-const OCCASIONS = [
-  { value: 'birthday', label: 'Birthday', emoji: '🎂' },
-  { value: 'anniversary', label: 'Anniversary', emoji: '💍' },
-  { value: 'wedding', label: 'Wedding', emoji: '💒' },
-  { value: 'retirement', label: 'Retirement', emoji: '👔' },
-  { value: 'fathers_day', label: "Father's Day", emoji: '👨' },
-  { value: 'mothers_day', label: "Mother's Day", emoji: '👩' },
-  { value: 'thank_you', label: 'Thank You', emoji: '🙏' },
-  { value: 'memorial', label: 'Memorial', emoji: '🕊️' },
-]
-
-// 8 Artist Personas - Named characters with distinct musical identities
 const ARTIST_PERSONAS = [
   { id: 'milo', slug: 'heartfelt-acoustic', name: 'Milo', avatar: '🎸', genreLabel: 'Acoustic Folk', tagline: 'Warm, intimate, and deeply personal', gender: 'm', color: 'amber' },
   { id: 'jada', slug: 'romantic-rnb', name: 'Jada', avatar: '🎤', genreLabel: 'R&B Soul', tagline: 'Smooth, soulful, and passionate', gender: 'f', color: 'rose' },
@@ -44,6 +32,41 @@ const STEPS = [
   { id: 'music', title: 'Music Style', icon: '🎵' },
   { id: 'details', title: 'Song Details', icon: '✨' },
 ]
+
+interface Occasion {
+  value: string
+  label: string
+  emoji: string
+  description: string
+  category: 'year_round' | 'seasonal'
+  priority: number
+}
+
+const ALL_OCCASIONS: Occasion[] = [
+  // Year-round occasions
+  { value: 'birthday', label: 'Birthday', emoji: '🎂', description: 'Celebrate their special day', category: 'year_round', priority: 1 },
+  { value: 'just_because', label: 'Just Because', emoji: '💭', description: 'No occasion needed', category: 'year_round', priority: 2 },
+  { value: 'thank_you', label: 'Thank You', emoji: '🙏', description: 'Show your appreciation', category: 'year_round', priority: 3 },
+  { value: 'wedding', label: 'Wedding', emoji: '💒', description: 'Your perfect wedding song', category: 'year_round', priority: 4 },
+  { value: 'anniversary', label: 'Anniversary', emoji: '💍', description: 'Honor your love story', category: 'year_round', priority: 5 },
+  { value: 'new_baby', label: 'New Baby', emoji: '👶', description: 'Welcome the little one', category: 'year_round', priority: 6 },
+  { value: 'get_well', label: 'Get Well', emoji: '💐', description: 'Wish them a speedy recovery', category: 'year_round', priority: 7 },
+  { value: 'congratulations', label: 'Congratulations', emoji: '🎊', description: 'Celebrate their achievement', category: 'year_round', priority: 8 },
+  { value: 'graduation', label: 'Graduation', emoji: '🎓', description: 'Honor their hard work', category: 'year_round', priority: 9 },
+  { value: 'retirement', label: 'Retirement', emoji: '🏖️', description: 'Celebrate their career', category: 'year_round', priority: 10 },
+  { value: 'memorial', label: 'In Memory', emoji: '🕊️', description: 'Honor their memory', category: 'year_round', priority: 11 },
+  
+  // Seasonal occasions (always shown for marketing site)
+  { value: 'christmas', label: 'Christmas', emoji: '🎄', description: 'Holiday cheer in song', category: 'seasonal', priority: 1 },
+  { value: 'valentines', label: "Valentine's Day", emoji: '❤️', description: 'Express your love', category: 'seasonal', priority: 2 },
+  { value: 'mothers_day', label: "Mother's Day", emoji: '🌸', description: 'Thank Mom', category: 'seasonal', priority: 3 },
+  { value: 'fathers_day', label: "Father's Day", emoji: '👔', description: 'Thank Dad', category: 'seasonal', priority: 4 },
+  { value: 'thanksgiving', label: 'Thanksgiving', emoji: '🦃', description: 'Give thanks', category: 'seasonal', priority: 5 },
+  { value: 'new_year', label: 'New Year', emoji: '🎉', description: 'Ring in the new year', category: 'seasonal', priority: 6 },
+]
+
+const OCCASIONS = ALL_OCCASIONS.sort((a, b) => a.priority - b.priority)
+
 ---
 
 <div class="max-w-2xl mx-auto" id="song-form">
@@ -326,6 +349,7 @@ const STEPS = [
   
   let currentStep = 0
   let showCustomPanel = false
+  let saveTimeout: NodeJS.Timeout
   
   // New styleSelection format
   const formData = {
@@ -635,7 +659,7 @@ const STEPS = [
   textInputs.forEach(id => {
     const el = document.getElementById(id) as HTMLInputElement | HTMLTextAreaElement
     el?.addEventListener('input', (e) => {
-      formData[id as keyof typeof formData] = (e.target as HTMLInputElement).value
+      (formData as any)[id] = (e.target as HTMLInputElement).value
       autoSave()
       validateStep()
     })
