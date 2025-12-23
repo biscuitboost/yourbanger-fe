@@ -21,7 +21,7 @@ export const headerData = {
   ],
   actions: [
     { text: 'Sign In', href: 'https://app.yourbanger.com/auth', target: '_blank' },
-    { text: 'Get Started', href: 'https://app.yourbanger.com/auth?tab=signup', target: '_blank' },
+    { text: 'Get Started', href: 'https://app.yourbanger.com/create', target: '_blank' },
   ],
 };
 
