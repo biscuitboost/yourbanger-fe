@@ -331,8 +331,8 @@ const OCCASIONS = ALL_OCCASIONS.sort((a, b) => a.priority - b.priority)
       disabled
     >
       <span class="flex items-center gap-2">
-        <span>🎁</span>
-        Continue to Payment
+        <span>✨</span>
+        Create My Song!
       </span>
     </button>
   </div>
@@ -679,17 +679,21 @@ const OCCASIONS = ALL_OCCASIONS.sort((a, b) => a.priority - b.priority)
   })
 
   document.getElementById('submit-btn')?.addEventListener('click', () => {
-    // Save for transfer
+    // Encode form data as base64 to pass via URL (localStorage doesn't work cross-domain)
     const transferData = {
-      data: formData,
-      timestamp: Date.now(),
-      transferred: false,
+      occasion: formData.occasion,
+      recipientName: formData.recipientName,
+      senderName: formData.senderName,
+      giftMessage: formData.giftMessage,
+      styleSelection: formData.styleSelection,
+      songFocus: formData.songFocus,
+      personalDetails: formData.personalDetails,
     }
-    localStorage.setItem('song-form-transfer', JSON.stringify(transferData))
+    const encoded = btoa(encodeURIComponent(JSON.stringify(transferData)))
     localStorage.removeItem(STORAGE_KEY)
     
-    // Redirect to app
-    window.location.href = `${APP_URL}/create`
+    // Redirect to app auth page with signup tab and form data
+    window.location.href = `${APP_URL}/auth?tab=signup&from=create&formData=${encoded}`
   })
 
   // Initialize
