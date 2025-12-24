@@ -1,26 +1,5 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-import SongCreationForm from '~/components/widgets/SongCreationForm.astro';
-
-const metadata = {
-  title: 'Create Your Song | YourBanger.com',
-  description: 'Create a personalized AI song in minutes. Fill out the form and get your custom song.',
-};
+// Redirect to the main app's song creation wizard
+// This consolidates the song creation flow to a single codebase
+return Astro.redirect('https://app.yourbanger.com/song/create', 302);
 ---
-
-<Layout metadata={metadata}>
-  <section class="py-16 px-6 sm:px-8 lg:px-12 min-h-screen">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-12">
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--foreground)] mb-4">
-          Create Your <span class="text-[var(--primary)]">Personalized Song</span>
-        </h1>
-        <p class="text-lg text-[var(--muted-foreground)] max-w-2xl mx-auto">
-          Fill out the form below to create a unique, AI-generated song. Your progress is automatically saved.
-        </p>
-      </div>
-
-      <SongCreationForm />
-    </div>
-  </section>
-</Layout>
