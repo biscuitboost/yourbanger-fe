@@ -1,30 +1,30 @@
 ---
 // 8 Featured Personas - Shown by default
 const FEATURED_PERSONAS = [
-  { id: 'dolly-mae', slug: 'dolly-mae', name: 'Dolly Mae', avatar: '🤠', genreLabel: 'Country', tagline: 'Witty Southern storyteller with comedic charm', gender: 'f', color: 'amber' },
-  { id: 'valentino', slug: 'valentino', name: 'Valentino', avatar: '🎤', genreLabel: 'R&B Soul', tagline: 'Old-school romantic, smooth and sincere', gender: 'm', color: 'rose' },
-  { id: 'sasha-vex', slug: 'sasha-vex', name: 'Sasha Vex', avatar: '⚡', genreLabel: 'Synth-Pop', tagline: 'Sharp-tongued electro-pop provocateur', gender: 'f', color: 'violet' },
-  { id: 'breezy', slug: 'breezy', name: 'Breezy', avatar: '🌊', genreLabel: 'Acoustic Pop', tagline: 'Sunny, optimistic beach vibes', gender: 'f', color: 'sky' },
-  { id: 'theodore-bloom', slug: 'theodore-bloom', name: 'Theodore Bloom', avatar: '�', genreLabel: 'Piano Ballad', tagline: 'Melancholic pianist for movie crying scenes', gender: 'm', color: 'slate' },
-  { id: 'cosmo', slug: 'cosmo', name: 'Cosmo', avatar: '�', genreLabel: 'Funk/Disco', tagline: 'Interstellar funk ambassador', gender: 'm', color: 'fuchsia' },
-  { id: 'riot', slug: 'riot', name: 'Riot', avatar: '🔥', genreLabel: 'Pop-Punk', tagline: 'Songs for slamming bedroom doors', gender: 'f', color: 'red' },
-  { id: 'maple', slug: 'maple', name: 'Maple', avatar: '🍂', genreLabel: 'Indie Folk', tagline: 'Cozy music that sounds like autumn', gender: 'f', color: 'orange' },
+  { id: 'dolly-mae', slug: 'dolly-mae', name: 'Dolly Mae', avatar: '🤠', imageUrl: '/artist-profiles/dolly-mae.jpeg', genreLabel: 'Country', tagline: 'Witty Southern storyteller with comedic charm', gender: 'f', color: 'amber' },
+  { id: 'valentino', slug: 'valentino', name: 'Valentino', avatar: '🎤', imageUrl: '/artist-profiles/valentino.jpeg', genreLabel: 'R&B Soul', tagline: 'Old-school romantic, smooth and sincere', gender: 'm', color: 'rose' },
+  { id: 'sasha-vex', slug: 'sasha-vex', name: 'Sasha Vex', avatar: '⚡', imageUrl: '/artist-profiles/sasha-vex.jpeg', genreLabel: 'Synth-Pop', tagline: 'Sharp-tongued electro-pop provocateur', gender: 'f', color: 'violet' },
+  { id: 'breezy', slug: 'breezy', name: 'Breezy', avatar: '🌊', imageUrl: '/artist-profiles/breezy.jpeg', genreLabel: 'Acoustic Pop', tagline: 'Sunny, optimistic beach vibes', gender: 'f', color: 'sky' },
+  { id: 'theodore-bloom', slug: 'theodore-bloom', name: 'Theodore Bloom', avatar: '🎹', imageUrl: '/artist-profiles/theodore-bloom.jpeg', genreLabel: 'Piano Ballad', tagline: 'Melancholic pianist for movie crying scenes', gender: 'm', color: 'slate' },
+  { id: 'cosmo', slug: 'cosmo', name: 'Cosmo', avatar: '🪩', imageUrl: '/artist-profiles/cosmo.jpeg', genreLabel: 'Funk/Disco', tagline: 'Interstellar funk ambassador', gender: 'm', color: 'fuchsia' },
+  { id: 'riot', slug: 'riot', name: 'Riot', avatar: '🔥', imageUrl: '/artist-profiles/riot.jpeg', genreLabel: 'Pop-Punk', tagline: 'Songs for slamming bedroom doors', gender: 'f', color: 'red' },
+  { id: 'maple', slug: 'maple', name: 'Maple', avatar: '🍂', imageUrl: '/artist-profiles/maple.jpeg', genreLabel: 'Indie Folk', tagline: 'Cozy music that sounds like autumn', gender: 'f', color: 'orange' },
 ]
 
 // 12 More Artists - Available via "Show More"
 const MORE_PERSONAS = [
-  { id: 'river', slug: 'river', name: 'River', avatar: '🌿', genreLabel: 'Acoustic Folk', tagline: 'Gentle songs for rainy Sunday mornings', gender: 'nb', color: 'emerald' },
-  { id: 'hank-colder', slug: 'hank-colder', name: 'Hank Colder', avatar: '🛻', genreLabel: 'Outlaw Country', tagline: 'Grizzled trucker-poet with road-worn wisdom', gender: 'm', color: 'stone' },
-  { id: 'ghost', slug: 'ghost', name: 'Ghost', avatar: '�', genreLabel: 'Lo-Fi Hip-Hop', tagline: 'Music for 3am feelings', gender: 'm', color: 'zinc' },
-  { id: 'carmen-fuego', slug: 'carmen-fuego', name: 'Carmen Fuego', avatar: '💃', genreLabel: 'Latin Pop', tagline: 'Fiery reggaeton swagger and bachata romance', gender: 'f', color: 'red' },
-  { id: 'ziggy-chrome', slug: 'ziggy-chrome', name: 'Ziggy Chrome', avatar: '✨', genreLabel: 'Glam Rock', tagline: 'Theatrical revivalist, maximum drama', gender: 'm', color: 'purple' },
-  { id: 'duke-silver', slug: 'duke-silver', name: 'Duke Silver', avatar: '🎷', genreLabel: 'Jazz/Lounge', tagline: 'Suave crooner for smoky clubs', gender: 'm', color: 'indigo' },
-  { id: 'solomon-grace', slug: 'solomon-grace', name: 'Solomon Grace', avatar: '🙏', genreLabel: 'Gospel Soul', tagline: 'Gospel-trained powerhouse, sacred intensity', gender: 'm', color: 'amber' },
-  { id: 'lila-moon', slug: 'lila-moon', name: 'Lila Moon', avatar: '�', genreLabel: 'Dream Pop', tagline: 'Ethereal bedroom-pop, half-asleep at 2am', gender: 'f', color: 'violet' },
-  { id: 'big-tiny', slug: 'big-tiny', name: 'Big Tiny', avatar: '💚', genreLabel: 'Conscious Hip-Hop', tagline: "Hip-hop's most wholesome voice", gender: 'm', color: 'green' },
-  { id: 'scarlett-raine', slug: 'scarlett-raine', name: 'Scarlett Raine', avatar: '🥀', genreLabel: 'Dark Ballad', tagline: 'Torch singer making heartbreak gorgeous', gender: 'f', color: 'rose' },
-  { id: 'wren', slug: 'wren', name: 'Wren', avatar: '🕊️', genreLabel: 'Chamber Folk', tagline: 'Delicate songs about grief and growing', gender: 'f', color: 'neutral' },
-  { id: 'blaze-wheeler', slug: 'blaze-wheeler', name: 'Blaze Wheeler', avatar: '�', genreLabel: 'Blues Rock', tagline: 'Voice like gravel soaked in bourbon', gender: 'm', color: 'orange' },
+  { id: 'river', slug: 'river', name: 'River', avatar: '🌿', imageUrl: '/artist-profiles/river.jpeg', genreLabel: 'Acoustic Folk', tagline: 'Gentle songs for rainy Sunday mornings', gender: 'nb', color: 'emerald' },
+  { id: 'hank-colder', slug: 'hank-colder', name: 'Hank Colder', avatar: '🛻', imageUrl: '/artist-profiles/hank-colder.jpeg', genreLabel: 'Outlaw Country', tagline: 'Grizzled trucker-poet with road-worn wisdom', gender: 'm', color: 'stone' },
+  { id: 'ghost', slug: 'ghost', name: 'Ghost', avatar: '👻', imageUrl: '/artist-profiles/ghost.jpeg', genreLabel: 'Lo-Fi Hip-Hop', tagline: 'Music for 3am feelings', gender: 'm', color: 'zinc' },
+  { id: 'carmen-fuego', slug: 'carmen-fuego', name: 'Carmen Fuego', avatar: '💃', imageUrl: '/artist-profiles/carmen-fuego.jpeg', genreLabel: 'Latin Pop', tagline: 'Fiery reggaeton swagger and bachata romance', gender: 'f', color: 'red' },
+  { id: 'ziggy-chrome', slug: 'ziggy-chrome', name: 'Ziggy Chrome', avatar: '✨', imageUrl: '/artist-profiles/ziggy-chrome.jpeg', genreLabel: 'Glam Rock', tagline: 'Theatrical revivalist, maximum drama', gender: 'm', color: 'purple' },
+  { id: 'duke-silver', slug: 'duke-silver', name: 'Duke Silver', avatar: '🎷', imageUrl: '/artist-profiles/duke-silver.jpeg', genreLabel: 'Jazz/Lounge', tagline: 'Suave crooner for smoky clubs', gender: 'm', color: 'indigo' },
+  { id: 'solomon-grace', slug: 'solomon-grace', name: 'Solomon Grace', avatar: '🙏', imageUrl: '/artist-profiles/solomon-grace.jpeg', genreLabel: 'Gospel Soul', tagline: 'Gospel-trained powerhouse, sacred intensity', gender: 'm', color: 'amber' },
+  { id: 'lila-moon', slug: 'lila-moon', name: 'Lila Moon', avatar: '🌙', imageUrl: '/artist-profiles/lila-moon.jpeg', genreLabel: 'Dream Pop', tagline: 'Ethereal bedroom-pop, half-asleep at 2am', gender: 'f', color: 'violet' },
+  { id: 'big-tiny', slug: 'big-tiny', name: 'Big Tiny', avatar: '💚', imageUrl: '/artist-profiles/big-tiny.jpeg', genreLabel: 'Conscious Hip-Hop', tagline: "Hip-hop's most wholesome voice", gender: 'm', color: 'green' },
+  { id: 'scarlett-raine', slug: 'scarlett-raine', name: 'Scarlett Raine', avatar: '🥀', imageUrl: '/artist-profiles/scarlett-raine.jpeg', genreLabel: 'Dark Ballad', tagline: 'Torch singer making heartbreak gorgeous', gender: 'f', color: 'rose' },
+  { id: 'wren', slug: 'wren', name: 'Wren', avatar: '🕊️', imageUrl: '/artist-profiles/wren.jpeg', genreLabel: 'Chamber Folk', tagline: 'Delicate songs about grief and growing', gender: 'f', color: 'neutral' },
+  { id: 'blaze-wheeler', slug: 'blaze-wheeler', name: 'Blaze Wheeler', avatar: '🔥', imageUrl: '/artist-profiles/blaze-wheeler.jpeg', genreLabel: 'Blues Rock', tagline: 'Voice like gravel soaked in bourbon', gender: 'm', color: 'orange' },
 ]
 
 const STEPS = [
@@ -296,8 +296,12 @@ const OCCASIONS = ALL_OCCASIONS.sort((a, b) => a.priority - b.priority)
                   data-slug={persona.slug}
                   data-gender={persona.gender}
                 >
-                  <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-2 bg-gray-100 dark:bg-gray-700">
-                    {persona.avatar}
+                  <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden flex items-center justify-center mb-2 border-2 border-gray-200 dark:border-gray-600">
+                    <img
+                      src={persona.imageUrl}
+                      alt={persona.name}
+                      class="w-full h-full object-cover"
+                    />
                   </div>
                   <p class="font-semibold text-sm sm:text-base">{persona.name}</p>
                   <span class="text-[10px] sm:text-xs px-2 py-0.5 rounded-full mt-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
