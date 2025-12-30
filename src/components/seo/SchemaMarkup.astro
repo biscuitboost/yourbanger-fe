@@ -1,0 +1,142 @@
+---
+type SchemaType = 'software' | 'product' | 'faq' | 'article';
+
+interface Props {
+  type: SchemaType;
+  data: Record<string, any>;
+}
+
+const { type, data } = Astro.props;
+
+// Helper function to merge objects
+function mergeDeep(target: any, source: any): any {
+  const output = { ...target };
+  
+  if (isObject(target) && isObject(source)) {
+    Object.keys(source).forEach(key => {
+      if (isObject(source[key])) {
+        if (!(key in target)) {
+          Object.assign(output, { [key]: source[key] });
+        } else {
+          output[key] = mergeDeep(target[key], source[key]);
+        }
+      } else {
+        Object.assign(output, { [key]: source[key] });
+      }
+    });
+  }
+  
+  return output;
+}
+
+function isObject(item: any): boolean {
+  return item && typeof item === 'object' && !Array.isArray(item);
+}
+
+// Base schema templates
+const baseSchemas = {
+  software: {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "YourBanger AI Song Generator",
+    description: "Create personalized AI-generated songs in 2 minutes. Custom lyrics, professional vocals, any genre.",
+    applicationCategory: "MultimediaApplication",
+    operatingSystem: "Web browser",
+    url: "https://yourbanger.com",
+    offers: {
+      "@type": "Offer",
+      price: "19.99",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock"
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "500",
+      bestRating: "5",
+      worstRating: "1"
+    },
+    featureList: [
+      "Create custom songs in 2 minutes",
+      "AI-powered vocals and instrumentation",
+      "Full lyric customization",
+      "Multiple genre options",
+      "Instant download"
+    ],
+    screenshot: "https://yourbanger.com/og-image.png"
+  },
+  
+  product: {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Personalized Song",
+    description: "Create personalized AI-generated songs for any occasion",
+    brand: {
+      "@type": "Brand",
+      name: "YourBanger"
+    },
+    category: "Digital Music",
+    offers: {
+      "@type": "Offer",
+      price: "19.99",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      priceValidUntil: "2025-12-31",
+      seller: {
+        "@type": "Organization",
+        name: "YourBanger"
+      }
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "500"
+    }
+  },
+  
+  faq: {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: []
+  },
+  
+  article: {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "",
+    description: "",
+    author: {
+      "@type": "Organization",
+      name: "YourBanger"
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "YourBanger"
+    },
+    datePublished: new Date().toISOString().split('T')[0]
+  }
+};
+
+// Generate final schema
+let finalSchema: Record<string, any>;
+
+switch (type) {
+  case 'software':
+    finalSchema = mergeDeep(baseSchemas.software, data);
+    break;
+  case 'product':
+    finalSchema = mergeDeep(baseSchemas.product, data);
+    break;
+  case 'faq':
+    finalSchema = mergeDeep(baseSchemas.faq, data);
+    break;
+  case 'article':
+    finalSchema = mergeDeep(baseSchemas.article, data);
+    break;
+  default:
+    throw new Error(`Unsupported schema type: ${type}`);
+}
+
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(finalSchema, null, 2)}></script>

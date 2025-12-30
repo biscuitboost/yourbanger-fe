@@ -3,14 +3,15 @@ import Layout from '~/layouts/PageLayout.astro';
 import DemoCard from '~/components/ui/DemoCard.astro';
 import AudioPlayer from '~/components/widgets/AudioPlayer.astro';
 import FloatingParticles from '~/components/ui/FloatingParticles.astro';
+import SchemaMarkup from '~/components/seo/SchemaMarkup.astro';
 import { Icon } from 'astro-icon/components';
 
 const metadata = {
-  title: 'Personalized AI Songs | Custom Music Gifts in Minutes | YourBanger.com',
-  description: 'Create a personalized songs in 2 minutes. Perfect for birthdays, weddings & special moments. Turn your story into a professional song. $19.99 per song. No talent required.',
+  title: 'AI Song Generator | Create Custom Songs in 2 Minutes | YourBanger.com',
+  description: 'Free AI song generator creates personalized songs in 2 minutes. Custom lyrics, professional vocals, any genre. Perfect for birthdays, weddings & gifts. Only $19.99.',
   ignoreTitleTemplate: true,
   openGraph: {
-    title: 'YourBanger.com - Personalized AI Songs for Any Occasion',
+    title: 'YourBanger.com - AI Song Generator for Any Occasion',
     description: 'Turn your story into a custom song. AI-powered personalized music for birthdays, weddings, and special moments.',
     type: 'website',
   },
@@ -146,6 +147,18 @@ const features = [
 ---
 
 <Layout metadata={metadata}>
+  <!-- Schema Markup for SEO -->
+  <SchemaMarkup 
+    type="software"
+    data={{
+      name: "YourBanger AI Song Generator",
+      description: "Create personalized AI-generated songs in 2 minutes. Turn your story into a professional song for birthdays, weddings, and special moments. $19.99 per song.",
+      aggregateRating: {
+        ratingValue: "4.9",
+        reviewCount: "500"
+      }
+    }}
+  />
   <!-- Hero Section -->
   <section class="relative pt-24 pb-16 px-6 sm:px-8 lg:px-12 overflow-hidden">
     <!-- Background elements -->
