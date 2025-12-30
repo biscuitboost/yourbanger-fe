@@ -3,12 +3,31 @@ import { getPermalink, getBlogPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
+      text: 'Create Your Song',
+      href: getPermalink('/create'),
+    },
+    {
+      text: 'AI Song Generator',
+      href: getPermalink('/ai-song-generator'),
+    },
+    {
       text: 'Examples',
       href: getPermalink('/examples'),
     },
     {
       text: 'Pricing',
       href: getPermalink('/pricing'),
+    },
+    {
+      text: 'Occasions',
+      links: [
+        { text: 'Birthday Songs', href: getPermalink('/birthday-songs') },
+        { text: 'Wedding Songs', href: getPermalink('/wedding-songs') },
+        { text: 'Anniversary Songs', href: getPermalink('/anniversary-songs') },
+        { text: 'Retirement Songs', href: getPermalink('/retirement-songs') },
+        { text: 'Christmas Songs', href: getPermalink('/christmas') },
+        { text: 'Funny Songs', href: getPermalink('/funny-songs') },
+      ],
     },
     {
       text: 'FAQ',
@@ -21,7 +40,7 @@ export const headerData = {
   ],
   actions: [
     { text: 'Sign In', href: 'https://app.yourbanger.com/auth', target: '_blank' },
-    { text: 'Get Started', href: 'https://app.yourbanger.com/song/create', target: '_blank' },
+    { text: 'Get Started', href: '/create', target: '_blank' },
   ],
 };
 
@@ -30,20 +49,35 @@ export const footerData = {
     {
       title: 'Product',
       links: [
+        { text: 'AI Song Generator', href: getPermalink('/ai-song-generator') },
+        { text: 'Create Your Song', href: getPermalink('/create') },
         { text: 'Examples', href: getPermalink('/examples') },
         { text: 'Pricing', href: getPermalink('/pricing') },
         { text: 'FAQ', href: getPermalink('/faq') },
       ],
     },
     {
-      title: 'Use Cases',
+      title: 'Occasions',
       links: [
         { text: 'Birthday Songs', href: getPermalink('/birthday-songs') },
         { text: 'Wedding Songs', href: getPermalink('/wedding-songs') },
         { text: 'Anniversary Songs', href: getPermalink('/anniversary-songs') },
         { text: 'Retirement Songs', href: getPermalink('/retirement-songs') },
+        { text: 'Christmas Songs', href: getPermalink('/christmas') },
         { text: 'Funny Songs', href: getPermalink('/funny-songs') },
+      ],
+    },
+    {
+      title: 'Compare',
+      links: [
+        { text: 'YourBanger vs SongFinch', href: getPermalink('/vs-songfinch') },
+      ],
+    },
+    {
+      title: 'Resources',
+      links: [
         { text: 'Blog', href: getBlogPermalink() },
+        { text: 'Gift Ideas', href: getBlogPermalink() },
       ],
     },
     {

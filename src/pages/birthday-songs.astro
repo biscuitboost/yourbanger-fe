@@ -96,13 +96,17 @@ const benefits = [
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
-          href="https://app.yourbanger.com/song/create"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/ai-song-generator"
           class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium text-lg px-8 h-14 rounded-xl shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
         >
           Create a Birthday Song
           <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/create"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Start Creating
         </a>
         <a
           href="/examples"
@@ -172,9 +176,11 @@ const benefits = [
       </div>
 
       <div class="text-center mt-8">
+        <a href="/ai-song-generator" class="inline-flex items-center text-[var(--primary)] hover:underline font-medium mr-4">
+          Learn About AI Song Generator
+        </a>
         <a href="/examples" class="inline-flex items-center text-[var(--primary)] hover:underline font-medium">
           See all examples
-          <Icon name="tabler:arrow-right" class="w-4 h-4 ml-1" />
         </a>
       </div>
     </div>
@@ -246,8 +252,12 @@ const benefits = [
       {
         variant: 'primary',
         text: 'Create a Birthday Song Now',
-        href: 'https://app.yourbanger.com/auth?tab=signup',
-        target: '_blank',
+        href: '/ai-song-generator',
+      },
+      {
+        variant: 'secondary',
+        text: 'Explore Other Occasions',
+        href: '/wedding-songs',
       },
     ]}
   >

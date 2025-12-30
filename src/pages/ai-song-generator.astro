@@ -94,15 +94,15 @@ const useCases = [
     icon: 'tabler:hearts',
     title: 'Love Songs',
     description: 'Express your feelings with a romantic song written just for them.',
-    href: '/love-songs',
+    href: '/wedding-songs',
     gradient: 'from-red-500 to-rose-500',
   },
   {
-    icon: 'tabler:candle',
-    title: 'Memorial Songs',
-    description: 'Honor loved ones with a heartfelt tribute that preserves their memory.',
-    href: '/memorial-songs',
-    gradient: 'from-slate-500 to-gray-500',
+    icon: 'tabler:sparkles',
+    title: 'Christmas Songs',
+    description: 'Celebrate the holidays with festive custom songs for family and friends.',
+    href: '/christmas',
+    gradient: 'from-red-500 to-green-500',
   },
 ];
 
@@ -356,6 +356,22 @@ const faqSchemaQuestions = faqItems.map(item => ({
           Start Creating Now
           <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
         </a>
+        <div class="mt-4">
+          <a 
+            href="/examples" 
+            class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-sm px-4 py-2 rounded-xl transition-all mr-2"
+          >
+            Explore Examples
+            <Icon name="tabler:arrow-right" class="w-4 h-4 ml-1" />
+          </a>
+          <a 
+            href="/pricing" 
+            class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-sm px-4 py-2 rounded-xl transition-all"
+          >
+            View Pricing
+            <Icon name="tabler:arrow-right" class="w-4 h-4 ml-1" />
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -751,6 +767,12 @@ const faqSchemaQuestions = faqItems.map(item => ({
         >
           Create Your Song Now
           <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/examples"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Listen to Examples
         </a>
       </div>
 

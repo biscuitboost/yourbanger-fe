@@ -104,17 +104,23 @@ const currentDate = new Date().toISOString().split('T')[0];
           <Icon name="tabler:bulb" class="w-5 h-5 text-[var(--primary)]" />
           <span class="font-semibold text-[var(--foreground)]">TL;DR - Quick Verdict</span>
         </div>
-        <p class="text-[var(--muted-foreground)]">
+        <p class="text-[var(--muted-foreground]]">
           <strong class="text-[var(--foreground)]">YourBanger</strong> is 90% cheaper, 5,000x faster, and uses AI for instant, consistent results. 
           <strong class="text-[var(--foreground)]">SongFinch</strong> is better if you specifically want a human musician and have 2+ weeks to wait.
         </p>
         <div class="mt-4 flex flex-wrap gap-3">
           <a
-            href="/create"
+            href="/ai-song-generator"
             class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium px-5 h-10 rounded-lg shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all text-sm"
           >
-            Try YourBanger - $19.99
+            Try AI Song Generator - $19.99
             <Icon name="tabler:arrow-right" class="w-4 h-4 ml-2" />
+          </a>
+          <a
+            href="/create"
+            class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium px-5 h-10 rounded-lg transition-all text-sm"
+          >
+            Create Song Now
           </a>
           <a
             href="/examples"
@@ -619,17 +625,23 @@ const currentDate = new Date().toISOString().split('T')[0];
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
         <a
-          href="/create"
+          href="/ai-song-generator"
           class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium text-lg px-10 h-14 rounded-xl shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
         >
-          Create Your Song for $19.99
+          Try AI Song Generator for $19.99
           <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/create"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Create Your Song Now
         </a>
         <a
           href="/examples"
           class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
         >
-          Listen to Examples First
+          Listen to Examples
         </a>
       </div>
 
