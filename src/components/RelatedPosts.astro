@@ -1,0 +1,114 @@
+---
+import { Icon } from 'astro-icon/components';
+
+export interface Props {
+  currentPage: string;
+  category: 'birthday' | 'wedding' | 'holiday' | 'milestone' | 'general';
+}
+
+const { currentPage, category } = Astro.props;
+
+const relatedPagesMap = {
+  birthday: ['/birthday-songs', '/ai-song-generator', '/21st-birthday-gift-ideas', '/unique-birthday-gift-ideas'],
+  wedding: ['/wedding-songs', '/ai-song-generator', '/personalized-wedding-gifts', '/wedding-gift-ideas-unique'],
+  holiday: ['/christmas', '/ai-song-generator', '/christmas-gift-ideas', '/personalized-christmas-gifts'],
+  milestone: ['/anniversary-songs', '/ai-song-generator', '/graduation-gift-ideas', '/retirement-gift-ideas'],
+  general: ['/ai-song-generator', '/create', '/examples', '/vs-songfinch']
+};
+
+function getPageTitle(path: string): string {
+  const titles: Record<string, string> = {
+    '/ai-song-generator': 'AI Song Generator',
+    '/create': 'Create Your Song',
+    '/examples': 'Listen to Examples',
+    '/vs-songfinch': 'Compare vs SongFinch',
+    '/birthday-songs': 'Birthday Songs',
+    '/wedding-songs': 'Wedding Songs',
+    '/anniversary-songs': 'Anniversary Songs',
+    '/christmas': 'Christmas Songs',
+    '/21st-birthday-gift-ideas': '21st Birthday Gift Ideas',
+    '/unique-birthday-gift-ideas': 'Unique Birthday Gifts',
+    '/personalized-wedding-gifts': 'Personalized Wedding Gifts',
+    '/wedding-gift-ideas-unique': 'Unique Wedding Gifts',
+    '/christmas-gift-ideas': 'Christmas Gift Ideas',
+    '/personalized-christmas-gifts': 'Personalized Christmas Gifts',
+    '/graduation-gift-ideas': 'Graduation Gift Ideas',
+    '/retirement-gift-ideas': 'Retirement Gift Ideas'
+  };
+  
+  return titles[path] || path;
+}
+
+function getPageDescription(path: string): string {
+  const descriptions: Record<string, string> = {
+    '/ai-song-generator': 'Create personalized songs with AI in 2 minutes',
+    '/create': 'Start creating your custom song now',
+    '/examples': 'Hear real songs created by our AI',
+    '/vs-songfinch': 'See how we compare to SongFinch',
+    '/birthday-songs': 'Personalized birthday songs they\'ll never forget',
+    '/wedding-songs': 'Custom wedding songs for your special day',
+    '/anniversary-songs': 'Celebrate your love with a custom song',
+    '/christmas': 'Unique Christmas songs for the whole family',
+    '/21st-birthday-gift-ideas': 'Perfect gifts for 21st birthday celebrations',
+    '/unique-birthday-gift-ideas': 'Creative birthday gifts that stand out',
+    '/personalized-wedding-gifts': 'Thoughtful gifts for the happy couple',
+    '/wedding-gift-ideas-unique': 'Unique wedding gift ideas they\'ll love',
+    '/christmas-gift-ideas': 'Best Christmas gift ideas for everyone',
+    '/personalized-christmas-gifts': 'Custom Christmas gifts with personal touch',
+    '/graduation-gift-ideas': 'Celebrate their achievement with special gifts',
+    '/retirement-gift-ideas': 'Honor their career with meaningful gifts'
+  };
+  
+  return descriptions[path] || 'Learn more';
+}
+
+// Get related pages, filtering out current page
+const relatedPages = relatedPagesMap[category]
+  .filter(path => path !== currentPage)
+  .slice(0, 3); // Show max 3 related pages
+---
+
+{relatedPages.length > 0 && (
+  <section class="py-8 border-t border-[var(--border)] mt-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-[var(--foreground)] mb-6 flex items-center gap-2">
+        <Icon name="tabler:link" class="w-5 h-5 text-[var(--primary)]" />
+        Related Pages
+      </h2>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        {relatedPages.map((relatedPath) => (
+          <a 
+            href={relatedPath}
+            class="block p-4 bg-[var(--card)] rounded-lg border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all group"
+          >
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center shrink-0 group-hover:bg-[var(--primary)]/20 transition-colors">
+                <Icon name="tabler:arrow-right" class="w-4 h-4 text-[var(--primary)]" />
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="font-semibold text-[var(--foreground)] mb-1 group-hover:text-[var(--primary)] transition-colors">
+                  {getPageTitle(relatedPath)}
+                </h3>
+                <p class="text-sm text-[var(--muted-foreground)] line-clamp-2">
+                  {getPageDescription(relatedPath)}
+                </p>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+      
+      <div class="text-center mt-6">
+        <a 
+          href="/ai-song-generator"
+          class="inline-flex items-center text-[var(--primary)] hover:underline font-medium"
+        >
+          <Icon name="tabler:sparkles" class="w-4 h-4 mr-2" />
+          Try our AI Song Generator
+          <Icon name="tabler:arrow-right" class="w-4 h-4 ml-1" />
+        </a>
+      </div>
+    </div>
+  </section>
+)}

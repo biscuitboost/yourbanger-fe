@@ -20,20 +20,22 @@ Christmas shopping can feel overwhelming. You've got parents, siblings, partners
 
 This **Christmas gift guide** covers everyone on your list, from meaningful splurges to perfect stocking stuffers. No more panic-buying gift cards on December 23rd.
 
+Want to create something truly personal this holiday season? Our [AI song generator](/ai-song-generator) can create custom Christmas songs in 2 minutes that capture your favorite memories together.
+
 <!-- IMAGE: Family exchanging Christmas gifts, joyful holiday moment -->
 <!-- Alt text: "Family joyfully exchanging Christmas gifts around decorated tree" -->
 
 ## Christmas Gifts for Her
 
 ### For Mom
-- [Personalized song about your relationship](/examples)
+- [Personalized song about your relationship](/ai-song-generator)
 - Spa day or self-care package
 - Quality jewelry or accessories
 - Experience you can share together
 - Cozy luxury items (cashmere, nice robe)
 
 ### For Wife/Girlfriend
-- [Love song about your relationship](/anniversary-songs)
+- [Love song about your relationship](/ai-song-generator)
 - Romantic getaway or experience
 - Quality jewelry
 - Something she mentioned wanting
@@ -42,7 +44,7 @@ This **Christmas gift guide** covers everyone on your list, from meaningful splu
 ### For Sister
 - Experience together
 - Quality item related to her interests
-- [Funny or sentimental song](/pricing)
+- [Funny or sentimental song](/ai-song-generator)
 - Inside joke gifts (elevated)
 - Self-care package
 
@@ -341,6 +343,10 @@ A [personalized AI song](/ai-song-generator) captures your relationship in a way
 Looking for something truly unique this holiday season? Our [AI song generator](/ai-song-generator) creates custom Christmas songs in just 2 minutes. Share your favorite memories, choose a festive genre, and get a professional-quality song with personalized lyrics about your loved one.
 
 **[Create Your AI Christmas Song →](/ai-song-generator)** — $19.99, ready in minutes
+
+**[See Christmas Song Examples →](/examples)** — Hear real holiday songs we've created
+
+**[Explore More Christmas Ideas →](/christmas)** — More holiday inspiration
 
 ## Final Thoughts
 

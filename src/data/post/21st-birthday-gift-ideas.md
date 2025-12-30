@@ -20,6 +20,8 @@ Twenty-one. It's the birthday that actually means something—the last major mil
 
 Whether you're shopping for your kid, sibling, friend, or significant other, a **21st birthday gift** should match the magnitude of the moment. This isn't the time for a gift card and a "happy birthday" text.
 
+Want to create something truly personal? Our [AI song generator](/ai-song-generator) can create a custom 21st birthday song in 2 minutes that captures their journey and this milestone moment.
+
 These ideas range from celebratory to sentimental, practical to purely fun—because turning 21 deserves more than socks.
 
 <!-- IMAGE: Young adult opening birthday gift with excited expression, friends around -->
@@ -155,7 +157,7 @@ Help them navigate post-college life:
 ### For Your Child
 
 This is a big moment for parents too. Consider:
-- [Personalized song about their journey](/birthday-songs)
+- [Personalized song about their journey](/ai-song-generator)
 - Meaningful jewelry (watch, necklace, ring)
 - Experience you can share together
 - Contribution to a major goal (travel, education, car)
@@ -166,7 +168,7 @@ This is a big moment for parents too. Consider:
 - Inside joke gifts that reference your shared history
 - Experience you can do together
 - Something they've wanted but wouldn't buy themselves
-- [Custom song about your sibling relationship](/pricing)
+- [Custom song about your sibling relationship](/ai-song-generator)
 
 ### For a Friend
 
@@ -179,7 +181,7 @@ This is a big moment for parents too. Consider:
 
 - Romantic experience (trip, fancy dinner)
 - Meaningful jewelry
-- [Love song that includes their 21st milestone](/examples)
+- [Love song that includes their 21st milestone](/ai-song-generator)
 - Something they've mentioned wanting
 
 <!-- IMAGE: Parent giving meaningful gift to 21-year-old child, emotional moment -->
@@ -287,7 +289,7 @@ The best 21st birthday gifts acknowledge this specific moment in their life. Thi
 - Your shared history
 - Their hopes and dreams
 
-A [personalized song](/examples) captures all of this—their journey so far, the milestone they're hitting, and the future ahead. It's the kind of gift that makes a 21st birthday truly unforgettable.
+A [personalized song](/ai-song-generator) captures all of this—their journey so far, the milestone they're hitting, and the future ahead. It's the kind of gift that makes a 21st birthday truly unforgettable.
 
 ## Final Thoughts
 
@@ -300,6 +302,10 @@ Whatever you choose, make it personal. Make it meaningful. And maybe include a n
 Want to give them something truly unforgettable? Our [AI song generator](/ai-song-generator) creates custom 21st birthday songs in just 2 minutes. Share their story—from childhood memories to who they're becoming—and get a professional-quality song with personalized lyrics.
 
 **[Create Your AI 21st Birthday Song →](/ai-song-generator)** — $19.99, ready in minutes
+
+**[See Birthday Song Examples →](/examples)** — Hear real songs we've created
+
+**[Explore All Birthday Gifts →](/birthday-songs)** — More birthday gift ideas
 
 ---
 

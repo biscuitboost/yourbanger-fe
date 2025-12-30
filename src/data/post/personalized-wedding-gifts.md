@@ -20,6 +20,8 @@ Here's the thing about **personalized wedding gifts**: slapping someone's initia
 
 Truly personalized gifts acknowledge the couple's specific story—how they met, what they love, the journey that brought them to this moment. That's the difference between a forgettable gift and one they'll treasure forever.
 
+Want to create something that captures their unique love story? Our [AI song generator](/ai-song-generator) can create a custom wedding song in 2 minutes that tells their relationship story.
+
 Let's explore wedding gifts that are actually personal.
 
 <!-- IMAGE: Couple admiring a personalized wedding gift together -->
@@ -43,7 +45,7 @@ These gifts capture their unique love story.
 
 ### Custom Songs About Their Relationship
 
-A [personalized song](/examples) that tells their love story is the ultimate personalized gift. Include:
+A [personalized song](/ai-song-generator) that tells their love story is the ultimate personalized gift. Include:
 - How they met
 - Their proposal story
 - Inside jokes
@@ -275,13 +277,13 @@ The best personalized wedding gifts show that you see and celebrate their specif
 - What would make them feel truly seen?
 - What will they treasure years from now?
 
-A [personalized song](/wedding-songs) captures all of this in a way no physical item can. It's their story, their inside jokes, their journey—set to music they can listen to forever.
+A [personalized song](/ai-song-generator) captures all of this in a way no physical item can. It's their story, their inside jokes, their journey—set to music they can listen to forever.
 
 ## Final Thoughts
 
 Personalized wedding gifts shouldn't just have their names on them—they should feel like they were made specifically for this couple and no one else.
 
-Whether you commission custom art, create a memory collection, or [write their love story as a song](/pricing), the goal is the same: show them that you see their relationship as the unique, special thing it is.
+Whether you commission custom art, create a memory collection, or [write their love story as a song](/ai-song-generator), the goal is the same: show them that you see their relationship as the unique, special thing it is.
 
 That's what makes a gift truly personal.
 
@@ -290,6 +292,10 @@ That's what makes a gift truly personal.
 Want to give them the ultimate personalized gift? Our [AI song generator](/ai-song-generator) creates custom wedding songs in just 2 minutes. Share their love story—how they met, their inside jokes, what makes them special—and get a professional-quality song that's uniquely theirs.
 
 **[Create Your AI Wedding Song →](/ai-song-generator)** — $19.99, ready in minutes
+
+**[See Wedding Song Examples →](/examples)** — Hear real wedding songs we've created
+
+**[Explore Wedding Gift Ideas →](/wedding-songs)** — More wedding inspiration
 
 ---
 
