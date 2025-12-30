@@ -1,0 +1,660 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import SchemaMarkup from '~/components/seo/SchemaMarkup.astro';
+import { Icon } from 'astro-icon/components';
+import CompetitorTable from '~/components/CompetitorTable.astro';
+
+const metadata = {
+  title: 'YourBanger vs SongFinch 2025: Price, Speed & Quality Compared',
+  description: 'Compare YourBanger vs SongFinch for custom songs. See why 500+ customers chose our AI song generator: $19.99 vs $199, 2 minutes vs 2 weeks, unlimited edits.',
+  openGraph: {
+    title: 'YourBanger vs SongFinch: Complete 2025 Comparison',
+    description: 'Detailed comparison of YourBanger and SongFinch custom song services including pricing, delivery time, and quality.',
+    type: 'article',
+  },
+};
+
+const faqItems = [
+  {
+    question: 'Is SongFinch worth the money?',
+    answer: 'SongFinch connects you with talented human musicians who create personalized songs. At $199+ per song with 1-2 week delivery, it\'s worth it if you specifically want a human-performed song and have the time and budget. However, if you want similar personalization at 90% less cost with instant delivery, YourBanger\'s AI song generator offers exceptional value at $19.99 per song.',
+  },
+  {
+    question: 'Are AI songs as good as human songs?',
+    answer: 'Modern AI music generation has reached remarkable quality levels. Our AI song generator produces studio-quality songs with professional vocals, full instrumentation, and emotionally resonant lyrics. Many listeners cannot distinguish between AI-generated and human-created songs. The key advantage of AI is consistency—every song meets the same high standard, while human-created songs can vary based on the individual artist\'s interpretation and skill level.',
+  },
+  {
+    question: 'Can I get a refund from SongFinch?',
+    answer: 'SongFinch\'s refund policy varies, and you should check their current terms on their website. At YourBanger, we offer a 100% satisfaction guarantee. If you\'re not happy with your song, you can regenerate it with different details or styles at no extra cost (up to 3 generations included). If you\'re still not satisfied, contact our support team for a full refund.',
+  },
+  {
+    question: 'What\'s the cheapest custom song option?',
+    answer: 'YourBanger offers the most affordable custom song option at just $19.99 per song. This is approximately 90% cheaper than SongFinch ($199+) and other human-musician services. Despite the lower price, you get a fully personalized song with custom lyrics, professional vocals, and studio-quality production—delivered in 2 minutes instead of 2 weeks.',
+  },
+  {
+    question: 'How do SongFinch reviews compare to YourBanger?',
+    answer: 'Both services have positive reviews from satisfied customers. SongFinch customers appreciate the human touch and the knowledge that a real musician created their song. YourBanger customers consistently praise the speed, affordability, and quality of our AI-generated songs, with a 4.9/5 average rating from 500+ reviews. Many customers are surprised by how personal and professional the AI-created songs sound.',
+  },
+  {
+    question: 'Can YourBanger create the same genres as SongFinch?',
+    answer: 'YourBanger actually offers more genre flexibility than SongFinch. Our AI song generator supports 20+ genres including pop, rock, country, hip-hop, R&B, ballad, acoustic, electronic, jazz, folk, and more. With SongFinch, your genre options depend on which artists are available and their individual specialties. With YourBanger, you can create any genre instantly, any time.',
+  },
+  {
+    question: 'Which service is better for last-minute gifts?',
+    answer: 'YourBanger is definitively better for last-minute gifts. You can create a personalized song in 2 minutes, even at 11:59 PM the night before an event. SongFinch requires 4-14 days for delivery, with rush fees for faster turnaround. If you need a custom song today, YourBanger is your only realistic option.',
+  },
+];
+
+const faqSchemaQuestions = faqItems.map(item => ({
+  "@type": "Question",
+  name: item.question,
+  acceptedAnswer: {
+    "@type": "Answer",
+    text: item.answer
+  }
+}));
+
+const currentDate = new Date().toISOString().split('T')[0];
+---
+
+<Layout metadata={metadata}>
+  <!-- Article Schema for SEO -->
+  <SchemaMarkup 
+    type="article"
+    data={{
+      headline: "YourBanger vs SongFinch: Complete 2025 Comparison",
+      description: "Detailed comparison of YourBanger and SongFinch custom song services including pricing, delivery time, and quality.",
+      datePublished: "2025-01-01",
+      dateModified: currentDate
+    }}
+  />
+
+  <!-- FAQ Schema for SEO -->
+  <SchemaMarkup 
+    type="faq"
+    data={{
+      mainEntity: faqSchemaQuestions
+    }}
+  />
+
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[var(--secondary)] rounded-full border border-[var(--border)] mb-6">
+        <Icon name="tabler:vs" class="w-4 h-4 text-[var(--primary)]" />
+        <span class="text-sm text-[var(--muted-foreground)]">2025 Comparison Guide</span>
+      </div>
+
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--foreground)] mb-6">
+        YourBanger vs SongFinch: Which Custom Song Service is Right for You?
+      </h1>
+
+      <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">
+        An honest comparison of price, speed, quality, and value between the leading custom song services.
+      </p>
+
+      <!-- Quick Verdict Box -->
+      <div class="max-w-2xl mx-auto p-6 bg-[var(--card)] rounded-xl border border-[var(--primary)]/30 text-left">
+        <div class="flex items-center gap-2 mb-3">
+          <Icon name="tabler:bulb" class="w-5 h-5 text-[var(--primary)]" />
+          <span class="font-semibold text-[var(--foreground)]">TL;DR - Quick Verdict</span>
+        </div>
+        <p class="text-[var(--muted-foreground)]">
+          <strong class="text-[var(--foreground)]">YourBanger</strong> is 90% cheaper, 5,000x faster, and uses AI for instant, consistent results. 
+          <strong class="text-[var(--foreground)]">SongFinch</strong> is better if you specifically want a human musician and have 2+ weeks to wait.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a
+            href="/create"
+            class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium px-5 h-10 rounded-lg shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all text-sm"
+          >
+            Try YourBanger - $19.99
+            <Icon name="tabler:arrow-right" class="w-4 h-4 ml-2" />
+          </a>
+          <a
+            href="/examples"
+            class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium px-5 h-10 rounded-lg transition-all text-sm"
+          >
+            Hear Examples First
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Side-by-Side Comparison
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          See how YourBanger and SongFinch compare across key features
+        </p>
+      </div>
+
+      <CompetitorTable />
+
+      <p class="text-sm text-[var(--muted-foreground)] text-center mt-6">
+        * SongFinch pricing and features based on publicly available information at time of writing. 
+        Visit <a href="https://www.songfinch.com" target="_blank" rel="noopener noreferrer" class="text-[var(--primary)] hover:underline">songfinch.com</a> for their current offerings.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pricing Breakdown Section -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          SongFinch Cost vs YourBanger Pricing
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          Understanding the true cost of custom songs
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- SongFinch Pricing -->
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-xl font-semibold text-[var(--foreground)] mb-4">SongFinch Pricing</h3>
+          <p class="text-[var(--muted-foreground)] mb-4">
+            SongFinch offers custom songs created by human musicians. Their pricing structure typically includes:
+          </p>
+          <ul class="space-y-3 text-[var(--muted-foreground)]">
+            <li class="flex items-start gap-2">
+              <Icon name="tabler:point" class="w-5 h-5 text-[var(--muted-foreground)] shrink-0 mt-0.5" />
+              <span><strong class="text-[var(--foreground)]">Standard songs:</strong> Starting at $199+</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="tabler:point" class="w-5 h-5 text-[var(--muted-foreground)] shrink-0 mt-0.5" />
+              <span><strong class="text-[var(--foreground)]">Premium options:</strong> $300-$500+ for additional features</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="tabler:point" class="w-5 h-5 text-[var(--muted-foreground)] shrink-0 mt-0.5" />
+              <span><strong class="text-[var(--foreground)]">Rush delivery:</strong> Additional fees for faster turnaround</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="tabler:point" class="w-5 h-5 text-[var(--muted-foreground)] shrink-0 mt-0.5" />
+              <span><strong class="text-[var(--foreground)]">Extra revisions:</strong> May incur additional costs</span>
+            </li>
+          </ul>
+          <p class="text-sm text-[var(--muted-foreground)] mt-4 italic">
+            * Pricing may vary. Check songfinch.com for current rates.
+          </p>
+        </div>
+
+        <!-- YourBanger Pricing -->
+        <div class="p-6 bg-[var(--primary)]/5 rounded-xl border border-[var(--primary)]/30">
+          <h3 class="text-xl font-semibold text-[var(--foreground)] mb-4">YourBanger Pricing</h3>
+          <p class="text-[var(--muted-foreground)] mb-4">
+            Our <a href="/ai-song-generator" class="text-[var(--primary)] hover:underline">AI song generator</a> offers simple, transparent pricing:
+          </p>
+          <div class="text-center py-6">
+            <div class="text-5xl font-bold text-[var(--primary)]">$19.99</div>
+            <div class="text-[var(--muted-foreground)]">per song</div>
+          </div>
+          <ul class="space-y-3 text-[var(--muted-foreground)]">
+            <li class="flex items-start gap-2">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--primary)] shrink-0 mt-0.5" />
+              <span>Full personalized song with custom lyrics</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--primary)] shrink-0 mt-0.5" />
+              <span>Professional AI vocals and production</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--primary)] shrink-0 mt-0.5" />
+              <span>Up to 3 generations (6 tracks) included</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--primary)] shrink-0 mt-0.5" />
+              <span>Instant delivery - no rush fees ever</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Savings Calculator -->
+      <div class="mt-10 p-6 bg-[var(--card)] rounded-xl border border-[var(--border)] text-center">
+        <h3 class="text-2xl font-bold text-[var(--foreground)] mb-2">Your Savings with YourBanger</h3>
+        <div class="flex items-center justify-center gap-4 flex-wrap">
+          <div class="text-[var(--muted-foreground)]">
+            <span class="line-through">$199</span> SongFinch
+          </div>
+          <Icon name="tabler:arrow-right" class="w-5 h-5 text-[var(--muted-foreground)]" />
+          <div class="text-[var(--primary)] font-bold">$19.99 YourBanger</div>
+          <Icon name="tabler:equal" class="w-5 h-5 text-[var(--muted-foreground)]" />
+          <div class="text-2xl font-bold text-green-500">Save $179+</div>
+        </div>
+        <p class="text-[var(--muted-foreground)] mt-4">
+          That's <strong class="text-[var(--foreground)]">90% savings</strong> on every custom song you create.
+        </p>
+
+        <div class="mt-6 p-4 bg-[var(--secondary)] rounded-lg">
+          <p class="text-sm text-[var(--muted-foreground)]">
+            <strong class="text-[var(--foreground)]">"But you get what you pay for, right?"</strong><br />
+            Our AI produces studio-quality songs that rival human-created music. Don't take our word for it—
+            <a href="/examples" class="text-[var(--primary)] hover:underline">listen to examples</a> and judge for yourself.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speed Comparison Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Need a Song Fast? Here's the Reality
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          When time matters, the difference between these services is dramatic
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- YourBanger Timeline -->
+        <div class="p-6 bg-[var(--primary)]/5 rounded-xl border border-[var(--primary)]/30">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 bg-[var(--primary)] rounded-full flex items-center justify-center">
+              <Icon name="tabler:bolt" class="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-[var(--foreground)]">YourBanger</h3>
+              <p class="text-[var(--primary)] font-medium">2 Minutes</p>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-[var(--primary)]/20 rounded-full flex items-center justify-center text-sm font-bold text-[var(--primary)]">1</div>
+              <span class="text-[var(--foreground)]">11:58 PM - Start creating your song</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-[var(--primary)]/20 rounded-full flex items-center justify-center text-sm font-bold text-[var(--primary)]">2</div>
+              <span class="text-[var(--foreground)]">11:59 PM - Enter story details, pick genre</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-[var(--primary)] rounded-full flex items-center justify-center text-sm font-bold text-white">✓</div>
+              <span class="text-[var(--foreground)]"><strong>12:00 AM - Playing your finished song!</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SongFinch Timeline -->
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 bg-[var(--secondary)] rounded-full flex items-center justify-center">
+              <Icon name="tabler:clock" class="w-6 h-6 text-[var(--muted-foreground)]" />
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-[var(--foreground)]">SongFinch</h3>
+              <p class="text-[var(--muted-foreground)] font-medium">4-14 Days</p>
+            </div>
+          </div>
+          <div class="space-y-3 text-[var(--muted-foreground)]">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-[var(--secondary)] rounded-full flex items-center justify-center text-sm font-bold">1</div>
+              <span>Monday - Place your order</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-[var(--secondary)] rounded-full flex items-center justify-center text-sm font-bold">2</div>
+              <span>Tuesday-Thursday - Artist assigned, begins work</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-[var(--secondary)] rounded-full flex items-center justify-center text-sm font-bold">3</div>
+              <span>Next Friday (maybe) - Receive your song</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use Cases for Speed -->
+      <div class="mt-10">
+        <h3 class="text-xl font-semibold text-[var(--foreground)] text-center mb-6">
+          When Speed Matters Most
+        </h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-4 bg-[var(--card)] rounded-xl border border-[var(--border)] text-center">
+            <Icon name="tabler:cake" class="w-8 h-8 text-[var(--primary)] mx-auto mb-2" />
+            <h4 class="font-semibold text-[var(--foreground)]">Forgot a Birthday</h4>
+            <p class="text-sm text-[var(--muted-foreground)]">Party's tomorrow? No problem.</p>
+          </div>
+          <div class="p-4 bg-[var(--card)] rounded-xl border border-[var(--border)] text-center">
+            <Icon name="tabler:microphone" class="w-8 h-8 text-[var(--primary)] mx-auto mb-2" />
+            <h4 class="font-semibold text-[var(--foreground)]">Last-Minute Toast</h4>
+            <p class="text-sm text-[var(--muted-foreground)]">Wedding speech in 2 hours? Done.</p>
+          </div>
+          <div class="p-4 bg-[var(--card)] rounded-xl border border-[var(--border)] text-center">
+            <Icon name="tabler:confetti" class="w-8 h-8 text-[var(--primary)] mx-auto mb-2" />
+            <h4 class="font-semibold text-[var(--foreground)]">Surprise Party</h4>
+            <p class="text-sm text-[var(--muted-foreground)]">Create it while they're at work.</p>
+          </div>
+          <div class="p-4 bg-[var(--card)] rounded-xl border border-[var(--border)] text-center">
+            <Icon name="tabler:bulb" class="w-8 h-8 text-[var(--primary)] mx-auto mb-2" />
+            <h4 class="font-semibold text-[var(--foreground)]">Spontaneous Idea</h4>
+            <p class="text-sm text-[var(--muted-foreground)]">Great idea at 2 AM? Make it real.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Comparison Section -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          AI vs Human: Which Sounds Better?
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          An honest look at the quality question
+        </p>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-[var(--muted-foreground)]">
+        <p>
+          Let's be honest: <strong class="text-[var(--foreground)]">SongFinch's human musicians are talented.</strong> There's something special about knowing a real person sat down with a guitar or piano and created something just for you. If that human element is important to you, SongFinch delivers it.
+        </p>
+
+        <p>
+          However, our <a href="/ai-song-generator" class="text-[var(--primary)] hover:underline">AI song generator</a> offers distinct advantages that many customers prefer. When people search for a SongFinch alternative, they're often looking for faster delivery, lower prices, or more control over the final product. YourBanger delivers on all three fronts while maintaining professional-quality output that rivals human-created songs.
+        </p>
+
+        <p>
+          The technology behind AI music generation has advanced dramatically in recent years. Modern AI can understand musical structure, emotional expression, and genre conventions at a level that produces genuinely impressive results. Many listeners in blind tests cannot reliably distinguish between AI-generated and human-created songs—especially when the AI has been trained specifically for personalized music creation like ours has.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="w-12 h-12 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center mb-4">
+            <Icon name="tabler:chart-line" class="w-6 h-6 text-[var(--primary)]" />
+          </div>
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">Consistency</h3>
+          <p class="text-[var(--muted-foreground)]">
+            AI doesn't have off days. Every song meets the same high production standard. With human artists, quality can vary based on their mood, schedule, and interpretation.
+          </p>
+        </div>
+
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="w-12 h-12 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center mb-4">
+            <Icon name="tabler:refresh" class="w-6 h-6 text-[var(--primary)]" />
+          </div>
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">Instant Customization</h3>
+          <p class="text-[var(--muted-foreground)]">
+            Don't like something? Regenerate instantly with different details, style, or mood. No waiting days for a revision, no awkward feedback conversations.
+          </p>
+        </div>
+
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <div class="w-12 h-12 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center mb-4">
+            <Icon name="tabler:music" class="w-6 h-6 text-[var(--primary)]" />
+          </div>
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">Genre Range</h3>
+          <p class="text-[var(--muted-foreground)]">
+            Our AI masters 20+ genres. With SongFinch, you're limited to what your assigned artist specializes in. Want country today and hip-hop tomorrow? No problem with AI.
+          </p>
+        </div>
+      </div>
+
+      <!-- Customer Testimonials -->
+      <div class="mt-12">
+        <h3 class="text-xl font-semibold text-[var(--foreground)] text-center mb-6">
+          What Customers Say About Quality
+        </h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+            <div class="flex gap-1 mb-3">
+              {[1, 2, 3, 4, 5].map(() => (
+                <svg class="w-5 h-5 text-yellow-500 fill-yellow-500" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+            <blockquote class="text-[var(--foreground)] mb-3">
+              "I was skeptical about AI music, but honestly? The song YourBanger created for my mom's birthday was better than I expected. She cried happy tears and has played it for everyone."
+            </blockquote>
+            <p class="text-sm text-[var(--muted-foreground)]">— Jennifer M., California</p>
+          </div>
+
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+            <div class="flex gap-1 mb-3">
+              {[1, 2, 3, 4, 5].map(() => (
+                <svg class="w-5 h-5 text-yellow-500 fill-yellow-500" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+            <blockquote class="text-[var(--foreground)] mb-3">
+              "I've used SongFinch before and YourBanger now. Both are good, but for $19.99 and instant delivery? YourBanger is the clear winner for me. The quality difference isn't worth 10x the price."
+            </blockquote>
+            <p class="text-sm text-[var(--muted-foreground)]">— Marcus T., Texas</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/examples" class="inline-flex items-center text-[var(--primary)] hover:underline font-medium">
+          Listen to AI-generated song examples
+          <Icon name="tabler:arrow-right" class="w-4 h-4 ml-1" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- When to Choose Each Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          When to Choose SongFinch vs YourBanger
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          Being honest about which service fits your needs
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Choose SongFinch -->
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-xl font-semibold text-[var(--foreground)] mb-4 flex items-center gap-2">
+            <Icon name="tabler:user" class="w-6 h-6" />
+            Choose SongFinch If...
+          </h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--muted-foreground)] shrink-0 mt-0.5" />
+              <span class="text-[var(--muted-foreground)]">You specifically want a human-performed acoustic song</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--muted-foreground)] shrink-0 mt-0.5" />
+              <span class="text-[var(--muted-foreground)]">You have 2+ weeks lead time before you need the song</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--muted-foreground)] shrink-0 mt-0.5" />
+              <span class="text-[var(--muted-foreground)]">Budget isn't a primary concern ($200+ is fine)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--muted-foreground)] shrink-0 mt-0.5" />
+              <span class="text-[var(--muted-foreground)]">You want to support independent musicians directly</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--muted-foreground)] shrink-0 mt-0.5" />
+              <span class="text-[var(--muted-foreground)]">The "human touch" factor is important to you</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Choose YourBanger -->
+        <div class="p-6 bg-[var(--primary)]/5 rounded-xl border border-[var(--primary)]/30">
+          <h3 class="text-xl font-semibold text-[var(--foreground)] mb-4 flex items-center gap-2">
+            <Icon name="tabler:sparkles" class="w-6 h-6 text-[var(--primary)]" />
+            Choose YourBanger If...
+          </h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--primary)] shrink-0 mt-0.5" />
+              <span class="text-[var(--foreground)]">You need a song fast (minutes, not weeks)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--primary)] shrink-0 mt-0.5" />
+              <span class="text-[var(--foreground)]">You want to save 90% on cost ($19.99 vs $199+)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--primary)] shrink-0 mt-0.5" />
+              <span class="text-[var(--foreground)]">You want unlimited, instant revisions</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--primary)] shrink-0 mt-0.5" />
+              <span class="text-[var(--foreground)]">You need a specific genre (20+ options)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--primary)] shrink-0 mt-0.5" />
+              <span class="text-[var(--foreground)]">You're ordering last-minute (even tonight!)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <Icon name="tabler:check" class="w-5 h-5 text-[var(--primary)] shrink-0 mt-0.5" />
+              <span class="text-[var(--foreground)]">You want consistent, professional quality every time</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SongFinch Review Summary Section -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          SongFinch Review: What You Need to Know
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          An objective look at SongFinch's service and how it compares
+        </p>
+      </div>
+
+      <div class="prose prose-lg max-w-none text-[var(--muted-foreground)]">
+        <p>
+          SongFinch has built a reputation as a premium custom song service since its founding. The company connects customers with independent musicians who create personalized songs based on the details you provide. Many SongFinch reviews praise the emotional impact of receiving a song created by a real human artist, and the platform has helped thousands of people celebrate special occasions with custom music.
+        </p>
+
+        <p>
+          However, when evaluating SongFinch cost versus value, many customers find themselves searching for alternatives. At $199+ per song with delivery times of 4-14 days, SongFinch pricing puts custom songs out of reach for many people. Additionally, the revision process can be slow and limited, which is frustrating if the first version doesn't quite capture what you envisioned.
+        </p>
+
+        <h3 class="text-xl font-semibold text-[var(--foreground)] mt-8 mb-4">What SongFinch Does Well</h3>
+        
+        <p>
+          To be fair, SongFinch excels in several areas. Their network of musicians includes genuinely talented artists who bring authentic human emotion to their performances. For customers who value the knowledge that a real person crafted their song, this human element is irreplaceable. SongFinch also offers a video component where you can see the artist performing your song, which adds a personal touch that AI cannot replicate.
+        </p>
+
+        <h3 class="text-xl font-semibold text-[var(--foreground)] mt-8 mb-4">Where YourBanger Offers a Better Alternative</h3>
+        
+        <p>
+          For customers prioritizing speed, affordability, and control, YourBanger provides a compelling SongFinch alternative. Our <a href="/ai-song-generator" class="text-[var(--primary)] hover:underline">AI song generator</a> delivers comparable personalization at a fraction of the cost and time. You can create a custom song for a <a href="/birthday-songs" class="text-[var(--primary)] hover:underline">birthday</a>, <a href="/wedding-songs" class="text-[var(--primary)] hover:underline">wedding</a>, <a href="/anniversary-songs" class="text-[var(--primary)] hover:underline">anniversary</a>, or any occasion in just 2 minutes.
+        </p>
+
+        <p>
+          The ability to instantly regenerate your song with different styles, moods, or details gives you creative control that traditional services simply cannot match. If the first version isn't perfect, you can try again immediately—no waiting, no additional fees, no awkward revision requests.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Common Questions About SongFinch vs YourBanger
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          Answers to help you make the right choice
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        {faqItems.map((item) => (
+          <details class="group bg-[var(--card)] rounded-xl border border-[var(--border)] overflow-hidden">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <h3 class="text-lg font-semibold text-[var(--foreground)] pr-4">{item.question}</h3>
+              <Icon 
+                name="tabler:chevron-down" 
+                class="w-5 h-5 text-[var(--muted-foreground)] group-open:rotate-180 transition-transform shrink-0" 
+              />
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-[var(--muted-foreground)]">{item.answer}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--primary)]/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-6">
+        Ready to Try the Faster, Affordable Alternative?
+      </h2>
+      
+      <p class="text-lg text-[var(--muted-foreground)] mb-8 max-w-2xl mx-auto">
+        Join thousands who chose YourBanger for instant, affordable custom songs. 
+        Create your personalized song in 2 minutes—not 2 weeks.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <a
+          href="/create"
+          class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium text-lg px-10 h-14 rounded-xl shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
+        >
+          Create Your Song for $19.99
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/examples"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Listen to Examples First
+        </a>
+      </div>
+
+      <!-- Trust Signals -->
+      <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+        <div class="flex items-center gap-2">
+          <div class="flex">
+            {[1, 2, 3, 4, 5].map(() => (
+              <svg class="w-4 h-4 text-yellow-500 fill-yellow-500" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            ))}
+          </div>
+          <span class="text-[var(--foreground)]">4.9/5 from 500+ reviews</span>
+        </div>
+        <div class="flex items-center gap-2 text-[var(--foreground)]">
+          <Icon name="tabler:shield-check" class="w-5 h-5 text-[var(--primary)]" />
+          <span>100% Satisfaction Guarantee</span>
+        </div>
+      </div>
+
+      <p class="text-sm text-[var(--muted-foreground)] mt-6">
+        Questions about pricing? Visit our <a href="/pricing" class="text-[var(--primary)] hover:underline">pricing page</a> for full details.
+        Ready to start? <a href="/create" class="text-[var(--primary)] hover:underline">Create your custom song now</a>.
+      </p>
+    </div>
+  </section>
+</Layout>

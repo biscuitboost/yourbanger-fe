@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-10-14T00:00:00Z
-title: "Last-Minute Gift Ideas That Don't Look Last-Minute"
+title: "AI Songs & Last-Minute Gift Ideas That Don't Look Last-Minute"
 excerpt: "The party is tomorrow and you still don't have a gift. Don't panic. These last-minute gift ideas are thoughtful, personal, and can be ready in hours—not days."
 image: ~/assets/images/blog/last-minute-gifts-hero.jpg
 imageAlt: "Person quickly creating last-minute personalized gift on phone, modern and urgent gift-giving moment"
@@ -12,8 +12,8 @@ tags:
   - birthday gifts
 author: YourBanger.com Team
 metadata:
-  title: "Last-Minute Gift Ideas That Don't Look Last-Minute | YourBanger.com"
-  description: "Need a gift fast? These last-minute gift ideas can be ready in hours but feel deeply personal. From custom songs to digital experiences—no shipping required."
+  title: "AI Songs & Last-Minute Gift Ideas | YourBanger.com"
+  description: "Create an AI song in 2 minutes for $19.99. Last-minute gift ideas that feel deeply personal—custom songs ready instantly, no shipping required."
 ---
 
 ## We've All Been There
@@ -183,10 +183,10 @@ The best last-minute gift isn't about finding something fast. It's about finding
 
 A personalized song takes 2 minutes to create but captures years of knowing someone. That's why it works for last-minute—not because it's fast, but because the meaning doesn't require shipping time.
 
-**[Create a personalized song now →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Song Now →](/ai-song-generator)**
 
 Because showing up with something meaningful is always better than showing up empty-handed—even if you thought of it an hour ago.
 
 ---
 
-*Need ideas for specific occasions? Check out our guides for [birthday songs](/birthday-songs), [wedding gifts](/wedding-songs), and [more examples](/examples).*
+*Need ideas for specific occasions? Check out our guides for [AI birthday songs](/birthday-songs), [AI wedding songs](/wedding-songs), [AI song generator](/ai-song-generator), and [more examples](/examples).*

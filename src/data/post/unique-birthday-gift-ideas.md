@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-06-10T00:00:00Z
-title: "10 Unique Birthday Gift Ideas That Will Make Them Cry (Happy Tears)"
+title: "10 AI Birthday Songs & Unique Gift Ideas That Will Make Them Cry"
 excerpt: "Forget the gift card. These personalized birthday gift ideas will create moments they'll remember forever. From custom songs to handwritten letters, find the perfect meaningful gift."
 image: ~/assets/images/blog/birthday-gift-ideas-hero.jpg
 imageAlt: "Wrapped birthday gifts with personalized touches including custom song QR code, photo book, and handwritten letter arranged on a table"
@@ -12,8 +12,8 @@ tags:
   - gift ideas
 author: YourBanger.com Team
 metadata:
-  title: "10 Unique Birthday Gift Ideas That Will Make Them Cry | YourBanger.com"
-  description: "Looking for unique birthday gift ideas? Discover personalized gifts that create unforgettable moments. Custom songs, memory books, and more meaningful alternatives to generic presents."
+  title: "AI Birthday Songs & Unique Gift Ideas | YourBanger.com"
+  description: "Create an AI birthday song in 2 minutes for $19.99. Discover unique gift ideas that create unforgettable moments—custom songs, memory books, and meaningful alternatives to generic presents."
 ---
 
 ## The Problem with Most Birthday Gifts
@@ -153,4 +153,12 @@ Because they deserve more than a gift card.
 
 ---
 
-*Looking for more gift ideas? Check out our guides for [wedding gifts](/wedding-songs), [anniversary surprises](/examples), and more.*
+## Create a Personalized AI Birthday Song
+
+Want to give them something truly unforgettable? Our [AI song generator](/ai-song-generator) creates custom birthday songs in just 2 minutes. Share their story, pick a music style, and get a professional-quality song they'll play on repeat.
+
+**[Create Your AI Birthday Song →](/ai-song-generator)** — $19.99, ready in minutes
+
+---
+
+*Looking for more gift ideas? Check out our guides for [AI wedding songs](/wedding-songs), [anniversary surprises](/examples), and our [AI song generator](/ai-song-generator).*

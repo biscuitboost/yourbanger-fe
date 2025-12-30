@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-09-05T00:00:00Z
-title: "Unique Gift Ideas for Him This Holiday Season"
+title: "AI Songs & Unique Gift Ideas for Him This Holiday Season"
 excerpt: "Skip the predictable gifts this year. These unique gift ideas for him go beyond the ordinary—from custom songs to experiences he'll actually remember."
 image: ~/assets/images/blog/unique-gifts-him-hero.jpg
 imageAlt: "Unique gift ideas for him including custom song card, experience tickets, quality leather items, and hobby gear"
@@ -12,8 +12,8 @@ tags:
   - christmas gifts
 author: YourBanger.com Team
 metadata:
-  title: "Unique Gift Ideas for Him This Holiday | YourBanger.com"
-  description: "Looking for unique gift ideas for him? These unexpected presents go beyond the usual suspects. From custom songs to personalized experiences."
+  title: "AI Songs & Unique Gift Ideas for Him | YourBanger.com"
+  description: "Create an AI song in 2 minutes for $19.99. Unique gift ideas for him that go beyond the usual suspects—custom songs about his life he'll never forget."
 ---
 
 ## Beyond the "Gifts for Him" Clichés
@@ -189,8 +189,8 @@ A [custom song](/) takes about 2 minutes to create. Share his quirks, your memor
 
 He can't buy that anywhere. Only you can give it.
 
-**[Create a song for him →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Song →](/ai-song-generator)**
 
 ---
 
-*More ideas: [Birthday Songs](/birthday-songs) | [Examples](/examples) | [Pricing](/pricing)*
+*More ideas: [AI Birthday Songs](/birthday-songs) | [AI Song Generator](/ai-song-generator) | [Examples](/examples)*

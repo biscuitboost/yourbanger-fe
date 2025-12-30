@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-11-08T00:00:00Z
-title: "Personalized Christmas Gifts That Actually Mean Something"
+title: "AI Christmas Songs & Personalized Gifts That Actually Mean Something"
 excerpt: "Skip the generic gifts this Christmas. These personalized gift ideas show you actually know the person—from custom songs to meaningful keepsakes they'll treasure forever."
 image: ~/assets/images/blog/personalized-christmas-gifts-hero.jpg
 imageAlt: "Personalized Christmas gifts under decorated tree including custom wrapped presents and photo books"
@@ -12,8 +12,8 @@ tags:
   - gift ideas
 author: YourBanger.com Team
 metadata:
-  title: "Personalized Christmas Gifts That Actually Mean Something | YourBanger.com"
-  description: "Looking for personalized Christmas gifts? Discover meaningful, custom gift ideas that show you really know them. From custom songs to unique keepsakes."
+  title: "AI Christmas Songs & Personalized Gifts | YourBanger.com"
+  description: "Create an AI Christmas song in 2 minutes for $19.99. Personalized gift ideas that show you really know them—custom songs about your relationship they'll treasure."
 ---
 
 ## Why Personalized Beats Expensive Every Time
@@ -188,8 +188,8 @@ If you want to give a gift that makes them laugh, cry, or both—try a [personal
 
 Because "I made you a song about our relationship" hits different than "I got you a gift card."
 
-**[Create a personalized Christmas song →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Christmas Song →](/ai-song-generator)**
 
 ---
 
-*Looking for more ideas? Check out our [birthday songs](/birthday-songs), [wedding songs](/wedding-songs), and [examples](/examples).*
+*Looking for more ideas? Check out our [AI birthday songs](/birthday-songs), [AI wedding songs](/wedding-songs), [AI song generator](/ai-song-generator), and [examples](/examples).*

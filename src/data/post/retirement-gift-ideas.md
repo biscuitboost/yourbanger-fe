@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-03-08T00:00:00Z
-title: "Retirement Gift Ideas That Honor Their Legacy (Not Another Watch)"
+title: "AI Retirement Songs & Gift Ideas That Honor Their Legacy"
 excerpt: "After decades of work, they deserve better than a gold watch. These retirement gift ideas celebrate their career and the freedom ahead—from custom songs to meaningful tributes."
 image: ~/assets/images/blog/retirement-gifts-hero.jpg
 imageAlt: "Retirement celebration with colleagues presenting meaningful gift to retiree, emotional moment"
@@ -12,8 +12,8 @@ tags:
   - career tributes
 author: YourBanger.com Team
 metadata:
-  title: "Retirement Gift Ideas That Honor Their Legacy | YourBanger.com"
-  description: "Looking for retirement gift ideas beyond the gold watch? These meaningful gifts celebrate decades of work and the exciting freedom ahead."
+  title: "AI Retirement Songs & Gift Ideas | YourBanger.com"
+  description: "Create an AI retirement song in 2 minutes for $19.99. Honor their legacy with custom songs about their career journey, impact, and the freedom ahead."
 ---
 
 ## Beyond the Gold Watch
@@ -184,8 +184,8 @@ A [personalized retirement song](/retirement-songs) delivers exactly that—thei
 
 It takes 2 minutes to create. It costs from $1.20. It honors years of dedication.
 
-**[Create a retirement song →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Retirement Song →](/ai-song-generator)**
 
 ---
 
-*More ideas: [Retirement Songs](/retirement-songs) | [Birthday Songs](/birthday-songs) | [Examples](/examples)*
+*More ideas: [Retirement Songs](/retirement-songs) | [AI Birthday Songs](/birthday-songs) | [AI Song Generator](/ai-song-generator) | [Examples](/examples)*

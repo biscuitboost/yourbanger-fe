@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-03-15T00:00:00Z
-title: "Engagement Party Gift Ideas for the Happy Couple"
+title: "AI Love Songs & Engagement Party Gift Ideas for the Happy Couple"
 excerpt: "They just got engaged—now what do you bring to the party? These engagement party gift ideas celebrate the moment without stepping on the wedding gift's toes."
 image: ~/assets/images/blog/engagement-party-gifts-hero.jpg
 imageAlt: "Engagement party celebration with champagne glasses, wrapped gifts, and elegant decorations"
@@ -12,6 +12,8 @@ tags:
   - gift ideas
 metadata:
   canonical: https://yourbanger.com/engagement-party-gift-ideas
+  title: "AI Love Songs & Engagement Party Gift Ideas | YourBanger.com"
+  description: "Create an AI engagement song in 2 minutes for $19.99. Engagement party gift ideas that celebrate the moment—custom songs about their love story."
 ---
 
 Someone you know just got engaged, and now there's a party to celebrate. But what's the protocol? Do you bring a gift? How much do you spend? What's appropriate for an engagement party versus the wedding?
@@ -280,6 +282,12 @@ Engagement party gifts should be celebratory, thoughtful, and proportional. You'
 Whether you bring champagne, plan a date night, or [create a song about their love story](/pricing), focus on celebrating the couple and the exciting journey they're beginning.
 
 They said yes. Help them celebrate that.
+
+## Create a Personalized AI Engagement Song
+
+Want to give them something truly memorable? Our [AI song generator](/ai-song-generator) creates custom engagement songs in just 2 minutes. Share their love story—how they met, the proposal, their excitement—and get a professional-quality song they'll treasure throughout wedding planning and beyond.
+
+**[Create Your AI Engagement Song →](/ai-song-generator)** — $19.99, ready in minutes
 
 ---
 

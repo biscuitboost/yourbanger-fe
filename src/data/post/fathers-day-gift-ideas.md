@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-05-15T00:00:00Z
-title: "Father's Day Gift Ideas He'll Actually Use (Not Another Tie)"
+title: "AI Father's Day Songs & Gift Ideas He'll Actually Use (Not Another Tie)"
 excerpt: "Dad says he doesn't need anything. These Father's Day gift ideas prove you know him better than a gift card ever could—from custom songs to meaningful experiences."
 image: ~/assets/images/blog/fathers-day-gifts-hero.jpg
 imageAlt: "Father receiving meaningful Father's Day gift from child, emotional moment of appreciation"
@@ -12,8 +12,8 @@ tags:
   - unique gifts
 author: YourBanger.com Team
 metadata:
-  title: "Father's Day Gift Ideas He'll Actually Use | YourBanger.com"
-  description: "Looking for Father's Day gifts that aren't boring? These unique, personalized gift ideas show Dad you actually know him—from custom songs to experiences."
+  title: "AI Father's Day Songs & Gift Ideas | YourBanger.com"
+  description: "Create an AI Father's Day song in 2 minutes for $19.99. Show Dad you know him with custom songs about his quirks, your memories, and why he's legendary."
 ---
 
 ## The Dad Gift Problem
@@ -179,8 +179,8 @@ Here's the secret: Dad doesn't care about the price tag. He cares about proof th
 
 A [custom song](/) about your relationship does all three. It takes 2 minutes, costs $19.99, and makes a grown man pretend he has allergies.
 
-**[Create a Father's Day song →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Father's Day Song →](/ai-song-generator)**
 
 ---
 
-*More ideas: [Birthday Songs](/birthday-songs) | [Retirement Songs](/retirement-songs) | [Examples](/examples)*
+*More ideas: [AI Birthday Songs](/birthday-songs) | [Retirement Songs](/retirement-songs) | [AI Song Generator](/ai-song-generator) | [Examples](/examples)*

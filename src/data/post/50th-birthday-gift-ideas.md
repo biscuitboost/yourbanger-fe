@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-07-18T00:00:00Z
-title: "50th Birthday Gift Ideas That Mark Half a Century"
+title: "AI 50th Birthday Songs & Gift Ideas That Mark Half a Century"
 excerpt: "Turning 50 is a milestone that deserves more than a 'happy birthday' text. These 50th birthday gift ideas celebrate five decades of life, memories, and what's still to come."
 image: ~/assets/images/blog/50th-birthday-gifts-hero.jpg
 imageAlt: "50th birthday celebration with elegant decorations and meaningful gifts for half-century milestone"
@@ -12,8 +12,8 @@ tags:
   - 50th birthday
 author: YourBanger.com Team
 metadata:
-  title: "50th Birthday Gift Ideas That Mark Half a Century | YourBanger.com"
-  description: "Looking for 50th birthday gift ideas? These meaningful gifts celebrate five decades of life with personalized tributes, experiences, and milestone acknowledgments."
+  title: "AI 50th Birthday Songs & Gift Ideas | YourBanger.com"
+  description: "Create an AI 50th birthday song in 2 minutes for $19.99 or explore meaningful gift ideas. Custom songs celebrating five decades of life, memories, and legacy."
 ---
 
 ## Half a Century Deserves More Than a Card
@@ -175,8 +175,8 @@ A [personalized birthday song](/birthday-songs) captures their whole journey in 
 
 Takes 2 minutes to create. Costs $19.99. Honors 50 years.
 
-**[Create a 50th birthday song →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI 50th Birthday Song →](/ai-song-generator)**
 
 ---
 
-*More ideas: [Birthday Songs](/birthday-songs) | [Examples](/examples) | [Retirement Songs](/retirement-songs)*
+*More ideas: [AI Birthday Songs](/birthday-songs) | [Examples](/examples) | [AI Song Generator](/ai-song-generator) | [Retirement Songs](/retirement-songs)*

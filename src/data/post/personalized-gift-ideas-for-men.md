@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-05-22T00:00:00Z
-title: "Personalized Gift Ideas for Men: Beyond the Usual Suspects"
+title: "AI Songs & Personalized Gift Ideas for Men"
 excerpt: "Tired of giving him another tie or gift card? These personalized gift ideas for men actually show you put thought into it—from custom songs to meaningful keepsakes."
 image: ~/assets/images/blog/personalized-gifts-men-hero.jpg
 imageAlt: "Personalized gift ideas for men including engraved leather wallet, custom BBQ tools, and whiskey glasses"
@@ -12,8 +12,8 @@ tags:
   - unique gifts
 author: YourBanger.com Team
 metadata:
-  title: "Personalized Gift Ideas for Men That Actually Impress | YourBanger.com"
-  description: "Looking for personalized gift ideas for men? Skip the boring stuff. These custom gifts for him show you actually know him—from songs to experiences."
+  title: "AI Songs & Personalized Gift Ideas for Men | YourBanger.com"
+  description: "Create an AI song in 2 minutes for $19.99. Personalized gift ideas for men that actually impress—custom songs about his life, hobbies, and what makes him legendary."
 ---
 
 ## Why Men Are "Hard to Shop For"
@@ -229,8 +229,8 @@ A [personalized song](/) takes about 2 minutes to create. Share his story—the 
 
 It costs from $1.20. He'll remember it forever.
 
-**[Create a song for him →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Song →](/ai-song-generator)**
 
 ---
 
-*Explore more: [Examples](/examples) | [Pricing](/pricing) | [Birthday Songs](/birthday-songs) | [Wedding Songs](/wedding-songs)*
+*Explore more: [Examples](/examples) | [AI Song Generator](/ai-song-generator) | [AI Birthday Songs](/birthday-songs) | [AI Wedding Songs](/wedding-songs)*

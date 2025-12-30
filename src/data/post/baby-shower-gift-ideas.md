@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-07-12T00:00:00Z
-title: "Baby Shower Gift Ideas That Go Beyond the Registry"
+title: "AI Songs & Baby Shower Gift Ideas That Go Beyond the Registry"
 excerpt: "The registry is covered. Now what? These baby shower gift ideas are the thoughtful extras that new parents actually appreciate—practical, meaningful, and not another onesie."
 image: ~/assets/images/blog/baby-shower-gifts-hero.jpg
 imageAlt: "Baby shower gift ideas beautifully arranged including wrapped presents and meaningful keepsakes"
@@ -12,6 +12,8 @@ tags:
   - baby gifts
 metadata:
   canonical: https://yourbanger.com/baby-shower-gift-ideas
+  title: "AI Songs & Baby Shower Gift Ideas | YourBanger.com"
+  description: "Create an AI song for new parents in 2 minutes for $19.99. Baby shower gift ideas that go beyond the registry—custom songs about their journey to parenthood."
 ---
 
 Here's the baby shower gift dilemma: the registry has all the essentials covered, but showing up with just a pack of diapers feels underwhelming. You want to give something meaningful—something that acknowledges this huge life change without being another item that ends up in a donation pile.
@@ -286,7 +288,13 @@ The best baby shower gifts balance practical and meaningful. New parents need di
 
 Whether you go practical, sentimental, or experiential, focus on supporting the whole family—not just the tiny new member.
 
-And if you really want to make them cry happy tears? [Create a song about their journey to parenthood](/pricing). It's the gift they'll play for that baby for years to come.
+And if you really want to make them cry happy tears? [Create a song about their journey to parenthood](/ai-song-generator). It's the gift they'll play for that baby for years to come.
+
+## Create a Personalized AI Song for New Parents
+
+Want to give them something truly unforgettable? Our [AI song generator](/ai-song-generator) creates custom songs in just 2 minutes. Share their journey—how they met, becoming a family, the excitement ahead—and get a professional-quality song they'll treasure forever.
+
+**[Create Your AI Song →](/ai-song-generator)** — $19.99, ready in minutes
 
 ---
 

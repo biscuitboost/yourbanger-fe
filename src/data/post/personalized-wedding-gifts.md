@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-11-28T00:00:00Z
-title: "Personalized Wedding Gifts That Actually Feel Personal"
+title: "AI Wedding Songs & Personalized Gifts That Actually Feel Personal"
 excerpt: "Monogrammed towels are fine, but truly personalized wedding gifts go deeper. These ideas celebrate the couple's unique story, not just their initials."
 image: ~/assets/images/blog/personalized-wedding-gifts-hero.jpg
 imageAlt: "Personalized wedding gifts including custom artwork, engraved items, and meaningful keepsakes arranged elegantly"
@@ -12,6 +12,8 @@ tags:
   - couples gifts
 metadata:
   canonical: https://yourbanger.com/personalized-wedding-gifts
+  title: "AI Wedding Songs & Personalized Gifts | YourBanger.com"
+  description: "Create an AI wedding song in 2 minutes for $19.99. Truly personalized wedding gifts that celebrate their unique story, not just their initials."
 ---
 
 Here's the thing about **personalized wedding gifts**: slapping someone's initials on a generic item doesn't make it personal. It makes it monogrammed.
@@ -282,6 +284,12 @@ Personalized wedding gifts shouldn't just have their names on them—they should
 Whether you commission custom art, create a memory collection, or [write their love story as a song](/pricing), the goal is the same: show them that you see their relationship as the unique, special thing it is.
 
 That's what makes a gift truly personal.
+
+## Create a Personalized AI Wedding Song
+
+Want to give them the ultimate personalized gift? Our [AI song generator](/ai-song-generator) creates custom wedding songs in just 2 minutes. Share their love story—how they met, their inside jokes, what makes them special—and get a professional-quality song that's uniquely theirs.
+
+**[Create Your AI Wedding Song →](/ai-song-generator)** — $19.99, ready in minutes
 
 ---
 

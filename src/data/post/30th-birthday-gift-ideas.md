@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-08-28T00:00:00Z
-title: "30th Birthday Gift Ideas for the Milestone They're Pretending Is Fine"
+title: "AI 30th Birthday Songs & Gift Ideas for the Milestone They're Pretending Is Fine"
 excerpt: "Turning 30 hits different. These 30th birthday gift ideas help celebrate the milestone with humor, meaning, or a healthy dose of denial—whatever they need."
 image: ~/assets/images/blog/30th-birthday-gifts-hero.jpg
 imageAlt: "Elegant 30th birthday celebration with gold '30' balloons, champagne, and thoughtfully wrapped gifts"
@@ -12,6 +12,8 @@ tags:
   - gift ideas
 metadata:
   canonical: https://yourbanger.com/30th-birthday-gift-ideas
+  title: "AI 30th Birthday Songs & Gift Ideas | YourBanger.com"
+  description: "Create an AI 30th birthday song in 2 minutes for $19.99 or explore meaningful gift ideas. Custom songs celebrating three decades of life, memories, and milestones."
 ---
 
 Thirty. The birthday that makes people say things like "30 is the new 20!" while quietly panicking about where the last decade went.
@@ -304,7 +306,11 @@ Turning 30 is weird. It's exciting and terrifying and meaningful all at once. Th
 
 Whether you go sentimental, practical, experiential, or funny, make it personal. Make it meaningful. And remind them that their 30s are going to be even better than their 20s (because they probably will be).
 
-[Create a custom 30th birthday song →](/pricing)
+## Create a Personalized AI Birthday Song
+
+Want to make their 30th truly memorable? Our [AI song generator](/ai-song-generator) creates custom birthday songs in just 2 minutes. Include their journey from childhood to now, embarrassing phases, proud moments, and hopes for their 30s.
+
+**[Create Your AI 30th Birthday Song →](/ai-song-generator)** — $19.99, ready in minutes
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-01-15T00:00:00Z
-title: "Personalized Gift Ideas: The Ultimate Guide to Meaningful Presents"
+title: "AI Personalized Gift Ideas: The Ultimate Guide to Meaningful Presents"
 excerpt: "The complete guide to personalized gifts for every occasion. From custom songs to engraved jewelry, discover how to give gifts that show you really care."
 image: ~/assets/images/blog/personalized-gifts-guide-hero.jpg
 imageAlt: "Collection of personalized gifts including custom song card, engraved jewelry, photo book, and star map arranged aesthetically"
@@ -12,8 +12,8 @@ tags:
   - unique gifts
 author: YourBanger.com Team
 metadata:
-  title: "Personalized Gift Ideas: The Ultimate Guide | YourBanger.com"
-  description: "The complete guide to personalized gifts. Discover custom gift ideas for birthdays, weddings, holidays, and every occasion. Make every present meaningful."
+  title: "AI Personalized Gift Ideas: The Ultimate Guide | YourBanger.com"
+  description: "Create an AI song in 2 minutes for $19.99 or explore our complete guide to personalized gifts. Custom gift ideas for birthdays, weddings, and every occasion."
 ---
 
 ## Why Personalized Gifts Always Win
@@ -63,7 +63,7 @@ The more elements you include, the more personal it becomes.
 
 > "I made a song about my dad's obsession with his grill for his birthday. He's played it for every visitor since." — Marcus T.
 
-[Create a personalized song →](https://app.yourbanger.com/auth?tab=signup)
+[Create Your AI Song →](/ai-song-generator)
 
 ### 2. Engraved Jewelry
 
@@ -305,7 +305,7 @@ If you want maximum personalization with minimal effort, a custom song is hard t
 
 It works for any occasion: [birthdays](/birthday-songs), [weddings](/wedding-songs), retirements, anniversaries, or "just because."
 
-**[Create a personalized song →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Song →](/ai-song-generator)**
 
 ---
 

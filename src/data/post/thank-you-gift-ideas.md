@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-09-18T00:00:00Z
-title: "Thank You Gift Ideas That Actually Show Gratitude"
+title: "AI Thank You Songs & Gift Ideas That Actually Show Gratitude"
 excerpt: "A generic gift card says 'thanks.' These thank you gift ideas say 'I genuinely appreciate what you did and put real thought into acknowledging it.'"
 image: ~/assets/images/blog/thank-you-gifts-hero.jpg
 imageAlt: "Thoughtful thank you gift ideas including beautifully wrapped present, fresh flowers, and handwritten card"
@@ -12,6 +12,8 @@ tags:
   - gratitude
 metadata:
   canonical: https://yourbanger.com/thank-you-gift-ideas
+  title: "AI Thank You Songs & Gift Ideas | YourBanger.com"
+  description: "Create an AI thank you song in 2 minutes for $19.99. Gift ideas that actually show gratitude—custom songs expressing what their help meant to you."
 ---
 
 Someone did something meaningful for you—helped you move, supported you through a tough time, went above and beyond at work, or simply showed up when you needed them. A text saying "thanks!" doesn't quite cut it.
@@ -284,6 +286,12 @@ Thank you gifts aren't about the monetary value—they're about showing that you
 Whether you write a heartfelt letter, send a thoughtful gift, or [create a song expressing your gratitude](/pricing), the goal is the same: make them feel seen and appreciated.
 
 Because people who show up for us deserve to know it mattered.
+
+## Create a Personalized AI Thank You Song
+
+Want to express gratitude in a way they'll never forget? Our [AI song generator](/ai-song-generator) creates custom thank you songs in just 2 minutes. Share what they did, why it mattered, and your genuine appreciation—and get a professional-quality song that says more than any card ever could.
+
+**[Create Your AI Thank You Song →](/ai-song-generator)** — $19.99, ready in minutes
 
 ---
 

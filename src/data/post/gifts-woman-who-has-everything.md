@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-07-25T00:00:00Z
-title: "10 Gifts for the Woman Who Has Everything"
+title: "AI Songs & 10 Gifts for the Woman Who Has Everything"
 excerpt: "She says she doesn't need anything. She means it. Here are 10 gift ideas for the woman who has everything—focusing on experiences and personalization over more stuff."
 image: ~/assets/images/blog/gifts-woman-everything-hero.jpg
 imageAlt: "Elegant gift ideas for the woman who has everything including spa items, experiences, and personalized presents"
@@ -12,8 +12,8 @@ tags:
   - personalized gifts
 author: YourBanger.com Team
 metadata:
-  title: "10 Gifts for the Woman Who Has Everything | YourBanger.com"
-  description: "What do you get the woman who has everything? These 10 unique gift ideas focus on experiences, personalization, and meaning over more stuff."
+  title: "AI Songs & Gifts for the Woman Who Has Everything | YourBanger.com"
+  description: "Create an AI song in 2 minutes for $19.99. The perfect gift for the woman who has everything—custom songs about her life she can't buy anywhere else."
 ---
 
 ## The "She Has Everything" Dilemma
@@ -209,8 +209,8 @@ She needs proof that you know her—a [custom song](/) about her life, a day des
 
 Those are the gifts that can't be bought. Only given.
 
-**[Create a personalized song for her →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Song →](/ai-song-generator)**
 
 ---
 
-*More ideas: [Birthday Songs](/birthday-songs) | [Wedding Songs](/wedding-songs) | [Examples](/examples)*
+*More ideas: [AI Birthday Songs](/birthday-songs) | [AI Wedding Songs](/wedding-songs) | [AI Song Generator](/ai-song-generator) | [Examples](/examples)*

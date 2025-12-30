@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-08-12T00:00:00Z
-title: "How to Write a Wedding Toast (Without the Stress)"
+title: "How to Write a Wedding Toast (Or Use an AI Song Instead)"
 excerpt: "Dreading the wedding speech? This guide covers everything—what to include, what to avoid, how to be funny without bombing, and how to end without crying."
 image: ~/assets/images/blog/wedding-toast-guide-hero.jpg
 imageAlt: "Best man giving wedding toast with champagne glasses raised, guests laughing and emotional"
@@ -12,8 +12,8 @@ tags:
   - how to
 author: YourBanger.com Team
 metadata:
-  title: "How to Write a Wedding Toast (Without the Stress) | YourBanger.com"
-  description: "Nervous about giving a wedding toast? This complete guide covers what to say, what to avoid, how to be funny, and how to nail the landing."
+  title: "How to Write a Wedding Toast or Create an AI Song | YourBanger.com"
+  description: "Nervous about giving a wedding toast? Learn what to say and avoid—or skip the stress and create an AI wedding song in 2 minutes for $19.99."
 ---
 
 ## The Wedding Toast: Everyone's Nightmare, Your Opportunity
@@ -214,4 +214,12 @@ You've got this. One toast, a few minutes, and then you can drink.
 
 ---
 
-*Want to make the toast even more memorable? Create a [custom song for the couple](/wedding-songs) to play at the reception.*
+## Skip the Speech: Create an AI Wedding Song Instead
+
+If public speaking terrifies you, our [AI song generator](/ai-song-generator) creates custom wedding songs in just 2 minutes. Share the couple's story, and get a professional-quality song that says everything you wanted to say—without the microphone anxiety.
+
+**[Create Your AI Wedding Song →](/ai-song-generator)** — $19.99, ready in minutes
+
+---
+
+*Want to make the toast even more memorable? Create a [custom AI song for the couple](/ai-song-generator) to play at the reception.*

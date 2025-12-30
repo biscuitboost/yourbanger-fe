@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-01-18T00:00:00Z
-title: "Anniversary Gift Ideas by Year (1st to 50th)"
+title: "AI Anniversary Songs & Gift Ideas by Year (1st to 50th)"
 excerpt: "From paper to gold and everything in between. The complete guide to anniversary gift ideas for every milestone year, with modern alternatives and personalized options."
 image: ~/assets/images/blog/anniversary-gifts-year-hero.jpg
 imageAlt: "Anniversary gift ideas by year showing traditional and modern gift options from 1st to 50th anniversary"
@@ -12,8 +12,8 @@ tags:
   - milestone celebrations
 author: YourBanger.com Team
 metadata:
-  title: "Anniversary Gift Ideas by Year (1st to 50th) | YourBanger.com"
-  description: "Complete guide to anniversary gifts by year. Traditional and modern gift ideas for 1st, 5th, 10th, 25th, 50th anniversaries and every year in between."
+  title: "AI Anniversary Songs & Gift Ideas by Year | YourBanger.com"
+  description: "Create an AI anniversary song in 2 minutes for $19.99. Plus traditional and modern gift ideas for 1st, 5th, 10th, 25th, 50th anniversaries and every year."
 ---
 
 ## The Anniversary Tradition
@@ -275,8 +275,8 @@ The easiest way to make any anniversary special: a custom song about your years 
 
 It takes 2 minutes. **Cost:** $19.99. It captures your story in music they'll play every anniversary to come.
 
-**[Create your anniversary song →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Anniversary Song →](/ai-song-generator)**
 
 ---
 
-*More ideas: [Anniversary Songs](/anniversary-songs) | [Wedding Songs](/wedding-songs) | [Examples](/examples)*
+*More ideas: [Anniversary Songs](/anniversary-songs) | [Wedding Songs](/wedding-songs) | [AI Song Generator](/ai-song-generator) | [Examples](/examples)*

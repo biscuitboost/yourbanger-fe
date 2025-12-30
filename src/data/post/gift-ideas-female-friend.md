@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-03-12T00:00:00Z
-title: "Gift Ideas for Female Friends They'll Actually Love"
+title: "AI Friendship Songs & Gift Ideas for Female Friends"
 excerpt: "Finding the perfect gift for your female friend shouldn't be stressful. These thoughtful ideas go beyond generic presents to show you really know her."
 image: ~/assets/images/blog/gifts-female-friend-hero.jpg
 imageAlt: "Two female friends laughing together while exchanging thoughtful gifts, warm friendship moment"
@@ -12,8 +12,8 @@ tags:
   - birthday gifts
 author: YourBanger.com Team
 metadata:
-  title: "Gift Ideas for Female Friends They'll Actually Love | YourBanger.com"
-  description: "Looking for gift ideas for your female friend? These thoughtful, unique presents show you actually pay attention. From custom songs to meaningful keepsakes."
+  title: "AI Friendship Songs & Gift Ideas for Her | YourBanger.com"
+  description: "Create an AI friendship song in 2 minutes for $19.99. Gift ideas for female friends that show you actually pay attention—custom songs about your friendship."
 ---
 
 ## Why Friend Gifts Are the Hardest
@@ -202,8 +202,8 @@ Share your memories, inside jokes, and what makes her great. Pick a music style.
 
 She'll probably cry. Then she'll play it for everyone.
 
-**[Create a friendship song →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Friendship Song →](/ai-song-generator)**
 
 ---
 
-*Want more ideas? Check out [birthday songs](/birthday-songs), [examples](/examples), or our [full pricing](/pricing).*
+*Want more ideas? Check out [AI birthday songs](/birthday-songs), [AI song generator](/ai-song-generator), or [examples](/examples).*

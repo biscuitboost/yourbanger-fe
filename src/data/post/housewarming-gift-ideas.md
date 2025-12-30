@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-12-05T00:00:00Z
-title: "Housewarming Gift Ideas That Won't Collect Dust"
+title: "AI Songs & Housewarming Gift Ideas That Won't Collect Dust"
 excerpt: "Skip the generic candle. These housewarming gift ideas are actually useful, thoughtful, and won't end up in a donation pile six months later."
 image: ~/assets/images/blog/housewarming-gifts-hero.jpg
 imageAlt: "Housewarming gift ideas including wrapped presents, potted plants, and home accessories at front door"
@@ -12,6 +12,8 @@ tags:
   - home gifts
 metadata:
   canonical: https://yourbanger.com/housewarming-gift-ideas
+  title: "AI Songs & Housewarming Gift Ideas | YourBanger.com"
+  description: "Create an AI housewarming song in 2 minutes for $19.99. Gift ideas that won't collect dust—custom songs celebrating their new chapter."
 ---
 
 Someone you know just got a new place, and you need to show up with something better than a bottle of wine and a card (though honestly, wine is always appreciated).
@@ -331,6 +333,12 @@ The best housewarming gift is one that makes their new house feel more like home
 When in doubt, go consumable (wine, food, candles) or experiential (services, gift cards, [personalized songs](/pricing)). You'll never go wrong with something they can enjoy without finding a place to store it.
 
 Welcome home, indeed.
+
+## Create a Personalized AI Housewarming Song
+
+Want to give them something truly memorable? Our [AI song generator](/ai-song-generator) creates custom songs in just 2 minutes. Share their journey to homeownership, the house-hunting stories, and wishes for their new space—and get a professional-quality song they'll treasure.
+
+**[Create Your AI Song →](/ai-song-generator)** — $19.99, ready in minutes
 
 ---
 

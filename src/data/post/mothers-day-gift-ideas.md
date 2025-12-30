@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-04-10T00:00:00Z
-title: "Mother's Day Gift Ideas That'll Make Her Ugly Cry (Happy Tears)"
+title: "AI Mother's Day Songs & Gift Ideas That'll Make Her Ugly Cry (Happy Tears)"
 excerpt: "Mom deserves more than flowers that die in a week. These Mother's Day gift ideas show her impact in ways she'll treasure forever—from custom songs to meaningful experiences."
 image: ~/assets/images/blog/mothers-day-gifts-hero.jpg
 imageAlt: "Mother receiving meaningful Mother's Day gift from child, emotional moment of appreciation and love"
@@ -12,8 +12,8 @@ tags:
   - unique gifts
 author: YourBanger.com Team
 metadata:
-  title: "Mother's Day Gift Ideas That'll Make Her Cry | YourBanger.com"
-  description: "Looking for Mother's Day gifts that actually mean something? These unique, personalized gift ideas show Mom her real impact—from custom songs to unforgettable experiences."
+  title: "AI Mother's Day Songs & Gift Ideas | YourBanger.com"
+  description: "Create an AI Mother's Day song in 2 minutes for $19.99. Show Mom her real impact with custom songs featuring her quirks, sacrifices, and why she's legendary."
 ---
 
 ## Mom Deserves Better Than Generic
@@ -177,8 +177,8 @@ A [custom song](/) does all three. It takes 2 minutes, costs $19.99, and require
 
 She'll cry. She'll play it for everyone. She'll remember this Mother's Day.
 
-**[Create a Mother's Day song →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Mother's Day Song →](/ai-song-generator)**
 
 ---
 
-*More ideas: [Birthday Songs](/birthday-songs) | [Anniversary Songs](/anniversary-songs) | [Examples](/examples)*
+*More ideas: [AI Birthday Songs](/birthday-songs) | [Anniversary Songs](/anniversary-songs) | [AI Song Generator](/ai-song-generator) | [Examples](/examples)*

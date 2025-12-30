@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-04-18T00:00:00Z
-title: "10 Gifts for Someone Who Has Everything (That They'll Actually Love)"
+title: "AI Songs & 10 Gifts for Someone Who Has Everything"
 excerpt: "What do you get for the person who has everything? These unique gift ideas go beyond stuff—creating experiences and memories they never knew they wanted."
 image: ~/assets/images/blog/gifts-has-everything-hero.jpg
 imageAlt: "Thoughtful gift arrangement for someone who has everything including experience tickets and personalized items"
@@ -12,8 +12,8 @@ tags:
   - personalized gifts
 author: YourBanger.com Team
 metadata:
-  title: "10 Gifts for Someone Who Has Everything | YourBanger.com"
-  description: "What do you buy for someone who has everything? These unique, thoughtful gift ideas focus on experiences and personalization over more stuff."
+  title: "AI Songs & Gifts for Someone Who Has Everything | YourBanger.com"
+  description: "Create an AI song in 2 minutes for $19.99. The perfect gift for someone who has everything—custom songs about their life they can't buy anywhere else."
 ---
 
 ## The "Has Everything" Problem
@@ -195,8 +195,8 @@ Share their story, quirks, and your memories. Pick a music style. In 2 minutes, 
 
 They can't buy that. Only you can give it.
 
-**[Create a personalized song →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Song →](/ai-song-generator)**
 
 ---
 
-*Need more ideas? See our [examples](/examples) or explore songs for [birthdays](/birthday-songs) and [weddings](/wedding-songs).*
+*Need more ideas? See our [examples](/examples) or explore [AI birthday songs](/birthday-songs), [AI wedding songs](/wedding-songs), and our [AI song generator](/ai-song-generator).*

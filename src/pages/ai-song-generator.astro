@@ -1,0 +1,777 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import SchemaMarkup from '~/components/seo/SchemaMarkup.astro';
+import AudioPlayer from '~/components/widgets/AudioPlayer.astro';
+import { Icon } from 'astro-icon/components';
+
+const metadata = {
+  title: 'AI Song Generator | Create Custom Songs in 2 Minutes | YourBanger',
+  description: 'Free AI song generator creates personalized songs with custom lyrics and professional vocals. Any genre, any occasion. Ready in 2 minutes. Only $19.99 per song.',
+  openGraph: {
+    title: 'AI Song Generator - Create Custom Songs in 2 Minutes',
+    description: 'Free AI song generator creates personalized songs with custom lyrics and professional vocals. Any genre, any occasion. Ready in 2 minutes.',
+    type: 'website',
+  },
+};
+
+const valueProps = [
+  { icon: 'tabler:pencil', text: 'Custom lyrics about anyone' },
+  { icon: 'tabler:microphone', text: 'Professional AI vocals' },
+  { icon: 'tabler:music', text: 'Any genre: Pop, Rock, Country, Hip-Hop' },
+];
+
+const steps = [
+  {
+    icon: 'tabler:message-2',
+    number: '1',
+    title: 'Tell Us Your Story',
+    description: 'Describe the person, the occasion, inside jokes, and memorable moments. The more details you share, the more personal your AI-generated song becomes. Our AI song generator uses this information to craft lyrics that capture the essence of your story.',
+  },
+  {
+    icon: 'tabler:adjustments',
+    number: '2',
+    title: 'Choose Your Style',
+    description: 'Select from a wide range of genres including pop, rock, country, hip-hop, R&B, ballad, and more. Pick the mood and tempo that fits the occasion. Our AI music generator adapts to create the perfect sound for your song.',
+  },
+  {
+    icon: 'tabler:sparkles',
+    number: '3',
+    title: 'AI Creates Your Song',
+    description: 'In just 2 minutes, our advanced AI song maker transforms your story into a professionally produced track. The AI generates custom lyrics, melodies, and vocals that sound like they were created by professional musicians.',
+  },
+  {
+    icon: 'tabler:download',
+    number: '4',
+    title: 'Download & Share',
+    description: 'Get your finished song as a high-quality MP3 or WAV file. Share it instantly via link, play it at events, or download for unlimited plays. Your AI-generated song is yours to keep forever.',
+  },
+];
+
+const useCases = [
+  {
+    icon: 'tabler:gift',
+    title: 'Birthday Songs',
+    description: 'Create personalized birthday anthems that celebrate their quirks and memories.',
+    href: '/birthday-songs',
+    gradient: 'from-pink-500 to-rose-500',
+  },
+  {
+    icon: 'tabler:heart',
+    title: 'Wedding Songs',
+    description: 'Unique first dance songs and wedding toasts that tell your love story.',
+    href: '/wedding-songs',
+    gradient: 'from-rose-500 to-pink-500',
+  },
+  {
+    icon: 'tabler:calendar-heart',
+    title: 'Anniversary Songs',
+    description: 'Celebrate years of love with a song about your journey together.',
+    href: '/anniversary-songs',
+    gradient: 'from-purple-500 to-pink-500',
+  },
+  {
+    icon: 'tabler:briefcase',
+    title: 'Retirement Songs',
+    description: 'Send off colleagues with a legendary tribute to their career.',
+    href: '/retirement-songs',
+    gradient: 'from-amber-500 to-orange-500',
+  },
+  {
+    icon: 'tabler:school',
+    title: 'Graduation Songs',
+    description: 'Celebrate academic achievements with a custom graduation anthem.',
+    href: '/graduation-songs',
+    gradient: 'from-blue-500 to-cyan-500',
+  },
+  {
+    icon: 'tabler:mood-happy',
+    title: 'Funny Songs',
+    description: 'Hilarious roast songs and comedy tracks for parties and gifts.',
+    href: '/funny-songs',
+    gradient: 'from-green-500 to-emerald-500',
+  },
+  {
+    icon: 'tabler:hearts',
+    title: 'Love Songs',
+    description: 'Express your feelings with a romantic song written just for them.',
+    href: '/love-songs',
+    gradient: 'from-red-500 to-rose-500',
+  },
+  {
+    icon: 'tabler:candle',
+    title: 'Memorial Songs',
+    description: 'Honor loved ones with a heartfelt tribute that preserves their memory.',
+    href: '/memorial-songs',
+    gradient: 'from-slate-500 to-gray-500',
+  },
+];
+
+const comparisonData = [
+  { feature: 'Price', yourbanger: '$19.99', traditional: '$100-$500' },
+  { feature: 'Delivery Time', yourbanger: '2 minutes', traditional: '1-2 weeks' },
+  { feature: 'Revisions', yourbanger: 'Unlimited, instant', traditional: 'Limited, slow' },
+  { feature: 'Availability', yourbanger: '24/7', traditional: 'Business hours' },
+  { feature: 'Consistency', yourbanger: 'Perfect every time', traditional: 'Varies by artist' },
+];
+
+const audioExamples = [
+  {
+    title: "Sarah's Legendary 30th",
+    genre: 'Rock',
+    description: 'An arena rock anthem about her obsession with true crime podcasts and terrible karaoke skills. Created with our AI song generator in under 2 minutes.',
+    audioSrc: '/audio/sample-rock.mp3',
+    gradient: 'from-pink-500 to-rose-500',
+  },
+  {
+    title: 'Forever Starts Today',
+    genre: 'Ballad',
+    description: 'A heartfelt wedding ballad about meeting on a dating app, a terrible first date, and knowing anyway. AI-generated music that sounds professionally produced.',
+    audioSrc: '/audio/sample-ballad.mp3',
+    gradient: 'from-blue-500 to-cyan-500',
+  },
+  {
+    title: 'The Grill Master',
+    genre: 'Country',
+    description: "A country tribute to Dad's 15-year relationship with his smoker grill. This AI music generator creation captures the soul of country music.",
+    audioSrc: '/audio/sample-country.mp3',
+    gradient: 'from-amber-500 to-orange-500',
+  },
+  {
+    title: 'Reply All Champion',
+    genre: 'Pop',
+    description: "A funky retirement celebration about Linda's 30 years of legendary potluck contributions. Made with AI in minutes, sounds like a studio production.",
+    audioSrc: '/audio/sample-pop.mp3',
+    gradient: 'from-emerald-500 to-teal-500',
+  },
+];
+
+const testimonials = [
+  {
+    quote: "I made a song about my dad's obsession with his smoker grill. We played it at the party, and he called me the next morning to play it again. The AI song generator captured his personality perfectly.",
+    author: 'Marcus T.',
+    location: 'Austin, TX',
+    occasion: 'Birthday',
+  },
+  {
+    quote: "Our wedding first dance was a custom song about how we met at a coffee shop. Not a dry eye in the house. Even the DJ was crying. Best $19.99 we ever spent.",
+    author: 'Sarah & Mike',
+    location: 'Portland, OR',
+    occasion: 'Wedding',
+  },
+  {
+    quote: "Got one for my wife for our 10th anniversary. Mentioned our first date at that terrible Thai place, the proposal fail, all of it. She's made it her ringtone.",
+    author: 'David K.',
+    location: 'Chicago, IL',
+    occasion: 'Anniversary',
+  },
+  {
+    quote: "Made one roasting my coworker who's retiring after 30 years. We played it at his party and he laughed so hard he had to sit down. The AI music generator is incredible.",
+    author: 'Rachel S.',
+    location: 'Denver, CO',
+    occasion: 'Retirement',
+  },
+];
+
+const faqItems = [
+  {
+    title: 'How does the AI song generator work?',
+    description: 'Our AI song generator uses advanced machine learning to transform your story into a complete song. You provide details about the person, occasion, and preferred style. The AI then generates custom lyrics, creates a melody, produces instrumental tracks, and adds professional-quality vocals. The entire process takes about 2 minutes, resulting in a unique song that sounds like it was created by professional musicians.',
+  },
+  {
+    title: 'What genres can the AI create?',
+    description: 'Our AI music generator supports a wide range of genres including pop, rock, country, hip-hop, R&B, ballad, acoustic, electronic, jazz, folk, and more. You can also specify the mood (upbeat, emotional, funny) and tempo to get exactly the sound you want. The AI adapts its composition style to match your chosen genre authentically.',
+  },
+  {
+    title: 'Can I customize the lyrics?',
+    description: 'Absolutely! After the AI generates your song, you can review and edit the lyrics before final production. You can add specific phrases, remove anything you don\'t like, or request regeneration with different details. This ensures your AI-generated song is exactly what you envisioned.',
+  },
+  {
+    title: 'How long does it take to create a song?',
+    description: 'The entire process takes about 2-3 minutes. You spend about 1-2 minutes entering your story details and preferences, then the AI song maker generates your complete song in under a minute. Compare this to traditional custom song services that take 1-2 weeks!',
+  },
+  {
+    title: 'What audio formats do I get?',
+    description: 'You receive your song as a high-quality MP3 file suitable for sharing and playing on any device. You also get a shareable link that anyone can use to listen to your song. The audio quality is professional-grade, suitable for playing at events, parties, or as a gift.',
+  },
+  {
+    title: 'Is AI-generated music real music?',
+    description: 'Yes! AI-generated music is real music with real melodies, harmonies, and vocals. Our AI song generator creates original compositions—not covers or remixes. The songs feature professional-quality production, authentic vocals, and genuine emotional impact. Many listeners can\'t tell the difference between AI-generated songs and those created by human musicians.',
+  },
+  {
+    title: 'How does this compare to SongFinch?',
+    description: 'While SongFinch connects you with human songwriters (typically $200+ and 1-2 weeks delivery), YourBanger uses AI to create songs instantly at a fraction of the cost ($19.99, 2 minutes). Both create personalized songs, but our AI song generator offers unlimited revisions, 24/7 availability, and consistent quality. For a detailed comparison, visit our comparison page.',
+  },
+  {
+    title: 'Can I use my song commercially?',
+    description: 'Your AI-generated song is yours to keep and share personally. For commercial use (advertising, monetized content, etc.), please contact us for licensing options. Personal use includes playing at private events, sharing on social media, and giving as gifts.',
+  },
+  {
+    title: 'What if I don\'t like my song?',
+    description: 'We offer a 100% satisfaction guarantee. If you\'re not happy with your song, you can regenerate it with different details or style choices at no extra cost. You get up to 3 generations (6 tracks total) included with your purchase. If you\'re still not satisfied, contact our support team for a full refund.',
+  },
+  {
+    title: 'Is there a free trial?',
+    description: 'While we don\'t offer a free trial for song creation, you can listen to numerous examples on our site to hear the quality of our AI-generated songs before purchasing. Each song is just $19.99 with our satisfaction guarantee, so you can try it risk-free.',
+  },
+];
+
+const faqSchemaQuestions = faqItems.map(item => ({
+  "@type": "Question",
+  name: item.title,
+  acceptedAnswer: {
+    "@type": "Answer",
+    text: item.description
+  }
+}));
+---
+
+<Layout metadata={metadata}>
+  <!-- SoftwareApplication Schema for SEO -->
+  <SchemaMarkup 
+    type="software"
+    data={{
+      name: "YourBanger AI Song Generator",
+      description: "Create personalized AI-generated songs in 2 minutes with custom lyrics and professional vocals.",
+      aggregateRating: {
+        ratingValue: "4.9",
+        reviewCount: "500"
+      }
+    }}
+  />
+
+  <!-- FAQ Schema for SEO -->
+  <SchemaMarkup 
+    type="faq"
+    data={{
+      mainEntity: faqSchemaQuestions
+    }}
+  />
+
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[var(--secondary)] rounded-full border border-[var(--border)] mb-6">
+        <Icon name="tabler:sparkles" class="w-4 h-4 text-[var(--primary)]" />
+        <span class="text-sm text-[var(--muted-foreground)]">AI-Powered Music Creation</span>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
+        <span class="text-[var(--primary)]">AI Song Generator</span>
+      </h1>
+
+      <p class="text-xl md:text-2xl text-[var(--foreground)] font-medium mb-4">
+        Create a Professional Custom Song in 2 Minutes
+      </p>
+
+      <p class="text-lg text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">
+        Turn your story, memories, and inside jokes into a professionally produced song. 
+        Our AI song generator creates personalized music with custom lyrics and professional vocals 
+        for any occasion—birthdays, weddings, anniversaries, and more.
+      </p>
+
+      <!-- Value Props -->
+      <div class="flex flex-wrap justify-center gap-4 mb-8">
+        {valueProps.map((prop) => (
+          <div class="flex items-center gap-2 px-4 py-2 bg-[var(--card)] rounded-full border border-[var(--border)]">
+            <Icon name={prop.icon} class="w-5 h-5 text-[var(--primary)]" />
+            <span class="text-sm text-[var(--foreground)]">{prop.text}</span>
+          </div>
+        ))}
+      </div>
+
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+        <a
+          href="/create"
+          class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium text-lg px-8 h-14 rounded-xl shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
+        >
+          Create Your Song Now
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/examples"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Listen to Examples
+        </a>
+      </div>
+
+      <!-- Trust Signals -->
+      <div class="flex flex-wrap items-center justify-center gap-4 text-sm text-[var(--muted-foreground)]">
+        <div class="flex items-center gap-1">
+          <div class="flex">
+            {[1, 2, 3, 4, 5].map(() => (
+              <svg class="w-4 h-4 text-yellow-500 fill-yellow-500" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            ))}
+          </div>
+          <span>4.9★ from 500+ reviews</span>
+        </div>
+        <span class="hidden sm:inline">|</span>
+        <span>$19.99 per song</span>
+        <span class="hidden sm:inline">|</span>
+        <span>No subscription</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          How Our AI Song Generator Works
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)] max-w-2xl mx-auto">
+          Creating a personalized song with AI is simple. No musical experience required—just your story and 2 minutes.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {steps.map((step) => (
+          <div class="relative p-6 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all">
+            <div class="absolute -top-3 -right-3 w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white font-bold text-lg">
+              {step.number}
+            </div>
+            <div class="w-12 h-12 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center mb-4">
+              <Icon name={step.icon} class="w-6 h-6 text-[var(--primary)]" />
+            </div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">{step.title}</h3>
+            <p class="text-[var(--muted-foreground)] text-sm">{step.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-10">
+        <a
+          href="/create"
+          class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium px-6 h-12 rounded-xl shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
+        >
+          Start Creating Now
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Technology Section -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-6">
+            Why AI-Generated Songs Sound This Good
+          </h2>
+          
+          <div class="space-y-6 text-[var(--muted-foreground)]">
+            <p>
+              Our AI song generator represents the cutting edge of music technology. Using advanced machine learning models trained on millions of songs, our AI understands the nuances of melody, harmony, rhythm, and lyrics that make music emotionally powerful.
+            </p>
+            
+            <p>
+              When you use our AI music generator, you're not getting a simple text-to-speech output or a generic template. The AI analyzes your story, identifies emotional themes, and crafts original lyrics that capture the essence of what you want to express. It then composes a unique melody and produces a full instrumental arrangement in your chosen genre.
+            </p>
+            
+            <p>
+              The result? A professionally produced song that sounds like it was created by a team of songwriters, composers, and producers—but delivered in 2 minutes instead of 2 weeks, at a fraction of the cost.
+            </p>
+
+            <h3 class="text-xl font-semibold text-[var(--foreground)] pt-4">AI Song Generator vs. Traditional Custom Songs</h3>
+            
+            <p>
+              Traditional custom song services like <a href="/vs-songfinch" class="text-[var(--primary)] hover:underline">SongFinch</a> connect you with human songwriters. While talented, they typically charge $200-$500 and take 1-2 weeks to deliver. Our AI song maker creates comparable quality instantly for just $19.99.
+            </p>
+
+            <p>
+              The AI doesn't get tired, doesn't have creative blocks, and delivers consistent quality every time. Plus, you can regenerate your song with different styles or details until it's perfect—something impossible with traditional services.
+            </p>
+
+            <h3 class="text-xl font-semibold text-[var(--foreground)] pt-4">Make a Song with AI: The Technology Behind the Magic</h3>
+            
+            <p>
+              When you make a song with AI using YourBanger, you're leveraging the same type of neural network technology that powers the most advanced AI systems in the world. Our AI song maker has been trained on diverse musical styles, from classic rock and country to modern pop and hip-hop. This training allows it to understand what makes each genre unique—the chord progressions, rhythmic patterns, vocal styles, and production techniques that define different types of music.
+            </p>
+
+            <p>
+              The AI music generator doesn't just string words together randomly. It understands narrative structure, emotional arcs, and how to craft lyrics that tell a compelling story. When you share details about a person or occasion, the AI identifies the most meaningful elements and weaves them into verses, choruses, and bridges that flow naturally and resonate emotionally.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center">
+                <Icon name="tabler:brain" class="w-5 h-5 text-[var(--primary)]" />
+              </div>
+              <h3 class="font-semibold text-[var(--foreground)]">Advanced AI Composition</h3>
+            </div>
+            <p class="text-sm text-[var(--muted-foreground)]">
+              Our AI understands music theory, genre conventions, and emotional expression to create songs that feel authentic and professionally crafted.
+            </p>
+          </div>
+
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center">
+                <Icon name="tabler:microphone-2" class="w-5 h-5 text-[var(--primary)]" />
+              </div>
+              <h3 class="font-semibold text-[var(--foreground)]">Professional AI Vocals</h3>
+            </div>
+            <p class="text-sm text-[var(--muted-foreground)]">
+              Natural-sounding vocals with proper pitch, timing, and emotional delivery. Choose from multiple voice styles to match your song's mood.
+            </p>
+          </div>
+
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-[var(--primary)]/10 rounded-lg flex items-center justify-center">
+                <Icon name="tabler:wave-sine" class="w-5 h-5 text-[var(--primary)]" />
+              </div>
+              <h3 class="font-semibold text-[var(--foreground)]">Studio-Quality Production</h3>
+            </div>
+            <p class="text-sm text-[var(--muted-foreground)]">
+              Full instrumental arrangements with proper mixing and mastering. Your AI-generated song sounds ready for radio play.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          What Will You Create?
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)] max-w-2xl mx-auto">
+          Our AI song generator creates personalized songs for every occasion. Choose your moment and make it unforgettable.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {useCases.map((useCase) => (
+          <a 
+            href={useCase.href}
+            class="group relative p-6 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-[var(--primary)]/50 transition-all overflow-hidden"
+          >
+            <div class={`absolute inset-0 bg-gradient-to-br ${useCase.gradient} opacity-0 group-hover:opacity-5 transition-opacity`}></div>
+            <div class="relative z-10">
+              <div class="w-12 h-12 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[var(--primary)]/20 transition-colors">
+                <Icon name={useCase.icon} class="w-6 h-6 text-[var(--primary)]" />
+              </div>
+              <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2 group-hover:text-[var(--primary)] transition-colors">
+                {useCase.title}
+              </h3>
+              <p class="text-sm text-[var(--muted-foreground)]">{useCase.description}</p>
+              <div class="mt-4 flex items-center text-[var(--primary)] text-sm font-medium">
+                Learn more
+                <Icon name="tabler:arrow-right" class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          AI Song Generator vs. Traditional Services
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)] max-w-2xl mx-auto">
+          See why thousands choose our AI music generator over traditional custom song services.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full bg-[var(--card)] rounded-xl border border-[var(--border)] overflow-hidden">
+          <thead>
+            <tr class="bg-[var(--secondary)]">
+              <th class="px-6 py-4 text-left text-sm font-semibold text-[var(--foreground)]">Feature</th>
+              <th class="px-6 py-4 text-center text-sm font-semibold text-[var(--primary)]">YourBanger AI</th>
+              <th class="px-6 py-4 text-center text-sm font-semibold text-[var(--muted-foreground)]">Traditional Services</th>
+            </tr>
+          </thead>
+          <tbody>
+            {comparisonData.map((row, index) => (
+              <tr class={index % 2 === 0 ? '' : 'bg-[var(--secondary)]/30'}>
+                <td class="px-6 py-4 text-sm text-[var(--foreground)] font-medium">{row.feature}</td>
+                <td class="px-6 py-4 text-center">
+                  <span class="inline-flex items-center gap-1 text-sm text-[var(--primary)] font-medium">
+                    <Icon name="tabler:check" class="w-4 h-4" />
+                    {row.yourbanger}
+                  </span>
+                </td>
+                <td class="px-6 py-4 text-center text-sm text-[var(--muted-foreground)]">{row.traditional}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="text-center mt-8">
+        <p class="text-sm text-[var(--muted-foreground)] mb-4">
+          Want a detailed comparison? <a href="/vs-songfinch" class="text-[var(--primary)] hover:underline">See how we compare to SongFinch →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audio Examples Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Listen to AI-Generated Songs
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)] max-w-2xl mx-auto">
+          Hear real examples of songs created with our AI song generator. Each one was made in under 2 minutes.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+        {audioExamples.map((example) => (
+          <div class="group relative bg-[var(--card)] rounded-xl border border-[var(--border)] overflow-hidden hover:border-[var(--primary)]/50 transition-all">
+            <div class={`absolute inset-0 bg-gradient-to-br ${example.gradient} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
+            <div class="relative p-6">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <span class="inline-block px-3 py-1 bg-[var(--primary)]/10 text-[var(--primary)] text-sm font-medium rounded-full mb-2">
+                    {example.genre}
+                  </span>
+                  <h3 class="text-xl font-semibold text-[var(--foreground)]">{example.title}</h3>
+                </div>
+              </div>
+              <p class="text-[var(--muted-foreground)] text-sm mb-4">{example.description}</p>
+              <AudioPlayer src={example.audioSrc} title={example.title} />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-10">
+        <a 
+          href="/examples" 
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium px-6 h-12 rounded-xl transition-all"
+        >
+          Explore All Examples
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          What Our Customers Say
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          <span class="text-[var(--primary)] font-semibold">4.9/5</span> from 500+ happy customers
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        {testimonials.map((testimonial) => (
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+            <div class="flex gap-1 mb-4">
+              {[1, 2, 3, 4, 5].map(() => (
+                <svg class="w-5 h-5 text-yellow-500 fill-yellow-500" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+            <blockquote class="text-[var(--foreground)] mb-4">"{testimonial.quote}"</blockquote>
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-semibold text-[var(--foreground)]">{testimonial.author}</p>
+                <p class="text-sm text-[var(--muted-foreground)]">{testimonial.location}</p>
+              </div>
+              <span class="px-3 py-1 bg-[var(--primary)]/10 text-[var(--primary)] text-sm font-medium rounded-full">
+                {testimonial.occasion}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          Everything you need to know about our AI song generator
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        {faqItems.map((item) => (
+          <details class="group bg-[var(--card)] rounded-xl border border-[var(--border)] overflow-hidden">
+            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+              <h3 class="text-lg font-semibold text-[var(--foreground)] pr-4">{item.title}</h3>
+              <Icon 
+                name="tabler:chevron-down" 
+                class="w-5 h-5 text-[var(--muted-foreground)] group-open:rotate-180 transition-transform shrink-0" 
+              />
+            </summary>
+            <div class="px-6 pb-6">
+              <p class="text-[var(--muted-foreground)]">{item.description}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <p class="text-sm text-[var(--muted-foreground)]">
+          Have more questions? <a href="/faq" class="text-[var(--primary)] hover:underline">Visit our full FAQ page →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Why Choose Our AI Song Maker
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)] max-w-2xl mx-auto">
+          YourBanger is the leading AI song generator for personalized music creation. Here's what sets us apart from other AI music generators.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-[var(--primary)]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <Icon name="tabler:heart-handshake" class="w-8 h-8 text-[var(--primary)]" />
+          </div>
+          <h3 class="text-xl font-semibold text-[var(--foreground)] mb-3">Truly Personal</h3>
+          <p class="text-[var(--muted-foreground)]">
+            Unlike generic AI music generators that create random songs, our AI song generator focuses on personalization. Every song is crafted around your specific story, memories, and the person you're celebrating. The result is a song that feels genuinely personal and meaningful.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-[var(--primary)]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <Icon name="tabler:rocket" class="w-8 h-8 text-[var(--primary)]" />
+          </div>
+          <h3 class="text-xl font-semibold text-[var(--foreground)] mb-3">Instant Delivery</h3>
+          <p class="text-[var(--muted-foreground)]">
+            Need a last-minute gift? Our AI song maker delivers in 2 minutes, not 2 weeks. Whether it's a birthday tomorrow or a wedding this weekend, you can create a professional custom song right now. No waiting, no scheduling, no delays.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-[var(--primary)]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <Icon name="tabler:refresh" class="w-8 h-8 text-[var(--primary)]" />
+          </div>
+          <h3 class="text-xl font-semibold text-[var(--foreground)] mb-3">Unlimited Revisions</h3>
+          <p class="text-[var(--muted-foreground)]">
+            Not quite right? Regenerate your song with different details, styles, or moods until it's perfect. With traditional custom song services, revisions are limited and slow. With our AI music generator, you can iterate instantly until you love the result.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-12 p-8 bg-[var(--card)] rounded-2xl border border-[var(--border)]">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-2xl font-bold text-[var(--foreground)] mb-4">
+              The Perfect Gift for Any Occasion
+            </h3>
+            <p class="text-[var(--muted-foreground)] mb-4">
+              A personalized song is more than just a gift—it's an experience. When someone hears a song written specifically about them, featuring their name, their memories, and their story, it creates an emotional moment they'll never forget. Our AI song generator makes this possible for everyone, not just those who can afford expensive custom songwriters.
+            </p>
+            <p class="text-[var(--muted-foreground)]">
+              Whether you're celebrating a <a href="/birthday-songs" class="text-[var(--primary)] hover:underline">birthday</a>, <a href="/wedding-songs" class="text-[var(--primary)] hover:underline">wedding</a>, <a href="/anniversary-songs" class="text-[var(--primary)] hover:underline">anniversary</a>, or <a href="/retirement-songs" class="text-[var(--primary)] hover:underline">retirement</a>, our AI creates songs that capture the essence of the moment. It's the gift that shows you truly care—because you took the time to share their story and create something uniquely theirs.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 bg-[var(--secondary)] rounded-xl text-center">
+              <div class="text-3xl font-bold text-[var(--primary)]">10,000+</div>
+              <div class="text-sm text-[var(--muted-foreground)]">Songs Created</div>
+            </div>
+            <div class="p-4 bg-[var(--secondary)] rounded-xl text-center">
+              <div class="text-3xl font-bold text-[var(--primary)]">4.9/5</div>
+              <div class="text-sm text-[var(--muted-foreground)]">Average Rating</div>
+            </div>
+            <div class="p-4 bg-[var(--secondary)] rounded-xl text-center">
+              <div class="text-3xl font-bold text-[var(--primary)]">2 min</div>
+              <div class="text-sm text-[var(--muted-foreground)]">Average Creation Time</div>
+            </div>
+            <div class="p-4 bg-[var(--secondary)] rounded-xl text-center">
+              <div class="text-3xl font-bold text-[var(--primary)]">15+</div>
+              <div class="text-sm text-[var(--muted-foreground)]">Music Genres</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--primary)]/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-6">
+        Ready to Create Your Song?
+      </h2>
+      
+      <p class="text-lg text-[var(--muted-foreground)] mb-8 max-w-2xl mx-auto">
+        Join thousands of people who have created unforgettable moments with personalized AI-generated songs. 
+        Your story deserves its own soundtrack.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+        <a
+          href="/create"
+          class="inline-flex items-center justify-center bg-[var(--primary)] hover:bg-[var(--primary)]/90 text-white font-medium text-lg px-10 h-14 rounded-xl shadow-lg shadow-[var(--primary)]/25 hover:shadow-[var(--primary)]/40 transition-all"
+        >
+          Create Your Song Now
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+        <div class="flex items-center gap-2 text-[var(--foreground)]">
+          <Icon name="tabler:currency-dollar" class="w-5 h-5 text-[var(--primary)]" />
+          <span>Just $19.99</span>
+        </div>
+        <div class="flex items-center gap-2 text-[var(--foreground)]">
+          <Icon name="tabler:shield-check" class="w-5 h-5 text-[var(--primary)]" />
+          <span>100% Satisfaction Guaranteed</span>
+        </div>
+        <div class="flex items-center gap-2 text-[var(--foreground)]">
+          <Icon name="tabler:clock" class="w-5 h-5 text-[var(--primary)]" />
+          <span>Ready in 2 Minutes</span>
+        </div>
+      </div>
+
+      <p class="text-sm text-[var(--muted-foreground)] mt-6">
+        Questions? Check our <a href="/pricing" class="text-[var(--primary)] hover:underline">pricing page</a> or <a href="/faq" class="text-[var(--primary)] hover:underline">FAQ</a>.
+      </p>
+    </div>
+  </section>
+</Layout>

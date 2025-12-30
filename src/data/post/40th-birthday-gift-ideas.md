@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-11-20T00:00:00Z
-title: "40th Birthday Gift Ideas for the Fabulous Forty"
+title: "AI 40th Birthday Songs & Gift Ideas for the Fabulous Forty"
 excerpt: "Forty is when you finally stop caring what people think and start investing in quality. These 40th birthday gift ideas match that energy—thoughtful, elevated, and worth celebrating."
 image: ~/assets/images/blog/40th-birthday-gifts-hero.jpg
 imageAlt: "Elegant 40th birthday celebration setup with '40' decorations, champagne, and sophisticated wrapped gifts"
@@ -12,6 +12,8 @@ tags:
   - gift ideas
 metadata:
   canonical: https://yourbanger.com/40th-birthday-gift-ideas
+  title: "AI 40th Birthday Songs & Gift Ideas | YourBanger.com"
+  description: "Create an AI 40th birthday song in 2 minutes for $19.99 or explore elevated gift ideas. Custom songs celebrating four decades of life, growth, and milestones."
 ---
 
 Forty hits different. It's the birthday where people stop pretending they're still in their 20s and start actually enjoying being adults. The kids (if they have them) are getting easier. The career is (hopefully) established. The "figuring it out" phase is giving way to the "I know what I like" phase.
@@ -322,7 +324,11 @@ Forty is worth celebrating—not apologizing for. The right gift acknowledges th
 
 Whether you go experiential, sentimental, or luxurious, make it quality. Make it meaningful. And remind them that 40 is just the beginning of the best part.
 
-[Create a custom 40th birthday song →](/pricing)
+## Create a Personalized AI Birthday Song
+
+Want to make their 40th truly unforgettable? Our [AI song generator](/ai-song-generator) creates custom birthday songs in just 2 minutes. Include their journey through four decades, career wins, family moments, and what makes them legendary.
+
+**[Create Your AI 40th Birthday Song →](/ai-song-generator)** — $19.99, ready in minutes
 
 ---
 

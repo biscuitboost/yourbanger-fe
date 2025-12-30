@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-02-20T00:00:00Z
-title: "Personalized Happy Birthday Songs: The Gift They'll Never Forget"
+title: "AI Birthday Songs: Personalized Happy Birthday Songs They'll Never Forget"
 excerpt: "Why settle for the awkward group sing-along when you can give them a personalized birthday song about their life? Here's how to create a custom birthday track in minutes."
 image: ~/assets/images/blog/personalized-birthday-song-hero.jpg
 imageAlt: "Birthday party with personalized song playing, birthday person looking emotional and surprised"
@@ -12,8 +12,8 @@ tags:
   - unique gifts
 author: YourBanger.com Team
 metadata:
-  title: "Personalized Happy Birthday Songs - Create Custom Birthday Music | YourBanger.com"
-  description: "Create a personalized happy birthday song in 2 minutes. Turn their quirks, memories, and inside jokes into a custom song they'll play on repeat. $19.99 per song."
+  title: "AI Birthday Songs - Create Personalized Happy Birthday Music | YourBanger.com"
+  description: "Create an AI birthday song in 2 minutes for $19.99. Turn their quirks, memories, and inside jokes into a custom song with professional vocals they'll play on repeat."
 ---
 
 ## The Problem with "Happy Birthday to You"
@@ -204,8 +204,8 @@ Skip the awkward group sing-along. Give them a song that's actually about them�
 
 It takes 2 minutes. It costs $19.99. They'll play it forever.
 
-**[Create a personalized birthday song →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Birthday Song →](/ai-song-generator)**
 
 ---
 
-*Want to see more? Check out our [birthday songs page](/birthday-songs), browse [examples](/examples), or see [pricing](/pricing).*
+*Want to see more? Check out our [AI birthday songs page](/birthday-songs), browse [examples](/examples), or try our [AI song generator](/ai-song-generator).*

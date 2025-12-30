@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-09-22T00:00:00Z
-title: "Best Friend Gift Ideas That Show You Actually Know Them"
+title: "AI Friendship Songs & Best Friend Gift Ideas That Show You Know Them"
 excerpt: "Your best friend deserves better than a generic present. These gift ideas prove you've been paying attention all these years—from custom songs to inside joke tributes."
 image: ~/assets/images/blog/best-friend-gifts-hero.jpg
 imageAlt: "Best friends sharing a meaningful gift moment, laughing together over a thoughtful present"
@@ -12,8 +12,8 @@ tags:
   - best friend gifts
 author: YourBanger.com Team
 metadata:
-  title: "Best Friend Gift Ideas They'll Actually Love | YourBanger.com"
-  description: "Looking for gift ideas for your best friend? These meaningful, personalized gifts prove you know them—from custom songs about your friendship to inside joke tributes."
+  title: "AI Friendship Songs & Best Friend Gift Ideas | YourBanger.com"
+  description: "Create an AI friendship song in 2 minutes for $19.99. Gift ideas that prove you know your best friend—custom songs about your chaos, memories, and inside jokes."
 ---
 
 ## Your Best Friend Deserves Better Than a Gift Card
@@ -181,8 +181,8 @@ A [personalized song](/) about your friendship does exactly that—your memories
 
 They'll cry. They'll play it on repeat. They'll remember this forever.
 
-**[Create a friendship song →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Friendship Song →](/ai-song-generator)**
 
 ---
 
-*More ideas: [Birthday Songs](/birthday-songs) | [Examples](/examples) | [Pricing](/pricing)*
+*More ideas: [AI Birthday Songs](/birthday-songs) | [AI Song Generator](/ai-song-generator) | [Examples](/examples)*

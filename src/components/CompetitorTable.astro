@@ -1,0 +1,171 @@
+---
+interface Props {
+  showFullComparison?: boolean;
+  competitor?: string;
+  highlightPrice?: boolean;
+}
+
+const { 
+  showFullComparison = true, 
+  competitor = "SongFinch",
+  highlightPrice = true 
+} = Astro.props;
+
+const comparisonData = [
+  {
+    feature: "Price",
+    yourbanger: "$19.99",
+    competitor: "$199+",
+    yourbangerWins: true,
+    highlight: highlightPrice
+  },
+  {
+    feature: "Delivery Time",
+    yourbanger: "2 minutes",
+    competitor: "4-14 days",
+    yourbangerWins: true
+  },
+  {
+    feature: "Technology",
+    yourbanger: "AI-Powered",
+    competitor: "Human Musicians",
+    yourbangerWins: null // neutral
+  },
+  {
+    feature: "Revisions",
+    yourbanger: "Unlimited, instant",
+    competitor: "1-2 included",
+    yourbangerWins: true
+  },
+  {
+    feature: "Availability",
+    yourbanger: "24/7",
+    competitor: "Business hours",
+    yourbangerWins: true
+  },
+  {
+    feature: "Consistency",
+    yourbanger: "Same quality every time",
+    competitor: "Varies by artist",
+    yourbangerWins: true
+  },
+  {
+    feature: "Last-Minute Orders",
+    yourbanger: "Perfect",
+    competitor: "Rush fees apply",
+    yourbangerWins: true
+  },
+  {
+    feature: "Audio Format",
+    yourbanger: "MP3 + WAV",
+    competitor: "MP3",
+    yourbangerWins: true
+  }
+];
+
+// Filter for compact version
+const displayData = showFullComparison 
+  ? comparisonData 
+  : comparisonData.slice(0, 4);
+---
+
+<div class="competitor-table-wrapper">
+  <table class="competitor-table">
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th class="yourbanger-col">YourBanger</th>
+        <th class="competitor-col">{competitor}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {displayData.map((row) => (
+        <tr class={row.highlight ? 'highlight-row' : ''}>
+          <td class="feature-cell">{row.feature}</td>
+          <td class={`yourbanger-cell ${row.yourbangerWins ? 'winner' : ''}`}>
+            {row.yourbangerWins && <span class="winner-badge">✓</span>}
+            {row.yourbanger}
+          </td>
+          <td class="competitor-cell">{row.competitor}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  
+  {!showFullComparison && (
+    <p class="see-full-comparison">
+      <a href="/vs-songfinch">See full comparison →</a>
+    </p>
+  )}
+</div>
+
+<style>
+  .competitor-table-wrapper {
+    overflow-x: auto;
+    margin: 2rem 0;
+  }
+  
+  .competitor-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+  }
+  
+  .competitor-table th,
+  .competitor-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .competitor-table thead th {
+    background: #1f2937;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .yourbanger-col {
+    background: #059669 !important;
+  }
+  
+  .yourbanger-cell.winner {
+    background: #ecfdf5;
+    font-weight: 600;
+  }
+  
+  .winner-badge {
+    color: #059669;
+    margin-right: 0.5rem;
+  }
+  
+  .highlight-row {
+    background: #fef3c7;
+  }
+  
+  .highlight-row .yourbanger-cell {
+    background: #d1fae5;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .see-full-comparison {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .see-full-comparison a {
+    color: #059669;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 640px) {
+    .competitor-table {
+      font-size: 0.875rem;
+    }
+    
+    .competitor-table th,
+    .competitor-table td {
+      padding: 0.75rem 0.5rem;
+    }
+  }
+</style>

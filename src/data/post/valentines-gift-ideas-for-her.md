@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-02-01T00:00:00Z
-title: "Unique Valentine's Day Gift Ideas for Her That Aren't Flowers"
+title: "AI Valentine's Songs & Unique Gift Ideas for Her That Aren't Flowers"
 excerpt: "Skip the overpriced roses. These unique Valentine's Day gift ideas for her actually show thought and effort—from custom songs to experiences she'll remember."
 image: ~/assets/images/blog/valentines-gifts-her-hero.jpg
 imageAlt: "Unique Valentine's Day gifts for her including personalized presents and romantic candles"
@@ -12,8 +12,8 @@ tags:
   - romantic gifts
 author: YourBanger.com Team
 metadata:
-  title: "Unique Valentine's Day Gift Ideas for Her | YourBanger.com"
-  description: "Looking for Valentine's Day gifts for her that aren't flowers? These unique, thoughtful gift ideas show you actually know her—from custom songs to meaningful experiences."
+  title: "AI Valentine's Songs & Gift Ideas for Her | YourBanger.com"
+  description: "Create an AI Valentine's song in 2 minutes for $19.99. Show her you know her with custom love songs about your relationship, inside jokes, and why she's special."
 ---
 
 ## Beyond the Valentine's Clichés
@@ -168,8 +168,8 @@ A [custom love song](/anniversary-songs) works because it's impossible to fake a
 
 That's what Valentine's Day should be: proof that you see her.
 
-**[Create a Valentine's song for her →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Valentine's Song →](/ai-song-generator)**
 
 ---
 
-*More ideas: [Anniversary Songs](/anniversary-songs) | [Wedding Songs](/wedding-songs) | [Examples](/examples)*
+*More ideas: [Anniversary Songs](/anniversary-songs) | [Wedding Songs](/wedding-songs) | [AI Song Generator](/ai-song-generator) | [Examples](/examples)*

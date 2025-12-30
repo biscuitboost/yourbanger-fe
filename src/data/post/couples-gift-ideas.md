@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-11-02T00:00:00Z
-title: "Couples Gift Ideas for Every Occasion (That They'll Both Love)"
+title: "AI Love Songs & Couples Gift Ideas for Every Occasion"
 excerpt: "Finding a gift that both people in a couple will actually enjoy is harder than it sounds. These couples gift ideas work for anniversaries, weddings, housewarmings, and holidays."
 image: ~/assets/images/blog/couples-gifts-hero.jpg
 imageAlt: "Happy couple opening a gift together at home, both excited about their couples gift"
@@ -12,6 +12,8 @@ tags:
   - gift ideas
 metadata:
   canonical: https://yourbanger.com/couples-gift-ideas
+  title: "AI Love Songs & Couples Gift Ideas | YourBanger.com"
+  description: "Create an AI love song in 2 minutes for $19.99. Couples gift ideas for every occasion—custom songs about their love story they'll both treasure."
 ---
 
 Shopping for a couple is tricky. You're essentially trying to find one gift that makes two different people happy—people who might have completely different tastes, hobbies, and ideas of what constitutes a "good gift."
@@ -289,6 +291,12 @@ Shopping for couples doesn't have to be complicated. Focus on experiences over t
 Whether you choose a cozy night-in kit, an adventure they can take together, or a [custom song that tells their love story](/pricing), the best couples gifts bring two people closer together.
 
 And isn't that the whole point?
+
+## Create a Personalized AI Love Song
+
+Want to give them something truly unforgettable? Our [AI song generator](/ai-song-generator) creates custom love songs in just 2 minutes. Share their story—how they met, their journey, what makes them special—and get a professional-quality song they'll dance to for years.
+
+**[Create Your AI Love Song →](/ai-song-generator)** — $19.99, ready in minutes
 
 ---
 

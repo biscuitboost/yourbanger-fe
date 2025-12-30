@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-06-20T00:00:00Z
-title: "Unique Wedding Gift Ideas Beyond the Registry"
+title: "AI Wedding Songs & Unique Gift Ideas Beyond the Registry"
 excerpt: "The registry is covered. What gift can you give that they'll actually remember? These unique wedding gift ideas stand out from the typical blender and towel set."
 image: ~/assets/images/blog/wedding-gifts-unique-hero.jpg
 imageAlt: "Unique wedding gift ideas including custom song card, personalized items, and experience tickets"
@@ -12,8 +12,8 @@ tags:
   - gift ideas
 author: YourBanger.com Team
 metadata:
-  title: "Unique Wedding Gift Ideas Beyond the Registry | YourBanger.com"
-  description: "Looking for wedding gift ideas beyond the registry? These unique, personalized gifts stand out and create memories the couple will treasure forever."
+  title: "AI Wedding Songs & Unique Gift Ideas | YourBanger.com"
+  description: "Create an AI wedding song in 2 minutes for $19.99. Give the couple a unique gift beyond the registry—custom songs about their love story they'll treasure forever."
 ---
 
 ## Beyond the Registry
@@ -191,8 +191,8 @@ They'll remember the unique gifts—the [personalized song](/wedding-songs) that
 
 That's what wedding gifts should be: memorable.
 
-**[Create a wedding song for them →](https://app.yourbanger.com/auth?tab=signup)**
+**[Create Your AI Wedding Song →](/ai-song-generator)**
 
 ---
 
-*More ideas: [Wedding Songs](/wedding-songs) | [Anniversary Songs](/anniversary-songs) | [Examples](/examples)*
+*More ideas: [AI Wedding Songs](/wedding-songs) | [Anniversary Songs](/anniversary-songs) | [AI Song Generator](/ai-song-generator) | [Examples](/examples)*
