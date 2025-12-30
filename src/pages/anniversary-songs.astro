@@ -2,14 +2,15 @@
 import Layout from '~/layouts/PageLayout.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
+import SchemaMarkup from '~/components/seo/SchemaMarkup.astro';
 import { Icon } from 'astro-icon/components';
 
 const metadata = {
-  title: 'Personalized Anniversary Songs | Custom Love Music | YourBanger.com',
-  description: 'Create a personalized anniversary song celebrating your years together. From 1st to 50th anniversary, turn your love story into custom music.',
+  title: 'AI Anniversary Song Generator | Custom Anniversary Songs in 2 Minutes | YourBanger.com',
+  description: 'AI anniversary song generator creates personalized songs in 2 minutes. Celebrate 1st to 50th anniversaries with custom music. Professional vocals. Only $19.99.',
   openGraph: {
-    title: 'Personalized Anniversary Songs - Your Love Story in Music',
-    description: 'Create a custom anniversary song in minutes. Celebrate your journey together with personalized music.',
+    title: 'AI Anniversary Song Generator - Custom Anniversary Songs in Minutes',
+    description: 'Create personalized AI anniversary songs celebrating your years together in just 2 minutes.',
     type: 'website',
   },
 };
@@ -43,32 +44,25 @@ const useCases = [
     title: 'The Gift',
     description: 'Skip the jewelry store. Give them something truly one-of-a-kind.',
   },
+  {
+    icon: 'tabler:gift',
+    title: 'The Gift',
+    description: 'Skip the jewelry store. Give them something truly one-of-a-kind.',
+  },
 ];
 
-// Schema for SEO
-const pageSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Personalized Anniversary Song Creation',
-  description: 'AI-powered custom anniversary song creation service. Create unique love songs celebrating your relationship in minutes.',
-  provider: {
-    '@type': 'Organization',
-    name: 'YourBanger.com',
-    url: 'https://yourbanger.com'
-  },
-  serviceType: 'Custom Music Creation',
-  areaServed: 'Worldwide',
-  offers: {
-    '@type': 'Offer',
-    price: '19.99',
-    priceCurrency: 'USD',
-    description: 'per song order'
-  }
-};
 ---
 
 <Layout metadata={metadata}>
-  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+  <!-- Product Schema for SEO -->
+  <SchemaMarkup 
+    type="product"
+    data={{
+      name: "AI-Generated Personalized Anniversary Song",
+      description: "Create a custom anniversary song with AI in 2 minutes. Celebrate 1st to 50th anniversaries with your love story in music. Professional vocals. Only $19.99.",
+      category: "Digital Music > Personalized Songs > Anniversary"
+    }}
+  />
 
   <!-- Hero Section -->
   <section class="py-16 md:py-24 relative overflow-hidden">
@@ -84,7 +78,7 @@ const pageSchema = {
       </div>
 
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
-        Personalized <span class="text-red-500">Anniversary Songs</span>
+        AI <span class="text-red-500">Anniversary Song Generator</span>
       </h1>
 
       <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">

@@ -2,14 +2,15 @@
 import Layout from '~/layouts/PageLayout.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
+import SchemaMarkup from '~/components/seo/SchemaMarkup.astro';
 import { Icon } from 'astro-icon/components';
 
 const metadata = {
-  title: 'Personalized Birthday Songs | Custom AI Birthday Music | YourBanger.com',
-  description: 'Create a personalized birthday song in 2 minutes. Turn their story, quirks, and memories into a custom AI-generated song. Perfect gift for any age. $19.99 per song.',
+  title: 'AI Birthday Song Generator | Custom Birthday Songs in 2 Minutes | YourBanger.com',
+  description: 'AI birthday song generator creates personalized songs in 2 minutes. Custom lyrics, professional vocals, any genre. Perfect birthday gift. Only $19.99.',
   openGraph: {
-    title: 'Personalized Birthday Songs - Create Custom Birthday Music',
-    description: 'Make their birthday unforgettable with a personalized AI song about them. 2 minutes to create, memories that last forever.',
+    title: 'AI Birthday Song Generator - Custom Birthday Songs in Minutes',
+    description: 'Create personalized AI birthday songs in 2 minutes. Turn memories into custom music with professional vocals.',
     type: 'website',
   },
 };
@@ -58,31 +59,18 @@ const benefits = [
   },
 ];
 
-// Schema for SEO
-const pageSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Personalized Birthday Song Creation',
-  description: 'AI-powered custom birthday song creation service. Create unique, personalized birthday songs in minutes.',
-  provider: {
-    '@type': 'Organization',
-    name: 'YourBanger.com',
-    url: 'https://yourbanger.com'
-  },
-  serviceType: 'Custom Music Creation',
-  areaServed: 'Worldwide',
-  offers: {
-    '@type': 'Offer',
-    price: '19.99',
-    priceCurrency: 'USD',
-    description: 'per song order'
-  }
-};
 ---
 
 <Layout metadata={metadata}>
-  <!-- Service Schema for SEO -->
-  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+  <!-- Product Schema for SEO -->
+  <SchemaMarkup 
+    type="product"
+    data={{
+      name: "AI-Generated Personalized Birthday Song",
+      description: "Create a custom birthday song with AI in 2 minutes. Features their name, memories, and inside jokes. Professional vocals in any genre. Only $19.99.",
+      category: "Digital Music > Personalized Songs > Birthday"
+    }}
+  />
 
   <!-- Hero Section -->
   <section class="py-16 md:py-24 relative overflow-hidden">
@@ -98,7 +86,7 @@ const pageSchema = {
       </div>
 
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
-        Personalized <span class="text-[var(--primary)]">Birthday Songs</span>
+        AI <span class="text-[var(--primary)]">Birthday Song Generator</span>
       </h1>
 
       <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">

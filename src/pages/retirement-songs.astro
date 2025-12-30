@@ -2,14 +2,15 @@
 import Layout from '~/layouts/PageLayout.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
+import SchemaMarkup from '~/components/seo/SchemaMarkup.astro';
 import { Icon } from 'astro-icon/components';
 
 const metadata = {
-  title: 'Personalized Retirement Songs | Custom Farewell Music | YourBanger.com',
-  description: 'Create a personalized retirement song to celebrate their career and legacy. Perfect for retirement parties, farewell speeches, and honoring decades of service.',
+  title: 'AI Retirement Song Generator | Custom Farewell Songs in 2 Minutes | YourBanger.com',
+  description: 'AI retirement song generator creates personalized farewell songs in 2 minutes. Honor their career and legacy with custom music. Professional vocals. Only $19.99.',
   openGraph: {
-    title: 'Personalized Retirement Songs - Honor Their Legacy in Music',
-    description: 'Create a custom retirement song in minutes. Celebrate their career, inside jokes, and lasting impact.',
+    title: 'AI Retirement Song Generator - Custom Farewell Songs in Minutes',
+    description: 'Create personalized AI retirement songs celebrating their career and legacy in just 2 minutes.',
     type: 'website',
   },
 };
@@ -58,30 +59,18 @@ const examples = [
   },
 ];
 
-// Schema for SEO
-const pageSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Personalized Retirement Song Creation',
-  description: 'AI-powered custom retirement and farewell song creation service. Create unique career tribute songs in minutes.',
-  provider: {
-    '@type': 'Organization',
-    name: 'YourBanger.com',
-    url: 'https://yourbanger.com'
-  },
-  serviceType: 'Custom Music Creation',
-  areaServed: 'Worldwide',
-  offers: {
-    '@type': 'Offer',
-    price: '19.99',
-    priceCurrency: 'USD',
-    description: 'per song order'
-  }
-};
 ---
 
 <Layout metadata={metadata}>
-  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+  <!-- Product Schema for SEO -->
+  <SchemaMarkup 
+    type="product"
+    data={{
+      name: "AI-Generated Personalized Retirement Song",
+      description: "Create a custom retirement song with AI in 2 minutes. Honor their career and legacy with personalized music. Perfect for retirement parties. Only $19.99.",
+      category: "Digital Music > Personalized Songs > Retirement"
+    }}
+  />
 
   <!-- Hero Section -->
   <section class="py-16 md:py-24 relative overflow-hidden">
@@ -97,7 +86,7 @@ const pageSchema = {
       </div>
 
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
-        Personalized <span class="text-amber-500">Retirement Songs</span>
+        AI <span class="text-amber-500">Retirement Song Generator</span>
       </h1>
 
       <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">

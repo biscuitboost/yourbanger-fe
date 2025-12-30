@@ -2,14 +2,15 @@
 import Layout from '~/layouts/PageLayout.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
+import SchemaMarkup from '~/components/seo/SchemaMarkup.astro';
 import { Icon } from 'astro-icon/components';
 
 const metadata = {
-  title: 'Personalized Wedding Songs | Custom Wedding & Anniversary Music | YourBanger.com',
-  description: 'Create a personalized wedding song for first dances, toasts, or anniversaries. Turn your love story into a custom AI song in minutes. Unique & unforgettable.',
+  title: 'AI Wedding Song Generator | Custom Wedding Songs in 2 Minutes | YourBanger.com',
+  description: 'AI wedding song generator creates personalized wedding songs in 2 minutes. Perfect for first dances, toasts, and anniversaries. Professional vocals. Only $19.99.',
   openGraph: {
-    title: 'Personalized Wedding Songs - Your Love Story in Music',
-    description: 'Create a custom wedding song in minutes. Perfect for first dances, wedding toasts, and anniversaries.',
+    title: 'AI Wedding Song Generator - Custom Wedding Songs in Minutes',
+    description: 'Create personalized AI wedding songs for first dances, toasts, and anniversaries in just 2 minutes.',
     type: 'website',
   },
 };
@@ -76,31 +77,18 @@ const testimonials = [
   },
 ];
 
-// Schema for SEO
-const pageSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Personalized Wedding Song Creation',
-  description: 'AI-powered custom wedding and anniversary song creation service. Create unique love songs in minutes.',
-  provider: {
-    '@type': 'Organization',
-    name: 'YourBanger.com',
-    url: 'https://yourbanger.com'
-  },
-  serviceType: 'Custom Music Creation',
-  areaServed: 'Worldwide',
-  offers: {
-    '@type': 'Offer',
-    price: '19.99',
-    priceCurrency: 'USD',
-    description: 'per song order'
-  }
-};
 ---
 
 <Layout metadata={metadata}>
-  <!-- Service Schema for SEO -->
-  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+  <!-- Product Schema for SEO -->
+  <SchemaMarkup 
+    type="product"
+    data={{
+      name: "AI-Generated Personalized Wedding Song",
+      description: "Create a custom wedding song with AI in 2 minutes. Perfect for first dances, toasts, or as a gift. AI generates professional music with your love story. Only $19.99.",
+      category: "Digital Music > Personalized Songs > Wedding"
+    }}
+  />
 
   <!-- Hero Section -->
   <section class="py-16 md:py-24 relative overflow-hidden">
@@ -116,7 +104,7 @@ const pageSchema = {
       </div>
 
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
-        Personalized <span class="text-rose-500">Wedding Songs</span>
+        AI <span class="text-rose-500">Wedding Song Generator</span>
       </h1>
 
       <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">

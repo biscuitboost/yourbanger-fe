@@ -2,14 +2,15 @@
 import Layout from '~/layouts/PageLayout.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
+import SchemaMarkup from '~/components/seo/SchemaMarkup.astro';
 import { Icon } from 'astro-icon/components';
 
 const metadata = {
-  title: 'Funny Personalized Songs | Custom Comedy Music | YourBanger.com',
-  description: 'Create hilarious personalized songs that roast your friends, celebrate inside jokes, and make everyone laugh. Perfect for parties, gifts, and unforgettable moments.',
+  title: 'AI Funny Song Generator | Custom Comedy Songs in 2 Minutes | YourBanger.com',
+  description: 'AI funny song generator creates hilarious personalized songs in 2 minutes. Perfect for roasts, parties, and inside jokes. Professional vocals. Only $19.99.',
   openGraph: {
-    title: 'Funny Personalized Songs - Custom Comedy Music',
-    description: 'Create a hilarious custom song in minutes. Roast your friends, celebrate inside jokes, and make memories.',
+    title: 'AI Funny Song Generator - Custom Comedy Songs in Minutes',
+    description: 'Create hilarious AI funny songs for roasts, parties, and gifts in just 2 minutes.',
     type: 'website',
   },
 };
@@ -58,30 +59,18 @@ const examples = [
   },
 ];
 
-// Schema for SEO
-const pageSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'Funny Personalized Song Creation',
-  description: 'AI-powered custom comedy song creation service. Create hilarious roast songs and inside joke tracks in minutes.',
-  provider: {
-    '@type': 'Organization',
-    name: 'YourBanger.com',
-    url: 'https://yourbanger.com'
-  },
-  serviceType: 'Custom Music Creation',
-  areaServed: 'Worldwide',
-  offers: {
-    '@type': 'Offer',
-    price: '19.99',
-    priceCurrency: 'USD',
-    description: 'per song order'
-  }
-};
 ---
 
 <Layout metadata={metadata}>
-  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+  <!-- Product Schema for SEO -->
+  <SchemaMarkup 
+    type="product"
+    data={{
+      name: "AI-Generated Funny Personalized Song",
+      description: "Create hilarious custom songs with AI in 2 minutes. Perfect for roasts, parties, and celebrating inside jokes. Professional comedy vocals. Only $19.99.",
+      category: "Digital Music > Personalized Songs > Comedy"
+    }}
+  />
 
   <!-- Hero Section -->
   <section class="py-16 md:py-24 relative overflow-hidden">
@@ -97,7 +86,7 @@ const pageSchema = {
       </div>
 
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
-        Funny <span class="text-pink-500">Personalized Songs</span>
+        AI <span class="text-pink-500">Funny Song Generator</span>
       </h1>
 
       <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">
