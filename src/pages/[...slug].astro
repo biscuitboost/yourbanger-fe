@@ -1,0 +1,283 @@
+---
+import Layout from '../layouts/PageLayout.astro';
+import SchemaMarkup from '../components/seo/SchemaMarkup.astro';
+import { getAllCombinations } from '../data/pseo-combinations';
+import { getGenreOccasionContent } from '../utils/pseo-content';
+import { Icon } from 'astro-icon/components';
+
+export function getStaticPaths() {
+  const combinations = getAllCombinations();
+  return combinations.map(combo => ({
+    params: { slug: combo.slug },
+    props: { 
+      genre: combo.genre, 
+      occasion: combo.occasion 
+    }
+  }));
+}
+
+const { genre, occasion } = Astro.props;
+
+const metadata = {
+  title: `${genre.name} ${occasion.name} Song | AI-Generated Custom Music | YourBanger.com`,
+  description: `Create a custom ${genre.name.toLowerCase()} song for ${occasion.name.toLowerCase()} in 2 minutes. AI-generated personalized lyrics and professional ${genre.name.toLowerCase()} music. Only $19.99.`,
+  openGraph: {
+    title: `${genre.name} ${occasion.name} Song Generator - Custom Music in Minutes`,
+    description: `Create personalized ${genre.name.toLowerCase()} songs for ${occasion.name.toLowerCase()} in just 2 minutes with AI.`,
+    type: 'website',
+  },
+};
+
+const useCases = [
+  {
+    icon: 'tabler:music',
+    title: `${occasion.name} Celebration`,
+    description: `Replace the generic playlist with a song that captures their unique story and personality.`,
+  },
+  {
+    icon: 'tabler:heart',
+    title: 'Personal Tribute',
+    description: `Skip the awkward speeches. Let the ${genre.name.toLowerCase()} song tell their story with emotion and style.`,
+  },
+  {
+    icon: 'tabler:star',
+    title: 'Memorable Gift',
+    description: `The perfect ${genre.name.toLowerCase()} tribute they'll treasure forever and play for years to come.`,
+  },
+  {
+    icon: 'tabler:users',
+    title: 'Group Creation',
+    description: `The ideal group gift that shows you actually know what makes them special.`,
+  },
+];
+
+const examples = [
+  {
+    title: 'The Perfect Tribute',
+    style: genre.name,
+    description: `A heartfelt ${genre.name.toLowerCase()} song celebrating their journey and the impact they've made.`,
+    gradient: 'from-purple-500 to-pink-500',
+  },
+  {
+    title: 'Their Story',
+    style: `${genre.name} Ballad`,
+    description: `An emotional ${genre.name.toLowerCase()} journey through their most memorable moments and achievements.`,
+    gradient: 'from-blue-500 to-cyan-500',
+  },
+  {
+    title: 'The Celebration',
+    style: `${genre.name} Anthem`,
+    description: `An upbeat ${genre.name.toLowerCase()} celebration of their personality, quirks, and lasting legacy.`,
+    gradient: 'from-green-500 to-emerald-500',
+  },
+];
+
+---
+
+<Layout metadata={metadata}>
+  <!-- Product Schema for SEO -->
+  <SchemaMarkup 
+    type="product"
+    data={{
+      name: `AI-Generated Personalized ${genre.name} ${occasion.name} Song`,
+      description: `Create a custom ${genre.name.toLowerCase()} ${occasion.name.toLowerCase()} song with AI in 2 minutes. Personalized music perfect for ${occasion.name.toLowerCase()} celebrations. Only $19.99.`,
+      category: `Digital Music > Personalized Songs > ${genre.name} > ${occasion.name}`
+    }}
+  />
+
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[var(--secondary)] rounded-full border border-[var(--border)] mb-6">
+        <Icon name="tabler:music" class="w-4 h-4 text-purple-500" />
+        <span class="text-sm text-[var(--muted-foreground)]">{genre.name} {occasion.name} Music</span>
+      </div>
+
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--foreground)] mb-6">
+        AI <span class="text-purple-500">{genre.name} {occasion.name} Song Generator</span>
+      </h1>
+
+      <p class="text-xl text-[var(--muted-foreground)] max-w-3xl mx-auto mb-8">
+        Create a personalized {genre.name.toLowerCase()} song for {occasion.name.toLowerCase()} in just 2 minutes. 
+        {genre.description}. Perfect for celebrating their special moment.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/create"
+          class="inline-flex items-center justify-center bg-purple-500 hover:bg-purple-600 text-white font-medium text-lg px-8 h-14 rounded-xl shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all"
+        >
+          Create Their {genre.name} {occasion.name} Song
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/ai-song-generator"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Start Creating
+        </a>
+        <a
+          href="/examples"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Hear Examples
+        </a>
+      </div>
+
+      <p class="text-sm text-[var(--muted-foreground)] mt-4">
+        $19.99 per song • Ready in minutes • A personalized {genre.name.toLowerCase()} tribute
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Genre Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Why {genre.name} is Perfect for {occasion.name}
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)] max-w-3xl mx-auto">
+          {getGenreOccasionContent(genre.slug, occasion.slug)}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          Perfect For Every {occasion.name}
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          From intimate gatherings to grand celebrations
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {useCases.map((useCase) => (
+          <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)] hover:border-purple-500/50 transition-all">
+            <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mb-4">
+              <Icon name={useCase.icon} class="w-6 h-6 text-purple-500" />
+            </div>
+            <h3 class="text-lg font-semibold text-[var(--foreground)] mb-2">{useCase.title}</h3>
+            <p class="text-[var(--muted-foreground)]">{useCase.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          {genre.name} {occasion.name} Song Examples
+        </h2>
+        <p class="text-lg text-[var(--muted-foreground)]">
+          Hear what a personalized {genre.name.toLowerCase()} tribute could sound like
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {examples.map((example) => (
+          <div class="group relative bg-[var(--card)] rounded-xl border border-[var(--border)] overflow-hidden hover:border-purple-500/50 transition-all">
+            <div class={`absolute inset-0 bg-gradient-to-br ${example.gradient} opacity-5 group-hover:opacity-10 transition-opacity`}></div>
+            <div class="relative p-6">
+              <span class="inline-block px-3 py-1 bg-purple-500/10 text-purple-500 text-sm font-medium rounded-full mb-3">
+                {example.style}
+              </span>
+              <h3 class="text-xl font-semibold text-[var(--foreground)] mb-2">{example.title}</h3>
+              <p class="text-[var(--muted-foreground)]">{example.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/examples" class="inline-flex items-center text-purple-500 hover:underline font-medium">
+          Listen to all examples
+          <Icon name="tabler:arrow-right" class="w-4 h-4 ml-1" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">
+          How to Create Your {genre.name} {occasion.name} Song
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-3">Share Their Story</h3>
+          <p class="text-[var(--muted-foreground)] mb-3">
+            Tell us about the person, include memories, inside jokes, and what makes them special.
+          </p>
+        </div>
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-3">We've Selected {genre.name}</h3>
+          <p class="text-[var(--muted-foreground)] mb-3">
+            {genre.description}. Perfect for {occasion.name.toLowerCase()} celebrations.
+          </p>
+        </div>
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-3">AI Creates Their Song</h3>
+          <p class="text-[var(--muted-foreground)] mb-3">
+            In about 2 minutes, you'll have a professional-quality {genre.name.toLowerCase()} song with custom lyrics.
+          </p>
+        </div>
+        <div class="p-6 bg-[var(--card)] rounded-xl border border-[var(--border)]">
+          <h3 class="text-lg font-semibold text-[var(--foreground)] mb-3">Download and Share</h3>
+          <p class="text-[var(--muted-foreground)] mb-3">
+            Get your MP3 and WAV files instantly. Play it at the {occasion.name.toLowerCase()} celebration!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Links -->
+  <section class="py-16 bg-[var(--secondary)]/30">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-8">
+        Explore More Options
+      </h2>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href={occasion.mainPage || '/ai-song-generator'}
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          All {occasion.name} Songs
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/ai-song-generator"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          AI Song Generator Home
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+        <a
+          href="/examples"
+          class="inline-flex items-center justify-center border border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--secondary)] font-medium text-lg px-8 h-14 rounded-xl transition-all"
+        >
+          Listen to Examples
+          <Icon name="tabler:arrow-right" class="w-5 h-5 ml-2" />
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

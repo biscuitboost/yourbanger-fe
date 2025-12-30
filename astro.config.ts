@@ -29,7 +29,39 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    sitemap(),
+    sitemap({
+      // Customize sitemap generation
+      filter: (page) => {
+        // Exclude certain pages if needed
+        const excludePaths = ['/404', '/thank-you'];
+        return !excludePaths.some(path => page.includes(path));
+      },
+      customPages: [
+        // Add any pages that might not be auto-detected
+        'https://yourbanger.com/ai-song-generator',
+        'https://yourbanger.com/vs-songfinch',
+      ],
+      changefreq: 'weekly',
+      priority: 0.7,
+      // Custom priority for important pages
+      serialize: (item) => {
+        if (item.url === 'https://yourbanger.com/') {
+          item.priority = 1.0;
+          item.changefreq = 'always';
+        }
+        if (item.url.includes('/ai-song-generator')) {
+          item.priority = 0.9;
+        }
+        if (item.url.includes('/vs-songfinch')) {
+          item.priority = 0.8;
+        }
+        // Programmatic pages get slightly lower priority
+        if (item.url.match(/-song$/)) {
+          item.priority = 0.6;
+        }
+        return item;
+      }
+    }),
     mdx(),
     icon({
       include: {
